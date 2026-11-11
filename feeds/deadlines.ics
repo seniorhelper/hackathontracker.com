@@ -1,0 +1,591 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Hackathon deadlines (prize events)
+BEGIN:VEVENT
+UID:devpost:32002@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Deadline: Health Hackathon 3.0
+DESCRIPTION:$200\,000 in prizes. https://health-hack-3.devpost.com/
+URL:https://health-hack-3.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31060@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Deadline: Agentic Hackathon
+DESCRIPTION:$480 in prizes. https://agentic-hackathon.devpost.com/
+URL:https://agentic-hackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31302@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Deadline: PayPal AI Hackathon
+DESCRIPTION:$67\,500 in prizes. https://paypalaihackathon.devpost.com/
+URL:https://paypalaihackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31948@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Deadline: Build\, Demo\, and Take Home a Working AI Support Bot
+DESCRIPTION:$750 in prizes. https://build-a-working-ai-support-bot.devpost.com/
+URL:https://build-a-working-ai-support-bot.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31650@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Deadline: Hackperimeter
+DESCRIPTION:$1\,000 in prizes. https://hackperimeter.devpost.com/
+URL:https://hackperimeter.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31776@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Deadline: System Public Challenge
+DESCRIPTION:$7\,500 in prizes. https://system-public-challenge.devpost.com/
+URL:https://system-public-challenge.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31529@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Deadline: Haven Princeton Game Jam - High School
+DESCRIPTION:$3\,551 in prizes. https://haven-asbury-park.devpost.com/
+URL:https://haven-asbury-park.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:32058@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Deadline: Ground Truth: The Live Agents Hackathon - powered by You.com
+DESCRIPTION:$650 in prizes. https://ground-truth-you-hack.devpost.com/
+URL:https://ground-truth-you-hack.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31769@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Deadline: Code/Clash
+DESCRIPTION:$500 in prizes. https://code-clash.devpost.com/
+URL:https://code-clash.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31688@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Deadline: Haven Richmond
+DESCRIPTION:$500 in prizes. https://haven-richmond.devpost.com/
+URL:https://haven-richmond.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31495@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Deadline: IceHacks
+DESCRIPTION:$17\,150 in prizes. https://icehacks.devpost.com/
+URL:https://icehacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31200@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Deadline: Hack the Harvest
+DESCRIPTION:$5\,000 in prizes. https://hack-the-harvest.devpost.com/
+URL:https://hack-the-harvest.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:30697@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Deadline: SanD Hacks
+DESCRIPTION:$2\,250 in prizes. https://sand-hacks-26.devpost.com/
+URL:https://sand-hacks-26.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:30876@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Deadline: Central Hacks
+DESCRIPTION:$1\,750 in prizes. https://central-hacks.devpost.com/
+URL:https://central-hacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31765@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Deadline: GTransformer AI Buildathon 2026 — AI for Global Good
+DESCRIPTION:$1\,000 in prizes. https://gtransformer-buildathon-2026.devpost.com/
+URL:https://gtransformer-buildathon-2026.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31922@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Deadline: AI@USC
+DESCRIPTION:$14\,000 in prizes. https://ai-usc.devpost.com/
+URL:https://ai-usc.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31552@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Deadline: UGREEN Hackathon 2026 on AI NAS
+DESCRIPTION:$46\,000 in prizes. https://ugreenhackathon.devpost.com/
+URL:https://ugreenhackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31797@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Deadline: Green Shift Hacks
+DESCRIPTION:$125 in prizes. https://green-shift-hacks.devpost.com/
+URL:https://green-shift-hacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31024@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Deadline: Meta VR Start Developer Competition 2026
+DESCRIPTION:$1\,000\,000 in prizes. https://start-developer-competition-26.devpost.com/
+URL:https://start-developer-competition-26.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31795@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Deadline: AccessED Hacks
+DESCRIPTION:$225 in prizes. https://accessed-hacks.devpost.com/
+URL:https://accessed-hacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:26475@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Deadline: Dakar Bitcoin Hack by BTrust
+DESCRIPTION:$900 in prizes. https://dakar-bitcoin-hack-2026.devpost.com/
+URL:https://dakar-bitcoin-hack-2026.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31746@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Deadline: University Blockchain Conference Hackathon 2026
+DESCRIPTION:$22\,000 in prizes. https://ubc-hackathon-2026.devpost.com/
+URL:https://ubc-hackathon-2026.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:30657@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Deadline: Teens Hack Houston Hackathon
+DESCRIPTION:$300 in prizes. https://tripleh.devpost.com/
+URL:https://tripleh.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:unstop:1773211@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Deadline: Build with Agora - BLR
+DESCRIPTION:$2\,000 in prizes. https://unstop.com/hackathons/build-with-agora-blr-knotic-1773211
+URL:https://unstop.com/hackathons/build-with-agora-blr-knotic-1773211
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31796@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Deadline: SafeSpace Hacks
+DESCRIPTION:$280 in prizes. https://safespace-hacks.devpost.com/
+URL:https://safespace-hacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31549@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Deadline: KUK VIRTUAL HACKATHON
+DESCRIPTION:$800 in prizes. https://kuk-virtual-hackathon.devpost.com/
+URL:https://kuk-virtual-hackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31775@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Deadline: OBSCURA: Satellite AI Research Challenge
+DESCRIPTION:$50 in prizes. https://obscura.devpost.com/
+URL:https://obscura.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31843@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Deadline: Blackout 2026
+DESCRIPTION:$5\,000 in prizes. https://blackout-2026.devpost.com/
+URL:https://blackout-2026.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31682@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: CSC Winter Sparkathon
+DESCRIPTION:$300 in prizes. https://csc-winter-sparkathon.devpost.com/
+URL:https://csc-winter-sparkathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31808@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: #BuildHybridAI 2026
+DESCRIPTION:$30\,000 in prizes. https://firebasehybridaihackathon.devpost.com/
+URL:https://firebasehybridaihackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:unstop:1762519@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: Anna AI OS Founding Builder Challenge 2026
+DESCRIPTION:$80\,000 in prizes. https://unstop.com/hackathons/anna-ai-os-founding-builder-challenge-2026-talentsec-technology-hong-kong-limited-1762519
+URL:https://unstop.com/hackathons/anna-ai-os-founding-builder-challenge-2026-talentsec-technology-hong-kong-limited-1762519
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31794@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Deadline: Code for Change
+DESCRIPTION:$200 in prizes. https://code-for-change-global.devpost.com/
+URL:https://code-for-change-global.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31667@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Deadline: Kiroween 2026
+DESCRIPTION:$100\,000 in prizes. https://kiroween.devpost.com/
+URL:https://kiroween.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31773@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Deadline: LaunchPad Hacks (Judges + Sponsors Needed)
+DESCRIPTION:$300 in prizes. https://launchpad-hacks.devpost.com/
+URL:https://launchpad-hacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:32042@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Deadline: The Dawn of Superintelligence | Kaya AI Grand Challenge
+DESCRIPTION:$3\,000 in prizes. https://kaya-ai-grand-challenge.devpost.com/
+URL:https://kaya-ai-grand-challenge.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31973@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: Deck the Pixels
+DESCRIPTION:$25\,000 in prizes. https://deckthepixels.devpost.com/
+URL:https://deckthepixels.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:32079@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: Learn AR with SPECS
+DESCRIPTION:$2\,500 in prizes. https://learn-specs.devpost.com/
+URL:https://learn-specs.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31972@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: SLAY HACKS
+DESCRIPTION:$4\,500 in prizes. https://slayy-hacks.devpost.com/
+URL:https://slayy-hacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31994@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Deadline: AI OpenBuild
+DESCRIPTION:$150 in prizes. https://ai-openbuild.devpost.com/
+URL:https://ai-openbuild.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31642@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Deadline: AWS MSP AI Hackathon
+DESCRIPTION:$64\,000 in prizes. https://aws-agentic-msp.devpost.com/
+URL:https://aws-agentic-msp.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31083@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Deadline: QNX Global Hackathon
+DESCRIPTION:$50\,000 in prizes. https://qnx.devpost.com/
+URL:https://qnx.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:32060@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Deadline: Silicon Valley Buildathon
+DESCRIPTION:$500 in prizes. https://silicon-valley-buildathon.devpost.com/
+URL:https://silicon-valley-buildathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:unstop:1652247@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Deadline: National Research & Cloud Innovation Challenge Season 4 by 3SVK — Powered by Adaption Labs | 4.8K+ Registrations
+DESCRIPTION:$100 in prizes. https://unstop.com/hackathons/cloud-innovation-challenge-jawaharlal-nehru-technological-university-jntuh-hyderabad-1652247
+URL:https://unstop.com/hackathons/cloud-innovation-challenge-jawaharlal-nehru-technological-university-jntuh-hyderabad-1652247
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:30789@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:Deadline: Arbiter Hacks V1
+DESCRIPTION:$7\,800 in prizes. https://arbiter-hacks-v1.devpost.com/
+URL:https://arbiter-hacks-v1.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31572@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Deadline: Codegeist 2026: Build with context. Ship with confidence.
+DESCRIPTION:$120\,000 in prizes. https://codegeist2026.devpost.com/
+URL:https://codegeist2026.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:27097@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Deadline: evensonarisnord
+DESCRIPTION:$150 in prizes. https://evensonarisnord.devpost.com/
+URL:https://evensonarisnord.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:30819@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Deadline: United Hacks V8
+DESCRIPTION:$18\,700 in prizes. https://unitedhacksv8.devpost.com/
+URL:https://unitedhacksv8.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31222@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Deadline: checkpoint 1 — games for good
+DESCRIPTION:$11\,960 in prizes. https://checkpoint-1.devpost.com/
+URL:https://checkpoint-1.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31141@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Deadline: HackStorm 3.0: Sense\, Think and Act
+DESCRIPTION:$5\,200 in prizes. https://hackstorm3.devpost.com/
+URL:https://hackstorm3.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:30455@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:Deadline: Cosmo Hacks 2026
+DESCRIPTION:$146\,770 in prizes. https://cosmohacks.devpost.com/
+URL:https://cosmohacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:30163@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Deadline: H.A.R.D. Hack 2027
+DESCRIPTION:$300 in prizes. https://h-a-r-d-hack-2027.devpost.com/
+URL:https://h-a-r-d-hack-2027.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:unstop:1759619@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Deadline: The Arcticathon
+DESCRIPTION:$100\,000 in prizes. https://unstop.com/hackathons/the-arcticathon-bidaya-1759619
+URL:https://unstop.com/hackathons/the-arcticathon-bidaya-1759619
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31873@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Deadline: HackOut! 2027
+DESCRIPTION:$3\,000 in prizes. https://hackout-branchout.devpost.com/
+URL:https://hackout-branchout.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:30340@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+SUMMARY:Deadline: HackTitan
+DESCRIPTION:$10\,000 in prizes. https://hacktitan.devpost.com/
+URL:https://hacktitan.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31681@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Deadline: Decisions Modeling for Greater Philadelphia
+DESCRIPTION:$100 in prizes. https://tbd-hackathon.devpost.com/
+URL:https://tbd-hackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:30463@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:Deadline: DeveloperWeek 2027 Hackathon
+DESCRIPTION:$6\,000 in prizes. https://developerweek-2027-hackathon.devpost.com/
+URL:https://developerweek-2027-hackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31612@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Deadline: NTU Beyond Binary Techathon 2027
+DESCRIPTION:$10\,000 in prizes. https://ntu-beyond-binary-2027.devpost.com/
+URL:https://ntu-beyond-binary-2027.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31340@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Deadline: Hook Em Hacks 2027
+DESCRIPTION:$1\,000 in prizes. https://hook-em-hacks-2027.devpost.com/
+URL:https://hook-em-hacks-2027.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:28629@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:Deadline: Tech to Treasure Hackathon
+DESCRIPTION:$450 in prizes. https://techtotreasure.devpost.com/
+URL:https://techtotreasure.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31535@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Deadline: Build Beyond Hackathon
+DESCRIPTION:$5\,000 in prizes. https://build-beyond.devpost.com/
+URL:https://build-beyond.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31800@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Deadline: GNEC Hackathon 2027 Winter - Compete For UN-Affiliated/NGO Internships & Prizes
+DESCRIPTION:$700 in prizes. https://gnec-hackathon-2027-winter.devpost.com/
+URL:https://gnec-hackathon-2027-winter.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31188@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270406
+DTEND;VALUE=DATE:20270407
+SUMMARY:Deadline: N/A
+DESCRIPTION:$2 in prizes. https://ai-content-engine-hackathon.devpost.com/
+URL:https://ai-content-engine-hackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31162@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:Deadline: Desert Dev Lab 2027
+DESCRIPTION:$1\,000 in prizes. https://desert-dev-lab-2027.devpost.com/
+URL:https://desert-dev-lab-2027.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:31722@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20270617
+DTEND;VALUE=DATE:20270618
+SUMMARY:Deadline: DeveloperWeek New York 2027 Hackathon
+DESCRIPTION:$12\,500 in prizes. https://developerweek-new-york-2027.devpost.com/
+URL:https://developerweek-new-york-2027.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost:30885@hackathontracker.com
+DTSTAMP:20261111T160654Z
+DTSTART;VALUE=DATE:20271210
+DTEND;VALUE=DATE:20271211
+SUMMARY:Deadline: hacks test
+DESCRIPTION:$1 in prizes. https://youtube-automation-hackathon.devpost.com/
+URL:https://youtube-automation-hackathon.devpost.com/
+END:VEVENT
+END:VCALENDAR

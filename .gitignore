@@ -1,0 +1,7 @@
+dist/
+node_modules/
+data/cache/
+_research/
+.claude/
+_brand/
+_workflow-pending/

@@ -1,0 +1,19 @@
+{
+  "_howto": "Approved entry-wall projects. To add one from a review email, copy an entry below and fill it in. Required: project, siteUrl, hackathon. Optional: builder, hackathonUrl, pitch, devpostUrl, codeUrl, videoUrl, tags (max 5), added (YYYY-MM-DD), featured (true pins it first), note (short badge text). Never add an email address here. Then rebuild and publish.",
+  "entries": [
+    {
+      "id": "lowtides",
+      "project": "Lowtides",
+      "builder": "Zach Wennstedt",
+      "hackathon": "PayPal AI Hackathon 2026",
+      "hackathonUrl": "https://paypalaihackathon.devpost.com/",
+      "pitch": "Two-sided spending protection for AI agents: budgets, holds and a kill switch that guard both the shopper and the store, built on PayPal.",
+      "siteUrl": "https://lowtides.ai/",
+      "codeUrl": "https://github.com/seniorhelper/lowtides",
+      "tags": ["ai agents", "payments", "paypal", "agentic commerce"],
+      "added": "2026-11-12",
+      "featured": true,
+      "note": "Founder's entry"
+    }
+  ]
+}

@@ -141,17 +141,20 @@ for (const e of events) {
 if (events.length) await writeFile(seenFile, JSON.stringify({ bootstrap: seen.bootstrap, ids: live }));
 
 // ---------- 6. Stats ----------
+// "Last refreshed" = when the listings were actually fetched (an --offline rebuild must not claim fresh data).
+const fetchedTimes = status.map((s) => s.fetchedAt).filter(Boolean).sort();
+const dataTime = fetchedTimes.length ? new Date(fetchedTimes[fetchedTimes.length - 1]) : now;
 const stats = {
-  updated: now.toISOString(), total: events.length, merged,
+  updated: dataTime.toISOString(), total: events.length, merged,
   prizeTotal: events.reduce((s, e) => s + (e.prizeUsd || 0), 0),
   withOdds: scored.length, online: events.filter((e) => e.mode === 'online').length,
   inPerson: events.filter((e) => e.mode === 'in-person' || e.mode === 'hybrid').length,
   sources: status.filter((s) => s.ok && s.count).length, cut,
 };
-const updatedText = now.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/Denver', timeZoneName: 'short' });
+const updatedText = dataTime.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/Denver', timeZoneName: 'short' });
 
 // ---------- 7. Templates ----------
-const NAV = [['/', 'Search'], ['/best-odds/', 'Best odds'], ['/online-hackathons/', 'Online'], ['/ai-hackathons/', 'AI'], ['/open-to-everyone/', 'No student ID'], ['/blog/', 'Blog']];
+const NAV = [['/', 'Search'], ['/top-50/', 'Top 50'], ['/submissions/', 'Entry wall'], ['/best-odds/', 'Best odds'], ['/online-hackathons/', 'Online'], ['/ai-hackathons/', 'AI'], ['/open-to-everyone/', 'No student ID'], ['/blog/', 'Blog']];
 
 function layout({ path, title, description, body, jsonld, noindex }) {
   const canonical = SITE + path;
@@ -160,7 +163,7 @@ function layout({ path, title, description, body, jsonld, noindex }) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self' https://formsubmit.co">
 <meta name="theme-color" content="#0c0f14">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>${esc(title)}</title>
@@ -181,9 +184,10 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(
 </div></header>
 <main id="main">${body}</main>
 <footer class="site"><div class="wrap">
-  <p><a href="/methodology/">How the odds work</a> · <a href="/sources/">Sources</a> · <a href="/alerts/">Alerts &amp; calendar</a> · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a></p>
+  <p><a href="/top-50/">Top 50</a> · <a href="/submissions/">Entry wall</a> · <a href="/submit/">Submit your project</a> · <a href="/methodology/">How the odds work</a> · <a href="/sources/">Sources</a> · <a href="/alerts/">Alerts &amp; calendar</a> · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a></p>
   <p class="small">Data last refreshed ${esc(updatedText)}. ${esc(COPY.name)} is independent and not affiliated with the organizers or platforms listed. Always check the official rules before you enter.</p>
 </div></footer>
+<p class="heart"><span class="beat" aria-hidden="true">❤</span><a href="https://eyetoad.com/" rel="noopener" target="_blank">Need a website?</a></p>
 </body></html>`;
 }
 
@@ -231,7 +235,7 @@ const ctx = { stats, status, events, scored, money, esc, fmtDate, updatedText, c
 // ---------- 8. Write site ----------
 await rm(DIST, { recursive: true, force: true });
 await mkdir(join(DIST, 'assets'), { recursive: true });
-for (const f of ['shared.js', 'app.js', 'styles.css', 'icon.svg']) await cp(join(ROOT, 'src', f), join(DIST, 'assets', f));
+for (const f of ['shared.js', 'app.js', 'watch.js', 'wall.js', 'styles.css', 'icon.svg']) await cp(join(ROOT, 'src', f), join(DIST, 'assets', f));
 const slim = events.map(({ lat, lon, ...e }) => ({ ...e, lat: lat == null ? null : Math.round(lat * 100) / 100, lon: lon == null ? null : Math.round(lon * 100) / 100 }));
 await out('data/events.json', JSON.stringify({ updated: stats.updated, events: slim }));
 await out('data/stats.json', JSON.stringify({ ...stats, sources: status }));
@@ -262,6 +266,186 @@ for (const p of PAGES) {
 <div class="wrap">${finder(p.preset)}</div>${prose(p.below)}`,
   });
 }
+
+// ---------- Entry wall data (content/submissions.json, approved entries only) ----------
+const normUrl = (u) => { try { const x = new URL(u); return (x.hostname.replace(/^www\./, '') + x.pathname.replace(/\/+$/, '')).toLowerCase(); } catch { return ''; } };
+const evByUrl = new Map(events.map((e) => [normUrl(e.url), e]));
+const evByKey = new Map(events.map((e) => [keyOf(e), e]));
+const subRaw = await readJSON(join(ROOT, 'content', 'submissions.json'), { entries: [] });
+const entries = [];
+for (const s of subRaw.entries || []) {
+  const project = str(s.project, 80), siteUrl = httpUrl(s.siteUrl), hackathon = str(s.hackathon, 120);
+  if (!project || !siteUrl || !hackathon) { console.warn('wall: skipped an entry missing project, siteUrl or hackathon'); continue; }
+  const match = (s.hackathonUrl && evByUrl.get(normUrl(s.hackathonUrl))) || evByKey.get(hackathon.toLowerCase().replace(/[^a-z0-9]+/g, ''));
+  entries.push({
+    id: str(s.id, 60) || project.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+    project, builder: str(s.builder, 80), hackathon, hackathonUrl: httpUrl(s.hackathonUrl) || match?.url || null,
+    hkKey: match ? match.id : 'h:' + hackathon.toLowerCase().replace(/[^a-z0-9]+/g, ''),
+    pitch: str(s.pitch, 200), siteUrl, devpostUrl: httpUrl(s.devpostUrl), codeUrl: httpUrl(s.codeUrl), videoUrl: httpUrl(s.videoUrl),
+    tags: Array.isArray(s.tags) ? s.tags.map((t) => str(String(t), 24)).filter(Boolean).slice(0, 5) : [],
+    added: isDate(s.added) ? s.added : null, featured: s.featured === true, note: str(s.note, 40),
+  });
+}
+entries.sort((a, b) => (b.featured - a.featured) || (b.added || '').localeCompare(a.added || ''));
+const entryCount = new Map();
+for (const s of entries) entryCount.set(s.hkKey, (entryCount.get(s.hkKey) || 0) + 1);
+
+// ---------- Top 50 watch page ----------
+const top50 = events.filter((e) => e.prizeUsd).sort((a, b) => b.prizeUsd - a.prizeUsd || cmpPer(a, b)).slice(0, 50);
+function cmpPer(a, b) { return (b.perReg ?? -1) - (a.perReg ?? -1); }
+const top50Prize = top50.reduce((s, e) => s + e.prizeUsd, 0);
+const top50Week = top50.filter((e) => { const d = daysUntil(e.end, now); return d != null && d >= 0 && d <= 7; }).length;
+const ODDS = { strong: 'Strong odds', fair: 'Fair odds', crowded: 'Crowded' };
+const watchRow = (e, i) => {
+  const where = e.mode === 'online' ? 'Online' : [e.city, e.country].filter(Boolean).join(', ') || (e.mode === 'in-person' ? 'In person' : '');
+  const n = entryCount.get(e.id) || 0;
+  return `<li class="w-row" data-end="${e.end || ''}" data-prize="${e.prizeUsd}" data-per="${e.perReg ?? ''}" data-reg="${e.registrants ?? ''}">
+  <span class="w-rank">${i + 1}</span>
+  <div class="w-main">
+    <h3><a href="${esc(e.url)}" rel="noopener" target="_blank">${esc(e.title)}</a></h3>
+    <p class="meta">${[e.organizer, where, 'Listed on ' + e.sourceLabel].filter(Boolean).map(esc).join(' · ')}</p>
+    <p class="badges">${e.oddsTier ? `<span class="badge odds-${e.oddsTier}">${ODDS[e.oddsTier]}</span>` : ''}${e.ai ? '<span class="badge plain">AI</span>' : ''}${e.eligibility === 'students' ? '<span class="badge elig">Students only</span>' : ''}${e.isNew ? '<span class="badge new">New</span>' : ''}</p>
+  </div>
+  <div class="w-nums">
+    <div class="fact"><b>${money(e.prizeUsd)}</b><span>in prizes</span></div>
+    <div class="fact"><b>${e.registrants != null ? e.registrants.toLocaleString('en-US') : '—'}</b><span>signed up</span></div>
+    <div class="fact"><b>${e.perReg != null ? money(e.perReg) : '—'}</b><span>per entrant</span></div>
+  </div>
+  <div class="w-clock"><b class="left" data-end="${e.end || ''}">${esc(e.end ? deadlineShort(e.end) : 'Dates TBA')}</b>
+    <a class="small" href="/submissions/?h=${encodeURIComponent(e.id)}">${n ? `See ${n} entr${n === 1 ? 'y' : 'ies'} →` : 'Post your entry →'}</a></div>
+</li>`;
+};
+function deadlineShort(end) { const d = daysUntil(end, now); return d == null ? 'Dates TBA' : d < 0 ? 'Closed' : d === 0 ? 'Closes today' : d === 1 ? '1 day left' : `${d} days left`; }
+
+await page({
+  path: '/top-50/', title: 'Top 50 Hackathons by Prize Money, Live | Hackathon Tracker',
+  description: `The 50 biggest open hackathon prize pools in one live watchlist: ${money(top50Prize)} in prizes, sign-up counts, odds and days left for each.`,
+  jsonld: { '@context': 'https://schema.org', '@type': 'ItemList', name: 'Top 50 open hackathons by prize money', numberOfItems: top50.length, itemListElement: top50.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.title, url: e.url })) },
+  body: `<section class="hero small"><div class="wrap">
+  <h1>Top 50 hackathons.<br>One watchlist.</h1>
+  <p class="lede">The biggest open prize pools, ranked and counting down.</p>
+  <p class="ctas"><a class="btn" href="/submit/">Post your entry</a><a class="btn ghost" href="/">Search all ${stats.total.toLocaleString('en-US')}</a></p>
+  <ul class="stats"><li><b>${money(top50Prize)}</b> in prizes</li><li><b>${top50Week}</b> closing this week</li><li><b>${entries.length}</b> on the entry wall</li></ul>
+</div></section>
+<div class="wrap" id="watch">
+  <div class="w-sort" role="group" aria-label="Sort the top 50">
+    <button type="button" class="btn ghost" data-sort="prize" aria-pressed="true">Biggest prize</button>
+    <button type="button" class="btn ghost" data-sort="soon" aria-pressed="false">Closing soonest</button>
+    <button type="button" class="btn ghost" data-sort="per" aria-pressed="false">Best odds</button>
+    <button type="button" class="btn ghost" data-sort="quiet" aria-pressed="false">Fewest entrants</button>
+  </div>
+  <ol class="watch" id="watchList">${top50.map(watchRow).join('\n')}</ol>
+  <p class="small">Ranked by listed US-dollar prize pool. Days left use the listed date only; the official page has the exact closing time. Refreshed ${esc(updatedText)}.</p>
+</div>
+${prose(`<h2>How the top 50 are picked</h2>
+<p>We take every open or upcoming hackathon we track that lists a cash prize in US dollars and rank them by total prize pool. Use the buttons to re-sort the same 50 by deadline, by <a href="/methodology/">prize per entrant</a>, or by how few people have signed up.</p>
+<p>A big pot usually means a big crowd, so check the per-entrant number before you commit. Want the full list with filters? <a href="/">Search every hackathon</a>.</p>
+<h2>Entered one of these?</h2>
+<p>Put your build on the <a href="/submissions/">entry wall</a> so judges, sponsors and other builders can find it. It's free and takes two minutes.</p>`)}
+<script type="module" src="/assets/watch.js"></script>`,
+});
+
+// ---------- Entry wall ----------
+const hue = (s) => [...s].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 6, 7);
+const wallCard = (s) => {
+  const links = [['Live site', s.siteUrl], ['Devpost', s.devpostUrl], ['Code', s.codeUrl], ['Video', s.videoUrl]].filter(([, u]) => u)
+    .map(([t, u], i) => `<a class="${i ? 'btn ghost' : 'btn'}" href="${esc(u)}" rel="noopener nofollow ugc" target="_blank">${t}</a>`).join('');
+  return `<article class="card entry${s.featured ? ' featured' : ''}" data-h="${esc(s.hkKey)}" data-text="${esc([s.project, s.builder, s.hackathon, s.pitch, s.tags.join(' ')].join(' ').toLowerCase())}">
+  <div class="e-top"><span class="mono c${hue(s.project)}" aria-hidden="true">${esc(s.project[0].toUpperCase())}</span>
+    <div><h3>${esc(s.project)}</h3><p class="meta">${s.builder ? 'by ' + esc(s.builder) + ' · ' : ''}${s.added ? 'Added ' + esc(fmtDate(s.added)) : ''}</p></div></div>
+  <p class="badges">${s.note ? `<span class="badge new">${esc(s.note)}</span>` : ''}<span class="badge plain">${s.hackathonUrl ? `<a href="${esc(s.hackathonUrl)}" rel="noopener" target="_blank">${esc(s.hackathon)}</a>` : esc(s.hackathon)}</span></p>
+  ${s.pitch ? `<p class="pitch">${esc(s.pitch)}</p>` : ''}
+  ${s.tags.length ? `<p class="foot">${s.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}</p>` : ''}
+  <p class="e-links">${links}</p>
+</article>`;
+};
+const wallHks = [...new Map(entries.map((s) => [s.hkKey, s.hackathon])).entries()];
+await page({
+  path: '/submissions/', title: 'Hackathon Entry Wall: Projects Builders Submitted | Hackathon Tracker',
+  description: 'A public wall of hackathon projects, posted by the people who built them. Browse entries by hackathon, or add your own build for free.',
+  jsonld: { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Hackathon entry wall', url: SITE + '/submissions/', mainEntity: { '@type': 'ItemList', numberOfItems: entries.length, itemListElement: entries.map((s, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'CreativeWork', name: s.project, url: s.siteUrl, ...(s.builder ? { creator: { '@type': 'Person', name: s.builder } } : {}) } })) } },
+  body: `<section class="hero small"><div class="wrap">
+  <h1>The hackathon entry wall.</h1>
+  <p class="lede">Built something? Stack it here where judges, sponsors and builders can see it.</p>
+  <p class="ctas"><a class="btn" href="/submit/">Post your project</a><a class="btn ghost" href="/top-50/">Watch the top 50</a></p>
+</div></section>
+<div class="wrap" id="wall">
+  <div class="filters wall-filters"><div class="row">
+    <label class="grow"><span>Search the wall</span><input type="search" id="wallQ" placeholder="Project, builder, tag…" autocomplete="off"></label>
+    <label><span>Hackathon</span><select id="wallH"><option value="">All hackathons</option>${wallHks.map(([k, t]) => `<option value="${esc(k)}">${esc(t)}</option>`).join('')}</select></label>
+  </div></div>
+  <p class="count" id="wallCount" role="status" aria-live="polite"><b>${entries.length}</b> project${entries.length === 1 ? '' : 's'} on the wall</p>
+  <div class="results" id="wallList">${entries.map(wallCard).join('\n')}
+  <a class="card add-card" href="/submit/"><b>+ Your project here</b><span>Post your hackathon build free. Takes two minutes.</span></a></div>
+  <p class="empty" id="wallEmpty" hidden>No entries match yet. <a href="/submit/">Be the first to post one.</a></p>
+</div>
+${prose(`<h2>How the wall works</h2>
+<ol><li><strong>Post your project</strong> with the <a href="/submit/">short form</a>: your links, a one-line pitch and the hackathon you entered.</li>
+<li><strong>We check it.</strong> Every entry is reviewed before it goes up, usually within a couple of days, so the wall stays free of spam and broken links.</li>
+<li><strong>It goes live</strong> under its hackathon, and shows up next to that event on the <a href="/top-50/">top 50</a>.</li></ol>
+<h2>What we accept</h2>
+<p>Real projects entered in a real hackathon, posted by someone on the team. Links must go to your own project. We don't publish email addresses, and you can ask us to take your entry down at any time.</p>
+<p>Posting here doesn't change your official submission. Each hackathon's own platform is still where judging happens, so follow its rules on when you can edit or share your work.</p>`)}
+<script type="module" src="/assets/wall.js"></script>`,
+});
+
+// ---------- Submit form + thanks ----------
+const FORM_TO = 'https://formsubmit.co/info@eyetoad.com';
+const hkOptions = sortEvents(events.filter((e) => e.prizeUsd), 'prize', now).slice(0, 200).map((e) => `<option value="${esc(e.title)}"></option>`).join('');
+await page({
+  path: '/submit/', title: 'Post Your Hackathon Project to the Entry Wall | Hackathon Tracker',
+  description: 'Add your hackathon project to the public entry wall for free. Share your live demo, Devpost page, code and video with judges, sponsors and other builders.',
+  body: `<section class="hero small"><div class="wrap">
+  <h1>Put your build on the wall.</h1>
+  <p class="lede">Free, two minutes, reviewed before it goes live.</p>
+</div></section>
+<div class="wrap">
+<form class="filters subform" method="POST" action="${FORM_TO}" accept-charset="UTF-8">
+  <input type="hidden" name="_subject" value="Entry wall: new project submitted">
+  <input type="hidden" name="_next" value="${SITE}/submit/thanks/">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_autoresponse" value="Thanks for posting your project to the Hackathon Tracker entry wall. We review every entry by hand and will add yours once it checks out.">
+  <label class="hp" aria-hidden="true">Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+  <fieldset><legend>Your project</legend>
+  <div class="row">
+    <label><span>Project name *</span><input type="text" name="project" required maxlength="80" placeholder="Project name"></label>
+    <label><span>Your name or team *</span><input type="text" name="builder" required maxlength="80" placeholder="Your name"></label>
+  </div>
+  <label class="full"><span>One-line pitch *</span><input type="text" name="pitch" required maxlength="160" placeholder="What it does, in one sentence"></label>
+  <div class="row">
+    <label><span>Hackathon you entered *</span><input type="text" name="hackathon" required maxlength="120" list="hkList" placeholder="Start typing to pick one"></label>
+    <label><span>Hackathon page link</span><input type="url" name="hackathon_link" maxlength="300" placeholder="https://"></label>
+  </div>
+  <datalist id="hkList">${hkOptions}</datalist>
+  </fieldset>
+  <fieldset><legend>Links</legend>
+  <div class="row">
+    <label><span>Live site or demo *</span><input type="url" name="site_url" required maxlength="300" placeholder="https://"></label>
+    <label><span>Devpost or entry page</span><input type="url" name="devpost_url" maxlength="300" placeholder="https://"></label>
+  </div>
+  <div class="row">
+    <label><span>Code repo</span><input type="url" name="code_url" maxlength="300" placeholder="https://"></label>
+    <label><span>Demo video</span><input type="url" name="video_url" maxlength="300" placeholder="https://"></label>
+  </div>
+  <label class="full"><span>Tags (up to 5, comma separated)</span><input type="text" name="tags" maxlength="120" placeholder="ai agents, payments, health"></label>
+  </fieldset>
+  <fieldset><legend>So we can reach you</legend>
+  <label class="full"><span>Email * (never published)</span><input type="email" name="email" required maxlength="120" placeholder="you@example.com"></label>
+  </fieldset>
+  <label class="chk"><input type="checkbox" name="confirm_owner" value="yes" required> I'm on the team that built this project and the links are ours.</label>
+  <label class="chk"><input type="checkbox" name="confirm_listing" value="yes" required> I agree to have this project shown publicly on Hackathon Tracker, and I know I can ask for it to be removed at any time.</label>
+  <label class="chk"><input type="checkbox" name="confirm_rules" value="yes" required> Posting here doesn't break my hackathon's rules.</label>
+  <p><button class="btn" type="submit">Submit for review</button></p>
+  <p class="small">Your entry is emailed to us for review and is not published until we approve it. We keep your email only to contact you about your entry. See our <a href="/privacy/">privacy page</a>.</p>
+</form>
+</div>`,
+});
+await page({
+  path: '/submit/thanks/', noindex: true, title: 'Thanks, Your Project Is In | Hackathon Tracker', description: 'Your project was sent for review.',
+  body: `<section class="hero small"><div class="wrap"><h1>Got it. Your project is in review.</h1>
+  <p class="lede">We check every entry by hand. Once it's approved it shows up on the wall.</p>
+  <p class="ctas"><a class="btn" href="/submissions/">See the entry wall</a><a class="btn ghost" href="/top-50/">Watch the top 50</a></p></div></section>`,
+});
 
 // Static pages (methodology, sources, alerts, about, privacy)
 for (const p of staticPages(ctx)) await page({ ...p, body: `<section class="hero small"><div class="wrap"><h1>${p.h1}</h1></div></section>${prose(p.html)}` });

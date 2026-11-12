@@ -19,6 +19,8 @@ export const COPY = {
 </ul>
 <h2>Start with one of these</h2>
 <ul>
+<li><a href="/top-50/">The top 50 hackathons by prize money, live</a></li>
+<li><a href="/submissions/">The entry wall: projects builders posted</a></li>
 <li><a href="/best-odds/">Hackathons with the best odds right now</a></li>
 <li><a href="/open-to-everyone/">Hackathons you can enter without a student ID</a></li>
 <li><a href="/online-hackathons/">Online hackathons you can join from anywhere</a></li>
@@ -183,9 +185,10 @@ export function staticPages({ stats, status, money, esc, fmtDate, updatedText, c
       path: '/privacy/', title: 'Privacy | Hackathon Tracker',
       description: 'Hackathon Tracker has no accounts, sets no cookies and runs no trackers. Your saved list and your location stay in your browser.',
       h1: 'Privacy',
-      html: `<p>Short version: we do not collect anything about you.</p>
+      html: `<p>Short version: we don't collect anything about you unless you post a project to the entry wall.</p>
 <ul>
-<li><strong>No accounts and no forms.</strong> There is nothing to sign up for.</li>
+<li><strong>No accounts.</strong> There is nothing to sign up for to search or save hackathons.</li>
+<li><strong>The entry wall form</strong> is the only place you give us anything. When you post a project, what you type is emailed to us for review through FormSubmit, a form-delivery service. We publish only the project details you chose to share (name, links, pitch, tags and the name you gave). Your email address is never published and is used only to contact you about your entry. Ask us anytime to remove your entry.</li>
 <li><strong>No cookies, analytics or ad trackers</strong> are set by this site.</li>
 <li><strong>Your saved list</strong> is stored in your own browser. Clearing your browser data removes it.</li>
 <li><strong>Near me</strong> asks your browser for your location only when you press the button. The distance sums happen on your device and your location is never sent to us or put in the page address.</li>

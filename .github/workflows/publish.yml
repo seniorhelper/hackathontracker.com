@@ -1,0 +1,59 @@
+name: Rebuild and publish
+
+on:
+  schedule:
+    - cron: '17 12 * * *'
+  push:
+    branches: [main]
+    paths-ignore: ['data/seen.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Restore last good listings
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: listings-${{ github.run_id }}
+          restore-keys: listings-
+      - name: Build
+        run: node scripts/build.mjs
+      - name: Stop if the listings look broken
+        run: |
+          node -e '
+          const s = JSON.parse(require("fs").readFileSync("dist/data/stats.json", "utf8"));
+          const live = s.sources.filter((x) => !x.local && x.ok && x.count > 0).length;
+          console.log("events:", s.total, "sources with listings:", live);
+          if (s.total < 150 || live < 3) { console.error("Too few listings, not publishing."); process.exit(1); }
+          '
+      - name: Save first-seen dates
+        run: |
+          git config user.name "hackathontracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/seen.json
+          git diff --cached --quiet || git commit -m "Update first-seen dates [skip ci]"
+          git push origin HEAD:main || true
+      - name: Publish
+        run: |
+          cd dist
+          touch .nojekyll
+          git init -q -b gh-pages
+          git config user.name "hackathontracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Publish $(date -u +%F)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" gh-pages

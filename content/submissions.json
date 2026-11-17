@@ -14,6 +14,17 @@
       "added": "2026-11-12",
       "featured": true,
       "note": "Founder's entry"
+    },
+    {
+      "id": "start-quitting-smoking",
+      "project": "Start Quitting Smoking",
+      "builder": "Danny Skelley",
+      "hackathon": "Ship or Die $100K Hackathon",
+      "hackathonUrl": "https://www.ship-or-die.com/100k-hackathon",
+      "pitch": "30-day taper tracker and free calculator that steps cigarettes, vapes, or weed to a planned zero.",
+      "siteUrl": "https://startquittingsmoking.com/",
+      "tags": ["health", "habit tracker", "quit smoking", "calculator"],
+      "added": "2026-11-16"
     }
   ]
 }

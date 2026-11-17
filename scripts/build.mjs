@@ -36,15 +36,18 @@ for (const file of (await readdir(srcDir)).filter((f) => f.endsWith('.mjs')).sor
   try { mod = await import(pathToFileURL(join(srcDir, file)).href); } catch (err) { status.push({ name: file, label: file, ok: false, count: 0, note: 'Could not load: ' + err.message }); continue; }
   if (typeof mod.fetchEvents !== 'function') continue;
   const name = mod.name || file.replace('.mjs', '');
-  const entry = { name, label: mod.label || name, homepage: mod.homepage || null, ok: false, count: 0, note: '', fetchedAt: null };
+  const entry = { name, label: mod.label || name, homepage: mod.homepage || null, ok: false, count: 0, note: '', fetchedAt: null, local: mod.local === true };
   const cacheFile = join(cacheDir, name + '.json');
   let events = null;
-  if (!OFFLINE) {
+  if (!OFFLINE || mod.local) {
     try {
-      events = await Promise.race([
-        mod.fetchEvents(),
-        new Promise((_, rej) => setTimeout(() => rej(new Error('timed out after 150s')), 150000)),
-      ]);
+      let timer;
+      try {
+        events = await Promise.race([
+          mod.fetchEvents(),
+          new Promise((_, rej) => { timer = setTimeout(() => rej(new Error('timed out after 150s')), 150000); }),
+        ]);
+      } finally { clearTimeout(timer); }
       if (!Array.isArray(events)) throw new Error('adapter did not return a list');
       entry.ok = true; entry.fetchedAt = now.toISOString();
       await writeFile(cacheFile, JSON.stringify({ fetchedAt: entry.fetchedAt, events }));
@@ -142,7 +145,7 @@ if (events.length) await writeFile(seenFile, JSON.stringify({ bootstrap: seen.bo
 
 // ---------- 6. Stats ----------
 // "Last refreshed" = when the listings were actually fetched (an --offline rebuild must not claim fresh data).
-const fetchedTimes = status.map((s) => s.fetchedAt).filter(Boolean).sort();
+const fetchedTimes = status.filter((s) => !s.local).map((s) => s.fetchedAt).filter(Boolean).sort();
 const dataTime = fetchedTimes.length ? new Date(fetchedTimes[fetchedTimes.length - 1]) : now;
 const stats = {
   updated: dataTime.toISOString(), total: events.length, merged,

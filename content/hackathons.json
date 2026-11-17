@@ -1,0 +1,17 @@
+{
+  "_howto": "Hackathons added by hand because none of the automatic sources list them. Required: id (short, lowercase, dashes), title, url (the organizer's own page). Optional: organizer, start, end (YYYY-MM-DD), mode (online, in-person, hybrid), city, region, country, prizeUsd (total CASH in US dollars, number only, leave out hardware and credits), prizeText, registrants (only if the organizer shows a live count), themes, eligibility (everyone, students, high-school). Leave out anything you can't confirm on the organizer's page. Ended events drop off on their own.",
+  "events": [
+    {
+      "id": "ship-or-die-100k",
+      "title": "Ship or Die $100K Hackathon",
+      "url": "https://www.ship-or-die.com/100k-hackathon",
+      "organizer": "Higgsfield, Marc Lou and Jack Friks",
+      "start": "2026-11-16",
+      "end": "2026-12-16",
+      "mode": "online",
+      "prizeUsd": 100000,
+      "themes": ["startup", "saas", "solo", "profit"],
+      "eligibility": "everyone"
+    }
+  ]
+}

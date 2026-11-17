@@ -113,7 +113,8 @@ export const PAGES = [
 ];
 
 export function staticPages({ stats, status, money, esc, fmtDate, updatedText, cut }) {
-  const rows = status.map((s) => `<tr><td>${s.homepage ? `<a href="${esc(s.homepage)}" rel="noopener" target="_blank">${esc(s.label)}</a>` : esc(s.label)}</td><td>${s.ok ? (s.note ? 'Using last good copy' : 'Working') : 'Not available today'}</td><td>${s.count.toLocaleString('en-US')}</td></tr>`).join('');
+  const cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+  const rows = status.map((s) => ({ ...s, label: cap(s.label) })).map((s) => `<tr><td>${s.homepage ? `<a href="${esc(s.homepage)}" rel="noopener" target="_blank">${esc(s.label)}</a>` : esc(s.label)}</td><td>${s.ok ? (s.note ? 'Using last good copy' : 'Working') : 'Not available today'}</td><td>${s.count.toLocaleString('en-US')}</td></tr>`).join('');
   return [
     {
       path: '/methodology/', title: 'How the Odds Are Calculated | Hackathon Tracker',

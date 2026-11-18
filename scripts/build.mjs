@@ -6,7 +6,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { geocode } from './cities.mjs';
 import { PAGES, COPY, staticPages } from './pages.mjs';
-import { esc, money, todayStr, daysUntil, fmtDate, applyFilters, sortEvents, cardHTML, icsFor, DEFAULTS, SORTS, slugFor, eventPath, gcalUrl, whereText, countdown, placeText } from '../src/shared.js';
+import { esc, money, todayStr, daysUntil, fmtDate, applyFilters, sortEvents, cardHTML, icsFor, DEFAULTS, SORTS, slugFor, eventPath, gcalUrl, whereText, countdown, placeText, oddsWhy, teamText, REG_LABEL, fmtUtc, dateRange } from '../src/shared.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = join(ROOT, 'dist');
@@ -61,7 +61,7 @@ for (const file of (await readdir(srcDir)).filter((f) => f.endsWith('.mjs')).sor
       entry.note = (entry.note ? entry.note + ' — ' : '') + 'showing last good copy';
     } else events = [];
   }
-  for (const e of events) raw.push({ ...e, source: name, sourceLabel: entry.label });
+  for (const e of events) raw.push({ ...e, source: name, sourceLabel: entry.label, checkedAt: entry.fetchedAt });
   entry.count = events.length;
   status.push(entry);
   console.log(`${entry.ok ? 'ok  ' : 'FAIL'} ${name.padEnd(12)} ${String(events.length).padStart(5)}  ${entry.note}`);
@@ -72,6 +72,17 @@ const isDate = (d) => typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d) && 
 const num = (n) => (typeof n === 'number' && Number.isFinite(n) && n >= 0 ? n : null);
 const str = (s, max = 140) => (typeof s === 'string' && s.trim() ? s.trim().replace(/\s+/g, ' ').slice(0, max) : null);
 const httpUrl = (u) => { try { const x = new URL(u); return x.protocol === 'https:' || x.protocol === 'http:' ? x.href : null; } catch { return null; } };
+// Exact time only when the source gives a real timestamp with a time zone. Midnight UTC usually means "date only".
+const isoAt = (v) => {
+  if (typeof v !== 'string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(\.\d+)?)?(Z|[+-]\d{2}:?\d{2})$/.test(v.trim())) return null;
+  const t = Date.parse(v.trim());
+  if (Number.isNaN(t)) return null;
+  const d = new Date(t);
+  if (/T00:00(:00(\.0+)?)?(Z|\+00:?00)$/.test(v.trim())) return null;
+  return d.toISOString();
+};
+const posInt = (n) => (Number.isInteger(n) && n >= 1 && n <= 100 ? n : null);
+const prizeList = (l) => (Array.isArray(l) ? l.map((p) => (p && str(p.place, 40) && str(p.amount, 40) ? { place: str(p.place, 40), amount: str(p.amount, 40) } : null)).filter(Boolean).slice(0, 10) : []);
 const AI_RE = /\b(ai|a\.i\.|artificial intelligence|machine learning|ml|llm|llms|gpt|genai|generative|agent|agents|agentic|gemini|claude|openai|deep learning)\b/i;
 
 let events = [];
@@ -98,6 +109,16 @@ for (const e of raw) {
     inviteOnly: e.inviteOnly === true,
     beginner: themes.some((t) => t.includes('beginner')),
     ai: AI_RE.test(title) || themes.some((t) => AI_RE.test(t)),
+    // Extra details: each is null/empty when the source doesn't give it, and the pages hide it.
+    endAt: (() => { const t = isoAt(e.endAt); return t && end && Math.abs(Date.parse(t) - Date.parse(end)) <= 2 * 864e5 ? t : null; })(),
+    regStatus: ['open', 'upcoming', 'closed'].includes(e.regStatus) ? e.regStatus : null,
+    regEnd: isDate(e.regEnd) && e.regEnd !== end ? e.regEnd : null,
+    teamMin: posInt(e.teamMin), teamMax: posInt(e.teamMax),
+    prizes: prizeList(e.prizes),
+    prizeNote: str(e.prizeNote, 200), cashPrizes: posInt(e.cashPrizes),
+    eligibilityNote: str(e.eligibilityNote, 160), venue: str(e.venue, 100), tagline: str(e.tagline, 160),
+    winnersDate: isDate(e.winnersDate) ? e.winnersDate : null,
+    checked: isDate(e.checked) ? e.checked : typeof e.checkedAt === 'string' ? e.checkedAt.slice(0, 10) : null,
   });
 }
 
@@ -111,10 +132,12 @@ for (const e of events) {
   if (!prev) { byKey.set(k, e); continue; }
   if (prev.source === e.source) { if (richness(e) > richness(prev)) byKey.set(k, e); continue; }
   const [keep, other] = richness(e) > richness(prev) ? [e, prev] : [prev, e];
-  for (const f of ['organizer', 'start', 'end', 'mode', 'city', 'region', 'country', 'lat', 'lon', 'prizeUsd', 'prizeText', 'registrants']) if (keep[f] == null) keep[f] = other[f];
+  for (const f of ['organizer', 'start', 'end', 'mode', 'city', 'region', 'country', 'lat', 'lon', 'prizeUsd', 'prizeText', 'registrants', 'endAt', 'regStatus', 'regEnd', 'teamMin', 'teamMax', 'prizeNote', 'cashPrizes', 'eligibilityNote', 'venue', 'tagline', 'winnersDate']) if (keep[f] == null) keep[f] = other[f];
+  if (!keep.prizes.length) keep.prizes = other.prizes;
+  if (keep.endAt && keep.end && Math.abs(Date.parse(keep.endAt) - Date.parse(keep.end)) > 2 * 864e5) keep.endAt = null;
   if (keep.eligibility === 'unknown') keep.eligibility = other.eligibility;
   keep.themes = [...new Set([...keep.themes, ...other.themes])].slice(0, 8);
-  keep.alsoOn = [...(keep.alsoOn || []), ...(other.alsoOn || []), { label: other.sourceLabel, url: other.url }];
+  keep.alsoOn = [...(keep.alsoOn || []), ...(other.alsoOn || []), ...(other.url !== keep.url ? [{ label: other.sourceLabel, url: other.url }] : [])];
   byKey.set(k, keep);
 }
 const merged = events.length - byKey.size;
@@ -159,9 +182,12 @@ const stats = {
 const updatedText = dataTime.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/Denver', timeZoneName: 'short' });
 
 // ---------- 7. Templates ----------
-const NAV = [['/', 'Search'], ['/top-50/', 'Top 50'], ['/submissions/', 'Entry wall'], ['/best-odds/', 'Best odds'], ['/online-hackathons/', 'Online'], ['/ai-hackathons/', 'AI'], ['/open-to-everyone/', 'No student ID'], ['/blog/', 'Blog']];
+const NAV = [['/top-50/', 'Top 50'], ['/calendar/', 'Calendar'], ['/submissions/', 'Entry wall'], ['/best-odds/', 'Best odds'], ['/online-hackathons/', 'Online'], ['/ai-hackathons/', 'AI'], ['/open-to-everyone/', 'No student ID'], ['/blog/', 'Blog']];
 
-const FOOT = [['/top-50/', 'Top 50'], ['/submissions/', 'Entry wall'], ['/submit/', 'Submit your project'], ['/alerts/', 'Calendar & alerts'], ['/methodology/', 'How the odds work'], ['/sources/', 'Sources'], ['/blog/', 'Guides'], ['/about/', 'About'], ['/contact/', 'Contact'], ['/privacy/', 'Privacy Policy'], ['/terms/', 'Terms of Use']];
+const FOOT = [['/top-50/', 'Top 50'], ['/submissions/', 'Entry wall'], ['/submit/', 'Submit your project'], ['/calendar/', 'Deadline calendar'], ['/alerts/', 'Feeds & alerts'], ['/compare/', 'Compare'], ['/methodology/', 'How the odds work'], ['/sources/', 'Sources'], ['/blog/', 'Guides'], ['/about/', 'About'], ['/contact/', 'Contact'], ['/privacy/', 'Privacy Policy'], ['/terms/', 'Terms of Use']];
+
+// Logo: icon + wordmark in one SVG, so it is exactly 280px wide on desktop whatever fonts the device has.
+const LOGO = `<svg class="logo-svg" viewBox="0 0 280 40" width="280" height="40" aria-hidden="true" focusable="false"><rect x="0" y="2" width="36" height="36" rx="8" fill="#c6f432"/><path d="M10.1 13.2l7.9 6.8-7.9 6.8M20.3 26.8h6.8" fill="none" stroke="#0c0f14" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><text x="46" y="27" textLength="233" lengthAdjust="spacingAndGlyphs" fill="currentColor" font-family="ui-monospace, 'Cascadia Code', Consolas, Menlo, monospace" font-size="21" font-weight="800" letter-spacing="-0.5">hackathon_tracker</text></svg>`;
 
 function layout({ path, title, description, body, jsonld, noindex, ogType }) {
   const canonical = SITE + path;
@@ -171,7 +197,7 @@ function layout({ path, title, description, body, jsonld, noindex, ogType }) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; object-src 'none'; form-action 'self' https://formsubmit.co">
+<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; object-src 'none'; form-action 'self' https://clients.eyetoad.com">
 <meta name="theme-color" content="#c6f432">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>${esc(title)}</title>
@@ -193,7 +219,7 @@ ${ld}
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap bar">
-  <a class="logo" href="/" aria-label="${esc(COPY.name)} home"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#c6f432"/><path d="M9 10l7 6-7 6M18 22h6" fill="none" stroke="#0c0f14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>hackathon_tracker</span></a>
+  <a class="logo" href="/" aria-label="${esc(COPY.name)} home">${LOGO}</a>
   <a class="saved-link" href="/?saved=1" aria-label="My saved hackathons">★ <span class="hide-sm">My list</span> <b id="savedCount" hidden></b></a>
   <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav"><span aria-hidden="true">☰</span> Menu</button>
   <nav id="mainNav" aria-label="Main">${NAV.map(([h, t]) => `<a href="${h}"${h === path ? ' aria-current="page"' : ''}>${t}</a>`).join('')}</nav>
@@ -201,11 +227,13 @@ ${ld}
 <main id="main">${body}</main>
 <footer class="site"><div class="wrap">
   <nav class="foot-links" aria-label="Footer">${FOOT.map(([h, t]) => `<a href="${h}">${t}</a>`).join('')}</nav>
+  <p class="small xlink">Into AI? <a href="https://www.greatairace.com/" rel="noopener" target="_blank">Watch the AI race between the big labs →</a></p>
   <p class="small">Data last refreshed ${esc(updatedText)}. ${esc(COPY.name)} is independent and not affiliated with the organizers or platforms listed. Always check the official rules before you enter.</p>
   <p class="small">© ${now.getUTCFullYear()} ${esc(COPY.name)}</p>
 </div></footer>
 <p class="heart"><span class="beat" aria-hidden="true">❤</span><a href="https://eyetoad.com/" rel="noopener" target="_blank">Need a website?</a></p>
 <script type="module" src="/assets/site.js"></script>
+${body.includes('data-lead') ? '<script src="/assets/lead-send.js" defer></script>\n<script type="module" src="/assets/form.js"></script>' : ''}
 </body></html>`;
 }
 
@@ -247,8 +275,9 @@ function finder(preset = {}) {
   </div>
 </form>
 <div class="countbar"><p id="count" class="count" role="status" aria-live="polite"><b>${list.length.toLocaleString('en-US')}</b> hackathons${prize ? ` · <b>${money(prize)}</b> in listed prizes` : ''}</p>
-<button type="button" class="btn ghost sm" id="savedIcs" hidden>Download my list (.ics)</button></div>
-<div id="results" class="results">${list.slice(0, 24).map((e) => cardHTML(e, now)).join('\n') || '<div class="empty"><b>Nothing open matches this right now.</b><p>The list refreshes every day. Try the <a href="/">full search</a> or subscribe to the <a href="/alerts/">deadline calendar</a>.</p></div>'}</div>
+<button type="button" class="btn ghost sm" data-saved-ics data-msg="savedMsg" hidden><span aria-hidden="true">📅</span> Download my saved list (.ics)</button></div>
+<p id="savedMsg" class="small" role="status" hidden></p>
+<div id="results" class="results">${list.slice(0, 24).map((e) => cardHTML(e, now)).join('\n') || '<div class="empty"><b>Nothing open matches this right now.</b><p>The list refreshes every day. Try the <a href="/">full search</a> or subscribe to the <a href="/calendar/">deadline calendar</a>.</p></div>'}</div>
 <p class="more"><button type="button" id="moreBtn" class="btn"${list.length > 24 ? '' : ' hidden'}>Show more</button></p>
 <noscript><p class="small">Filters need JavaScript. The list above still shows the current top results.</p></noscript>
 </section>
@@ -264,14 +293,30 @@ const ctx = { stats, status, events, scored, money, esc, fmtDate, updatedText, c
 // ---------- 8. Write site ----------
 await rm(DIST, { recursive: true, force: true });
 await mkdir(join(DIST, 'assets'), { recursive: true });
-for (const f of ['shared.js', 'app.js', 'site.js', 'watch.js', 'wall.js', 'styles.css', 'icon.svg', 'og.png', 'apple-touch-icon.png']) await cp(join(ROOT, 'src', f), join(DIST, 'assets', f));
+for (const f of ['shared.js', 'app.js', 'site.js', 'watch.js', 'wall.js', 'form.js', 'lead-send.js', 'compare.js', 'styles.css', 'icon.svg', 'og.png', 'apple-touch-icon.png']) await cp(join(ROOT, 'src', f), join(DIST, 'assets', f));
 await cp(join(ROOT, 'src', 'favicon.png'), join(DIST, 'favicon.png'));
-const slim = events.map(({ lat, lon, ...e }) => ({ ...e, lat: lat == null ? null : Math.round(lat * 100) / 100, lon: lon == null ? null : Math.round(lon * 100) / 100 }));
+const EXTRA = ['endAt', 'regStatus', 'regEnd', 'teamMin', 'teamMax', 'prizes', 'prizeNote', 'cashPrizes', 'eligibilityNote', 'venue', 'tagline', 'winnersDate', 'alsoOn'];
+const slim = events.map(({ lat, lon, ...e }) => {
+  const o = { ...e, lat: lat == null ? null : Math.round(lat * 100) / 100, lon: lon == null ? null : Math.round(lon * 100) / 100 };
+  for (const k of EXTRA) if (o[k] == null || (Array.isArray(o[k]) && !o[k].length)) delete o[k]; // optional extras: left out when empty
+  return o;
+});
 await out('data/events.json', JSON.stringify({ updated: stats.updated, events: slim }));
 await out('data/stats.json', JSON.stringify({ ...stats, sources: status }));
 
 const sitemap = [];
 const page = async (p) => { await out((p.path === '/' ? '' : p.path.slice(1)) + (p.file || 'index.html'), layout(p)); if (!p.noindex) sitemap.push(p.path); };
+
+// Home strips: closing this week, and new today (or this week).
+const mini = (e) => `<li class="mini"><a href="${eventPath(e)}"><span class="clock ${countdown(e, now).cls}" data-left data-end="${e.end || ''}"${e.endAt ? ` data-end-at="${e.endAt}"` : ''}>${esc(countdown(e, now).text)}</span><b>${esc(e.title)}</b><span class="small">${esc([e.prizeUsd ? money(e.prizeUsd) + ' in prizes' : null, whereText(e)].filter(Boolean).join(' · '))}</span></a></li>`;
+const closingWeek = sortEvents(events.filter((e) => { const d = daysUntil(e.end, now); return d != null && d >= 0 && d <= 7; }), 'soon', now);
+const closingPick = [...closingWeek.filter((e) => e.prizeUsd), ...closingWeek.filter((e) => !e.prizeUsd)].slice(0, 10).sort((a, b) => a.end.localeCompare(b.end));
+const newToday = events.filter((e) => e.firstSeen === today && e.firstSeen > seen.bootstrap);
+const newList = sortEvents(newToday.length ? newToday : events.filter((e) => e.isNew), 'prize', now).slice(0, 6);
+const FEED_HOST = SITE.replace(/^https:\/\//, '');
+const GCAL_SUB = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent('webcal://' + FEED_HOST + '/calendar.ics');
+const subscribeBand = `<section class="subband" aria-labelledby="subH"><div><h2 id="subH"><span aria-hidden="true">📅</span> Subscribe to all deadlines</h2><p class="small">One free calendar with every upcoming hackathon deadline. It updates itself daily.</p></div>
+<p class="sub-btns"><a class="btn sm" href="${GCAL_SUB}" rel="noopener" target="_blank">Google Calendar</a><a class="btn sm ghost" href="webcal://${FEED_HOST}/calendar.ics">Apple / iPhone</a><a class="btn sm ghost" href="/calendar/#outlook">Outlook</a><a class="btn sm ghost" href="/calendar/">All options</a></p></section>`;
 
 // Home
 const homeList = sortEvents(applyFilters(events, DEFAULTS, now), DEFAULTS.sort, now).slice(0, 24);
@@ -285,10 +330,15 @@ await page({
   body: `<section class="hero home"><div class="wrap">
   <h1>${COPY.h1}</h1>
   <p class="lede">${COPY.lede}</p>
-  <p class="ctas"><a class="btn big" href="#finder">Find my hackathon</a><a class="btn big ghost" href="/alerts/">Subscribe to deadlines</a></p>
+  <p class="ctas"><a class="btn big" href="#finder">Find my hackathon</a><a class="btn big ghost" href="/calendar/"><span aria-hidden="true">📅</span> Deadline calendar</a></p>
   <ul class="stats"><li><b>${stats.total.toLocaleString('en-US')}</b> open now</li><li><b>${money(stats.prizeTotal)}</b> in prizes</li><li><b>${stats.withOdds}</b> odds scored</li></ul>
 </div></section>
-<div class="wrap">${finder({})}</div>
+<div class="wrap">
+${closingPick.length ? `<section class="strip" aria-labelledby="closeH"><div class="strip-h"><h2 id="closeH">Closing this week</h2><a href="/closing-soon/">See all ${closingWeek.length} →</a></div><ul class="minis">${closingPick.map(mini).join('')}</ul></section>` : ''}
+${subscribeBand}
+${finder({})}
+${newList.length ? `<section class="strip" aria-labelledby="newH"><div class="strip-h"><h2 id="newH">${newToday.length ? 'New today' : 'New this week'}</h2><a href="/?sort=new#finder">All newest listings →</a></div><ul class="minis">${newList.map(mini).join('')}</ul></section>` : ''}
+</div>
 ${prose(COPY.homeBelow(ctx))}`,
 });
 
@@ -302,6 +352,20 @@ for (const p of PAGES) {
 <div class="wrap">${finder(p.preset)}</div>${prose(`<p class="intro">${p.intro}</p>` + p.below)}`,
   });
 }
+
+// Guides (loaded early so event pages can link related ones)
+const blogDir = join(ROOT, 'content', 'blog');
+const posts = [];
+if (existsSync(blogDir)) {
+  for (const f of (await readdir(blogDir)).filter((x) => x.endsWith('.html'))) {
+    const txt = await readFile(join(blogDir, f), 'utf8');
+    const m = txt.match(/^\s*<!--meta\s+(\{[\s\S]*?\})\s*-->/);
+    if (!m) { console.warn('blog: no meta in', f); continue; }
+    let meta; try { meta = JSON.parse(m[1]); } catch { console.warn('blog: bad meta in', f); continue; }
+    posts.push({ slug: f.replace('.html', ''), ...meta, html: txt.slice(m[0].length) });
+  }
+}
+posts.sort((a, b) => (b.date || '').localeCompare(a.date || '') || a.slug.localeCompare(b.slug));
 
 // ---------- One page per event ----------
 const MODE_LD = { online: 'https://schema.org/OnlineEventAttendanceMode', 'in-person': 'https://schema.org/OfflineEventAttendanceMode', hybrid: 'https://schema.org/MixedEventAttendanceMode' };
@@ -324,43 +388,74 @@ function eventLd(e) {
   };
 }
 const eventIndexable = (e) => e.source === 'manual' || !!e.prizeUsd;
+const postBySlug = new Map(posts.map((p) => [p.slug, p]));
+function relatedGuides(e) {
+  const want = [e.ai ? 'ai-agent-hackathons' : null, e.mode === 'online' ? 'online-hackathons-with-cash-prizes' : null, e.mode === 'in-person' || e.mode === 'hybrid' ? 'how-to-find-hackathons-near-me' : null,
+    e.eligibility !== 'students' && e.eligibility !== 'high-school' ? 'hackathons-for-adults-and-non-students' : null, 'how-to-win-a-hackathon', 'how-hackathons-are-judged', 'is-this-hackathon-legit'];
+  return [...new Set(want.filter(Boolean))].map((s) => postBySlug.get(s)).filter(Boolean).slice(0, 3);
+}
+const MODE_TEXT = { online: 'Online', 'in-person': 'In person', hybrid: 'Hybrid (in person + online)' };
+const ODDS_TXT = { strong: 'Strong odds', fair: 'Fair odds', crowded: 'Crowded' };
 for (const e of events) {
   const path = eventPath(e);
   const c = countdown(e, now);
   const g = gcalUrl(e);
   const similar = sortEvents(events.filter((x) => x !== e && (x.mode === e.mode || (e.ai && x.ai))), 'prize', now).slice(0, 3);
+  const team = teamText(e);
+  const why = oddsWhy(e);
+  const sourceLink = `<a href="${esc(e.url)}" rel="noopener" target="_blank">${esc(e.sourceLabel)}</a>`;
+  // Only rows we actually have data for. Nothing is guessed.
   const rows = [
-    ['Deadline', e.end ? `${fmtDate(e.end)} <span class="small">(date only, confirm the time zone on the official page)</span>` : 'Not listed'],
-    ['Starts', e.start ? fmtDate(e.start) : 'Not listed'],
-    ['Where', esc(whereText(e))],
-    ['Organizer', e.organizer ? esc(e.organizer) : 'Not listed'],
-    ['Prizes', e.prizeUsd ? `${money(e.prizeUsd)} in listed cash prizes` : e.prizeText ? esc(e.prizeText) : 'Not listed'],
-    ['Signed up', e.registrants != null ? e.registrants.toLocaleString('en-US') : 'Not shown by the source'],
-    ['Prize per entrant', e.perReg != null ? `${money(e.perReg)} <a href="/methodology/">(how this works)</a>` : 'Not enough data to score'],
-    ['Who can enter', ELIG[e.eligibility] + (e.inviteOnly ? ' · invite only' : '')],
-    ['Topics', e.themes.length ? e.themes.map((t) => `<span class="tag">${esc(t)}</span>`).join(' ') : 'None listed'],
-    ['Listed on', esc(e.sourceLabel) + (e.alsoOn?.length ? ', ' + e.alsoOn.map((a) => `<a href="${esc(a.url)}" rel="noopener" target="_blank">${esc(a.label)}</a>`).join(', ') : '')],
-  ];
+    e.end && ['Deadline', `${fmtDate(e.end)}${e.endAt ? `<br><b data-local="${e.endAt}">${esc(fmtUtc(e.endAt))}</b>` : ' <span class="small">(date only; confirm the time zone on the official page)</span>'}<br><span class="clock ${c.cls}" data-left data-end="${e.end}"${e.endAt ? ` data-end-at="${e.endAt}"` : ''}>${esc(c.text)}</span>`],
+    e.start && ['Dates', esc(dateRange(e))],
+    e.regStatus && ['Registration', esc(REG_LABEL[e.regStatus]) + (e.regEnd ? ` · closes ${fmtDate(e.regEnd)}` : '')],
+    !e.regStatus && e.regEnd && ['Registration closes', fmtDate(e.regEnd)],
+    e.winnersDate && ['Winners announced', `On or around ${fmtDate(e.winnersDate)}`],
+    e.mode && ['Format', MODE_TEXT[e.mode]],
+    e.mode !== 'online' && (e.city || e.country || e.venue) && ['Location', esc([e.venue, placeText(e)].filter(Boolean).join(', '))],
+    e.organizer && ['Organizer / host', esc(e.organizer)],
+    (e.prizeUsd || e.prizeText) && ['Total prizes', e.prizeUsd ? `${money(e.prizeUsd)} in listed cash prizes` : esc(e.prizeText)],
+    e.prizes.length && ['Prize breakdown', `<ul class="plain">${e.prizes.map((p) => `<li><b>${esc(p.place)}</b>: ${esc(p.amount)}</li>`).join('')}</ul>`],
+    e.prizeNote && ['Prize details', esc(e.prizeNote)],
+    e.cashPrizes && ['Cash prizes', `${e.cashPrizes} cash prize${e.cashPrizes === 1 ? '' : 's'} listed`],
+    e.registrants != null && ['Signed up', `${e.registrants.toLocaleString('en-US')} <span class="small">as of ${fmtDate(e.checked || today)}</span>`],
+    e.perReg != null && ['Prize per entrant', `${money(e.perReg)} <span class="badge odds-${e.oddsTier}">${ODDS_TXT[e.oddsTier]}</span><br><span class="small">${esc(why)} <a href="/methodology/">How this works</a></span>`],
+    e.perReg == null && e.early && ['Odds', `<span class="badge odds-early">Just opened</span> <span class="small">${esc(why)}</span>`],
+    (e.eligibility !== 'unknown' || e.eligibilityNote || e.inviteOnly) && ['Who can enter', [e.eligibility !== 'unknown' ? ELIG[e.eligibility] : null, e.eligibilityNote ? esc(e.eligibilityNote) : null, e.inviteOnly ? 'Invite only' : null].filter(Boolean).join(' · ')],
+    team && ['Team size', esc(team)],
+    e.themes.length && ['Themes', e.themes.map((t) => `<span class="tag">${esc(t)}</span>`).join(' ')],
+    ['Listed on', sourceLink + (e.alsoOn?.length ? ', ' + e.alsoOn.map((a) => `<a href="${esc(a.url)}" rel="noopener" target="_blank">${esc(a.label)}</a>`).join(', ') : '')],
+    e.firstSeen && ['First seen here', fmtDate(e.firstSeen)],
+    e.checked && ['Last checked', fmtDate(e.checked)],
+  ].filter(Boolean);
   const desc = `${e.title}: ${[e.prizeUsd ? money(e.prizeUsd) + ' in prizes' : null, whereText(e), e.end ? 'deadline ' + fmtDate(e.end) : null].filter(Boolean).join(', ')}. Add the deadline to your calendar and compare the odds.`;
+  const crumb2 = e.mode === 'online' ? ['/online-hackathons/', 'Online hackathons'] : e.mode ? ['/in-person-hackathons/', 'In-person hackathons'] : null;
+  const guides = relatedGuides(e);
   await page({
     path, noindex: !eventIndexable(e), ogType: 'article',
     title: `${e.title}: Deadline and Prizes | ${COPY.name}`, description: desc,
-    jsonld: [eventLd(e), { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Hackathons', item: SITE + '/' }, { '@type': 'ListItem', position: 2, name: e.title, item: SITE + path }] }].filter(Boolean),
+    jsonld: [eventLd(e), { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Hackathons', item: SITE + '/' }, ...(crumb2 ? [{ '@type': 'ListItem', position: 2, name: crumb2[1], item: SITE + crumb2[0] }] : []), { '@type': 'ListItem', position: crumb2 ? 3 : 2, name: e.title, item: SITE + path }] }].filter(Boolean),
     body: `<section class="hero small event"><div class="wrap">
-  <p class="crumbs small"><a href="/">Hackathons</a> › ${e.mode === 'online' ? '<a href="/online-hackathons/">Online</a>' : e.mode ? '<a href="/in-person-hackathons/">In person</a>' : 'Event'}</p>
+  <nav class="crumbs small" aria-label="Breadcrumb"><a href="/">Hackathons</a> › ${crumb2 ? `<a href="${crumb2[0]}">${crumb2[1]}</a> › ` : ''}<span aria-current="page">${esc(e.title)}</span></nav>
   <h1>${esc(e.title)}</h1>
-  <p class="lede"><span class="clock ${c.cls}">${esc(c.text)}</span>${e.prizeUsd ? ` <b class="bigprize">${money(e.prizeUsd)}</b> in prizes ·` : ''} ${esc(whereText(e))}</p>
-  <p class="ctas"><a class="btn big" href="${esc(e.url)}" rel="noopener" target="_blank">Official page <span aria-hidden="true">↗</span></a>${g ? `<a class="btn big ghost" href="${esc(g)}" rel="noopener" target="_blank">Add to Google Calendar</a><a class="btn big ghost" href="${path}deadline.ics" download>Apple / Outlook (.ics)</a>` : ''}<button class="save big" type="button" aria-pressed="false" data-save="${esc(e.id)}" aria-label="Save to my hackathons: ${esc(e.title)}">☆<span>Save</span></button></p>
+  <p class="lede"><span class="clock ${c.cls}" data-left data-end="${e.end || ''}"${e.endAt ? ` data-end-at="${e.endAt}"` : ''}>${esc(c.text)}</span>${e.prizeUsd ? ` <b class="bigprize">${money(e.prizeUsd)}</b> in prizes ·` : ''} ${esc(whereText(e))}${e.registrants != null ? ` · ${e.registrants.toLocaleString('en-US')} signed up` : ''}</p>
+  ${e.tagline ? `<p class="tagline">${esc(e.tagline)}</p>` : ''}
+  <p class="ctas"><a class="btn big" href="${esc(e.url)}" rel="noopener" target="_blank">Official page <span aria-hidden="true">↗</span></a><button class="save big" type="button" aria-pressed="false" data-save="${esc(e.id)}" aria-label="Save to my hackathons: ${esc(e.title)}">☆<span>Save</span></button><button type="button" class="btn big ghost" data-share="${path}" data-title="${esc(e.title)}">Share</button></p>
+  ${g ? `<div class="cal-row big" role="group" aria-label="Add the deadline to your calendar"><span class="cal-label"><span aria-hidden="true">📅</span> Add to calendar</span><a class="btn ghost" href="${esc(g)}" rel="noopener" target="_blank">Google Calendar</a><a class="btn ghost" href="${path}deadline.ics">Apple / Outlook (.ics)</a></div>` : ''}
 </div></section>
 <div class="wrap prose event-body">
+<h2 class="first">Key details</h2>
 <table class="facts-table"><tbody>${rows.map(([k, v]) => `<tr><th scope="row">${k}</th><td>${v}</td></tr>`).join('')}</tbody></table>
+<p class="small">Anything missing here was not in the listing. The <a href="${esc(e.url)}" rel="noopener" target="_blank">official page</a> has the full rules.</p>
 <h2>Before you enter</h2>
 <ul><li>Read the eligibility, judging and intellectual-property sections of the <a href="${esc(e.url)}" rel="noopener" target="_blank">official rules</a>. They override anything shown here.</li>
 <li>Check the exact closing time and time zone, then leave an hour spare for the submission form and video upload.</li>
 <li>Look at the prize breakdown. The headline figure is usually split across places and tracks. Our <a href="/blog/how-hackathons-are-judged/">guide to how hackathons are judged</a> shows what to look for.</li></ul>
+<p class="entry-cta">Entered this one? <a href="/submit/?hackathon=${encodeURIComponent(e.title)}">Post your entry on the wall</a> <label class="cmp"><input type="checkbox" data-compare="${esc(e.id)}"> Add to compare</label></p>
+${guides.length ? `<h2>Related guides</h2><ul class="guides">${guides.map((p) => `<li><a href="/blog/${p.slug}/">${esc(p.title)}</a></li>`).join('')}</ul>` : ''}
 </div>
 ${similar.length ? `<div class="wrap"><h2 class="section-h">Similar hackathons</h2><div class="results">${similar.map((x) => cardHTML(x, now)).join('\n')}</div></div>` : ''}
-<div class="wrap prose"><p class="small">Details come from ${esc(e.sourceLabel)} and were last refreshed ${esc(updatedText)}. Spotted something wrong? <a href="/contact/">Tell us</a>.</p></div>`,
+<div class="wrap prose"><p class="small">Details come from ${esc(e.sourceLabel)}${e.checked ? ` and were last checked ${esc(fmtDate(e.checked))}` : ''}. Spotted something wrong? <a href="/contact/">Tell us</a>.</p></div>`,
   });
   if (e.end) await out(path.slice(1) + 'deadline.ics', icsFor([e], e.title, { site: SITE }));
 }
@@ -410,7 +505,7 @@ const watchRow = (e, i) => {
     <div class="fact"><b>${e.perReg != null ? money(e.perReg) : '—'}</b><span>per entrant</span></div>
   </div>
   <div class="w-clock"><b class="left" data-end="${e.end || ''}">${esc(e.end ? deadlineShort(e.end) : 'Dates TBA')}</b>
-    <a class="small" href="/submissions/?h=${encodeURIComponent(e.id)}">${n ? `See ${n} entr${n === 1 ? 'y' : 'ies'} →` : 'Post your entry →'}</a></div>
+    ${n ? `<a class="small" href="/submissions/?h=${encodeURIComponent(e.id)}">See ${n} entr${n === 1 ? 'y' : 'ies'} →</a>` : ''}<a class="small" href="/submit/?hackathon=${encodeURIComponent(e.title)}">Post your entry →</a></div>
 </li>`;
 };
 function deadlineShort(end) { const d = daysUntil(end, now); return d == null ? 'Dates TBA' : d < 0 ? 'Closed' : d === 0 ? 'Closes today' : d === 1 ? '1 day left' : `${d} days left`; }
@@ -488,7 +583,8 @@ ${prose(`<h2>How the wall works</h2>
 });
 
 // ---------- Submit form + thanks ----------
-const FORM_TO = 'https://formsubmit.co/info@eyetoad.com';
+// Forms go to our own lead server through /assets/lead-send.js (see src/form.js). No third-party form service.
+const LEAD_URL = 'https://clients.eyetoad.com/lead/send.php';
 const hkOptions = sortEvents(events.filter((e) => e.prizeUsd), 'prize', now).slice(0, 200).map((e) => `<option value="${esc(e.title)}"></option>`).join('');
 await page({
   path: '/submit/', title: 'Post Your Hackathon Project to the Entry Wall | Hackathon Tracker',
@@ -498,11 +594,9 @@ await page({
   <p class="lede">Free, two minutes, reviewed before it goes live.</p>
 </div></section>
 <div class="wrap">
-<form class="filters subform" method="POST" action="${FORM_TO}" accept-charset="UTF-8">
+<form class="filters subform" method="POST" action="${LEAD_URL}" accept-charset="UTF-8" data-lead data-ok-html="&lt;b&gt;Sent. Your project is in review.&lt;/b&gt; We check every entry by hand, usually within a couple of days, and it shows up on the &lt;a href=&quot;/submissions/&quot;&gt;entry wall&lt;/a&gt; once approved.">
   <input type="hidden" name="_subject" value="Entry wall: new project submitted">
-  <input type="hidden" name="_next" value="${SITE}/submit/thanks/">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_autoresponse" value="Thanks for posting your project to the Hackathon Tracker entry wall. We review every entry by hand and will add yours once it checks out.">
+  <input type="hidden" name="form_name" value="Hackathon Tracker entry wall">
   <label class="hp" aria-hidden="true">Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
   <fieldset><legend>Your project</legend>
   <div class="row">
@@ -533,8 +627,9 @@ await page({
   <label class="chk"><input type="checkbox" name="confirm_owner" value="yes" required> I'm on the team that built this project and the links are ours.</label>
   <label class="chk"><input type="checkbox" name="confirm_listing" value="yes" required> I agree to have this project shown publicly on Hackathon Tracker, and I know I can ask for it to be removed at any time.</label>
   <label class="chk"><input type="checkbox" name="confirm_rules" value="yes" required> Posting here doesn't break my hackathon's rules.</label>
+  <p class="form-status" role="alert" tabindex="-1" hidden></p>
   <p><button class="btn" type="submit">Submit for review</button></p>
-  <p class="small">Your entry is emailed to us for review and is not published until we approve it. We keep your email only to contact you about your entry. See our <a href="/privacy/">privacy page</a>.</p>
+  <p class="small">Your entry goes to our own secure lead server for review and is not published until we approve it. We keep your email only to contact you about your entry. See our <a href="/privacy/">privacy page</a>.</p>
 </form>
 </div>`,
 });
@@ -545,28 +640,25 @@ await page({
   <p class="ctas"><a class="btn" href="/submissions/">See the entry wall</a><a class="btn ghost" href="/top-50/">Watch the top 50</a></p></div></section>`,
 });
 
+// Compare (filled in by /assets/compare.js from events.json)
+await page({
+  path: '/compare/', noindex: true, title: `Compare Hackathons Side by Side | ${COPY.name}`, description: 'Compare up to three hackathons side by side: deadline, prize pool, sign-ups, odds, eligibility and team size.',
+  body: `<section class="hero small"><div class="wrap"><h1>Compare hackathons</h1><p class="lede">Up to three, side by side.</p></div></section>
+<div class="wrap" id="compare"><p class="small">Loading your picks…</p></div>
+<noscript><div class="wrap"><p>Comparing needs JavaScript.</p></div></noscript>
+<script type="module" src="/assets/compare.js"></script>`,
+});
+
 // Static pages (methodology, sources, alerts, about, privacy)
 for (const p of staticPages(ctx)) await page({ ...p, body: `<section class="hero small"><div class="wrap"><h1>${p.h1}</h1>${p.lede ? `<p class="lede">${p.lede}</p>` : ''}</div></section>${prose(p.html)}` });
 await page({
   path: '/contact/thanks/', noindex: true, title: 'Thanks, Message Sent | Hackathon Tracker', description: 'Your message was sent.',
   body: `<section class="hero small"><div class="wrap"><h1>Thanks. Your message is on its way.</h1>
   <p class="lede">We read every message and reply by email.</p>
-  <p class="ctas"><a class="btn" href="/">Back to the search</a><a class="btn ghost" href="/alerts/">Subscribe to deadlines</a></p></div></section>`,
+  <p class="ctas"><a class="btn" href="/">Back to the search</a><a class="btn ghost" href="/calendar/">Subscribe to deadlines</a></p></div></section>`,
 });
 
 // Blog
-const blogDir = join(ROOT, 'content', 'blog');
-const posts = [];
-if (existsSync(blogDir)) {
-  for (const f of (await readdir(blogDir)).filter((x) => x.endsWith('.html'))) {
-    const txt = await readFile(join(blogDir, f), 'utf8');
-    const m = txt.match(/^\s*<!--meta\s+(\{[\s\S]*?\})\s*-->/);
-    if (!m) { console.warn('blog: no meta in', f); continue; }
-    let meta; try { meta = JSON.parse(m[1]); } catch { console.warn('blog: bad meta in', f); continue; }
-    posts.push({ slug: f.replace('.html', ''), ...meta, html: txt.slice(m[0].length) });
-  }
-}
-posts.sort((a, b) => (b.date || '').localeCompare(a.date || '') || a.slug.localeCompare(b.slug));
 for (const p of posts) {
   const faq = Array.isArray(p.faq) ? p.faq.filter((f) => f && f.q && f.a) : [];
   await page({

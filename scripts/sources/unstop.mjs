@@ -40,7 +40,19 @@ export async function fetchEvents() {
           if (/dollar|USD/i.test(c)) prizeUsd = total;
         }
       }
+      // Prize breakdown by place, in the listing's own currency (e.g. "Winner: INR 50,000").
+      const prizes = [];
+      for (const p of cash) {
+        const place = typeof p.rank === 'string' && p.rank.trim() ? p.rank.trim() : typeof p.rank === 'number' ? `Rank ${p.rank}` : null;
+        const c = String(p.currencyCode || p.currency || '');
+        const sym = /rupee|INR/i.test(c) ? 'INR ' : /dollar|USD/i.test(c) ? '$' : null;
+        const amt = Number(p.cash);
+        if (place && sym && Number.isFinite(amt) && amt > 0) prizes.push({ place, amount: sym + amt.toLocaleString('en-US') });
+      }
+      const rr = e.regnRequirements || {};
+      const rs = String(rr.reg_status || '').toUpperCase();
       const filterNames = (e.filters || []).map((f) => String(f.name).toLowerCase());
+      const filterLabels = (e.filters || []).map((f) => String(f.name || '').trim()).filter(Boolean);
       let eligibility = 'unknown';
       if (filterNames.length === 1 && filterNames[0] === 'all') eligibility = 'everyone';
       else if (filterNames.length && filterNames.every((n) => /student|college|school|undergrad|graduate/.test(n))) eligibility = 'students';
@@ -65,6 +77,14 @@ export async function fetchEvents() {
         eligibility,
         inviteOnly: e.visibility !== 'public',
         image: e.logoUrl2 || (e.organisation && e.organisation.logoUrl) || null,
+        // Extra details (optional; null when the API leaves them out).
+        endAt: typeof e.end_date === 'string' ? e.end_date : null,
+        regStatus: rs === 'STARTED' ? 'open' : rs === 'NOT_STARTED' ? 'upcoming' : /CLOSED|ENDED|FINISHED/.test(rs) ? 'closed' : null,
+        regEnd: typeof rr.end_regn_dt === 'string' ? rr.end_regn_dt.slice(0, 10) : null,
+        teamMin: Number.isFinite(Number(rr.min_team_size)) && rr.min_team_size != null ? Number(rr.min_team_size) : null,
+        teamMax: Number.isFinite(Number(rr.max_team_size)) && rr.max_team_size != null ? Number(rr.max_team_size) : null,
+        prizes: prizes.length ? prizes : null,
+        eligibilityNote: filterLabels.length && !(filterNames.length === 1 && filterNames[0] === 'all') ? filterLabels.join(', ') : null,
       });
     }
     if (page < Math.min(last, 15)) await sleep(1000);

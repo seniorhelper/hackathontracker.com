@@ -6,12 +6,12 @@ A search engine for hackathons, ranked by prize money per entrant.
 - `node scripts/build.mjs --offline` rebuilds from the last cached data.
 - `node scripts/serve.mjs` previews `dist/` at http://localhost:4173.
 - Page wording lives in `scripts/pages.mjs`; blog posts are HTML files in `content/blog/`.
-- Brand colours are the tokens at the top of `src/styles.css`.
+- Brand colors are the tokens at the top of `src/styles.css`.
 - Hand-added events go in `content/hackathons.json`; each event gets a page at `/hackathons/<slug>/` with a `deadline.ics`.
 - `/calendar.ics` is a subscribable feed of every upcoming deadline.
 - A GitHub Action rebuilds and publishes the site once a day.
 
 ## Top 50 and the entry wall
 - `/top-50/` ranks the 50 biggest open US-dollar prize pools; visitors can re-sort by deadline, odds or fewest entrants.
-- `/submit/` emails each new project to info@eyetoad.com through FormSubmit for review. Nothing is published automatically.
+- `/submit/` and `/contact/` send to our own lead server (clients.eyetoad.com) through `src/lead-send.js` (shared Eye To Ad lead router) and `src/form.js` (honeypot, time trap, sent/failed states). Nothing is published automatically.
 - To approve one, add it to `content/submissions.json` (format is described at the top of that file), rebuild and publish. It then shows on `/submissions/` and next to its hackathon on the top 50.

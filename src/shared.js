@@ -31,11 +31,11 @@ export const DEFAULTS = {
 };
 
 export const SORTS = {
-  best: 'Best odds first',
-  prize: 'Biggest prize',
-  soon: 'Closing soonest',
-  quiet: 'Fewest competitors',
-  new: 'Newly listed',
+  best: 'Best odds (prize per entrant)',
+  prize: 'Biggest prize first',
+  soon: 'Deadline: soonest first',
+  quiet: 'Fewest people signed up',
+  new: 'Newest listings first',
 };
 
 export function placeText(e) {
@@ -88,6 +88,36 @@ export function sortEvents(list, sort, now = new Date()) {
 }
 
 const ODDS_LABEL = { strong: 'Strong odds', fair: 'Fair odds', crowded: 'Crowded' };
+export const REG_LABEL = { open: 'Registration open', upcoming: 'Registration opens soon', closed: 'Registration closed' };
+
+// Short plain-English reason behind an odds badge (used as a tooltip and on event pages).
+export function oddsWhy(e) {
+  if (e.perReg != null && e.oddsTier) {
+    const third = { strong: 'the top third', fair: 'the middle third', crowded: 'the bottom third' }[e.oddsTier];
+    return `${money(e.prizeUsd)} in prizes ÷ ${e.registrants.toLocaleString('en-US')} signed up = ${money(e.perReg)} per entrant. That puts it in ${third} of the hackathons we can score today.`;
+  }
+  if (e.early) return 'Fewer than 10 people have signed up so far, so it is too early to score the odds.';
+  return '';
+}
+
+export function teamText(e) {
+  const a = e.teamMin, b = e.teamMax;
+  if (b === 1) return 'Solo only';
+  if (a && b) return a === b ? `Teams of ${a}` : `${a} to ${b} people`;
+  if (b) return `Up to ${b} people`;
+  if (a) return `At least ${a} people`;
+  return '';
+}
+
+export function dateRange(e) {
+  if (e.start && e.end && e.start !== e.end) return `${fmtDate(e.start)} – ${fmtDate(e.end)}`;
+  return e.end ? fmtDate(e.end) : e.start ? 'Starts ' + fmtDate(e.start) : '';
+}
+
+// "Nov 18, 2026, 8:00 PM UTC" — the exact time, shown in UTC until the browser swaps in local time.
+export function fmtUtc(iso) {
+  return new Date(iso).toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'UTC' }) + ' UTC';
+}
 
 // Stable, lowercase page slug for an event: title words plus a short hash of its id.
 export function slugFor(e) {
@@ -126,52 +156,66 @@ export function deadlineText(e, now = new Date()) {
 
 const ymd = (d) => d.replace(/-/g, '');
 const nextDay = (d) => new Date(Date.parse(d) + 864e5).toISOString().slice(0, 10);
-const calDetails = (e) => [e.prizeUsd ? money(e.prizeUsd) + ' in prizes' : e.prizeText, whereText(e), 'Official page: ' + e.url, 'Check the official rules for the exact closing time and time zone.'].filter(Boolean).join('\n');
+const calDetails = (e) => [e.prizeUsd ? money(e.prizeUsd) + ' in prizes' : e.prizeText, whereText(e), e.endAt ? 'Closes ' + fmtUtc(e.endAt) : null, 'Official page: ' + e.url, 'Check the official rules for the exact closing time and time zone.'].filter(Boolean).join('\n');
+// Timed deadline (one hour ending at the exact close) when we know the time, else an all-day event.
+const utcStamp = (t) => new Date(t).toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '');
+const calSpan = (e) => (e.endAt ? [utcStamp(Date.parse(e.endAt) - 36e5), utcStamp(e.endAt)] : null);
 
 export function gcalUrl(e) {
   if (!e.end) return null;
-  const p = new URLSearchParams({ action: 'TEMPLATE', text: 'Deadline: ' + e.title, dates: `${ymd(e.end)}/${ymd(nextDay(e.end))}`, details: calDetails(e), location: e.mode === 'online' ? e.url : placeText(e) || e.url });
+  const span = calSpan(e);
+  const p = new URLSearchParams({ action: 'TEMPLATE', text: 'Deadline: ' + e.title, dates: span ? span.join('/') : `${ymd(e.end)}/${ymd(nextDay(e.end))}`, details: calDetails(e), location: e.mode === 'online' ? e.url : placeText(e) || e.url });
   return 'https://calendar.google.com/calendar/render?' + p.toString();
 }
 
 export function cardHTML(e, now = new Date(), isSaved = false) {
   const c = countdown(e, now);
   const facts = [];
-  if (e.prizeUsd) facts.push(`<div class="fact prize"><b>${money(e.prizeUsd)}</b><span>in prizes</span></div>`);
+  if (e.prizeUsd) facts.push(`<div class="fact prize${e.prizeUsd >= 1e6 ? ' long' : ''}"><b>${money(e.prizeUsd)}</b><span>in prizes</span></div>`);
   else if (e.prizeText) facts.push(`<div class="fact prize text"><b>${esc(e.prizeText.slice(0, 26))}</b><span>prizes</span></div>`);
   else facts.push('<div class="fact prize none"><b>Not listed</b><span>prizes</span></div>');
   if (e.registrants != null) facts.push(`<div class="fact"><b>${e.registrants.toLocaleString('en-US')}</b><span>signed up</span></div>`);
   if (e.perReg != null) facts.push(`<div class="fact"><b>${money(e.perReg)}</b><span>per entrant</span></div>`);
   const badges = [];
-  if (e.oddsTier) badges.push(`<span class="badge odds-${e.oddsTier}">${ODDS_LABEL[e.oddsTier]}</span>`);
-  else if (e.early) badges.push(`<span class="badge odds-early">Just opened</span>`);
+  const why = oddsWhy(e);
+  if (e.oddsTier) badges.push(`<a class="badge odds-${e.oddsTier}" href="/methodology/" title="${esc(why)}">${ODDS_LABEL[e.oddsTier]} <span aria-hidden="true">ⓘ</span><span class="sr">: ${esc(why)}</span></a>`);
+  else if (e.early) badges.push(`<a class="badge odds-early" href="/methodology/" title="${esc(why)}">Just opened <span aria-hidden="true">ⓘ</span></a>`);
   if (e.isNew) badges.push('<span class="badge new">New</span>');
+  if (e.regStatus) badges.push(`<span class="badge reg-${e.regStatus}">${REG_LABEL[e.regStatus]}</span>`);
   if (e.eligibility === 'students') badges.push('<span class="badge elig">Students only</span>');
   if (e.eligibility === 'high-school') badges.push('<span class="badge elig">High school</span>');
   if (e.eligibility === 'everyone') badges.push('<span class="badge open">Open to all</span>');
   if (e.beginner) badges.push('<span class="badge plain">Beginner friendly</span>');
   if (e.ai) badges.push('<span class="badge plain">AI</span>');
   if (e.inviteOnly) badges.push('<span class="badge elig">Invite only</span>');
+  const team = teamText(e);
+  if (team) badges.push(`<span class="badge plain">${esc(team)}</span>`);
   const also = (e.alsoOn || []).map((a) => `<a href="${esc(a.url)}" rel="noopener" target="_blank">${esc(a.label)}</a>`).join(', ');
   const path = eventPath(e);
   const g = gcalUrl(e);
   const where = whereText(e);
+  const range = dateRange(e);
+  const tags = (e.themes || []).filter((t) => !t.includes('beginner')).slice(0, 3);
   return `<article class="card${c.cls === 'hot' ? ' urgent' : ''}" data-id="${esc(e.id)}">
   <div class="card-head"><span class="clock ${c.cls}">${esc(c.text)}</span>
     <button class="save" type="button" aria-pressed="${isSaved}" data-save="${esc(e.id)}" aria-label="${isSaved ? 'Remove from' : 'Save to'} my hackathons: ${esc(e.title)}" title="Save to my hackathons">${isSaved ? '★' : '☆'}<span>${isSaved ? 'Saved' : 'Save'}</span></button></div>
   <h3><a href="${path}">${esc(e.title)}</a></h3>
-  <p class="meta">${esc(where)}${e.organizer && !where.toLowerCase().includes(e.organizer.toLowerCase()) ? ' · ' + esc(e.organizer) : ''} · ${esc(deadlineText(e, now))}</p>
+  <p class="meta">${esc(where)}${e.organizer && !where.toLowerCase().includes(e.organizer.toLowerCase()) ? ' · ' + esc(e.organizer) : ''}</p>
+  <p class="dates"><span class="sr">Dates: </span>${esc(e.start && e.end && e.start !== e.end ? range : deadlineText(e, now))}</p>
   <div class="facts">${facts.join('')}</div>
   ${badges.length ? `<p class="badges">${badges.join('')}</p>` : ''}
-  <div class="card-actions"><a class="btn sm" href="${esc(e.url)}" rel="noopener" target="_blank">Official page <span aria-hidden="true">↗</span></a>${g ? `<details class="cal"><summary class="btn sm ghost">Add to calendar</summary><div class="cal-menu"><a href="${esc(g)}" rel="noopener" target="_blank">Google Calendar</a><a href="${path}deadline.ics" download>Apple, Outlook (.ics)</a></div></details>` : ''}</div>
-  <p class="src">Listed on ${esc(e.sourceLabel)}${also ? ', ' + also : ''}</p>
+  ${tags.length ? `<p class="tags">${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}</p>` : ''}
+  <div class="card-actions"><a class="btn sm" href="${esc(e.url)}" rel="noopener" target="_blank">Official page <span aria-hidden="true">↗</span></a><a class="btn sm ghost" href="${path}">Full details</a></div>
+  ${g ? `<div class="cal-row" role="group" aria-label="Add the deadline to your calendar"><span class="cal-label"><span aria-hidden="true">📅</span> Add to calendar</span><a class="btn sm ghost" href="${esc(g)}" rel="noopener" target="_blank">Google</a><a class="btn sm ghost" href="${path}deadline.ics">Apple / Outlook</a></div>` : ''}
+  <div class="card-foot"><p class="src">Listed on ${esc(e.sourceLabel)}${also ? ', ' + also : ''}</p>
+    <span class="card-tools"><button type="button" class="link" data-share="${path}" data-title="${esc(e.title)}">Share</button><label class="cmp"><input type="checkbox" data-compare="${esc(e.id)}"> Compare</label></span></div>
 </article>`;
 }
 
 // ---------- iCalendar (RFC 5545) ----------
 const enc = new TextEncoder();
 // Escape TEXT values: backslash, semicolon, comma and newlines.
-export const icsText = (s) => String(s ?? '').replace(/\\/g, '\\\\').replace(/;/g, '\;').replace(/,/g, '\\,').replace(/\r\n|\r|\n/g, '\\n');
+export const icsText = (s) => String(s ?? '').replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r\n|\r|\n/g, '\\n');
 // Fold content lines longer than 75 octets (UTF-8 safe), continuation lines start with one space.
 export function icsFold(line) {
   if (enc.encode(line).length <= 75) return line;
@@ -198,8 +242,7 @@ export function icsFor(events, calName = 'Hackathon deadlines', opts = {}) {
       'BEGIN:VEVENT',
       'UID:' + slug + '@hackathontracker.com',
       'DTSTAMP:' + stamp,
-      'DTSTART;VALUE=DATE:' + ymd(e.end),
-      'DTEND;VALUE=DATE:' + ymd(nextDay(e.end)),
+      ...(calSpan(e) ? ['DTSTART:' + calSpan(e)[0], 'DTEND:' + calSpan(e)[1]] : ['DTSTART;VALUE=DATE:' + ymd(e.end), 'DTEND;VALUE=DATE:' + ymd(nextDay(e.end))]),
       'SUMMARY:' + icsText('Deadline: ' + e.title),
       'DESCRIPTION:' + icsText(calDetails(e) + '\nDetails: ' + site + '/hackathons/' + slug + '/'),
       'URL:' + e.url,

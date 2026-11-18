@@ -87,6 +87,9 @@ export async function fetchEvents() {
         eligibility: 'unknown',
         inviteOnly: !!h.invite_only,
         image: h.thumbnail_url ? (h.thumbnail_url.startsWith('//') ? 'https:' + h.thumbnail_url : h.thumbnail_url) : null,
+        // Extra details (optional; null when the API leaves them out).
+        regStatus: h.open_state === 'open' ? 'open' : h.open_state === 'upcoming' ? 'upcoming' : null,
+        cashPrizes: h.prizes_counts && typeof h.prizes_counts.cash === 'number' ? h.prizes_counts.cash : null,
       });
     }
     if (page < 15 && out.length < total) await sleep(1000);

@@ -25,6 +25,9 @@ export async function fetchEvents() {
       registrants: typeof e.registrants === 'number' ? e.registrants : null,
       themes: Array.isArray(e.themes) ? e.themes : [],
       eligibility: e.eligibility || 'unknown', inviteOnly: e.inviteOnly === true, image: null,
+      endAt: e.endAt ?? null, regStatus: e.regStatus ?? null, regEnd: e.regEnd ?? null, teamMin: e.teamMin ?? null, teamMax: e.teamMax ?? null,
+      prizes: Array.isArray(e.prizes) ? e.prizes : null, prizeNote: e.prizeNote ?? null, eligibilityNote: e.eligibilityNote ?? null,
+      venue: e.venue ?? null, tagline: e.tagline ?? null, winnersDate: e.winnersDate ?? null, checked: e.checked ?? null,
     });
   }
   return out;

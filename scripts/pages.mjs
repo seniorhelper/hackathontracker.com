@@ -44,7 +44,7 @@ ${posts.map((p) => `- [${p.title}](${SITE}/blog/${p.slug}/): ${p.description}`).
 <li><strong>Search everything at once.</strong> Listings are pulled from several hackathon platforms and duplicates are merged, with a link back to the original page.</li>
 <li><strong>Filter to what fits you.</strong> Online or in person, a city or country, minimum prize, deadline window, beginner friendly, AI, or hide events that are for students only.</li>
 <li><strong>Keep a shortlist.</strong> Hit Save on any card. Your list stays in your browser. There is no account and nothing to sign up for.</li>
-<li><strong>Never miss a deadline.</strong> Add any deadline to your calendar in one click, or <a href="/alerts/">subscribe to the feeds</a> to hear about new listings.</li>
+<li><strong>Never miss a deadline.</strong> Add any deadline to your calendar in one click, or <a href="/calendar/">subscribe to every deadline</a> in Google, Apple or Outlook.</li>
 </ul>
 <h2>Start with one of these</h2>
 <ul>
@@ -67,7 +67,7 @@ export const PAGES = [
     h1: 'Hackathons with the best odds right now',
     intro: 'These are the open hackathons with the most prize money for each person signed up. Fewer entrants chasing the same pot is the simplest edge there is.',
     below: `<h2>How to read this list</h2>
-<p>“Per entrant” is the total cash prize divided by the number of people signed up today. It is a rough guide, not a promise. Sign-ups keep climbing until the deadline, and at most events plenty of people who sign up never submit anything, which works in your favour.</p>
+<p>“Per entrant” is the total cash prize divided by the number of people signed up today. It is a rough guide, not a promise. Sign-ups keep climbing until the deadline, and at most events plenty of people who sign up never submit anything, which works in your favor.</p>
 <p>A good habit: check this page early in a hackathon’s run, save the ones that suit your skills, then look again a week before the deadline to see how crowded each one became. <a href="/methodology/">Full method and limits</a>.</p>`,
   },
   {
@@ -98,7 +98,9 @@ export const PAGES = [
     intro: 'Agent, LLM and machine-learning hackathons that are open or coming up. Company-sponsored AI events tend to carry the biggest prizes and the biggest crowds, so check the odds.',
     below: `<h2>Picking an AI hackathon</h2>
 <p>Many AI hackathons are run by a company that wants people building on its model or platform. Read the rules for which tools are required, because a great project on the wrong stack is not eligible. Prizes are sometimes paid partly in platform credits rather than cash, so look at the prize breakdown on the official page before you commit.</p>
-<p>An event counts as AI here when its title or topic tags mention AI, machine learning, LLMs, agents or a major model by name.</p>`,
+<p>An event counts as AI here when its title or topic tags mention AI, machine learning, LLMs, agents or a major model by name.</p>
+<p>Building with agents? Our guide to <a href="/blog/ai-agent-hackathons/">AI agent hackathons</a> covers what judges look for and how to scope a demo that works on the day.</p>
+<p>Curious which labs are pulling ahead while you build? <a href="https://www.greatairace.com/" rel="noopener" target="_blank">The Great AI Race</a> tracks the race between the major AI labs.</p>`,
   },
   {
     slug: 'beginner-hackathons', hook: 'Tagged beginner friendly by the organizers.', preset: { beginner: true },
@@ -171,7 +173,7 @@ export function staticPages({ stats, status, money, esc, fmtDate, updatedText, c
 <li><strong>It says nothing about quality.</strong> Judging, mentors and the people you would meet do not show up in a division sum.</li>
 </ul>
 <h2>Other labels</h2>
-<p><strong>Students only</strong> and <strong>High school</strong> appear when the source is a student or high-school programme, or the listing says so. <strong>Beginner friendly</strong> appears only when the organizer tagged the event that way. If a card shows no eligibility badge, we do not know, and you should check the rules.</p>
+<p><strong>Students only</strong> and <strong>High school</strong> appear when the source is a student or high-school program, or the listing says so. <strong>Beginner friendly</strong> appears only when the organizer tagged the event that way. If a card shows no eligibility badge, we do not know, and you should check the rules.</p>
 <h2>Where listings come from</h2>
 <p>We read public listings from the platforms on the <a href="/sources/">sources page</a>, merge duplicates that appear on more than one site, drop anything that has already ended, and link every card to the original page. The data is rebuilt once a day. If something is wrong, the organizer’s own page is always the authority.</p>`,
     },
@@ -185,29 +187,55 @@ export function staticPages({ stats, status, money, esc, fmtDate, updatedText, c
 <p>We only read pages that are public and that the site’s robots rules allow, we identify ourselves when we do, and we link every listing back to where it came from. If you run one of these platforms and want something changed, the listing owner’s wishes win.</p>`,
     },
     {
-      path: '/alerts/', title: 'Hackathon Calendar: Subscribe to Every Deadline Free | Hackathon Tracker',
-      description: 'Subscribe to a free hackathon deadline calendar in Google, Apple or Outlook, download your saved hackathons as an .ics file, or follow the new-listing feeds.',
+      path: '/calendar/', title: 'Hackathon Deadline Calendar: Subscribe Free in Google, Apple or Outlook | Hackathon Tracker',
+      description: 'Subscribe to every hackathon deadline in Google Calendar, Apple Calendar or Outlook, copy the feed link, or download your saved hackathons as one .ics file. Free, no account.',
       h1: 'Every hackathon deadline,<br>in your calendar.',
       lede: 'Subscribe once. It updates itself every day.',
       html: `<div class="subscribe" id="subscribe">
-<h2>Subscribe to the deadline calendar</h2>
-<p>One all-day event on each hackathon’s deadline day, with the prize, the location and a link to the official page. It stays current on its own.</p>
-<p class="ctas"><a class="btn" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fhackathontracker.com%2Fcalendar.ics" rel="noopener" target="_blank">Google Calendar</a><a class="btn ghost" href="webcal://hackathontracker.com/calendar.ics">Apple Calendar</a><a class="btn ghost" href="webcal://hackathontracker.com/calendar.ics">Outlook</a><a class="btn ghost" href="/calendar.ics" download>Download .ics</a></p>
-<p class="copyrow"><code id="feedUrl">https://hackathontracker.com/calendar.ics</code> <button type="button" class="btn ghost sm" data-copy="feedUrl">Copy link</button></p>
-<p class="small">Google Calendar on the web: Other calendars → From URL, then paste the link. Outlook on the web: Add calendar → Subscribe from web. Apple Calendar: File → New Calendar Subscription. Calendar apps check for changes on their own schedule, from every few hours to about a day.</p>
+<h2 class="first">Subscribe to all deadlines</h2>
+<p>One event on each hackathon’s deadline day, with the prize, the location and a link to the official page. New hackathons appear on their own and ended ones drop off.</p>
+<p class="ctas"><a class="btn" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fhackathontracker.com%2Fcalendar.ics" rel="noopener" target="_blank">Google Calendar</a><a class="btn ghost" href="webcal://hackathontracker.com/calendar.ics">Apple Calendar / iPhone</a><a class="btn ghost" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Fhackathontracker.com%2Fcalendar.ics&amp;name=Hackathon%20deadlines" rel="noopener" target="_blank">Outlook.com</a><a class="btn ghost" href="https://outlook.office.com/calendar/0/addfromweb?url=https%3A%2F%2Fhackathontracker.com%2Fcalendar.ics&amp;name=Hackathon%20deadlines" rel="noopener" target="_blank">Outlook (work or school)</a></p>
+<p class="copyrow"><code id="feedUrl">https://hackathontracker.com/calendar.ics</code> <button type="button" class="btn ghost sm" data-copy="feedUrl">Copy link</button> <a class="btn ghost sm" href="/calendar.ics" download>Download .ics</a></p>
 </div>
-<h2>Only the hackathons you care about</h2>
-<p>Tap the ☆ on any hackathon to save it. Your list lives in this browser, with no account. Then press <strong>Download my list (.ics)</strong> above the results to get one calendar file with every saved deadline, or open your list from <a href="/?saved=1">★ My list</a> in the top bar.</p>
-<p>Every hackathon also has its own <strong>Add to calendar</strong> button with a Google Calendar link and an .ics file for Apple Calendar and Outlook.</p>
+<h2>Download my saved list</h2>
+<p>Tap <strong>☆ Save</strong> on any hackathon card. Your list stays in this browser, with no account. Then press the button below to put every saved deadline in your calendar in one go. On iPhone and iPad it opens straight in the Calendar app.</p>
+<p class="ctas"><button type="button" class="btn" data-saved-ics data-always data-msg="savedMsg2" disabled>Save a hackathon first (☆)</button><a class="btn ghost" href="/?saved=1#finder">★ See my list</a></p>
+<p id="savedMsg2" class="small" role="status" hidden></p>
+<h2>One hackathon at a time</h2>
+<p>Every hackathon card and event page has an <strong>Add to calendar</strong> row with a <strong>Google</strong> button and an <strong>Apple / Outlook</strong> button (.ics file). Use those when you only want one or two deadlines.</p>
+<h2>How to subscribe, step by step</h2>
+<h3>Google Calendar</h3>
+<p>Press <strong>Google Calendar</strong> above and confirm. Or on the web: Other calendars → <strong>+</strong> → From URL, paste the link, then Add calendar. It then shows on your Android phone too.</p>
+<h3>Apple Calendar (iPhone, iPad, Mac)</h3>
+<p>Press <strong>Apple Calendar / iPhone</strong> above and tap Subscribe. On a Mac you can also use File → New Calendar Subscription and paste the link.</p>
+<h3 id="outlook">Outlook</h3>
+<p>Press the Outlook button that matches your account. Or in Outlook on the web: Add calendar → Subscribe from web, paste the link and name it. In Outlook for Windows: Add calendar → From internet.</p>
+<h3>Anything else</h3>
+<p>Any app that takes an iCalendar (.ics) link works. Press <strong>Copy link</strong> and paste it where your app asks for a calendar URL.</p>
+<h2>Good to know</h2>
+<ul>
+<li>Calendar apps check for changes on their own schedule, from every few hours to about a day.</li>
+<li>Most listings give a date, not a time, so most deadlines show as all-day events. When a source gives the exact closing time, the event is placed at that time.</li>
+<li>Each deadline comes with a reminder three days before.</li>
+<li>The official page always has the exact closing time and time zone. Check it before submission day.</li>
+</ul>
+<p>Prefer feeds? See <a href="/alerts/">RSS feeds and alerts</a>.</p>`,
+    },
+    {
+      path: '/alerts/', title: 'Hackathon Alerts: RSS Feeds for New Listings | Hackathon Tracker',
+      description: 'Free RSS feeds for newly listed hackathons and hackathons with strong odds, plus a prize-hackathons calendar. Works in any feed reader.',
+      h1: 'Hackathon alerts and feeds',
+      lede: 'Hear about new hackathons without checking back.',
+      html: `<p>Want deadlines in your calendar? The <a href="/calendar/"><strong>deadline calendar page</strong></a> has one-tap subscribe buttons for Google, Apple and Outlook.</p>
 <h2>Feeds for new listings</h2>
 <p>These work in any feed reader, and in tools that turn a feed into an email or chat message.</p>
 <ul>
 <li><a href="/feeds/new.xml">Newly listed hackathons (RSS)</a></li>
 <li><a href="/feeds/best-odds.xml">Hackathons with strong odds (RSS)</a></li>
-<li><a href="/feeds/deadlines.ics">Prize hackathons only (calendar)</a></li>
+<li><a href="/feeds/deadlines.ics">Prize hackathons only (calendar feed)</a></li>
 </ul>
 <h2>Good to know</h2>
-<p>Deadlines show as all-day events because most listings give a date, not a time. The official page has the exact closing time and time zone. Always check it before submission day.</p>`,
+<p>Feeds rebuild once a day with the rest of the site. Each item links to the organizer’s official page, which is always the authority on dates and rules.</p>`,
     },
     {
       path: '/about/', title: 'About Hackathon Tracker',
@@ -216,7 +244,7 @@ export function staticPages({ stats, status, money, esc, fmtDate, updatedText, c
       html: `<p>Hackathon Tracker exists to answer one question: <strong>which hackathon is worth entering?</strong></p>
 <p>Listings are scattered across a dozen platforms, most lists are sorted by date, and none of them tell you how crowded an event is compared with its prize money. So this site pulls the public listings into one search, works out the prize per entrant where the numbers exist, and lets you filter down to the ones that fit you, whether you are a student, a working adult or somewhere in between.</p>
 <p>It is free, there is no account, and every listing links straight to the organizer’s page. The site is supported by advertising. We are independent and not affiliated with any platform or organizer listed here.</p>
-<p>Want deadlines without checking back? <a href="/alerts/">Subscribe to the calendar</a>. Found a mistake or a hackathon we’re missing? <a href="/contact/">Tell us</a>.</p>
+<p>Want deadlines without checking back? <a href="/calendar/">Subscribe to the calendar</a>. Found a mistake or a hackathon we’re missing? <a href="/contact/">Tell us</a>.</p>
 <p>Read <a href="/methodology/">how the odds work</a>, see <a href="/sources/">where the data comes from</a>, or go <a href="/">find a hackathon</a>.</p>`,
     },
     {
@@ -228,7 +256,7 @@ export function staticPages({ stats, status, money, esc, fmtDate, updatedText, c
 <h2>What we collect</h2>
 <ul>
 <li><strong>No accounts.</strong> You can search, filter and save hackathons without signing up or giving us your name or email.</li>
-<li><strong>Forms.</strong> If you post a project to the entry wall or use the contact form, what you type is emailed to us through FormSubmit, a form-delivery service. We use it only to review your entry or answer you. For entry-wall posts we publish only the project details you chose to share. Your email address is never published. Ask us at any time to remove your entry or delete your message.</li>
+<li><strong>Forms.</strong> If you post a project to the entry wall or use the contact form, what you type is sent to our own secure lead server, which stores it and notifies us. No third-party form service is used. We use it only to review your entry or answer you. For entry-wall posts we publish only the project details you chose to share. Your email address is never published. Ask us at any time to remove your entry or delete your message.</li>
 <li><strong>Your saved list</strong> is stored in your own browser (local storage) and never sent to us. Clearing your browser data removes it.</li>
 <li><strong>Near me</strong> asks your browser for your location only when you press the button. The distance math happens on your device, and your location is never sent to us or put in the page address.</li>
 <li><strong>Server logs.</strong> Like any website, our hosting provider may keep standard request logs, such as IP address, browser type and the pages requested, for security and reliability.</li>
@@ -281,10 +309,9 @@ export function staticPages({ stats, status, money, esc, fmtDate, updatedText, c
       description: 'Contact Hackathon Tracker: report a wrong listing, suggest a hackathon we are missing, ask about the entry wall or advertising.',
       h1: 'Contact us',
       lede: 'Wrong listing, missing hackathon, or a question? Send it here.',
-      html: `<form class="filters subform" method="POST" action="https://formsubmit.co/info@eyetoad.com" accept-charset="UTF-8">
+      html: `<form class="filters subform" method="POST" action="https://clients.eyetoad.com/lead/send.php" accept-charset="UTF-8" data-lead data-ok-html="&lt;b&gt;Sent. Thanks for your message.&lt;/b&gt; We read every one and reply by email.">
   <input type="hidden" name="_subject" value="Hackathon Tracker: contact form">
-  <input type="hidden" name="_next" value="https://hackathontracker.com/contact/thanks/">
-  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="form_name" value="Hackathon Tracker contact">
   <label class="hp" aria-hidden="true">Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
   <div class="row">
     <label><span>Your name</span><input type="text" name="name" required maxlength="80" placeholder="Your name" autocomplete="name"></label>
@@ -292,6 +319,7 @@ export function staticPages({ stats, status, money, esc, fmtDate, updatedText, c
   </div>
   <label class="full"><span>Topic</span><select name="topic"><option>Wrong or outdated listing</option><option>Suggest a hackathon</option><option>Entry wall</option><option>Advertising</option><option>Something else</option></select></label>
   <label class="full"><span>Message</span><textarea name="message" required maxlength="3000" rows="6" placeholder="Include the hackathon name and link if it’s about a listing."></textarea></label>
+  <p class="form-status" role="alert" tabindex="-1" hidden></p>
   <p><button class="btn" type="submit">Send message</button></p>
   <p class="small">We use your email only to reply. See the <a href="/privacy/">Privacy Policy</a>.</p>
 </form>

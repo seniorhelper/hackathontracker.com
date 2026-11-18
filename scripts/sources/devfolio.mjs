@@ -57,6 +57,13 @@ export async function fetchEvents() {
           eligibility: 'unknown',
           inviteOnly: !!s.private,
           image: hs.logo || s.cover_img || null,
+          // Extra details (optional; null when the API leaves them out).
+          endAt: typeof s.ends_at === 'string' ? s.ends_at : null,
+          regStatus: type === 'application_open' ? 'open' : 'upcoming',
+          regEnd: typeof hs.reg_ends_at === 'string' ? hs.reg_ends_at.slice(0, 10) : null,
+          teamMin: typeof s.team_min === 'number' ? s.team_min : null,
+          teamMax: typeof s.team_size === 'number' ? s.team_size : null,
+          tagline: typeof s.tagline === 'string' ? s.tagline : null,
         });
       }
       if (hits.length < size) break;

@@ -1,4 +1,4 @@
-import { DEFAULTS, applyFilters, sortEvents, cardHTML, icsFor, money } from './shared.js';
+import { DEFAULTS, applyFilters, sortEvents, cardHTML, money } from './shared.js';
 import { saved as store } from './site.js';
 
 const root = document.getElementById('finder');
@@ -59,7 +59,7 @@ async function start() {
     count.innerHTML = `<b>${current.length.toLocaleString('en-US')}</b> hackathon${current.length === 1 ? '' : 's'}${prize ? ` · <b>${money(prize)}</b> in listed prizes` : ''}`;
     if (!current.length) {
       results.innerHTML = state.saved && !saved.size
-        ? '<div class="empty"><b>Your list is empty.</b><p>Tap the ☆ on any hackathon to save it here. Then download your list as a calendar.</p></div>'
+        ? '<div class="empty"><b>Your list is empty.</b><p>Tap ☆ Save on any hackathon to keep it here. Then use <b>Download my saved list</b> to put every deadline in your calendar, or see <a href="/calendar/">all calendar options</a>.</p></div>'
         : '<div class="empty"><b>No hackathons match all of that.</b><p>Try a longer deadline, a smaller prize, or fewer filters.</p><p><button type="button" class="btn" data-clear>Clear all filters</button></p></div>';
     } else {
       results.innerHTML = current.slice(0, shown).map((e) => cardHTML(e, now, saved.has(e.id))).join('\n');
@@ -78,7 +78,6 @@ async function start() {
     const n = countActive();
     const fc = document.getElementById('filterCount');
     if (fc) { fc.textContent = n ? String(n) : ''; fc.hidden = !n; }
-    if (savedIcs) savedIcs.hidden = !saved.size;
   }
   function countActive() {
     let n = 0;
@@ -100,16 +99,7 @@ async function start() {
     panel.classList.toggle('open', open);
   });
 
-  // "My hackathons.ics": every saved event that has a date, as one calendar file.
-  const savedIcs = document.getElementById('savedIcs');
-  if (savedIcs) savedIcs.addEventListener('click', () => {
-    const list = events.filter((e) => saved.has(e.id) && e.end);
-    if (!list.length) { savedIcs.textContent = 'Save a hackathon first'; return; }
-    const url = URL.createObjectURL(new Blob([icsFor(list, 'My hackathons')], { type: 'text/calendar;charset=utf-8' }));
-    const a = Object.assign(document.createElement('a'), { href: url, download: 'My hackathons.ics' });
-    document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 4000);
-  });
+  // "Download my saved list" is handled in site.js (shared with the /calendar/ page).
   document.addEventListener('ht:saved', () => { saved = store.get(); if (state.saved) render(); else syncChips(); });
 
   function readForm() {

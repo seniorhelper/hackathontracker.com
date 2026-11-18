@@ -1,5 +1,5 @@
 {
-  "_howto": "Hackathons added by hand because none of the automatic sources list them. Required: id (short, lowercase, dashes), title, url (the organizer's own page). Optional: organizer, start, end (YYYY-MM-DD), mode (online, in-person, hybrid), city, region, country, prizeUsd (total CASH in US dollars, number only, leave out hardware and credits), prizeText, registrants (only if the organizer shows a live count), themes, eligibility (everyone, students, high-school). Leave out anything you can't confirm on the organizer's page. Ended events drop off on their own.",
+  "_howto": "Hackathons added by hand because none of the automatic sources list them. Required: id (short, lowercase, dashes), title, url (the organizer's own page). Optional: organizer, start, end (YYYY-MM-DD), mode (online, in-person, hybrid), city, region, country, prizeUsd (total CASH in US dollars, number only, leave out hardware and credits), prizeText, registrants (only if the organizer shows a live count), themes, eligibility (everyone, students, high-school). Extra optional fields: endAt (exact close time with zone, e.g. 2026-11-18T12:00:00-08:00), prizeNote, prizes ([{place, amount}]), eligibilityNote, teamMin, teamMax, regStatus (open, upcoming, closed), regEnd, venue, tagline, winnersDate, checked (date you checked the page). Use the exact title a platform uses and the entry merges with that listing instead of duplicating it. Leave out anything you can't confirm on the organizer's page. Ended events drop off on their own.",
   "events": [
     {
       "id": "ship-or-die-100k",
@@ -25,6 +25,22 @@
       "region": "New York",
       "country": "United States",
       "themes": ["ai", "agentic ai", "computer vision", "apply first"]
+    },
+    {
+      "id": "meta-vr-start-developer-competition-2026",
+      "title": "Meta VR Start Developer Competition 2026",
+      "url": "https://start-developer-competition-26.devpost.com/",
+      "organizer": "Meta",
+      "start": "2026-09-24",
+      "end": "2026-11-18",
+      "endAt": "2026-11-18T12:00:00-08:00",
+      "mode": "online",
+      "prizeUsd": 1000000,
+      "prizeNote": "20 cash prizes from $20,000 to $100,000 across Entertainment, Gaming and Productivity tracks, plus special category awards.",
+      "eligibilityNote": "Meta Start program members (non-members can apply to join Start first). Entries must be fully usable with hand tracking.",
+      "winnersDate": "2026-12-11",
+      "themes": ["vr", "hand tracking", "meta quest", "gaming", "productivity"],
+      "checked": "2026-11-17"
     }
   ]
 }

@@ -6,11 +6,12 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { geocode } from './cities.mjs';
 import { PAGES, COPY, staticPages } from './pages.mjs';
-import { esc, money, todayStr, daysUntil, fmtDate, applyFilters, sortEvents, cardHTML, icsFor, DEFAULTS, SORTS } from '../src/shared.js';
+import { esc, money, todayStr, daysUntil, fmtDate, applyFilters, sortEvents, cardHTML, icsFor, DEFAULTS, SORTS, slugFor, eventPath, gcalUrl, whereText, countdown, placeText } from '../src/shared.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = join(ROOT, 'dist');
 const SITE = 'https://hackathontracker.com';
+const ADSENSE = 'ca-pub-3561679124556057';
 const OFFLINE = process.argv.includes('--offline');
 const now = new Date();
 const today = todayStr(now);
@@ -118,6 +119,7 @@ for (const e of events) {
 }
 const merged = events.length - byKey.size;
 events = [...byKey.values()];
+{ const used = new Set(); for (const e of events) { let sl = slugFor(e), n = 2; while (used.has(sl)) sl = slugFor(e) + '-' + n++; used.add(sl); e.slug = sl; } }
 
 // ---------- 4. Odds ----------
 // Prize per entrant = total cash prize / people signed up. Needs both numbers and at least 10 sign-ups.
@@ -159,38 +161,51 @@ const updatedText = dataTime.toLocaleString('en-US', { month: 'short', day: 'num
 // ---------- 7. Templates ----------
 const NAV = [['/', 'Search'], ['/top-50/', 'Top 50'], ['/submissions/', 'Entry wall'], ['/best-odds/', 'Best odds'], ['/online-hackathons/', 'Online'], ['/ai-hackathons/', 'AI'], ['/open-to-everyone/', 'No student ID'], ['/blog/', 'Blog']];
 
-function layout({ path, title, description, body, jsonld, noindex }) {
+const FOOT = [['/top-50/', 'Top 50'], ['/submissions/', 'Entry wall'], ['/submit/', 'Submit your project'], ['/alerts/', 'Calendar & alerts'], ['/methodology/', 'How the odds work'], ['/sources/', 'Sources'], ['/blog/', 'Guides'], ['/about/', 'About'], ['/contact/', 'Contact'], ['/privacy/', 'Privacy Policy'], ['/terms/', 'Terms of Use']];
+
+function layout({ path, title, description, body, jsonld, noindex, ogType }) {
   const canonical = SITE + path;
+  const ld = (Array.isArray(jsonld) ? jsonld : jsonld ? [jsonld] : []).map((j) => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('\n');
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self' https://formsubmit.co">
-<meta name="theme-color" content="#0c0f14">
+<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; object-src 'none'; form-action 'self' https://formsubmit.co">
+<meta name="theme-color" content="#c6f432">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${canonical}">
-${noindex ? '<meta name="robots" content="noindex">' : ''}
-<meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}">
+${noindex ? '<meta name="robots" content="noindex, follow">' : '<meta name="robots" content="index, follow, max-image-preview:large">'}
+<meta property="og:site_name" content="${esc(COPY.name)}"><meta property="og:type" content="${ogType || 'website'}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${SITE}/assets/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(description)}"><meta name="twitter:image" content="${SITE}/assets/og.png">
+<meta name="google-adsense-account" content="${ADSENSE}">
 <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="New hackathons" href="/feeds/new.xml">
+<link rel="alternate" type="text/calendar" title="Hackathon deadlines calendar" href="/calendar.ics">
 <link rel="stylesheet" href="/assets/styles.css">
-${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>` : ''}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE}" crossorigin="anonymous"></script>
+${ld}
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap bar">
-  <a class="logo" href="/" aria-label="${esc(COPY.name)} home"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="4" fill="var(--brand)"/><path d="M9 10l7 6-7 6M18 22h6" fill="none" stroke="var(--on-brand)" stroke-width="3" stroke-linecap="square"/></svg><span>hackathon_tracker</span></a>
-  <nav aria-label="Main">${NAV.map(([h, t]) => `<a href="${h}"${h === path ? ' aria-current="page"' : ''}>${t}</a>`).join('')}</nav>
+  <a class="logo" href="/" aria-label="${esc(COPY.name)} home"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#c6f432"/><path d="M9 10l7 6-7 6M18 22h6" fill="none" stroke="#0c0f14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>hackathon_tracker</span></a>
+  <a class="saved-link" href="/?saved=1" aria-label="My saved hackathons">★ <span class="hide-sm">My list</span> <b id="savedCount" hidden></b></a>
+  <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav"><span aria-hidden="true">☰</span> Menu</button>
+  <nav id="mainNav" aria-label="Main">${NAV.map(([h, t]) => `<a href="${h}"${h === path ? ' aria-current="page"' : ''}>${t}</a>`).join('')}</nav>
 </div></header>
 <main id="main">${body}</main>
 <footer class="site"><div class="wrap">
-  <p><a href="/top-50/">Top 50</a> · <a href="/submissions/">Entry wall</a> · <a href="/submit/">Submit your project</a> · <a href="/methodology/">How the odds work</a> · <a href="/sources/">Sources</a> · <a href="/alerts/">Alerts &amp; calendar</a> · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a></p>
+  <nav class="foot-links" aria-label="Footer">${FOOT.map(([h, t]) => `<a href="${h}">${t}</a>`).join('')}</nav>
   <p class="small">Data last refreshed ${esc(updatedText)}. ${esc(COPY.name)} is independent and not affiliated with the organizers or platforms listed. Always check the official rules before you enter.</p>
+  <p class="small">© ${now.getUTCFullYear()} ${esc(COPY.name)}</p>
 </div></footer>
 <p class="heart"><span class="beat" aria-hidden="true">❤</span><a href="https://eyetoad.com/" rel="noopener" target="_blank">Need a website?</a></p>
+<script type="module" src="/assets/site.js"></script>
 </body></html>`;
 }
 
@@ -201,16 +216,22 @@ function finder(preset = {}) {
   const f = { ...DEFAULTS, ...preset };
   const list = sortEvents(applyFilters(events, f, now), f.sort, now);
   const prize = list.reduce((s, e) => s + (e.prizeUsd || 0), 0);
+  const chip = (c, label) => `<button type="button" class="chip" data-chip="${c}" aria-pressed="false">${label}</button>`;
   return `<section id="finder" class="finder" data-updated="${stats.updated}">
 <script type="application/json" id="preset">${JSON.stringify(preset).replace(/</g, '\\u003c')}</script>
-<form id="filters" class="filters" role="search" aria-label="Filter hackathons">
-  <div class="row main">
-    <label class="grow"><span>Search</span><input type="search" name="q" placeholder="AI, fintech, a sponsor, a school…" value="${esc(f.q)}" autocomplete="off"></label>
-    <label><span>City or country</span><input type="text" name="place" placeholder="Denver, India, …" value="${esc(f.place)}" autocomplete="off"></label>
-    <label><span>Sort by</span><select name="sort">${Object.entries(SORTS).map(([v, l]) => opt(v, l, f.sort)).join('')}</select></label>
+<form id="filters" class="filters" role="search" aria-label="Search and filter hackathons">
+  <div class="quick">
+    <label class="q"><span class="sr">Search hackathons</span><input type="search" name="q" placeholder="Search: AI, fintech, a sponsor, a city…" value="${esc(f.q)}" autocomplete="off" enterkeyhint="search"></label>
+    <button type="button" class="btn ghost ftoggle" id="filterToggle" aria-expanded="false" aria-controls="morePanel">Filters <b id="filterCount" class="pill" hidden></b></button>
   </div>
+  <div class="chips" role="group" aria-label="Quick filters">
+    ${chip('mode=online', 'Online')}${chip('mode=in-person', 'In person')}${chip('minPrize=10000', '$10K+ prize')}${chip('within=7', 'Closes in 7 days')}${chip('hideStudent', 'No student ID needed')}${chip('ai', 'AI')}${chip('beginner', 'Beginner')}${chip('saved', '★ My list')}
+  </div>
+  <div class="more-panel" id="morePanel">
   <div class="row">
+    <label><span>Sort by</span><select name="sort">${Object.entries(SORTS).map(([v, l]) => opt(v, l, f.sort)).join('')}</select></label>
     <label><span>Where</span><select name="mode">${opt('any', 'Online or in person', f.mode)}${opt('online', 'Online', f.mode)}${opt('in-person', 'In person', f.mode)}</select></label>
+    <label><span>City or country</span><input type="text" name="place" placeholder="Denver, India…" value="${esc(f.place)}" autocomplete="off"></label>
     <label><span>Prize money</span><select name="minPrize">${opt(0, 'Any', f.minPrize)}${opt(1000, '$1,000+', f.minPrize)}${opt(10000, '$10,000+', f.minPrize)}${opt(50000, '$50,000+', f.minPrize)}</select></label>
     <label><span>Deadline</span><select name="within">${opt(0, 'Any time', f.within)}${opt(3, 'Next 3 days', f.within)}${opt(7, 'Next 7 days', f.within)}${opt(30, 'Next 30 days', f.within)}</select></label>
     <label><span>Odds</span><select name="odds">${opt('any', 'Any', f.odds)}${opt('fair', 'Fair or better', f.odds)}${opt('strong', 'Strong only', f.odds)}</select></label>
@@ -218,19 +239,24 @@ function finder(preset = {}) {
   </div>
   <div class="row checks">
     ${chk('hideStudent', 'Hide student-only', f.hideStudent)}${chk('beginner', 'Beginner friendly', f.beginner)}${chk('ai', 'AI', f.ai)}${chk('saved', 'My saved list', f.saved)}
-    <span class="near"><button type="button" id="nearBtn" class="btn ghost">Near me</button>
+    <span class="near"><button type="button" id="nearBtn" class="btn ghost sm" aria-pressed="false">Near me</button>
       <select name="km" aria-label="Distance">${opt(80, '50 mi', f.km)}${opt(160, '100 mi', f.km)}${opt(400, '250 mi', f.km)}</select></span>
-    <button type="reset" class="btn ghost" id="resetBtn">Clear filters</button>
+    <button type="reset" class="btn ghost sm" id="resetBtn">Clear filters</button>
   </div>
   <p id="nearMsg" class="small" role="status" hidden></p>
+  </div>
 </form>
-<p id="count" class="count" role="status" aria-live="polite"><b>${list.length.toLocaleString('en-US')}</b> hackathons${prize ? ` · <b>${money(prize)}</b> in listed prizes` : ''}</p>
-<div id="results" class="results">${list.slice(0, 24).map((e) => cardHTML(e, now)).join('\n') || '<p class="empty">Nothing matches right now. This list refreshes daily.</p>'}</div>
+<div class="countbar"><p id="count" class="count" role="status" aria-live="polite"><b>${list.length.toLocaleString('en-US')}</b> hackathons${prize ? ` · <b>${money(prize)}</b> in listed prizes` : ''}</p>
+<button type="button" class="btn ghost sm" id="savedIcs" hidden>Download my list (.ics)</button></div>
+<div id="results" class="results">${list.slice(0, 24).map((e) => cardHTML(e, now)).join('\n') || '<div class="empty"><b>Nothing open matches this right now.</b><p>The list refreshes every day. Try the <a href="/">full search</a> or subscribe to the <a href="/alerts/">deadline calendar</a>.</p></div>'}</div>
 <p class="more"><button type="button" id="moreBtn" class="btn"${list.length > 24 ? '' : ' hidden'}>Show more</button></p>
 <noscript><p class="small">Filters need JavaScript. The list above still shows the current top results.</p></noscript>
 </section>
 <script type="module" src="/assets/app.js"></script>`;
 }
+
+// ItemList of the first results, pointing at our event pages.
+const itemList = (name, list) => ({ '@context': 'https://schema.org', '@type': 'ItemList', name, numberOfItems: list.length, itemListElement: list.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.title, url: SITE + eventPath(e) })) });
 
 const prose = (html) => `<div class="wrap prose">${html}</div>`;
 const ctx = { stats, status, events, scored, money, esc, fmtDate, updatedText, cut, SITE, today };
@@ -238,7 +264,8 @@ const ctx = { stats, status, events, scored, money, esc, fmtDate, updatedText, c
 // ---------- 8. Write site ----------
 await rm(DIST, { recursive: true, force: true });
 await mkdir(join(DIST, 'assets'), { recursive: true });
-for (const f of ['shared.js', 'app.js', 'watch.js', 'wall.js', 'styles.css', 'icon.svg']) await cp(join(ROOT, 'src', f), join(DIST, 'assets', f));
+for (const f of ['shared.js', 'app.js', 'site.js', 'watch.js', 'wall.js', 'styles.css', 'icon.svg', 'og.png', 'apple-touch-icon.png']) await cp(join(ROOT, 'src', f), join(DIST, 'assets', f));
+await cp(join(ROOT, 'src', 'favicon.png'), join(DIST, 'favicon.png'));
 const slim = events.map(({ lat, lon, ...e }) => ({ ...e, lat: lat == null ? null : Math.round(lat * 100) / 100, lon: lon == null ? null : Math.round(lon * 100) / 100 }));
 await out('data/events.json', JSON.stringify({ updated: stats.updated, events: slim }));
 await out('data/stats.json', JSON.stringify({ ...stats, sources: status }));
@@ -247,13 +274,19 @@ const sitemap = [];
 const page = async (p) => { await out((p.path === '/' ? '' : p.path.slice(1)) + (p.file || 'index.html'), layout(p)); if (!p.noindex) sitemap.push(p.path); };
 
 // Home
+const homeList = sortEvents(applyFilters(events, DEFAULTS, now), DEFAULTS.sort, now).slice(0, 24);
 await page({
   path: '/', title: COPY.homeTitle, description: COPY.homeDesc,
-  jsonld: { '@context': 'https://schema.org', '@type': 'WebSite', name: COPY.name, url: SITE + '/', potentialAction: { '@type': 'SearchAction', target: SITE + '/?q={search_term_string}', 'query-input': 'required name=search_term_string' } },
-  body: `<section class="hero"><div class="wrap">
+  jsonld: [
+    { '@context': 'https://schema.org', '@type': 'WebSite', name: COPY.name, url: SITE + '/', description: COPY.homeDesc, inLanguage: 'en-US', potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: SITE + '/?q={search_term_string}' }, 'query-input': 'required name=search_term_string' } },
+    { '@context': 'https://schema.org', '@type': 'Organization', name: COPY.name, url: SITE + '/', logo: SITE + '/assets/apple-touch-icon.png' },
+    itemList('Hackathons with the best odds right now', homeList),
+  ],
+  body: `<section class="hero home"><div class="wrap">
   <h1>${COPY.h1}</h1>
   <p class="lede">${COPY.lede}</p>
-  <ul class="stats"><li><b>${stats.total.toLocaleString('en-US')}</b> open or upcoming</li><li><b>${money(stats.prizeTotal)}</b> in listed prizes</li><li><b>${stats.withOdds}</b> with odds scored</li><li><b>${stats.sources}</b> sources checked</li></ul>
+  <p class="ctas"><a class="btn big" href="#finder">Find my hackathon</a><a class="btn big ghost" href="/alerts/">Subscribe to deadlines</a></p>
+  <ul class="stats"><li><b>${stats.total.toLocaleString('en-US')}</b> open now</li><li><b>${money(stats.prizeTotal)}</b> in prizes</li><li><b>${stats.withOdds}</b> odds scored</li></ul>
 </div></section>
 <div class="wrap">${finder({})}</div>
 ${prose(COPY.homeBelow(ctx))}`,
@@ -261,13 +294,75 @@ ${prose(COPY.homeBelow(ctx))}`,
 
 // Landing pages
 for (const p of PAGES) {
-  const list = applyFilters(events, { ...DEFAULTS, ...p.preset }, now);
+  const list = sortEvents(applyFilters(events, { ...DEFAULTS, ...p.preset }, now), p.preset.sort || DEFAULTS.sort, now);
   await page({
     path: `/${p.slug}/`, title: p.title, description: p.description,
-    body: `<section class="hero small"><div class="wrap"><h1>${p.h1}</h1><p class="lede">${p.intro}</p>
-<p class="small">${list.length.toLocaleString('en-US')} match today · refreshed ${esc(updatedText)}</p></div></section>
-<div class="wrap">${finder(p.preset)}</div>${prose(p.below)}`,
+    jsonld: itemList(p.h1, list.slice(0, 24)),
+    body: `<section class="hero small"><div class="wrap"><h1>${p.h1}</h1><p class="lede">${p.hook || ''} <span class="live">${list.length.toLocaleString('en-US')} open today</span></p></div></section>
+<div class="wrap">${finder(p.preset)}</div>${prose(`<p class="intro">${p.intro}</p>` + p.below)}`,
   });
+}
+
+// ---------- One page per event ----------
+const MODE_LD = { online: 'https://schema.org/OnlineEventAttendanceMode', 'in-person': 'https://schema.org/OfflineEventAttendanceMode', hybrid: 'https://schema.org/MixedEventAttendanceMode' };
+const ELIG = { everyone: 'Open to everyone (per the listing)', students: 'Students only', 'high-school': 'High school students', unknown: 'See the official rules for who can enter.' };
+function eventLd(e) {
+  const startDate = e.start || e.end;
+  if (!startDate || !e.mode) return null;
+  const place = (e.mode === 'in-person' || e.mode === 'hybrid') && (e.city || e.country)
+    ? { '@type': 'Place', name: placeText(e), address: { '@type': 'PostalAddress', ...(e.city ? { addressLocality: e.city } : {}), ...(e.region ? { addressRegion: e.region } : {}), ...(e.country ? { addressCountry: e.country } : {}) } } : null;
+  const virtual = { '@type': 'VirtualLocation', url: e.url };
+  const location = e.mode === 'online' ? virtual : e.mode === 'hybrid' ? (place ? [place, virtual] : virtual) : place;
+  if (!location) return null;
+  return {
+    '@context': 'https://schema.org', '@type': 'Event', name: e.title, url: SITE + eventPath(e), sameAs: e.url,
+    description: `${e.title}: ${[e.prizeUsd ? money(e.prizeUsd) + ' in listed prizes' : null, whereText(e), e.end ? 'deadline ' + fmtDate(e.end) : null].filter(Boolean).join(', ')}.`,
+    startDate, ...(e.end ? { endDate: e.end } : {}),
+    eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: MODE_LD[e.mode], location,
+    image: [SITE + '/assets/og.png'],
+    ...(e.organizer ? { organizer: { '@type': 'Organization', name: e.organizer } } : {}),
+  };
+}
+const eventIndexable = (e) => e.source === 'manual' || !!e.prizeUsd;
+for (const e of events) {
+  const path = eventPath(e);
+  const c = countdown(e, now);
+  const g = gcalUrl(e);
+  const similar = sortEvents(events.filter((x) => x !== e && (x.mode === e.mode || (e.ai && x.ai))), 'prize', now).slice(0, 3);
+  const rows = [
+    ['Deadline', e.end ? `${fmtDate(e.end)} <span class="small">(date only, confirm the time zone on the official page)</span>` : 'Not listed'],
+    ['Starts', e.start ? fmtDate(e.start) : 'Not listed'],
+    ['Where', esc(whereText(e))],
+    ['Organizer', e.organizer ? esc(e.organizer) : 'Not listed'],
+    ['Prizes', e.prizeUsd ? `${money(e.prizeUsd)} in listed cash prizes` : e.prizeText ? esc(e.prizeText) : 'Not listed'],
+    ['Signed up', e.registrants != null ? e.registrants.toLocaleString('en-US') : 'Not shown by the source'],
+    ['Prize per entrant', e.perReg != null ? `${money(e.perReg)} <a href="/methodology/">(how this works)</a>` : 'Not enough data to score'],
+    ['Who can enter', ELIG[e.eligibility] + (e.inviteOnly ? ' · invite only' : '')],
+    ['Topics', e.themes.length ? e.themes.map((t) => `<span class="tag">${esc(t)}</span>`).join(' ') : 'None listed'],
+    ['Listed on', esc(e.sourceLabel) + (e.alsoOn?.length ? ', ' + e.alsoOn.map((a) => `<a href="${esc(a.url)}" rel="noopener" target="_blank">${esc(a.label)}</a>`).join(', ') : '')],
+  ];
+  const desc = `${e.title}: ${[e.prizeUsd ? money(e.prizeUsd) + ' in prizes' : null, whereText(e), e.end ? 'deadline ' + fmtDate(e.end) : null].filter(Boolean).join(', ')}. Add the deadline to your calendar and compare the odds.`;
+  await page({
+    path, noindex: !eventIndexable(e), ogType: 'article',
+    title: `${e.title}: Deadline and Prizes | ${COPY.name}`, description: desc,
+    jsonld: [eventLd(e), { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Hackathons', item: SITE + '/' }, { '@type': 'ListItem', position: 2, name: e.title, item: SITE + path }] }].filter(Boolean),
+    body: `<section class="hero small event"><div class="wrap">
+  <p class="crumbs small"><a href="/">Hackathons</a> › ${e.mode === 'online' ? '<a href="/online-hackathons/">Online</a>' : e.mode ? '<a href="/in-person-hackathons/">In person</a>' : 'Event'}</p>
+  <h1>${esc(e.title)}</h1>
+  <p class="lede"><span class="clock ${c.cls}">${esc(c.text)}</span>${e.prizeUsd ? ` <b class="bigprize">${money(e.prizeUsd)}</b> in prizes ·` : ''} ${esc(whereText(e))}</p>
+  <p class="ctas"><a class="btn big" href="${esc(e.url)}" rel="noopener" target="_blank">Official page <span aria-hidden="true">↗</span></a>${g ? `<a class="btn big ghost" href="${esc(g)}" rel="noopener" target="_blank">Add to Google Calendar</a><a class="btn big ghost" href="${path}deadline.ics" download>Apple / Outlook (.ics)</a>` : ''}<button class="save big" type="button" aria-pressed="false" data-save="${esc(e.id)}" aria-label="Save to my hackathons: ${esc(e.title)}">☆<span>Save</span></button></p>
+</div></section>
+<div class="wrap prose event-body">
+<table class="facts-table"><tbody>${rows.map(([k, v]) => `<tr><th scope="row">${k}</th><td>${v}</td></tr>`).join('')}</tbody></table>
+<h2>Before you enter</h2>
+<ul><li>Read the eligibility, judging and intellectual-property sections of the <a href="${esc(e.url)}" rel="noopener" target="_blank">official rules</a>. They override anything shown here.</li>
+<li>Check the exact closing time and time zone, then leave an hour spare for the submission form and video upload.</li>
+<li>Look at the prize breakdown. The headline figure is usually split across places and tracks. Our <a href="/blog/how-hackathons-are-judged/">guide to how hackathons are judged</a> shows what to look for.</li></ul>
+</div>
+${similar.length ? `<div class="wrap"><h2 class="section-h">Similar hackathons</h2><div class="results">${similar.map((x) => cardHTML(x, now)).join('\n')}</div></div>` : ''}
+<div class="wrap prose"><p class="small">Details come from ${esc(e.sourceLabel)} and were last refreshed ${esc(updatedText)}. Spotted something wrong? <a href="/contact/">Tell us</a>.</p></div>`,
+  });
+  if (e.end) await out(path.slice(1) + 'deadline.ics', icsFor([e], e.title, { site: SITE }));
 }
 
 // ---------- Entry wall data (content/submissions.json, approved entries only) ----------
@@ -305,7 +400,7 @@ const watchRow = (e, i) => {
   return `<li class="w-row" data-end="${e.end || ''}" data-prize="${e.prizeUsd}" data-per="${e.perReg ?? ''}" data-reg="${e.registrants ?? ''}">
   <span class="w-rank">${i + 1}</span>
   <div class="w-main">
-    <h3><a href="${esc(e.url)}" rel="noopener" target="_blank">${esc(e.title)}</a></h3>
+    <h3><a href="${eventPath(e)}">${esc(e.title)}</a></h3>
     <p class="meta">${[e.organizer, where, 'Listed on ' + e.sourceLabel].filter(Boolean).map(esc).join(' · ')}</p>
     <p class="badges">${e.oddsTier ? `<span class="badge odds-${e.oddsTier}">${ODDS[e.oddsTier]}</span>` : ''}${e.ai ? '<span class="badge plain">AI</span>' : ''}${e.eligibility === 'students' ? '<span class="badge elig">Students only</span>' : ''}${e.isNew ? '<span class="badge new">New</span>' : ''}</p>
   </div>
@@ -451,7 +546,13 @@ await page({
 });
 
 // Static pages (methodology, sources, alerts, about, privacy)
-for (const p of staticPages(ctx)) await page({ ...p, body: `<section class="hero small"><div class="wrap"><h1>${p.h1}</h1></div></section>${prose(p.html)}` });
+for (const p of staticPages(ctx)) await page({ ...p, body: `<section class="hero small"><div class="wrap"><h1>${p.h1}</h1>${p.lede ? `<p class="lede">${p.lede}</p>` : ''}</div></section>${prose(p.html)}` });
+await page({
+  path: '/contact/thanks/', noindex: true, title: 'Thanks, Message Sent | Hackathon Tracker', description: 'Your message was sent.',
+  body: `<section class="hero small"><div class="wrap"><h1>Thanks. Your message is on its way.</h1>
+  <p class="lede">We read every message and reply by email.</p>
+  <p class="ctas"><a class="btn" href="/">Back to the search</a><a class="btn ghost" href="/alerts/">Subscribe to deadlines</a></p></div></section>`,
+});
 
 // Blog
 const blogDir = join(ROOT, 'content', 'blog');
@@ -467,17 +568,20 @@ if (existsSync(blogDir)) {
 }
 posts.sort((a, b) => (b.date || '').localeCompare(a.date || '') || a.slug.localeCompare(b.slug));
 for (const p of posts) {
+  const faq = Array.isArray(p.faq) ? p.faq.filter((f) => f && f.q && f.a) : [];
   await page({
     path: `/blog/${p.slug}/`, title: `${p.title} | ${COPY.name}`, description: p.description,
-    jsonld: { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: p.title, description: p.description, datePublished: p.date, dateModified: p.updated || p.date, mainEntityOfPage: `${SITE}/blog/${p.slug}/`, publisher: { '@type': 'Organization', name: COPY.name } },
-    body: `<section class="hero small"><div class="wrap"><p class="small"><a href="/blog/">Blog</a> · ${esc(fmtDate(p.date))}</p><h1>${esc(p.title)}</h1></div></section>
-${prose(p.html + `<p class="cta"><a class="btn" href="/">Search ${stats.total.toLocaleString('en-US')} live hackathons</a></p>`)}`,
+    ogType: 'article',
+    jsonld: [{ '@context': 'https://schema.org', '@type': 'BlogPosting', headline: p.title, description: p.description, datePublished: p.date, dateModified: p.updated || p.date, mainEntityOfPage: `${SITE}/blog/${p.slug}/`, image: [SITE + '/assets/og.png'], author: { '@type': 'Organization', name: COPY.name, url: SITE + '/about/' }, publisher: { '@type': 'Organization', name: COPY.name, logo: { '@type': 'ImageObject', url: SITE + '/assets/apple-touch-icon.png' } } },
+      ...(faq.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] : [])],
+    body: `<section class="hero small"><div class="wrap"><p class="small"><a href="/blog/">Guides</a> · ${esc(fmtDate(p.date))}</p><h1>${esc(p.title)}</h1></div></section>
+${prose(p.html + (faq.length ? `<section class="faq"><h2>FAQ</h2>${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>` : '') + `<p class="cta"><a class="btn" href="/">Search ${stats.total.toLocaleString('en-US')} live hackathons</a></p>`)}`,
   });
 }
 await page({
   path: '/blog/', title: `Hackathon Guides | ${COPY.name}`, description: 'Practical guides on choosing, entering and winning hackathons, for adults and students alike.',
-  body: `<section class="hero small"><div class="wrap"><h1>Hackathon guides</h1></div></section>
-<div class="wrap prose">${posts.length ? `<ul class="postlist">${posts.map((p) => `<li><a href="/blog/${p.slug}/">${esc(p.title)}</a><p>${esc(p.description)}</p></li>`).join('')}</ul>` : '<p>Guides are on the way.</p>'}</div>`,
+  body: `<section class="hero small"><div class="wrap"><h1>Hackathon guides</h1><p class="lede">Pick better events, build smarter, submit cleaner.</p></div></section>
+<div class="wrap">${posts.length ? `<ul class="postlist">${posts.map((p) => `<li><a href="/blog/${p.slug}/"><span class="small">${esc(fmtDate(p.date))}</span><b>${esc(p.title)}</b><span class="pd">${esc(p.description)}</span></a></li>`).join('')}</ul>` : '<p>Guides are on the way.</p>'}</div>`,
 });
 
 // 404
@@ -488,11 +592,16 @@ const rssItem = (e) => `<item><title>${esc(e.title)}</title><link>${esc(e.url)}<
 const rss = (title, path, list) => `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>${esc(title)}</title><link>${SITE}/</link><description>${esc(title)} from ${esc(COPY.name)}</description><lastBuildDate>${now.toUTCString()}</lastBuildDate>${list.map(rssItem).join('')}</channel></rss>`;
 await out('feeds/new.xml', rss('Newly listed hackathons', '/feeds/new.xml', sortEvents(events, 'new', now).slice(0, 60)));
 await out('feeds/best-odds.xml', rss('Hackathons with the best odds', '/feeds/best-odds.xml', scored.filter((e) => e.oddsTier === 'strong').slice(0, 60)));
-await out('feeds/deadlines.ics', icsFor(sortEvents(events.filter((e) => e.end && e.prizeUsd), 'soon', now).slice(0, 300), 'Hackathon deadlines (prize events)'));
+await out('feeds/deadlines.ics', icsFor(sortEvents(events.filter((e) => e.end && e.prizeUsd), 'soon', now).slice(0, 300), 'Hackathon deadlines (prize events)', { feed: true }));
+const upcoming = sortEvents(events.filter((e) => e.end && daysUntil(e.end, now) >= 0), 'soon', now);
+await out('calendar.ics', icsFor(upcoming, 'Hackathon deadlines (all upcoming)', { feed: true }));
 
 // Housekeeping files
 await out('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${sitemap.map((p) => `<url><loc>${SITE}${p}</loc><lastmod>${today}</lastmod></url>`).join('')}</urlset>`);
-await out('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`);
+const AI_BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'anthropic-ai', 'PerplexityBot', 'Google-Extended', 'Applebot-Extended'];
+await out('robots.txt', `# Search engines and AI assistants are welcome here.\nUser-agent: *\nAllow: /\n\n${AI_BOTS.map((b) => `User-agent: ${b}\nAllow: /`).join('\n\n')}\n\nSitemap: ${SITE}/sitemap.xml\n`);
+await out('ads.txt', 'google.com, pub-3561679124556057, DIRECT, f08c47fec0942fa0\n');
+await out('llms.txt', COPY.llms({ SITE, stats, money, posts, PAGES, updatedText }));
 if (!BASE) await out('CNAME','hackathontracker.com\n');
 await out('.nojekyll', '');
 

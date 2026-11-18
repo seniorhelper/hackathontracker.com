@@ -7,6 +7,8 @@ A search engine for hackathons, ranked by prize money per entrant.
 - `node scripts/serve.mjs` previews `dist/` at http://localhost:4173.
 - Page wording lives in `scripts/pages.mjs`; blog posts are HTML files in `content/blog/`.
 - Brand colours are the tokens at the top of `src/styles.css`.
+- Hand-added events go in `content/hackathons.json`; each event gets a page at `/hackathons/<slug>/` with a `deadline.ics`.
+- `/calendar.ics` is a subscribable feed of every upcoming deadline.
 - A GitHub Action rebuilds and publishes the site once a day.
 
 ## Top 50 and the entry wall

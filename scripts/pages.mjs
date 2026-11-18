@@ -4,8 +4,37 @@ export const COPY = {
   name: 'Hackathon Tracker',
   homeTitle: 'Hackathon Tracker: Find Hackathons Ranked by Your Odds of Winning',
   homeDesc: 'Search open and upcoming hackathons from many platforms in one place. Filter by prize, deadline, city or online, hide student-only events, and see the prize money per entrant.',
-  h1: 'Better odds.<br>Better weekends.',
-  lede: 'Every open hackathon we can find, in one search. Sorted by how much prize money there is for each person who signed up, so you can skip the pile-ups and enter the ones you can win.',
+  h1: 'Find a hackathon<br>you can actually win.',
+  lede: 'Every open hackathon in one search, ranked by prize money per entrant.',
+  llms: ({ SITE, stats, money, posts, PAGES, updatedText }) => `# Hackathon Tracker
+
+> Hackathon Tracker (${SITE}) is a free, independent search engine for open and upcoming hackathons. It merges public listings from several hackathon platforms plus hand-checked organizer pages, removes duplicates and ended events, and ranks events by listed cash prize per person signed up ("prize per entrant"). No account is needed.
+
+Data is rebuilt daily. Last refresh: ${updatedText}. ${stats.total.toLocaleString('en-US')} open or upcoming hackathons, ${money(stats.prizeTotal)} in listed US-dollar prizes. Organizer pages are always the authority on dates, rules and prizes.
+
+## Search and lists
+- [Search all hackathons](${SITE}/): filters for online or in person, city or country, minimum prize, deadline window, odds, beginner, AI and student-only events. Query parameters work, for example ${SITE}/?q=ai&mode=online&minPrize=10000
+- [Top 50 by prize money](${SITE}/top-50/)
+${PAGES.map((p) => `- [${p.h1}](${SITE}/${p.slug}/)`).join('\n')}
+- Each hackathon has its own page at ${SITE}/hackathons/<slug>/ with deadline, prize, sign-ups, eligibility and a per-event calendar file at ${SITE}/hackathons/<slug>/deadline.ics
+
+## Calendar and feeds (free, no account)
+- [All upcoming deadlines, iCalendar feed](${SITE}/calendar.ics): one all-day event per deadline, refreshed daily. Subscribe with webcal://${SITE.replace(/^https:\/\//, '')}/calendar.ics
+- [Prize hackathon deadlines, iCalendar](${SITE}/feeds/deadlines.ics)
+- [Newly listed hackathons, RSS](${SITE}/feeds/new.xml)
+- [Hackathons with strong odds, RSS](${SITE}/feeds/best-odds.xml)
+- [Machine-readable listings, JSON](${SITE}/data/events.json)
+
+## Method
+- [How prize per entrant and the odds badges work](${SITE}/methodology/)
+- [Sources and data status](${SITE}/sources/)
+
+## Guides
+${posts.map((p) => `- [${p.title}](${SITE}/blog/${p.slug}/): ${p.description}`).join('\n')}
+
+## About
+- [About](${SITE}/about/) · [Contact](${SITE}/contact/) · [Privacy Policy](${SITE}/privacy/) · [Terms of Use](${SITE}/terms/)
+`,
   homeBelow: ({ stats, money, cut }) => `
 <h2>Why sort hackathons by odds?</h2>
 <p>Most lists sort by date. That tells you when a hackathon ends, not whether it is worth entering. Two events can offer the same prize money while one has a few hundred people signed up and the other has tens of thousands. Your chances are not the same, and no date sort will show you that.</p>
@@ -32,7 +61,7 @@ export const COPY = {
 
 export const PAGES = [
   {
-    slug: 'best-odds', preset: { odds: 'strong', sort: 'best' },
+    slug: 'best-odds', hook: 'The most prize money per person signed up.', preset: { odds: 'strong', sort: 'best' },
     title: 'Hackathons With the Best Odds Right Now | Hackathon Tracker',
     description: 'Open hackathons ranked by prize money per person signed up. The top third by odds, refreshed daily, with deadlines and links to enter.',
     h1: 'Hackathons with the best odds right now',
@@ -42,7 +71,7 @@ export const PAGES = [
 <p>A good habit: check this page early in a hackathon’s run, save the ones that suit your skills, then look again a week before the deadline to see how crowded each one became. <a href="/methodology/">Full method and limits</a>.</p>`,
   },
   {
-    slug: 'online-hackathons', preset: { mode: 'online' },
+    slug: 'online-hackathons', hook: 'Join from anywhere. Most run for weeks.', preset: { mode: 'online' },
     title: 'Online Hackathons Open Now (Virtual, Join From Anywhere) | Hackathon Tracker',
     description: 'Every online and virtual hackathon we track that is open or upcoming, with prize money, sign-up counts and deadlines. Filter by prize, topic or odds.',
     h1: 'Online hackathons open now',
@@ -52,7 +81,7 @@ export const PAGES = [
 <p>If meeting people is the main goal, an event in a room still beats a Discord server. Try the <a href="/in-person-hackathons/">in-person list</a> and type your city.</p>`,
   },
   {
-    slug: 'in-person-hackathons', preset: { mode: 'in-person', sort: 'soon' },
+    slug: 'in-person-hackathons', hook: 'Real rooms, soonest first.', preset: { mode: 'in-person', sort: 'soon' },
     title: 'In-Person Hackathons Near You | Hackathon Tracker',
     description: 'Upcoming in-person hackathons by date. Type a city or country, or use Near me, to find events you can actually get to.',
     h1: 'In-person hackathons',
@@ -62,7 +91,7 @@ export const PAGES = [
 <p>Near me only works for events whose city we can place on a map, so if it comes up short, try typing your city or the nearest big one. Many in-person events are run by universities, so check the badge on each card to see whether it is students only.</p>`,
   },
   {
-    slug: 'ai-hackathons', preset: { ai: true },
+    slug: 'ai-hackathons', hook: 'Agents, LLMs and ML, with the odds side by side.', preset: { ai: true },
     title: 'AI Hackathons Open Now | Hackathon Tracker',
     description: 'Open and upcoming AI hackathons: agents, LLMs, generative AI and machine learning. See prize pools, sign-up counts and odds side by side.',
     h1: 'AI hackathons open now',
@@ -72,7 +101,7 @@ export const PAGES = [
 <p>An event counts as AI here when its title or topic tags mention AI, machine learning, LLMs, agents or a major model by name.</p>`,
   },
   {
-    slug: 'beginner-hackathons', preset: { beginner: true },
+    slug: 'beginner-hackathons', hook: 'Tagged beginner friendly by the organizers.', preset: { beginner: true },
     title: 'Beginner-Friendly Hackathons Open Now | Hackathon Tracker',
     description: 'Hackathons tagged beginner friendly by their organizers, open or upcoming. A live list, not a stale roundup, with deadlines and prize details.',
     h1: 'Beginner-friendly hackathons',
@@ -82,7 +111,7 @@ export const PAGES = [
 <p>We only show the beginner tag when the organizer set it themselves. Plenty of untagged events welcome first-timers too, so it is worth browsing <a href="/online-hackathons/">online hackathons</a> as well.</p>`,
   },
   {
-    slug: 'open-to-everyone', preset: { hideStudent: true },
+    slug: 'open-to-everyone', hook: 'Student-only events filtered out.', preset: { hideStudent: true },
     title: 'Hackathons for Adults and Non-Students | Hackathon Tracker',
     description: 'Hackathons with the student-only and high-school-only events filtered out. For working adults, career changers, indie builders and anyone without a student ID.',
     h1: 'Hackathons you can enter without a student ID',
@@ -92,7 +121,7 @@ export const PAGES = [
 <p>Company-run online hackathons are usually the most open to working adults. Sort by <a href="/best-odds/">best odds</a> to find ones that are not swamped.</p>`,
   },
   {
-    slug: 'biggest-prizes', preset: { sort: 'prize', minPrize: 10000 },
+    slug: 'biggest-prizes', hook: '$10,000 or more, largest pot first.', preset: { sort: 'prize', minPrize: 10000 },
     title: 'Biggest Hackathon Prizes Open Now ($10,000+) | Hackathon Tracker',
     description: 'Open hackathons with $10,000 or more in listed cash prizes, largest first, with the number of people signed up for each.',
     h1: 'The biggest hackathon prizes open now',
@@ -102,7 +131,7 @@ export const PAGES = [
 <p>We only count prizes listed in US dollars. Events that list prizes in other currencies, or as credits and swag, show the organizer’s own wording instead.</p>`,
   },
   {
-    slug: 'closing-soon', preset: { within: 7, sort: 'soon' },
+    slug: 'closing-soon', hook: 'Deadlines landing this week.', preset: { within: 7, sort: 'soon' },
     title: 'Hackathon Deadlines This Week | Hackathon Tracker',
     description: 'Hackathons whose submission or event date falls in the next 7 days, soonest first. Good for a last-minute entry or a final check on your shortlist.',
     h1: 'Hackathons closing in the next 7 days',
@@ -112,7 +141,7 @@ export const PAGES = [
   },
 ];
 
-export function staticPages({ stats, status, money, esc, fmtDate, updatedText, cut }) {
+export function staticPages({ stats, status, money, esc, fmtDate, updatedText, cut, today }) {
   const cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);
   const rows = status.map((s) => ({ ...s, label: cap(s.label) })).map((s) => `<tr><td>${s.homepage ? `<a href="${esc(s.homepage)}" rel="noopener" target="_blank">${esc(s.label)}</a>` : esc(s.label)}</td><td>${s.ok ? (s.note ? 'Using last good copy' : 'Working') : 'Not available today'}</td><td>${s.count.toLocaleString('en-US')}</td></tr>`).join('');
   return [
@@ -156,22 +185,29 @@ export function staticPages({ stats, status, money, esc, fmtDate, updatedText, c
 <p>We only read pages that are public and that the site’s robots rules allow, we identify ourselves when we do, and we link every listing back to where it came from. If you run one of these platforms and want something changed, the listing owner’s wishes win.</p>`,
     },
     {
-      path: '/alerts/', title: 'Free Hackathon Alerts and Calendar Feeds | Hackathon Tracker',
-      description: 'Get new hackathons and deadlines without an account: a feed of new listings, a feed of the best odds, and a deadline calendar you can subscribe to.',
-      h1: 'Alerts and calendar',
-      html: `<p>No account, no email address, no cost. Pick whichever of these fits how you already work.</p>
-<h2>Deadline calendar</h2>
-<p>Subscribe once and every prize hackathon’s deadline shows up in your calendar and stays current.</p>
-<p><a class="btn" href="/feeds/deadlines.ics">Download the deadline calendar</a></p>
-<p>To subscribe so it keeps updating: in Google Calendar choose “Other calendars → From URL”, in Apple Calendar “File → New Calendar Subscription”, and paste <code>https://hackathontracker.com/feeds/deadlines.ics</code>.</p>
-<h2>New-listing feeds</h2>
-<p>These work in any feed reader, and in tools that turn a feed into an email or a chat message.</p>
+      path: '/alerts/', title: 'Hackathon Calendar: Subscribe to Every Deadline Free | Hackathon Tracker',
+      description: 'Subscribe to a free hackathon deadline calendar in Google, Apple or Outlook, download your saved hackathons as an .ics file, or follow the new-listing feeds.',
+      h1: 'Every hackathon deadline,<br>in your calendar.',
+      lede: 'Subscribe once. It updates itself every day.',
+      html: `<div class="subscribe" id="subscribe">
+<h2>Subscribe to the deadline calendar</h2>
+<p>One all-day event on each hackathon’s deadline day, with the prize, the location and a link to the official page. It stays current on its own.</p>
+<p class="ctas"><a class="btn" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fhackathontracker.com%2Fcalendar.ics" rel="noopener" target="_blank">Google Calendar</a><a class="btn ghost" href="webcal://hackathontracker.com/calendar.ics">Apple Calendar</a><a class="btn ghost" href="webcal://hackathontracker.com/calendar.ics">Outlook</a><a class="btn ghost" href="/calendar.ics" download>Download .ics</a></p>
+<p class="copyrow"><code id="feedUrl">https://hackathontracker.com/calendar.ics</code> <button type="button" class="btn ghost sm" data-copy="feedUrl">Copy link</button></p>
+<p class="small">Google Calendar on the web: Other calendars → From URL, then paste the link. Outlook on the web: Add calendar → Subscribe from web. Apple Calendar: File → New Calendar Subscription. Calendar apps check for changes on their own schedule, from every few hours to about a day.</p>
+</div>
+<h2>Only the hackathons you care about</h2>
+<p>Tap the ☆ on any hackathon to save it. Your list lives in this browser, with no account. Then press <strong>Download my list (.ics)</strong> above the results to get one calendar file with every saved deadline, or open your list from <a href="/?saved=1">★ My list</a> in the top bar.</p>
+<p>Every hackathon also has its own <strong>Add to calendar</strong> button with a Google Calendar link and an .ics file for Apple Calendar and Outlook.</p>
+<h2>Feeds for new listings</h2>
+<p>These work in any feed reader, and in tools that turn a feed into an email or chat message.</p>
 <ul>
-<li><a href="/feeds/new.xml">Newly listed hackathons</a></li>
-<li><a href="/feeds/best-odds.xml">Hackathons with strong odds</a></li>
+<li><a href="/feeds/new.xml">Newly listed hackathons (RSS)</a></li>
+<li><a href="/feeds/best-odds.xml">Hackathons with strong odds (RSS)</a></li>
+<li><a href="/feeds/deadlines.ics">Prize hackathons only (calendar)</a></li>
 </ul>
-<h2>Your own shortlist</h2>
-<p>Press Save on any card and tick “My saved list” in the filters to see just those. Use “Add deadline to calendar” on a card to drop a single deadline into your calendar. Your list lives in this browser only.</p>`,
+<h2>Good to know</h2>
+<p>Deadlines show as all-day events because most listings give a date, not a time. The official page has the exact closing time and time zone. Always check it before submission day.</p>`,
     },
     {
       path: '/about/', title: 'About Hackathon Tracker',
@@ -179,23 +215,90 @@ export function staticPages({ stats, status, money, esc, fmtDate, updatedText, c
       h1: 'About Hackathon Tracker',
       html: `<p>Hackathon Tracker exists to answer one question: <strong>which hackathon is worth entering?</strong></p>
 <p>Listings are scattered across a dozen platforms, most lists are sorted by date, and none of them tell you how crowded an event is compared with its prize money. So this site pulls the public listings into one search, works out the prize per entrant where the numbers exist, and lets you filter down to the ones that fit you, whether you are a student, a working adult or somewhere in between.</p>
-<p>It is free, there is no account, and every listing links straight to the organizer’s page. We are independent and not affiliated with any platform or organizer listed here.</p>
+<p>It is free, there is no account, and every listing links straight to the organizer’s page. The site is supported by advertising. We are independent and not affiliated with any platform or organizer listed here.</p>
+<p>Want deadlines without checking back? <a href="/alerts/">Subscribe to the calendar</a>. Found a mistake or a hackathon we’re missing? <a href="/contact/">Tell us</a>.</p>
 <p>Read <a href="/methodology/">how the odds work</a>, see <a href="/sources/">where the data comes from</a>, or go <a href="/">find a hackathon</a>.</p>`,
     },
     {
-      path: '/privacy/', title: 'Privacy | Hackathon Tracker',
-      description: 'Hackathon Tracker has no accounts, sets no cookies and runs no trackers. Your saved list and your location stay in your browser.',
-      h1: 'Privacy',
-      html: `<p>Short version: we don't collect anything about you unless you post a project to the entry wall.</p>
+      path: '/privacy/', title: 'Privacy Policy | Hackathon Tracker',
+      description: 'How Hackathon Tracker handles data: no accounts, your saved list stays in your browser, Google AdSense advertising cookies, and how to opt out.',
+      h1: 'Privacy Policy',
+      html: `<p class="small">Last updated ${fmtDate(today)}.</p>
+<p>This policy explains what information is collected when you use hackathontracker.com (“the site”), how it is used, and the choices you have.</p>
+<h2>What we collect</h2>
 <ul>
-<li><strong>No accounts.</strong> There is nothing to sign up for to search or save hackathons.</li>
-<li><strong>The entry wall form</strong> is the only place you give us anything. When you post a project, what you type is emailed to us for review through FormSubmit, a form-delivery service. We publish only the project details you chose to share (name, links, pitch, tags and the name you gave). Your email address is never published and is used only to contact you about your entry. Ask us anytime to remove your entry.</li>
-<li><strong>No cookies, analytics or ad trackers</strong> are set by this site.</li>
-<li><strong>Your saved list</strong> is stored in your own browser. Clearing your browser data removes it.</li>
-<li><strong>Near me</strong> asks your browser for your location only when you press the button. The distance sums happen on your device and your location is never sent to us or put in the page address.</li>
-<li><strong>Links</strong> to hackathon pages go to other websites, which have their own privacy policies.</li>
+<li><strong>No accounts.</strong> You can search, filter and save hackathons without signing up or giving us your name or email.</li>
+<li><strong>Forms.</strong> If you post a project to the entry wall or use the contact form, what you type is emailed to us through FormSubmit, a form-delivery service. We use it only to review your entry or answer you. For entry-wall posts we publish only the project details you chose to share. Your email address is never published. Ask us at any time to remove your entry or delete your message.</li>
+<li><strong>Your saved list</strong> is stored in your own browser (local storage) and never sent to us. Clearing your browser data removes it.</li>
+<li><strong>Near me</strong> asks your browser for your location only when you press the button. The distance math happens on your device, and your location is never sent to us or put in the page address.</li>
+<li><strong>Server logs.</strong> Like any website, our hosting provider may keep standard request logs, such as IP address, browser type and the pages requested, for security and reliability.</li>
 </ul>
-<p>The site is served by a hosting provider that, like any web host, may keep standard server logs such as IP addresses. If this page changes, the change will be posted here.</p>`,
+<h2>Advertising and cookies</h2>
+<p>The site shows ads served by Google AdSense, which helps keep it free. Google and its partners are third-party vendors that use cookies, web beacons and similar technologies to serve ads based on your prior visits to this site and other websites.</p>
+<ul>
+<li>Google’s use of advertising cookies enables it and its partners to serve ads to you based on your visits to this site and/or other sites on the internet.</li>
+<li>You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" rel="noopener" target="_blank">Google Ads Settings</a> (adssettings.google.com).</li>
+<li>You can also opt out of some third-party vendors’ use of cookies for personalized advertising at <a href="https://www.aboutads.info/choices/" rel="noopener" target="_blank">www.aboutads.info</a> (US) or <a href="https://www.youronlinechoices.eu/" rel="noopener" target="_blank">youronlinechoices.eu</a> (EU).</li>
+<li>Learn more in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">How Google uses information from sites or apps that use its services</a> and <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">How Google uses cookies in advertising</a>.</li>
+</ul>
+<p>Where the law requires it, for example in the European Economic Area, the UK and Switzerland, you will be asked for consent before personalized ads are shown, and you can change your choice at any time. You can also block or delete cookies in your browser settings. Ads may then be less relevant, but the site still works.</p>
+<p>We do not set our own analytics or tracking cookies, and we do not sell personal information.</p>
+<h2>Links to other sites</h2>
+<p>Hackathon listings link to organizers’ and platforms’ websites. Those sites have their own privacy policies, and we are not responsible for them.</p>
+<h2>Children</h2>
+<p>The site is a general-audience directory and is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has sent us information, <a href="/contact/">contact us</a> and we will delete it.</p>
+<h2>Your rights and choices</h2>
+<p>Depending on where you live, you may have the right to access, correct or delete personal information we hold about you, or to object to how it is used. <a href="/contact/">Contact us</a> and we will respond within a reasonable time.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be posted on this page with a new date.</p>`,
+    },
+    {
+      path: '/terms/', title: 'Terms of Use | Hackathon Tracker',
+      description: 'The terms for using Hackathon Tracker: listings are provided as-is, always check official rules, entry-wall content and links to other websites.',
+      h1: 'Terms of Use',
+      html: `<p class="small">Last updated ${fmtDate(today)}.</p>
+<p>By using hackathontracker.com (“the site”) you agree to these terms. If you do not agree, please do not use the site.</p>
+<h2>Listings are information, not advice</h2>
+<p>Hackathon details are gathered from public listings and organizers’ pages and refreshed once a day. They can be incomplete, out of date or wrong. The organizer’s official page and rules are always the authority on dates, eligibility, prizes and judging. Check them before you register, build or submit. Prize-per-entrant figures and odds badges are simple estimates, not predictions or guarantees.</p>
+<h2>No affiliation</h2>
+<p>The site is independent. We are not affiliated with, endorsed by or responsible for the hackathons, organizers or platforms listed, and we do not run the events. Questions about an event go to its organizer.</p>
+<h2>Entry wall and submissions</h2>
+<p>When you post a project you confirm that you are on the team that built it, that the links are yours, and that posting does not break your hackathon’s rules. You keep ownership of your project. You give us permission to show the details you submitted on the site. We review entries by hand and may decline or remove any entry. Ask us at any time to take yours down.</p>
+<h2>Acceptable use</h2>
+<p>Please don’t misuse the site: no attempts to disrupt it, overload it, or submit spam, malware or content you don’t have the right to share. Reasonable automated access that respects robots.txt is welcome.</p>
+<h2>Advertising</h2>
+<p>The site shows third-party ads, including Google AdSense. Ads are provided by third parties and are not endorsements. See the <a href="/privacy/">Privacy Policy</a> for how advertising cookies work.</p>
+<h2>Links</h2>
+<p>Links to other websites are provided for convenience. We don’t control those sites and are not responsible for their content or practices.</p>
+<h2>No warranty and limits on liability</h2>
+<p>The site is provided “as is” and “as available”, without warranties of any kind. To the fullest extent allowed by law, we are not liable for any loss arising from your use of the site or reliance on its listings, including missed deadlines, ineligible entries or prize decisions made by organizers.</p>
+<h2>Changes</h2>
+<p>We may update these terms. The current version is always on this page.</p>
+<p>Questions? <a href="/contact/">Contact us</a>.</p>`,
+    },
+    {
+      path: '/contact/', title: 'Contact Hackathon Tracker',
+      description: 'Contact Hackathon Tracker: report a wrong listing, suggest a hackathon we are missing, ask about the entry wall or advertising.',
+      h1: 'Contact us',
+      lede: 'Wrong listing, missing hackathon, or a question? Send it here.',
+      html: `<form class="filters subform" method="POST" action="https://formsubmit.co/info@eyetoad.com" accept-charset="UTF-8">
+  <input type="hidden" name="_subject" value="Hackathon Tracker: contact form">
+  <input type="hidden" name="_next" value="https://hackathontracker.com/contact/thanks/">
+  <input type="hidden" name="_template" value="table">
+  <label class="hp" aria-hidden="true">Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+  <div class="row">
+    <label><span>Your name</span><input type="text" name="name" required maxlength="80" placeholder="Your name" autocomplete="name"></label>
+    <label><span>Your email</span><input type="email" name="email" required maxlength="120" placeholder="you@example.com" autocomplete="email"></label>
+  </div>
+  <label class="full"><span>Topic</span><select name="topic"><option>Wrong or outdated listing</option><option>Suggest a hackathon</option><option>Entry wall</option><option>Advertising</option><option>Something else</option></select></label>
+  <label class="full"><span>Message</span><textarea name="message" required maxlength="3000" rows="6" placeholder="Include the hackathon name and link if it’s about a listing."></textarea></label>
+  <p><button class="btn" type="submit">Send message</button></p>
+  <p class="small">We use your email only to reply. See the <a href="/privacy/">Privacy Policy</a>.</p>
+</form>
+<h2>Prefer email?</h2>
+<p>Write to <span data-mail>our inbox (turn on JavaScript to see the address)</span>.</p>
+<h2>Suggesting a hackathon</h2>
+<p>Send the organizer’s official page. We add events by hand when the dates and prizes can be confirmed there, and the daily refresh keeps them current.</p>`,
     },
   ];
 }

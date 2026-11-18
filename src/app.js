@@ -1,4 +1,5 @@
 import { DEFAULTS, applyFilters, sortEvents, cardHTML, icsFor, money } from './shared.js';
+import { saved as store } from './site.js';
 
 const root = document.getElementById('finder');
 if (root) start();
@@ -26,10 +27,6 @@ async function start() {
     state[k] = BOOL.includes(k) ? v === '1' : NUM.includes(k) ? Number(v) || 0 : v.slice(0, 80);
   }
 
-  const store = {
-    get() { try { return new Set(JSON.parse(localStorage.getItem('ht.saved') || '[]')); } catch { return new Set(); } },
-    set(s) { try { localStorage.setItem('ht.saved', JSON.stringify([...s])); return true; } catch { return false; } },
-  };
   let saved = store.get();
   let events = [];
   let shown = PAGE;
@@ -62,14 +59,58 @@ async function start() {
     count.innerHTML = `<b>${current.length.toLocaleString('en-US')}</b> hackathon${current.length === 1 ? '' : 's'}${prize ? ` · <b>${money(prize)}</b> in listed prizes` : ''}`;
     if (!current.length) {
       results.innerHTML = state.saved && !saved.size
-        ? '<p class="empty">Your saved list is empty. Press “☆ Save” on any hackathon to keep it here.</p>'
-        : '<p class="empty">Nothing matches those filters. Try widening the deadline or prize, or clear the filters.</p>';
+        ? '<div class="empty"><b>Your list is empty.</b><p>Tap the ☆ on any hackathon to save it here. Then download your list as a calendar.</p></div>'
+        : '<div class="empty"><b>No hackathons match all of that.</b><p>Try a longer deadline, a smaller prize, or fewer filters.</p><p><button type="button" class="btn" data-clear>Clear all filters</button></p></div>';
     } else {
       results.innerHTML = current.slice(0, shown).map((e) => cardHTML(e, now, saved.has(e.id))).join('\n');
     }
     moreBtn.hidden = current.length <= shown;
     if (!moreBtn.hidden) moreBtn.textContent = `Show more (${(current.length - shown).toLocaleString('en-US')} left)`;
+    syncChips();
+    document.dispatchEvent(new Event('ht:render'));
   }
+
+  // Quick chips mirror the form controls, so phones get one-tap filters.
+  const chips = [...document.querySelectorAll('[data-chip]')];
+  const chipOn = (c) => { const [k, v] = c.dataset.chip.split('='); return v === undefined ? !!state[k] : String(state[k]) === v; };
+  function syncChips() {
+    for (const c of chips) c.setAttribute('aria-pressed', String(chipOn(c)));
+    const n = countActive();
+    const fc = document.getElementById('filterCount');
+    if (fc) { fc.textContent = n ? String(n) : ''; fc.hidden = !n; }
+    if (savedIcs) savedIcs.hidden = !saved.size;
+  }
+  function countActive() {
+    let n = 0;
+    for (const k of ['mode', 'minPrize', 'within', 'odds', 'source', 'hideStudent', 'beginner', 'ai', 'saved', 'place']) if (state[k] !== DEFAULTS[k]) n++;
+    return n + (state.near ? 1 : 0);
+  }
+  for (const c of chips) c.addEventListener('click', () => {
+    const [k, v] = c.dataset.chip.split('=');
+    if (v === undefined) state[k] = !state[k];
+    else state[k] = chipOn(c) ? DEFAULTS[k] : (typeof DEFAULTS[k] === 'number' ? Number(v) : v);
+    shown = PAGE; syncForm(); syncUrl(); render();
+  });
+
+  const toggle = document.getElementById('filterToggle');
+  const panel = document.getElementById('morePanel');
+  if (toggle && panel) toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    toggle.setAttribute('aria-expanded', String(open));
+    panel.classList.toggle('open', open);
+  });
+
+  // "My hackathons.ics": every saved event that has a date, as one calendar file.
+  const savedIcs = document.getElementById('savedIcs');
+  if (savedIcs) savedIcs.addEventListener('click', () => {
+    const list = events.filter((e) => saved.has(e.id) && e.end);
+    if (!list.length) { savedIcs.textContent = 'Save a hackathon first'; return; }
+    const url = URL.createObjectURL(new Blob([icsFor(list, 'My hackathons')], { type: 'text/calendar;charset=utf-8' }));
+    const a = Object.assign(document.createElement('a'), { href: url, download: 'My hackathons.ics' });
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+  });
+  document.addEventListener('ht:saved', () => { saved = store.get(); if (state.saved) render(); else syncChips(); });
 
   function readForm() {
     for (const el of form.elements) {
@@ -81,6 +122,7 @@ async function start() {
   let t;
   form.addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { readForm(); shown = PAGE; syncUrl(); render(); }, 120); });
   form.addEventListener('submit', (ev) => ev.preventDefault());
+  results.addEventListener('click', (ev) => { if (ev.target.closest('[data-clear]')) form.reset(); });
   form.addEventListener('reset', (ev) => {
     ev.preventDefault();
     Object.assign(state, base, { near: null });
@@ -110,31 +152,8 @@ async function start() {
     );
   });
 
-  results.addEventListener('click', (ev) => {
-    const s = ev.target.closest('[data-save]');
-    if (s) {
-      const id = s.dataset.save;
-      if (saved.has(id)) saved.delete(id); else saved.add(id);
-      const ok = store.set(saved);
-      const on = saved.has(id);
-      s.setAttribute('aria-pressed', String(on));
-      s.textContent = on ? '★ Saved' : '☆ Save';
-      if (!ok) s.title = 'Saved for this visit only (your browser is blocking storage).';
-      if (state.saved) render();
-      return;
-    }
-    const c = ev.target.closest('[data-ics]');
-    if (c) {
-      const e = events.find((x) => x.id === c.dataset.ics);
-      if (!e) return;
-      const url = URL.createObjectURL(new Blob([icsFor([e], e.title)], { type: 'text/calendar' }));
-      const a = Object.assign(document.createElement('a'), { href: url, download: 'hackathon-deadline.ics' });
-      document.body.appendChild(a); a.click(); a.remove();
-      setTimeout(() => URL.revokeObjectURL(url), 2000);
-    }
-  });
-
   syncForm();
+  syncChips();
   try {
     const res = await fetch(new URL('../data/events.json', import.meta.url));
     if (!res.ok) throw new Error(res.status);

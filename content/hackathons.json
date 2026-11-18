@@ -12,6 +12,19 @@
       "prizeUsd": 100000,
       "themes": ["startup", "saas", "solo", "profit"],
       "eligibility": "everyone"
+    },
+    {
+      "id": "ai-summit-new-york-hackathon-2026",
+      "title": "The AI Summit New York Hackathon",
+      "url": "https://newyork.theaisummit.com/hackathon/",
+      "organizer": "The AI Summit New York",
+      "start": "2026-12-09",
+      "end": "2026-12-10",
+      "mode": "in-person",
+      "city": "New York",
+      "region": "New York",
+      "country": "United States",
+      "themes": ["ai", "agentic ai", "computer vision", "apply first"]
     }
   ]
 }

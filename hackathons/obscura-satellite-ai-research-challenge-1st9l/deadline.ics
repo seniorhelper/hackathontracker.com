@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:OBSCURA: Satellite AI Research Challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:obscura-satellite-ai-research-challenge-1st9l@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Deadline: OBSCURA: Satellite AI Research Challenge
+DESCRIPTION:$50 in prizes\nOnline\nOfficial page: https://obscura.devpost.c
+ om/\nCheck the official rules for the exact closing time and time zone.\nD
+ etails: https://hackathontracker.com/hackathons/obscura-satellite-ai-resea
+ rch-challenge-1st9l/
+URL:https://obscura.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: OBSCURA: Satellite AI Research Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

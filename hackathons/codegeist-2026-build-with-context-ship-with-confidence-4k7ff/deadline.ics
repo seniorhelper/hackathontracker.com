@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Codegeist 2026: Build with context. Ship with confidence.
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codegeist-2026-build-with-context-ship-with-confidence-4k7ff@hackathont
+ racker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Deadline: Codegeist 2026: Build with context. Ship with confidence.
+DESCRIPTION:$120\,000 in prizes\nOnline\nOfficial page: https://codegeist20
+ 26.devpost.com/\nCheck the official rules for the exact closing time and t
+ ime zone.\nDetails: https://hackathontracker.com/hackathons/codegeist-2026
+ -build-with-context-ship-with-confidence-4k7ff/
+URL:https://codegeist2026.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Codegeist 2026: Build with context. Ship with conf
+ idence.
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

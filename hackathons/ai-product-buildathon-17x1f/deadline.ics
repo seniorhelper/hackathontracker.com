@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI Product Buildathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ai-product-buildathon-17x1f@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261121T172900Z
+DTEND:20261121T182900Z
+SUMMARY:Deadline: AI Product Buildathon
+DESCRIPTION:INR 150\,000\nOnline\nCloses Nov 21\, 2026\, 6:29 PM UTC\nOffic
+ ial page: https://unstop.com/hackathons/ai-product-buildathon-product-spac
+ e-1799475\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/ai-product-buildatho
+ n-17x1f/
+URL:https://unstop.com/hackathons/ai-product-buildathon-product-space-17994
+ 75
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AI Product Buildathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

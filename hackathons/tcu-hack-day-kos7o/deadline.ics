@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TCU Hack Day
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:tcu-hack-day-kos7o@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20270123T113000Z
+DTEND:20270123T123000Z
+SUMMARY:Deadline: TCU Hack Day
+DESCRIPTION:Delhi\, Delhi\, India + online\nCloses Jan 23\, 2027\, 12:30 PM
+  UTC\nOfficial page: https://unstop.com/hackathons/tcu-hack-day-technical-
+ community-universe-1763620\nCheck the official rules for the exact closing
+  time and time zone.\nDetails: https://hackathontracker.com/hackathons/tcu
+ -hack-day-kos7o/
+URL:https://unstop.com/hackathons/tcu-hack-day-technical-community-universe
+ -1763620
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: TCU Hack Day
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

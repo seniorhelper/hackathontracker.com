@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CircuitX
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:circuitx-1lv97@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261220T023000Z
+DTEND:20261220T033000Z
+SUMMARY:Deadline: CircuitX
+DESCRIPTION:INR 40\,000\nBangalore Urban\, Karnataka\, India\nCloses Dec 20
+ \, 2026\, 3:30 AM UTC\nOfficial page: https://unstop.com/hackathons/circui
+ tx-bms-institute-of-technology-and-management-bmsitm-bangalore-1811526\nCh
+ eck the official rules for the exact closing time and time zone.\nDetails:
+  https://hackathontracker.com/hackathons/circuitx-1lv97/
+URL:https://unstop.com/hackathons/circuitx-bms-institute-of-technology-and-
+ management-bmsitm-bangalore-1811526
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CircuitX
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

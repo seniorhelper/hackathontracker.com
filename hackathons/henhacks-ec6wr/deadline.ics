@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HenHacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:henhacks-ec6wr@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Deadline: HenHacks
+DESCRIPTION:Newark\, Delaware\, US\nOfficial page: https://www.mlh.com/even
+ ts/henhacks-30\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/henhacks-ec6wr/
+URL:https://www.mlh.com/events/henhacks-30
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HenHacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

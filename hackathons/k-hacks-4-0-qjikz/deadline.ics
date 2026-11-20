@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:K Hacks 4.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:k-hacks-4-0-qjikz@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261218T073000Z
+DTEND:20261218T083000Z
+SUMMARY:Deadline: K Hacks 4.0
+DESCRIPTION:INR 600\,000\nOnline\nCloses Dec 18\, 2026\, 8:30 AM UTC\nOffic
+ ial page: https://unstop.com/hackathons/k-hacks-40-anna-university-au-chen
+ nai-1772496\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/k-hacks-4-0-qjikz/
+URL:https://unstop.com/hackathons/k-hacks-40-anna-university-au-chennai-177
+ 2496
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: K Hacks 4.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

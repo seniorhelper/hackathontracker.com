@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodeDia 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codedia-2026-h3lsj@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261129T173000Z
+DTEND:20261129T183000Z
+SUMMARY:Deadline: CodeDia 2026
+DESCRIPTION:INR 10\,000\nOnline\nCloses Nov 29\, 2026\, 6:30 PM UTC\nOffici
+ al page: https://unstop.com/hackathons/code-dia-2026-lovely-professional-u
+ niversity-lpu-punjab-1798702\nCheck the official rules for the exact closi
+ ng time and time zone.\nDetails: https://hackathontracker.com/hackathons/c
+ odedia-2026-h3lsj/
+URL:https://unstop.com/hackathons/code-dia-2026-lovely-professional-univers
+ ity-lpu-punjab-1798702
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CodeDia 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

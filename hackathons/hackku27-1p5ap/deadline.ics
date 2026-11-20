@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackKU27
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackku27-1p5ap@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Deadline: HackKU27
+DESCRIPTION:Lawrence\, Kansas\, US\nOfficial page: https://www.mlh.com/even
+ ts/hackku27\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/hackku27-1p5ap/
+URL:https://www.mlh.com/events/hackku27
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackKU27
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

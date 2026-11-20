@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Zenith'26
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:zenith-26-1q6kd@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261204T070042Z
+DTEND:20261204T080042Z
+SUMMARY:Deadline: Zenith'26
+DESCRIPTION:INR 250\,000\nHyderabad\, Telangana\, India\nCloses Dec 4\, 202
+ 6\, 8:00 AM UTC\nOfficial page: https://unstop.com/hackathons/zenith26-mlr
+ -institute-of-technology-mlrit-hyderabad-1790028\nCheck the official rules
+  for the exact closing time and time zone.\nDetails: https://hackathontrac
+ ker.com/hackathons/zenith-26-1q6kd/
+URL:https://unstop.com/hackathons/zenith26-mlr-institute-of-technology-mlri
+ t-hyderabad-1790028
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Zenith'26
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

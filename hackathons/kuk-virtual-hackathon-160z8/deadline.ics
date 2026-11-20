@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KUK VIRTUAL HACKATHON
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:kuk-virtual-hackathon-160z8@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Deadline: KUK VIRTUAL HACKATHON
+DESCRIPTION:$800 in prizes\nOnline\nOfficial page: https://kuk-virtual-hack
+ athon.devpost.com/\nCheck the official rules for the exact closing time an
+ d time zone.\nDetails: https://hackathontracker.com/hackathons/kuk-virtual
+ -hackathon-160z8/
+URL:https://kuk-virtual-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: KUK VIRTUAL HACKATHON
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

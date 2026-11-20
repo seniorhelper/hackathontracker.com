@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Touch Some Grass
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:touch-some-grass-1v8kq@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270330T172900Z
+DTEND:20270330T182900Z
+SUMMARY:Deadline: Touch Some Grass
+DESCRIPTION:Chennai\, Tamil Nadu\, India\nCloses Mar 30\, 2027\, 6:29 PM UT
+ C\nOfficial page: https://touch-some-grass.devfolio.co/\nCheck the officia
+ l rules for the exact closing time and time zone.\nDetails: https://hackat
+ hontracker.com/hackathons/touch-some-grass-1v8kq/
+URL:https://touch-some-grass.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Touch Some Grass
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

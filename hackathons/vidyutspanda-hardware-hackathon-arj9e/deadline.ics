@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Vidyutspanda - Hardware Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:vidyutspanda-hardware-hackathon-arj9e@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261121T111602Z
+DTEND:20261121T121602Z
+SUMMARY:Deadline: Vidyutspanda - Hardware Hackathon
+DESCRIPTION:Bangalore\, Karnataka\, India\nCloses Nov 21\, 2026\, 12:16 PM 
+ UTC\nOfficial page: https://unstop.com/hackathons/vidyutspanda-hardware-ha
+ ckathon-dayananda-sagar-university-bengaluru-karnataka-1780955\nCheck the 
+ official rules for the exact closing time and time zone.\nDetails: https:/
+ /hackathontracker.com/hackathons/vidyutspanda-hardware-hackathon-arj9e/
+URL:https://unstop.com/hackathons/vidyutspanda-hardware-hackathon-dayananda
+ -sagar-university-bengaluru-karnataka-1780955
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Vidyutspanda - Hardware Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

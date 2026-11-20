@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Creator Economy Hack - powered by You.com
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:creator-economy-hack-powered-by-you-com-7vkiz@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Deadline: Creator Economy Hack - powered by You.com
+DESCRIPTION:$500 in prizes\nWhop HQ\nOfficial page: https://creator-economy
+ -you-hack.devpost.com/\nCheck the official rules for the exact closing tim
+ e and time zone.\nDetails: https://hackathontracker.com/hackathons/creator
+ -economy-hack-powered-by-you-com-7vkiz/
+URL:https://creator-economy-you-hack.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Creator Economy Hack - powered by You.com
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

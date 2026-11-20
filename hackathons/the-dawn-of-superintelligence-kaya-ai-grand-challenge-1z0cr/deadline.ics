@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Dawn of Superintelligence | Kaya AI Grand Challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:the-dawn-of-superintelligence-kaya-ai-grand-challenge-1z0cr@hackathontr
+ acker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Deadline: The Dawn of Superintelligence | Kaya AI Grand Challenge
+DESCRIPTION:$3\,000 in prizes\nMumbai\nOfficial page: https://kaya-ai-grand
+ -challenge.devpost.com/\nCheck the official rules for the exact closing ti
+ me and time zone.\nDetails: https://hackathontracker.com/hackathons/the-da
+ wn-of-superintelligence-kaya-ai-grand-challenge-1z0cr/
+URL:https://kaya-ai-grand-challenge.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: The Dawn of Superintelligence | Kaya AI Grand Chal
+ lenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

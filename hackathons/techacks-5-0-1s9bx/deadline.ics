@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Techacks 5.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:techacks-5-0-1s9bx@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270116T083000Z
+DTEND:20270116T093000Z
+SUMMARY:Deadline: Techacks 5.0
+DESCRIPTION:Rajpura\, Punjab\, India\nCloses Jan 16\, 2027\, 9:30 AM UTC\nO
+ fficial page: https://techacks05.devfolio.co/\nCheck the official rules fo
+ r the exact closing time and time zone.\nDetails: https://hackathontracker
+ .com/hackathons/techacks-5-0-1s9bx/
+URL:https://techacks05.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Techacks 5.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

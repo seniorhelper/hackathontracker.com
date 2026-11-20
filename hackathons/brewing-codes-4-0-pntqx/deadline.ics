@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Brewing Codes 4.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:brewing-codes-4-0-pntqx@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20280327
+DTEND;VALUE=DATE:20280328
+SUMMARY:Deadline: Brewing Codes 4.0
+DESCRIPTION:₹ 100\,000\nOnline\nOfficial page: https://brewing-codes-4-0.
+ devpost.com/\nCheck the official rules for the exact closing time and time
+  zone.\nDetails: https://hackathontracker.com/hackathons/brewing-codes-4-0
+ -pntqx/
+URL:https://brewing-codes-4-0.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Brewing Codes 4.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

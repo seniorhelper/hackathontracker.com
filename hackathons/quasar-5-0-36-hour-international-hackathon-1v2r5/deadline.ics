@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Quasar 5.0: 36-Hour International Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:quasar-5-0-36-hour-international-hackathon-1v2r5@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20270124T172900Z
+DTEND:20270124T182900Z
+SUMMARY:Deadline: Quasar 5.0: 36-Hour International Hackathon
+DESCRIPTION:INR 150\,000\nMumbai\, Maharashtra\, India\nCloses Jan 24\, 202
+ 7\, 6:29 PM UTC\nOfficial page: https://unstop.com/hackathons/quasar-50-36
+ -hour-international-hackathon-vasantdada-patil-pratishthans-college-of-eng
+ ineering-and-visual-art-1772406\nCheck the official rules for the exact cl
+ osing time and time zone.\nDetails: https://hackathontracker.com/hackathon
+ s/quasar-5-0-36-hour-international-hackathon-1v2r5/
+URL:https://unstop.com/hackathons/quasar-50-36-hour-international-hackathon
+ -vasantdada-patil-pratishthans-college-of-engineering-and-visual-art-17724
+ 06
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Quasar 5.0: 36-Hour International Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ELUCode - 8
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:elucode-8-1beiq@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261121T143051Z
+DTEND:20261121T153051Z
+SUMMARY:Deadline: ELUCode - 8
+DESCRIPTION:Online\nCloses Nov 21\, 2026\, 3:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/elucode-8-edulinkup-1800924\nCheck the official 
+ rules for the exact closing time and time zone.\nDetails: https://hackatho
+ ntracker.com/hackathons/elucode-8-1beiq/
+URL:https://unstop.com/hackathons/elucode-8-edulinkup-1800924
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: ELUCode - 8
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

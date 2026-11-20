@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack AI x Stan
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-ai-x-stan-2held@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Deadline: Hack AI x Stan
+DESCRIPTION:$CAD 25\,000\nStan HQ - Toronto\nOfficial page: https://hackai-
+ toronto.devpost.com/\nCheck the official rules for the exact closing time 
+ and time zone.\nDetails: https://hackathontracker.com/hackathons/hack-ai-x
+ -stan-2held/
+URL:https://hackai-toronto.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hack AI x Stan
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

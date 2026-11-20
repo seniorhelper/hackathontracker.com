@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Code Rush – 24 Hours Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:code-rush-24-hours-hackathon-1v68m@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261204T103100Z
+DTEND:20261204T113100Z
+SUMMARY:Deadline: Code Rush – 24 Hours Hackathon
+DESCRIPTION:Davanagere\, Karnataka\, India\nCloses Dec 4\, 2026\, 11:31 AM 
+ UTC\nOfficial page: https://unstop.com/hackathons/code-rush-24-hours-hacka
+ thon-ignitron-2k26-gm-university-davanagere-1791410\nCheck the official ru
+ les for the exact closing time and time zone.\nDetails: https://hackathont
+ racker.com/hackathons/code-rush-24-hours-hackathon-1v68m/
+URL:https://unstop.com/hackathons/code-rush-24-hours-hackathon-ignitron-2k2
+ 6-gm-university-davanagere-1791410
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Code Rush – 24 Hours Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

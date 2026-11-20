@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackTU 8.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hacktu-8-0-1odrs@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270207T033000Z
+DTEND:20270207T043000Z
+SUMMARY:Deadline: HackTU 8.0
+DESCRIPTION:Patiala\, Punjab\, India\nCloses Feb 7\, 2027\, 4:30 AM UTC\nOf
+ ficial page: https://hacktu-8.devfolio.co/\nCheck the official rules for t
+ he exact closing time and time zone.\nDetails: https://hackathontracker.co
+ m/hackathons/hacktu-8-0-1odrs/
+URL:https://hacktu-8.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackTU 8.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

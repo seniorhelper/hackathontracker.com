@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:305 Veterans Hackathon Edition November 2026 — 305Hackathons
+ .vercel.app
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:305-veterans-hackathon-edition-november-2026-305hackathons-v-tub1o@hack
+ athontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: 305 Veterans Hackathon Edition November 2026 — 305Hacka
+ thons.vercel.app
+DESCRIPTION:Online\nOfficial page: https://305veteransnov2026.devpost.com/\
+ nCheck the official rules for the exact closing time and time zone.\nDetai
+ ls: https://hackathontracker.com/hackathons/305-veterans-hackathon-edition
+ -november-2026-305hackathons-v-tub1o/
+URL:https://305veteransnov2026.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: 305 Veterans Hackathon Edition November 2026 — 3
+ 05Hackathons.vercel.app
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

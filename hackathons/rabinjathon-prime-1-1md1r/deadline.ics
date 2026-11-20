@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Rabinjathon: Prime 1
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:rabinjathon-prime-1-1md1r@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270204T173000Z
+DTEND:20270204T183000Z
+SUMMARY:Deadline: Rabinjathon: Prime 1
+DESCRIPTION:Online\nCloses Feb 4\, 2027\, 6:30 PM UTC\nOfficial page: https
+ ://unstop.com/hackathons/rabinjathon-prime-1-rabinja-squad-1761846\nCheck 
+ the official rules for the exact closing time and time zone.\nDetails: htt
+ ps://hackathontracker.com/hackathons/rabinjathon-prime-1-1md1r/
+URL:https://unstop.com/hackathons/rabinjathon-prime-1-rabinja-squad-1761846
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Rabinjathon: Prime 1
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

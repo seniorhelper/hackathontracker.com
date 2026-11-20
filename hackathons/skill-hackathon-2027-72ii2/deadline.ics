@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Skill Hackathon 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:skill-hackathon-2027-72ii2@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270223T140000Z
+DTEND:20270223T150000Z
+SUMMARY:Deadline: Skill Hackathon 2027
+DESCRIPTION:INR 300\,000\nIndore\, Madhya Pradesh\, India\nCloses Feb 23\, 
+ 2027\, 3:00 PM UTC\nOfficial page: https://unstop.com/hackathons/skill-hac
+ kathon-2027-symbiosis-skill-hackathon-20-ssh-2027-symbiosis-university-of-
+ applied-sciences-suas-indo-1770707\nCheck the official rules for the exact
+  closing time and time zone.\nDetails: https://hackathontracker.com/hackat
+ hons/skill-hackathon-2027-72ii2/
+URL:https://unstop.com/hackathons/skill-hackathon-2027-symbiosis-skill-hack
+ athon-20-ssh-2027-symbiosis-university-of-applied-sciences-suas-indo-17707
+ 07
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Skill Hackathon 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

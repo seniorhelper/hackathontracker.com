@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:StarForge : 24-Hour National Level Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:starforge-24-hour-national-level-hackathon-1frmx@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261213T033000Z
+DTEND:20261213T043000Z
+SUMMARY:Deadline: StarForge : 24-Hour National Level Hackathon
+DESCRIPTION:INR 65\,000\nBangalore\, Karnataka\, India\nCloses Dec 13\, 202
+ 6\, 4:30 AM UTC\nOfficial page: https://unstop.com/hackathons/starforge-24
+ -hour-hackathon-bms-institute-of-technology-and-management-bmsitm-bangalor
+ e-1773675\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/starforge-24-hour-na
+ tional-level-hackathon-1frmx/
+URL:https://unstop.com/hackathons/starforge-24-hour-hackathon-bms-institute
+ -of-technology-and-management-bmsitm-bangalore-1773675
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: StarForge : 24-Hour National Level Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

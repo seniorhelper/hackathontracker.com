@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HACK WITH GDG S4
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-with-gdg-s4-yk6i2@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270123T233000Z
+DTEND:20270124T003000Z
+SUMMARY:Deadline: HACK WITH GDG S4
+DESCRIPTION:KSR Kalvi Nagar\, Tamil Nadu\, India\nCloses Jan 24\, 2027\, 12
+ :30 AM UTC\nOfficial page: https://hack-with-gdg-s4.devfolio.co/\nCheck th
+ e official rules for the exact closing time and time zone.\nDetails: https
+ ://hackathontracker.com/hackathons/hack-with-gdg-s4-yk6i2/
+URL:https://hack-with-gdg-s4.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HACK WITH GDG S4
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Data Sprint Challenge 2.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:data-sprint-challenge-2-0-1l3f7@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261121T173000Z
+DTEND:20261121T183000Z
+SUMMARY:Deadline: Data Sprint Challenge 2.0
+DESCRIPTION:Online\nCloses Nov 21\, 2026\, 6:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/data-sprint-20-anveshan-nie-1807080\nCheck the o
+ fficial rules for the exact closing time and time zone.\nDetails: https://
+ hackathontracker.com/hackathons/data-sprint-challenge-2-0-1l3f7/
+URL:https://unstop.com/hackathons/data-sprint-20-anveshan-nie-1807080
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Data Sprint Challenge 2.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

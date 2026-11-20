@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Incursion 2027 24-Hour National Level Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:incursion-2027-24-hour-national-level-hackathon-1sm2m@hackathontracker.
+ com
+DTSTAMP:20261120T202018Z
+DTSTART:20270131T023004Z
+DTEND:20270131T033004Z
+SUMMARY:Deadline: Incursion 2027 24-Hour National Level Hackathon
+DESCRIPTION:INR 200\,000\nPune\, Maharashtra\, India + online\nCloses Jan 3
+ 1\, 2027\, 3:30 AM UTC\nOfficial page: https://unstop.com/hackathons/incur
+ sion-2027-24-hour-national-level-hackathon-dr-dy-patil-institute-of-techno
+ logy-1806016\nCheck the official rules for the exact closing time and time
+  zone.\nDetails: https://hackathontracker.com/hackathons/incursion-2027-24
+ -hour-national-level-hackathon-1sm2m/
+URL:https://unstop.com/hackathons/incursion-2027-24-hour-national-level-hac
+ kathon-dr-dy-patil-institute-of-technology-1806016
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Incursion 2027 24-Hour National Level Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

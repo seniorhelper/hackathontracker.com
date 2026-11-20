@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Winter of Code 6.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:winter-of-code-6-0-sl5f8@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270124T173000Z
+DTEND:20270124T183000Z
+SUMMARY:Deadline: Winter of Code 6.0
+DESCRIPTION:In person\nCloses Jan 24\, 2027\, 6:30 PM UTC\nOfficial page: h
+ ttps://woc6.devfolio.co/\nCheck the official rules for the exact closing t
+ ime and time zone.\nDetails: https://hackathontracker.com/hackathons/winte
+ r-of-code-6-0-sl5f8/
+URL:https://woc6.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Winter of Code 6.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

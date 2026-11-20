@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CODERED'26
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codered-26-1igyf@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261229T100000Z
+DTEND:20261229T110000Z
+SUMMARY:Deadline: CODERED'26
+DESCRIPTION:INR 230\,000\nYelahanka\, Karnataka\, India + online\nCloses De
+ c 29\, 2026\, 11:00 AM UTC\nOfficial page: https://unstop.com/hackathons/c
+ odered26-bms-insitute-of-technology-and-management-1810268\nCheck the offi
+ cial rules for the exact closing time and time zone.\nDetails: https://hac
+ kathontracker.com/hackathons/codered-26-1igyf/
+URL:https://unstop.com/hackathons/codered26-bms-insitute-of-technology-and-
+ management-1810268
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CODERED'26
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

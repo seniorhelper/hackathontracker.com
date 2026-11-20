@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Build with Gemma - Innovate in Windsor
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:build-with-gemma-innovate-in-windsor-1c1pu@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Deadline: Build with Gemma - Innovate in Windsor
+DESCRIPTION:University of Windsor\nOfficial page: https://innovate-in-winds
+ or-hackathon.devpost.com/\nCheck the official rules for the exact closing 
+ time and time zone.\nDetails: https://hackathontracker.com/hackathons/buil
+ d-with-gemma-innovate-in-windsor-1c1pu/
+URL:https://innovate-in-windsor-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Build with Gemma - Innovate in Windsor
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

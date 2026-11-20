@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:hack::peel 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-peel-2026-1if1m@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Deadline: hack::peel 2026
+DESCRIPTION:$CAD 100\nThe Woodlands Secondary School\nOfficial page: https:
+ //hack-peel.devpost.com/\nCheck the official rules for the exact closing t
+ ime and time zone.\nDetails: https://hackathontracker.com/hackathons/hack-
+ peel-2026-1if1m/
+URL:https://hack-peel.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: hack::peel 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

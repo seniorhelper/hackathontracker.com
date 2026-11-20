@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Craft N Code Tamil Nadu
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:craft-n-code-tamil-nadu-i816m@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270206T093000Z
+DTEND:20270206T103000Z
+SUMMARY:Deadline: Craft N Code Tamil Nadu
+DESCRIPTION:INR 50\,000\nOnline\nCloses Feb 6\, 2027\, 10:30 AM UTC\nOffici
+ al page: https://unstop.com/hackathons/craft-n-code-tamil-nadu-d3-2026-tec
+ h-fest-iiit-bhubaneswar-international-institute-of-information-technology-
+ -1746234\nCheck the official rules for the exact closing time and time zon
+ e.\nDetails: https://hackathontracker.com/hackathons/craft-n-code-tamil-na
+ du-i816m/
+URL:https://unstop.com/hackathons/craft-n-code-tamil-nadu-d3-2026-tech-fest
+ -iiit-bhubaneswar-international-institute-of-information-technology--17462
+ 34
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Craft N Code Tamil Nadu
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

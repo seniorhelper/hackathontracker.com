@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Prompt War & Syntax Squad
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:prompt-war-syntax-squad-ze7iv@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261209T070000Z
+DTEND:20261209T080000Z
+SUMMARY:Deadline: Prompt War & Syntax Squad
+DESCRIPTION:INR 30\,000\nOnline\nCloses Dec 9\, 2026\, 8:00 AM UTC\nOfficia
+ l page: https://unstop.com/hackathons/prompt-war-syntax-squad-padmabhoosha
+ n-vasantdada-patil-institute-of-technology-pvpit-pune-1818490\nCheck the o
+ fficial rules for the exact closing time and time zone.\nDetails: https://
+ hackathontracker.com/hackathons/prompt-war-syntax-squad-ze7iv/
+URL:https://unstop.com/hackathons/prompt-war-syntax-squad-padmabhooshan-vas
+ antdada-patil-institute-of-technology-pvpit-pune-1818490
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Prompt War & Syntax Squad
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

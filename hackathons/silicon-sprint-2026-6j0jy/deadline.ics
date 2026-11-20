@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Silicon Sprint 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:silicon-sprint-2026-6j0jy@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261128T103000Z
+DTEND:20261128T113000Z
+SUMMARY:Deadline: Silicon Sprint 2026
+DESCRIPTION:INR 100\,000\nOnline\nCloses Nov 28\, 2026\, 11:30 AM UTC\nOffi
+ cial page: https://unstop.com/hackathons/silicon-sprint-2026-nitk-surathka
+ l-1814263\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/silicon-sprint-2026-
+ 6j0jy/
+URL:https://unstop.com/hackathons/silicon-sprint-2026-nitk-surathkal-181426
+ 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Silicon Sprint 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

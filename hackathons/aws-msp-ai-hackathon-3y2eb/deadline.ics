@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AWS MSP AI Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:aws-msp-ai-hackathon-3y2eb@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Deadline: AWS MSP AI Hackathon
+DESCRIPTION:$64\,000 in prizes\nOnline\nOfficial page: https://aws-agentic-
+ msp.devpost.com/\nCheck the official rules for the exact closing time and 
+ time zone.\nDetails: https://hackathontracker.com/hackathons/aws-msp-ai-ha
+ ckathon-3y2eb/
+URL:https://aws-agentic-msp.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AWS MSP AI Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kent Hack Enough
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:kent-hack-enough-1n5gn@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Deadline: Kent Hack Enough
+DESCRIPTION:Kent\, Ohio\, US\nOfficial page: https://www.mlh.com/events/ken
+ t-hack-enough-8e\nCheck the official rules for the exact closing time and 
+ time zone.\nDetails: https://hackathontracker.com/hackathons/kent-hack-eno
+ ugh-1n5gn/
+URL:https://www.mlh.com/events/kent-hack-enough-8e
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Kent Hack Enough
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

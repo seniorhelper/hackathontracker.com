@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackignite 1.0 – 24 Hours National Level Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackignite-1-0-24-hours-national-level-hackathon-hoa2u@hackathontracker
+ .com
+DTSTAMP:20261120T202018Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:Deadline: Hackignite 1.0 – 24 Hours National Level Hackathon
+DESCRIPTION:Hubballi\, Karnataka\, India\nCloses Nov 30\, 2026\, 1:00 AM UT
+ C\nOfficial page: https://unstop.com/hackathons/hackignite-10-24-hours-nat
+ ional-level-hackathon-jain-college-of-engineering-technology-hubballi-1801
+ 378\nCheck the official rules for the exact closing time and time zone.\nD
+ etails: https://hackathontracker.com/hackathons/hackignite-1-0-24-hours-na
+ tional-level-hackathon-hoa2u/
+URL:https://unstop.com/hackathons/hackignite-10-24-hours-national-level-hac
+ kathon-jain-college-of-engineering-technology-hubballi-1801378
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hackignite 1.0 – 24 Hours National Level Hackath
+ on
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

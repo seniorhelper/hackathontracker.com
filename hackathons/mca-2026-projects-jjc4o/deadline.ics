@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MCA 2026 projects
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:mca-2026-projects-jjc4o@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:Deadline: MCA 2026 projects
+DESCRIPTION:Online\nOfficial page: https://mca-2026-projects.devpost.com/\n
+ Check the official rules for the exact closing time and time zone.\nDetail
+ s: https://hackathontracker.com/hackathons/mca-2026-projects-jjc4o/
+URL:https://mca-2026-projects.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: MCA 2026 projects
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

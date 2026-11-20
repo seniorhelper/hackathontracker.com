@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:QuikCPQ AI Innovation Challenge 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:quikcpq-ai-innovation-challenge-2027-nm4ll@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261127T105800Z
+DTEND:20261127T115800Z
+SUMMARY:Deadline: QuikCPQ AI Innovation Challenge 2027
+DESCRIPTION:Online\nCloses Nov 27\, 2026\, 11:58 AM UTC\nOfficial page: htt
+ ps://unstop.com/hackathons/quikcpq-ai-innovation-challenge-2027-quik-cpq-s
+ olutions-llp-1806984\nCheck the official rules for the exact closing time 
+ and time zone.\nDetails: https://hackathontracker.com/hackathons/quikcpq-a
+ i-innovation-challenge-2027-nm4ll/
+URL:https://unstop.com/hackathons/quikcpq-ai-innovation-challenge-2027-quik
+ -cpq-solutions-llp-1806984
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: QuikCPQ AI Innovation Challenge 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

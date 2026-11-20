@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hovermania | TECHKRITI | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hovermania-techkriti-iit-kanpur-ezi3v@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261231T071846Z
+DTEND:20261231T081846Z
+SUMMARY:Deadline: Hovermania | TECHKRITI | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 8:18 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/hovermania-techkriti2
+ 7-techkriti-1764460\nCheck the official rules for the exact closing time a
+ nd time zone.\nDetails: https://hackathontracker.com/hackathons/hovermania
+ -techkriti-iit-kanpur-ezi3v/
+URL:https://unstop.com/hackathons/hovermania-techkriti27-techkriti-1764460
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hovermania | TECHKRITI | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

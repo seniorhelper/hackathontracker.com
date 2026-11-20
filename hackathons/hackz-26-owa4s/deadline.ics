@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackZ'26
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackz-26-owa4s@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270130T053000Z
+DTEND:20270130T063000Z
+SUMMARY:Deadline: HackZ'26
+DESCRIPTION:INR 183\,000\nOnline\nCloses Jan 30\, 2027\, 6:30 AM UTC\nOffic
+ ial page: https://unstop.com/hackathons/hackz26-computer-science-and-engin
+ eering-association-csea-ceg-anna-university-1776729\nCheck the official ru
+ les for the exact closing time and time zone.\nDetails: https://hackathont
+ racker.com/hackathons/hackz-26-owa4s/
+URL:https://unstop.com/hackathons/hackz26-computer-science-and-engineering-
+ association-csea-ceg-anna-university-1776729
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackZ'26
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

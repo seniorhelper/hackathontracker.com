@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ETHGlobal Tokyo 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ethglobal-tokyo-2027-1d62z@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270826
+SUMMARY:Deadline: ETHGlobal Tokyo 2027
+DESCRIPTION:Tokyo\, Japan\nOfficial page: https://ethglobal.com/events/toky
+ o2027\nCheck the official rules for the exact closing time and time zone.\
+ nDetails: https://hackathontracker.com/hackathons/ethglobal-tokyo-2027-1d6
+ 2z/
+URL:https://ethglobal.com/events/tokyo2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: ETHGlobal Tokyo 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

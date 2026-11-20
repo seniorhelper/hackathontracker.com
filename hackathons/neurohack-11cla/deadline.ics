@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:NeuroHack
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:neurohack-11cla@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270106T063100Z
+DTEND:20270106T073100Z
+SUMMARY:Deadline: NeuroHack
+DESCRIPTION:INR 80\,000\nChennai\, Tamil Nadu\, India + online\nCloses Jan 
+ 6\, 2027\, 7:31 AM UTC\nOfficial page: https://unstop.com/hackathons/neuro
+ hack-2027-iit-madras-1781449\nCheck the official rules for the exact closi
+ ng time and time zone.\nDetails: https://hackathontracker.com/hackathons/n
+ eurohack-11cla/
+URL:https://unstop.com/hackathons/neurohack-2027-iit-madras-1781449
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: NeuroHack
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

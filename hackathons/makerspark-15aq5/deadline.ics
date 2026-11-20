@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MakerSpark
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:makerspark-15aq5@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261209T103000Z
+DTEND:20261209T113000Z
+SUMMARY:Deadline: MakerSpark
+DESCRIPTION:Thiruvananthapuram\, Keralam\, India\nCloses Dec 9\, 2026\, 11:
+ 30 AM UTC\nOfficial page: https://makerspark.devfolio.co/\nCheck the offic
+ ial rules for the exact closing time and time zone.\nDetails: https://hack
+ athontracker.com/hackathons/makerspark-15aq5/
+URL:https://makerspark.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: MakerSpark
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

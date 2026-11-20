@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HACK2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack2027-1t5pe@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270221T033000Z
+DTEND:20270221T043000Z
+SUMMARY:Deadline: HACK2027
+DESCRIPTION:Chennai\, Tamil Nadu\, India\nCloses Feb 21\, 2027\, 4:30 AM UT
+ C\nOfficial page: https://hack2027.devfolio.co/\nCheck the official rules 
+ for the exact closing time and time zone.\nDetails: https://hackathontrack
+ er.com/hackathons/hack2027-1t5pe/
+URL:https://hack2027.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HACK2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

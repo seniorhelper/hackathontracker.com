@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Teens Hack Houston
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:teens-hack-houston-j1u57@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Deadline: Teens Hack Houston
+DESCRIPTION:Houston\, Texas\, United States + online\nOfficial page: https:
+ //tripleh.space/\nCheck the official rules for the exact closing time and 
+ time zone.\nDetails: https://hackathontracker.com/hackathons/teens-hack-ho
+ uston-j1u57/
+URL:https://tripleh.space/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Teens Hack Houston
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

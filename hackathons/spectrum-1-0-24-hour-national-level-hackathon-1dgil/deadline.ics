@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Spectrum 1.0 – 24 Hour National Level Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:spectrum-1-0-24-hour-national-level-hackathon-1dgil@hackathontracker.co
+ m
+DTSTAMP:20261120T202018Z
+DTSTART:20261206T023246Z
+DTEND:20261206T033246Z
+SUMMARY:Deadline: Spectrum 1.0 – 24 Hour National Level Hackathon
+DESCRIPTION:INR 40\,000\nBidar\, Karnataka\, India\nCloses Dec 6\, 2026\, 3
+ :32 AM UTC\nOfficial page: https://unstop.com/hackathons/spectrum-10-24-ho
+ ur-national-level-hackathon-guru-nanak-dev-engineering-college-bidar-18123
+ 68\nCheck the official rules for the exact closing time and time zone.\nDe
+ tails: https://hackathontracker.com/hackathons/spectrum-1-0-24-hour-nation
+ al-level-hackathon-1dgil/
+URL:https://unstop.com/hackathons/spectrum-10-24-hour-national-level-hackat
+ hon-guru-nanak-dev-engineering-college-bidar-1812368
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Spectrum 1.0 – 24 Hour National Level Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

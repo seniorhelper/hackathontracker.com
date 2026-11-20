@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodeWarriors India 2026 - National Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codewarriors-india-2026-national-hackathon-g40vw@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261213T032044Z
+DTEND:20261213T042044Z
+SUMMARY:Deadline: CodeWarriors India 2026 - National Hackathon
+DESCRIPTION:Online\nCloses Dec 13\, 2026\, 4:20 AM UTC\nOfficial page: http
+ s://unstop.com/hackathons/codewarriors-india-2026-national-hackathon-build
+ x-1817737\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/codewarriors-india-2
+ 026-national-hackathon-g40vw/
+URL:https://unstop.com/hackathons/codewarriors-india-2026-national-hackatho
+ n-buildx-1817737
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CodeWarriors India 2026 - National Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

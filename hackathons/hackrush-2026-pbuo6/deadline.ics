@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackrush 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackrush-2026-pbuo6@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261230T093000Z
+DTEND:20261230T103000Z
+SUMMARY:Deadline: Hackrush 2026
+DESCRIPTION:Online\nCloses Dec 30\, 2026\, 10:30 AM UTC\nOfficial page: htt
+ ps://unstop.com/hackathons/hackrush-2026-igdtuw-delhi-1799179\nCheck the o
+ fficial rules for the exact closing time and time zone.\nDetails: https://
+ hackathontracker.com/hackathons/hackrush-2026-pbuo6/
+URL:https://unstop.com/hackathons/hackrush-2026-igdtuw-delhi-1799179
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hackrush 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

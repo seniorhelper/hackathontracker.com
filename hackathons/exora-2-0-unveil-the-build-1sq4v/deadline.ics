@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Exora 2.0: Unveil The Build
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:exora-2-0-unveil-the-build-1sq4v@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261128T133000Z
+DTEND:20261128T143000Z
+SUMMARY:Deadline: Exora 2.0: Unveil The Build
+DESCRIPTION:Gurgaon\, Haryana\, India + online\nCloses Nov 28\, 2026\, 2:30
+  PM UTC\nOfficial page: https://unstop.com/hackathons/exora-20-unveil-the-
+ build-abes-engineering-college-1799143\nCheck the official rules for the e
+ xact closing time and time zone.\nDetails: https://hackathontracker.com/ha
+ ckathons/exora-2-0-unveil-the-build-1sq4v/
+URL:https://unstop.com/hackathons/exora-20-unveil-the-build-abes-engineerin
+ g-college-1799143
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Exora 2.0: Unveil The Build
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

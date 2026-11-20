@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Learn AR with SPECS
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:learn-ar-with-specs-10vg6@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: Learn AR with SPECS
+DESCRIPTION:$2\,500 in prizes\nOnline\nOfficial page: https://learn-specs.d
+ evpost.com/\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/learn-ar-with-spec
+ s-10vg6/
+URL:https://learn-specs.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Learn AR with SPECS
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

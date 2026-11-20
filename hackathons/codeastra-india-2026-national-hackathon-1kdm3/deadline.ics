@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodeAstra India 2026 – National Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codeastra-india-2026-national-hackathon-1kdm3@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261214T033020Z
+DTEND:20261214T043020Z
+SUMMARY:Deadline: CodeAstra India 2026 – National Hackathon
+DESCRIPTION:Online\nCloses Dec 14\, 2026\, 4:30 AM UTC\nOfficial page: http
+ s://unstop.com/hackathons/codeastra-india-2026-national-hackathon-wecodeco
+ ders-1791313\nCheck the official rules for the exact closing time and time
+  zone.\nDetails: https://hackathontracker.com/hackathons/codeastra-india-2
+ 026-national-hackathon-1kdm3/
+URL:https://unstop.com/hackathons/codeastra-india-2026-national-hackathon-w
+ ecodecoders-1791313
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CodeAstra India 2026 – National Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

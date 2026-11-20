@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Defy'27
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:defy-27-1sg1o@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261215T172900Z
+DTEND:20261215T182900Z
+SUMMARY:Deadline: Defy'27
+DESCRIPTION:INR 100\,000\nChennai\, Tamil Nadu\, India + online\nCloses Dec
+  15\, 2026\, 6:29 PM UTC\nOfficial page: https://unstop.com/hackathons/def
+ y27-vellore-institute-of-technology-vit-chennai-1806122\nCheck the officia
+ l rules for the exact closing time and time zone.\nDetails: https://hackat
+ hontracker.com/hackathons/defy-27-1sg1o/
+URL:https://unstop.com/hackathons/defy27-vellore-institute-of-technology-vi
+ t-chennai-1806122
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Defy'27
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Nerdearla Vibeathon by Devin
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:nerdearla-vibeathon-by-devin-27bu6@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Deadline: Nerdearla Vibeathon by Devin
+DESCRIPTION:Amazon CDMX (Puerta Polanco)\nOfficial page: https://vibeathon-
+ mexico-2026.devpost.com/\nCheck the official rules for the exact closing t
+ ime and time zone.\nDetails: https://hackathontracker.com/hackathons/nerde
+ arla-vibeathon-by-devin-27bu6/
+URL:https://vibeathon-mexico-2026.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Nerdearla Vibeathon by Devin
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

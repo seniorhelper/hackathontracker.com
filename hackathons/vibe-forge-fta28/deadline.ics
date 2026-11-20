@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Vibe Forge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:vibe-forge-fta28@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261125T040000Z
+DTEND:20261125T050000Z
+SUMMARY:Deadline: Vibe Forge
+DESCRIPTION:INR 15\,000\nJaipur\, Rajasthan\, India\nCloses Nov 25\, 2026\,
+  5:00 AM UTC\nOfficial page: https://unstop.com/hackathons/vibe-forge-nims
+ -university-nu-jaipur-1772221\nCheck the official rules for the exact clos
+ ing time and time zone.\nDetails: https://hackathontracker.com/hackathons/
+ vibe-forge-fta28/
+URL:https://unstop.com/hackathons/vibe-forge-nims-university-nu-jaipur-1772
+ 221
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Vibe Forge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

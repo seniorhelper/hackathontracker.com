@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CTF - Capture The Flag
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ctf-capture-the-flag-138t2@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270106T091700Z
+DTEND:20270106T101700Z
+SUMMARY:Deadline: CTF - Capture The Flag
+DESCRIPTION:INR 70\,000\nOnline\nCloses Jan 6\, 2027\, 10:17 AM UTC\nOffici
+ al page: https://unstop.com/hackathons/ctf-capture-the-flag-iit-madras-178
+ 2683\nCheck the official rules for the exact closing time and time zone.\n
+ Details: https://hackathontracker.com/hackathons/ctf-capture-the-flag-138t
+ 2/
+URL:https://unstop.com/hackathons/ctf-capture-the-flag-iit-madras-1782683
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CTF - Capture The Flag
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

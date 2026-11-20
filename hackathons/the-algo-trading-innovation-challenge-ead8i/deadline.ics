@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Algo Trading Innovation Challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:the-algo-trading-innovation-challenge-ead8i@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261128T173000Z
+DTEND:20261128T183000Z
+SUMMARY:Deadline: The Algo Trading Innovation Challenge
+DESCRIPTION:INR 50\,000\nPowai\, Maharashtra\, India\nCloses Nov 28\, 2026\
+ , 6:30 PM UTC\nOfficial page: https://unstop.com/hackathons/the-algo-tradi
+ ng-innovation-challenge-iit-bombay-1811240\nCheck the official rules for t
+ he exact closing time and time zone.\nDetails: https://hackathontracker.co
+ m/hackathons/the-algo-trading-innovation-challenge-ead8i/
+URL:https://unstop.com/hackathons/the-algo-trading-innovation-challenge-iit
+ -bombay-1811240
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: The Algo Trading Innovation Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Seed Hackathon 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:seed-hackathon-2026-1qtua@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261222T172940Z
+DTEND:20261222T182940Z
+SUMMARY:Deadline: Seed Hackathon 2026
+DESCRIPTION:INR 100\,000\nOnline\nCloses Dec 22\, 2026\, 6:29 PM UTC\nOffic
+ ial page: https://unstop.com/hackathons/crp-seed-hackathon-2026-seed-globa
+ l-education-services-private-limited-1798287\nCheck the official rules for
+  the exact closing time and time zone.\nDetails: https://hackathontracker.
+ com/hackathons/seed-hackathon-2026-1qtua/
+URL:https://unstop.com/hackathons/crp-seed-hackathon-2026-seed-global-educa
+ tion-services-private-limited-1798287
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Seed Hackathon 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

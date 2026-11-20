@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Goblet of Codes
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:goblet-of-codes-1ivur@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261124T172900Z
+DTEND:20261124T182900Z
+SUMMARY:Deadline: Goblet of Codes
+DESCRIPTION:Bhilai\, Chhattisgarh\, India\nCloses Nov 24\, 2026\, 6:29 PM U
+ TC\nOfficial page: https://unstop.com/hackathons/goblet-of-codes-kaushalya
+ -20-chhattisgarh-swami-vivekanand-technical-university-csvtu-bhilai-chhatt
+ isgarh-1798470\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/goblet-of-codes
+ -1ivur/
+URL:https://unstop.com/hackathons/goblet-of-codes-kaushalya-20-chhattisgarh
+ -swami-vivekanand-technical-university-csvtu-bhilai-chhattisgarh-1798470
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Goblet of Codes
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Forge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:the-forge-17h37@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270112T020900Z
+DTEND:20270112T030900Z
+SUMMARY:Deadline: The Forge
+DESCRIPTION:INR 5\,000\nDelhi\, Delhi\, India\nCloses Jan 12\, 2027\, 3:09 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/the-forge-hoollow-178
+ 7722\nCheck the official rules for the exact closing time and time zone.\n
+ Details: https://hackathontracker.com/hackathons/the-forge-17h37/
+URL:https://unstop.com/hackathons/the-forge-hoollow-1787722
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: The Forge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

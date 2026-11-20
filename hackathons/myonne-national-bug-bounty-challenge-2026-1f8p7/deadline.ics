@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MyOnne National Bug Bounty Challenge 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:myonne-national-bug-bounty-challenge-2026-1f8p7@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261128T110000Z
+DTEND:20261128T120000Z
+SUMMARY:Deadline: MyOnne National Bug Bounty Challenge 2026
+DESCRIPTION:INR 300\,000\nOnline\nCloses Nov 28\, 2026\, 12:00 PM UTC\nOffi
+ cial page: https://unstop.com/hackathons/myonne-national-bug-bounty-challe
+ nge-2026-myonne-amora-private-limited-1817686\nCheck the official rules fo
+ r the exact closing time and time zone.\nDetails: https://hackathontracker
+ .com/hackathons/myonne-national-bug-bounty-challenge-2026-1f8p7/
+URL:https://unstop.com/hackathons/myonne-national-bug-bounty-challenge-2026
+ -myonne-amora-private-limited-1817686
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: MyOnne National Bug Bounty Challenge 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

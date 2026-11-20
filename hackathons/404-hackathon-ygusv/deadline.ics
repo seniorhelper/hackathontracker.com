@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:404 Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:404-hackathon-ygusv@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261130T104700Z
+DTEND:20261130T114700Z
+SUMMARY:Deadline: 404 Hackathon
+DESCRIPTION:INR 1\,085\,000\nOnline\nCloses Nov 30\, 2026\, 11:47 AM UTC\nO
+ fficial page: https://unstop.com/hackathons/404-hackathon-hax-baby-1793392
+ \nCheck the official rules for the exact closing time and time zone.\nDeta
+ ils: https://hackathontracker.com/hackathons/404-hackathon-ygusv/
+URL:https://unstop.com/hackathons/404-hackathon-hax-baby-1793392
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: 404 Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

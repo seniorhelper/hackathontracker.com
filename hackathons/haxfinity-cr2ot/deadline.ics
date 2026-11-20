@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:haxfinity
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:haxfinity-cr2ot@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270104T040000Z
+DTEND:20270104T050000Z
+SUMMARY:Deadline: haxfinity
+DESCRIPTION:Myladi\, Kerala\, India\nCloses Jan 4\, 2027\, 5:00 AM UTC\nOff
+ icial page: https://haxfinity.devfolio.co/\nCheck the official rules for t
+ he exact closing time and time zone.\nDetails: https://hackathontracker.co
+ m/hackathons/haxfinity-cr2ot/
+URL:https://haxfinity.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: haxfinity
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Free AWS Courses & Certifications for Students – NASSCOM Ini
+ tiative
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:free-aws-courses-certifications-for-students-nasscom-initiat-169vk@hack
+ athontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Deadline: Free AWS Courses & Certifications for Students – NASSCO
+ M Initiative
+DESCRIPTION:REMOTE\nOfficial page: https://free-aws-courses.devpost.com/\nC
+ heck the official rules for the exact closing time and time zone.\nDetails
+ : https://hackathontracker.com/hackathons/free-aws-courses-certifications-
+ for-students-nasscom-initiat-169vk/
+URL:https://free-aws-courses.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Free AWS Courses & Certifications for Students –
+  NASSCOM Initiative
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

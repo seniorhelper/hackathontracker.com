@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Drone Soccer | TECHKRITI | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:drone-soccer-techkriti-iit-kanpur-gnm10@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261231T064528Z
+DTEND:20261231T074528Z
+SUMMARY:Deadline: Drone Soccer | TECHKRITI | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 7:45 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/drone-soccer-techkrit
+ i27-techkriti-1764446\nCheck the official rules for the exact closing time
+  and time zone.\nDetails: https://hackathontracker.com/hackathons/drone-so
+ ccer-techkriti-iit-kanpur-gnm10/
+URL:https://unstop.com/hackathons/drone-soccer-techkriti27-techkriti-176444
+ 6
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Drone Soccer | TECHKRITI | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

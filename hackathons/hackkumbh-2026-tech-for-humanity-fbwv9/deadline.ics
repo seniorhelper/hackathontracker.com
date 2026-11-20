@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackKumbh 2026 : Tech For Humanity
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackkumbh-2026-tech-for-humanity-fbwv9@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261219T033000Z
+DTEND:20261219T043000Z
+SUMMARY:Deadline: HackKumbh 2026 : Tech For Humanity
+DESCRIPTION:INR 225\,000\nNagpur\, Maharashtra\, India\nCloses Dec 19\, 202
+ 6\, 4:30 AM UTC\nOfficial page: https://unstop.com/hackathons/hackkumbh-20
+ 26-tech-for-humanity-yeshwantrao-chavan-college-of-engineering-ycce-nagpur
+ -1800629\nCheck the official rules for the exact closing time and time zon
+ e.\nDetails: https://hackathontracker.com/hackathons/hackkumbh-2026-tech-f
+ or-humanity-fbwv9/
+URL:https://unstop.com/hackathons/hackkumbh-2026-tech-for-humanity-yeshwant
+ rao-chavan-college-of-engineering-ycce-nagpur-1800629
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackKumbh 2026 : Tech For Humanity
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Code to Cart: AI x E-commerce Hackathon | KartAI X CodeXcelera
+ te
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:code-to-cart-ai-x-e-commerce-hackathon-kartai-x-codexcelerat-1x9zz@hack
+ athontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261129T172900Z
+DTEND:20261129T182900Z
+SUMMARY:Deadline: Code to Cart: AI x E-commerce Hackathon | KartAI X CodeXc
+ elerate
+DESCRIPTION:INR 8\,000\nOnline\nCloses Nov 29\, 2026\, 6:29 PM UTC\nOfficia
+ l page: https://unstop.com/hackathons/code-to-cart-ai-x-e-commerce-hackath
+ on-kartai-x-codexcelerate-kartai-1803912\nCheck the official rules for the
+  exact closing time and time zone.\nDetails: https://hackathontracker.com/
+ hackathons/code-to-cart-ai-x-e-commerce-hackathon-kartai-x-codexcelerat-1x
+ 9zz/
+URL:https://unstop.com/hackathons/code-to-cart-ai-x-e-commerce-hackathon-ka
+ rtai-x-codexcelerate-kartai-1803912
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Code to Cart: AI x E-commerce Hackathon | KartAI X
+  CodeXcelerate
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

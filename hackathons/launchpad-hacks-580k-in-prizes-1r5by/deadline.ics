@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:LaunchPad Hacks (580k In Prizes!)
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:launchpad-hacks-580k-in-prizes-1r5by@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Deadline: LaunchPad Hacks (580k In Prizes!)
+DESCRIPTION:$300 in prizes\nOnline\nOfficial page: https://launchpad-hacks.
+ devpost.com/\nCheck the official rules for the exact closing time and time
+  zone.\nDetails: https://hackathontracker.com/hackathons/launchpad-hacks-5
+ 80k-in-prizes-1r5by/
+URL:https://launchpad-hacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: LaunchPad Hacks (580k In Prizes!)
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:DevNetwork [API + Cloud + AI] Hackathon 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:devnetwork-api-cloud-ai-hackathon-2027-26qpl@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270910
+DTEND;VALUE=DATE:20270911
+SUMMARY:Deadline: DevNetwork [API + Cloud + AI] Hackathon 2027
+DESCRIPTION:$12\,500 in prizes\nSanta Clara Convention Center and Online\nO
+ fficial page: https://devnetwork-api-hackathon-2027.devpost.com/\nCheck th
+ e official rules for the exact closing time and time zone.\nDetails: https
+ ://hackathontracker.com/hackathons/devnetwork-api-cloud-ai-hackathon-2027-
+ 26qpl/
+URL:https://devnetwork-api-hackathon-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: DevNetwork [API + Cloud + AI] Hackathon 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

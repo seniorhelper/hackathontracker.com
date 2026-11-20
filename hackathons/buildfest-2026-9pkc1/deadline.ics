@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Buildfest 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:buildfest-2026-9pkc1@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261230T111600Z
+DTEND:20261230T121600Z
+SUMMARY:Deadline: Buildfest 2026
+DESCRIPTION:Online\nCloses Dec 30\, 2026\, 12:16 PM UTC\nOfficial page: htt
+ ps://unstop.com/hackathons/buildfest-2026-learnix-labs-1814814\nCheck the 
+ official rules for the exact closing time and time zone.\nDetails: https:/
+ /hackathontracker.com/hackathons/buildfest-2026-9pkc1/
+URL:https://unstop.com/hackathons/buildfest-2026-learnix-labs-1814814
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Buildfest 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

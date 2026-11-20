@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Diwali Festiverse: The Agent-to-Agent Hackathon (India Edition
+ )
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:diwali-festiverse-the-agent-to-agent-hackathon-india-edition-axg5m@hack
+ athontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Deadline: Diwali Festiverse: The Agent-to-Agent Hackathon (India Ed
+ ition)
+DESCRIPTION:$700 in prizes\nOJone Building\nOfficial page: https://theagent
+ -to-agent-hackathon.devpost.com/\nCheck the official rules for the exact c
+ losing time and time zone.\nDetails: https://hackathontracker.com/hackatho
+ ns/diwali-festiverse-the-agent-to-agent-hackathon-india-edition-axg5m/
+URL:https://theagent-to-agent-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Diwali Festiverse: The Agent-to-Agent Hackathon (I
+ ndia Edition)
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

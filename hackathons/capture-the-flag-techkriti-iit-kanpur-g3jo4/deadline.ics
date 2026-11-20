@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Capture The Flag | TECHKRITI | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:capture-the-flag-techkriti-iit-kanpur-g3jo4@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261231T071900Z
+DTEND:20261231T081900Z
+SUMMARY:Deadline: Capture The Flag | TECHKRITI | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 8:19 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/capture-the-flag-tech
+ kriti27-techkriti-1764472\nCheck the official rules for the exact closing 
+ time and time zone.\nDetails: https://hackathontracker.com/hackathons/capt
+ ure-the-flag-techkriti-iit-kanpur-g3jo4/
+URL:https://unstop.com/hackathons/capture-the-flag-techkriti27-techkriti-17
+ 64472
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Capture The Flag | TECHKRITI | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

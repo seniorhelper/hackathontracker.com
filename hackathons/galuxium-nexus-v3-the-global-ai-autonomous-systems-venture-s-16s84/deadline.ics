@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Galuxium Nexus V3: The Global AI\, Autonomous Systems & Ventur
+ e SaaS Championship
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:galuxium-nexus-v3-the-global-ai-autonomous-systems-venture-s-16s84@hack
+ athontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270730T173000Z
+DTEND:20270730T183000Z
+SUMMARY:Deadline: Galuxium Nexus V3: The Global AI\, Autonomous Systems & V
+ enture SaaS Championship
+DESCRIPTION:INR 1\,500\,000\nOnline\nCloses Jul 30\, 2027\, 6:30 PM UTC\nOf
+ ficial page: https://unstop.com/hackathons/galuxium-nexus-v3-the-global-ai
+ -autonomous-systems-venture-saas-championship-galuxium-1800395\nCheck the 
+ official rules for the exact closing time and time zone.\nDetails: https:/
+ /hackathontracker.com/hackathons/galuxium-nexus-v3-the-global-ai-autonomou
+ s-systems-venture-s-16s84/
+URL:https://unstop.com/hackathons/galuxium-nexus-v3-the-global-ai-autonomou
+ s-systems-venture-saas-championship-galuxium-1800395
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Galuxium Nexus V3: The Global AI\, Autonomous Syst
+ ems & Venture SaaS Championship
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

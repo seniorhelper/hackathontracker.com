@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Tech For Community 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:tech-for-community-2026-dk3hi@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Deadline: Tech For Community 2026
+DESCRIPTION:St. John's\, Newfoundland and Labrador / Avalon Peninsula\, CA\
+ nOfficial page: https://www.mlh.com/events/tech-for-community-2026\nCheck 
+ the official rules for the exact closing time and time zone.\nDetails: htt
+ ps://hackathontracker.com/hackathons/tech-for-community-2026-dk3hi/
+URL:https://www.mlh.com/events/tech-for-community-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Tech For Community 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

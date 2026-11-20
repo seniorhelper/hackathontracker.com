@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Robowars | TECHKRITI | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:robowars-techkriti-iit-kanpur-gnivi@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261231T072417Z
+DTEND:20261231T082417Z
+SUMMARY:Deadline: Robowars | TECHKRITI | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 8:24 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/robowars-techkriti27-
+ techkriti-1764470\nCheck the official rules for the exact closing time and
+  time zone.\nDetails: https://hackathontracker.com/hackathons/robowars-tec
+ hkriti-iit-kanpur-gnivi/
+URL:https://unstop.com/hackathons/robowars-techkriti27-techkriti-1764470
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Robowars | TECHKRITI | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

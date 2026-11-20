@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Texus 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:texus-2027-1mkip@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270214T100000Z
+DTEND:20270214T110000Z
+SUMMARY:Deadline: Texus 2027
+DESCRIPTION:Chennai\, Tamil Nadu\, India\nCloses Feb 14\, 2027\, 11:00 AM U
+ TC\nOfficial page: https://texus27.devfolio.co/\nCheck the official rules 
+ for the exact closing time and time zone.\nDetails: https://hackathontrack
+ er.com/hackathons/texus-2027-1mkip/
+URL:https://texus27.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Texus 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

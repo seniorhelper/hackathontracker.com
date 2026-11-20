@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:NewYear X Thon 2K27
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:newyear-x-thon-2k27-dwl43@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261231T053100Z
+DTEND:20261231T063100Z
+SUMMARY:Deadline: NewYear X Thon 2K27
+DESCRIPTION:INR 5\,000\nOnline\nCloses Dec 31\, 2026\, 6:31 AM UTC\nOfficia
+ l page: https://unstop.com/hackathons/newyear-x-thon-2k27-brainwaves-17635
+ 61\nCheck the official rules for the exact closing time and time zone.\nDe
+ tails: https://hackathontracker.com/hackathons/newyear-x-thon-2k27-dwl43/
+URL:https://unstop.com/hackathons/newyear-x-thon-2k27-brainwaves-1763561
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: NewYear X Thon 2K27
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

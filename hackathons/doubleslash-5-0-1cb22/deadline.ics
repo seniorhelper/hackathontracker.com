@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:doubleSlash 5.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:doubleslash-5-0-1cb22@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270228T033000Z
+DTEND:20270228T043000Z
+SUMMARY:Deadline: doubleSlash 5.0
+DESCRIPTION:Bidhannagar\, West Bengal\, India\nCloses Feb 28\, 2027\, 4:30 
+ AM UTC\nOfficial page: https://doubleslash5.devfolio.co/\nCheck the offici
+ al rules for the exact closing time and time zone.\nDetails: https://hacka
+ thontracker.com/hackathons/doubleslash-5-0-1cb22/
+URL:https://doubleslash5.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: doubleSlash 5.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

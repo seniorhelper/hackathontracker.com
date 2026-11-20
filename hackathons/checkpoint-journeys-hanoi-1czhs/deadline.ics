@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:checkpoint journeys — hanoi
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:checkpoint-journeys-hanoi-1czhs@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Deadline: checkpoint journeys — hanoi
+DESCRIPTION:Hà Đông\, Hà Nội\, Vietnam\nOfficial page: https://hanoi.
+ checkpointhacks.org/\nCheck the official rules for the exact closing time 
+ and time zone.\nDetails: https://hackathontracker.com/hackathons/checkpoin
+ t-journeys-hanoi-1czhs/
+URL:https://hanoi.checkpointhacks.org/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: checkpoint journeys — hanoi
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

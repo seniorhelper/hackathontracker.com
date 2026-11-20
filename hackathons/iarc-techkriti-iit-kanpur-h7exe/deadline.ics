@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IARC | TECHKRITI | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:iarc-techkriti-iit-kanpur-h7exe@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261231T072238Z
+DTEND:20261231T082238Z
+SUMMARY:Deadline: IARC | TECHKRITI | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 8:22 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/iarc-techkriti27-tech
+ kriti-1764468\nCheck the official rules for the exact closing time and tim
+ e zone.\nDetails: https://hackathontracker.com/hackathons/iarc-techkriti-i
+ it-kanpur-h7exe/
+URL:https://unstop.com/hackathons/iarc-techkriti27-techkriti-1764468
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: IARC | TECHKRITI | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Central India Hackathon 4.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:central-india-hackathon-4-0-1d7dg@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270123T103000Z
+DTEND:20270123T113000Z
+SUMMARY:Deadline: Central India Hackathon 4.0
+DESCRIPTION:INR 100\,000\nNagpur\, Maharashtra\, India\nCloses Jan 23\, 202
+ 7\, 11:30 AM UTC\nOfficial page: https://unstop.com/hackathons/central-ind
+ ia-hackathon-40-suryodaya-college-of-engineering-technology-nagpur-1788753
+ \nCheck the official rules for the exact closing time and time zone.\nDeta
+ ils: https://hackathontracker.com/hackathons/central-india-hackathon-4-0-1
+ d7dg/
+URL:https://unstop.com/hackathons/central-india-hackathon-40-suryodaya-coll
+ ege-of-engineering-technology-nagpur-1788753
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Central India Hackathon 4.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

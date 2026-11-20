@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:LightHouse - Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:lighthouse-hackathon-1mlsg@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270110T155600Z
+DTEND:20270110T165600Z
+SUMMARY:Deadline: LightHouse - Hackathon
+DESCRIPTION:INR 510\,000\nNew Delhi\, Delhi\, India + online\nCloses Jan 10
+ \, 2027\, 4:56 PM UTC\nOfficial page: https://unstop.com/hackathons/lighth
+ ouse-hackathon-chandigarh-university-cu-ajitgarh-punjab-1809486\nCheck the
+  official rules for the exact closing time and time zone.\nDetails: https:
+ //hackathontracker.com/hackathons/lighthouse-hackathon-1mlsg/
+URL:https://unstop.com/hackathons/lighthouse-hackathon-chandigarh-universit
+ y-cu-ajitgarh-punjab-1809486
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: LightHouse - Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

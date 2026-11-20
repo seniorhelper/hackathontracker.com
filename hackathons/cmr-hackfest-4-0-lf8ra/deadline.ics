@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CMR HACKFEST 4.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:cmr-hackfest-4-0-lf8ra@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261125T172900Z
+DTEND:20261125T182900Z
+SUMMARY:Deadline: CMR HACKFEST 4.0
+DESCRIPTION:INR 222\,000\nHyderabad\, Telangana\, India\nCloses Nov 25\, 20
+ 26\, 6:29 PM UTC\nOfficial page: https://unstop.com/hackathons/cmr-hackfes
+ t-40-cmr-college-of-engineering-and-technology-cmrcet-hyderabad-1782514\nC
+ heck the official rules for the exact closing time and time zone.\nDetails
+ : https://hackathontracker.com/hackathons/cmr-hackfest-4-0-lf8ra/
+URL:https://unstop.com/hackathons/cmr-hackfest-40-cmr-college-of-engineerin
+ g-and-technology-cmrcet-hyderabad-1782514
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CMR HACKFEST 4.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

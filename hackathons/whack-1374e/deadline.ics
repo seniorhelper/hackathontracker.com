@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WHACK
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:whack-1374e@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Deadline: WHACK
+DESCRIPTION:Lulu Chow Wang Campus Center\nOfficial page: https://wellesleyh
+ ack-2026.devpost.com/\nCheck the official rules for the exact closing time
+  and time zone.\nDetails: https://hackathontracker.com/hackathons/whack-13
+ 74e/
+URL:https://wellesleyhack-2026.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: WHACK
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

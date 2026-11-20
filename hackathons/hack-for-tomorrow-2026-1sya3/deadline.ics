@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack For Tomorrow 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-for-tomorrow-2026-1sya3@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270103T033000Z
+DTEND:20270103T043000Z
+SUMMARY:Deadline: Hack For Tomorrow 2026
+DESCRIPTION:Ernakulam\, Keralam\, India\nCloses Jan 3\, 2027\, 4:30 AM UTC\
+ nOfficial page: https://hft2026.devfolio.co/\nCheck the official rules for
+  the exact closing time and time zone.\nDetails: https://hackathontracker.
+ com/hackathons/hack-for-tomorrow-2026-1sya3/
+URL:https://hft2026.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hack For Tomorrow 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

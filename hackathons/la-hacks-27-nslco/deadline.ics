@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:LA Hacks 27
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:la-hacks-27-nslco@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Deadline: LA Hacks 27
+DESCRIPTION:Los Angeles\, California\, US\nOfficial page: https://www.mlh.c
+ om/events/la-hacks-27\nCheck the official rules for the exact closing time
+  and time zone.\nDetails: https://hackathontracker.com/hackathons/la-hacks
+ -27-nslco/
+URL:https://www.mlh.com/events/la-hacks-27
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: LA Hacks 27
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

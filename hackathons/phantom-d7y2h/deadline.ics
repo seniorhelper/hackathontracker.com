@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PHANTOM
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:phantom-d7y2h@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Deadline: PHANTOM
+DESCRIPTION:Philadelphia\, Pennsylvania\, United States\nOfficial page: htt
+ ps://phantom.hackclub.com/\nCheck the official rules for the exact closing
+  time and time zone.\nDetails: https://hackathontracker.com/hackathons/pha
+ ntom-d7y2h/
+URL:https://phantom.hackclub.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: PHANTOM
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

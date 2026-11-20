@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Crackhunt
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:crackhunt-1cxnj@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270305T104500Z
+DTEND:20270305T114500Z
+SUMMARY:Deadline: Crackhunt
+DESCRIPTION:INR 10\,000\nOnline\nCloses Mar 5\, 2027\, 11:45 AM UTC\nOffici
+ al page: https://unstop.com/hackathons/crackhunt-solutions-2k27-army-insti
+ tute-of-technology-pune-1799765\nCheck the official rules for the exact cl
+ osing time and time zone.\nDetails: https://hackathontracker.com/hackathon
+ s/crackhunt-1cxnj/
+URL:https://unstop.com/hackathons/crackhunt-solutions-2k27-army-institute-o
+ f-technology-pune-1799765
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Crackhunt
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

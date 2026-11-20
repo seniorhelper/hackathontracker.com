@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Beat The Market | TECHKRITI | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:beat-the-market-techkriti-iit-kanpur-jzkeu@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261231T070241Z
+DTEND:20261231T080241Z
+SUMMARY:Deadline: Beat The Market | TECHKRITI | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 8:02 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/beat-the-market-techk
+ riti27-techkriti-1764450\nCheck the official rules for the exact closing t
+ ime and time zone.\nDetails: https://hackathontracker.com/hackathons/beat-
+ the-market-techkriti-iit-kanpur-jzkeu/
+URL:https://unstop.com/hackathons/beat-the-market-techkriti27-techkriti-176
+ 4450
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Beat The Market | TECHKRITI | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

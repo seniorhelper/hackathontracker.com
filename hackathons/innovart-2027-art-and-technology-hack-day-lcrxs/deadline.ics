@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:InnovArt 2027: Art and Technology Hack Day
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:innovart-2027-art-and-technology-hack-day-lcrxs@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270103
+SUMMARY:Deadline: InnovArt 2027: Art and Technology Hack Day
+DESCRIPTION:Online\nOfficial page: https://innovart2027.devpost.com/\nCheck
+  the official rules for the exact closing time and time zone.\nDetails: ht
+ tps://hackathontracker.com/hackathons/innovart-2027-art-and-technology-hac
+ k-day-lcrxs/
+URL:https://innovart2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: InnovArt 2027: Art and Technology Hack Day
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

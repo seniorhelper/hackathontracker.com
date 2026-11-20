@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Solidworks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:solidworks-ywrjx@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270304T123000Z
+DTEND:20270304T133000Z
+SUMMARY:Deadline: Solidworks
+DESCRIPTION:Online\nCloses Mar 4\, 2027\, 1:30 PM UTC\nOfficial page: https
+ ://unstop.com/hackathons/solidworks-solutions-2k27-army-institute-of-techn
+ ology-pune-1799800\nCheck the official rules for the exact closing time an
+ d time zone.\nDetails: https://hackathontracker.com/hackathons/solidworks-
+ ywrjx/
+URL:https://unstop.com/hackathons/solidworks-solutions-2k27-army-institute-
+ of-technology-pune-1799800
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Solidworks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

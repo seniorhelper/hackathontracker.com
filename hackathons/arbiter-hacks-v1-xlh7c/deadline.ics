@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Arbiter Hacks V1
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:arbiter-hacks-v1-xlh7c@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:Deadline: Arbiter Hacks V1
+DESCRIPTION:$7\,800 in prizes\nOnline\nOfficial page: https://arbiter-hacks
+ -v1.devpost.com/\nCheck the official rules for the exact closing time and 
+ time zone.\nDetails: https://hackathontracker.com/hackathons/arbiter-hacks
+ -v1-xlh7c/
+URL:https://arbiter-hacks-v1.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Arbiter Hacks V1
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

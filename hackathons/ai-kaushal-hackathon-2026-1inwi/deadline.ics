@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI Kaushal Hackathon 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ai-kaushal-hackathon-2026-1inwi@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261209T123000Z
+DTEND:20261209T133000Z
+SUMMARY:Deadline: AI Kaushal Hackathon 2026
+DESCRIPTION:INR 500\,000\nLucknow\, Uttar Pradesh\, India + online\nCloses 
+ Dec 9\, 2026\, 1:30 PM UTC\nOfficial page: https://unstop.com/hackathons/a
+ i-kaushal-hackathon-2026-indian-institute-of-information-technology-iiit-l
+ ucknow-1817798\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/ai-kaushal-hack
+ athon-2026-1inwi/
+URL:https://unstop.com/hackathons/ai-kaushal-hackathon-2026-indian-institut
+ e-of-information-technology-iiit-lucknow-1817798
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AI Kaushal Hackathon 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

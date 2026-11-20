@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack Era 2.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-era-2-0-12izm@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261130T173100Z
+DTEND:20261130T183100Z
+SUMMARY:Deadline: Hack Era 2.0
+DESCRIPTION:INR 10\,000\nOnline\nCloses Nov 30\, 2026\, 6:31 PM UTC\nOffici
+ al page: https://unstop.com/hackathons/hack-era-20-erazone-1771785\nCheck 
+ the official rules for the exact closing time and time zone.\nDetails: htt
+ ps://hackathontracker.com/hackathons/hack-era-2-0-12izm/
+URL:https://unstop.com/hackathons/hack-era-20-erazone-1771785
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hack Era 2.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

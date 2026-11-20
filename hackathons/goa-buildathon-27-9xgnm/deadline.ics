@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Goa Buildathon 27
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:goa-buildathon-27-9xgnm@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270117T095500Z
+DTEND:20270117T105500Z
+SUMMARY:Deadline: Goa Buildathon 27
+DESCRIPTION:INR 1\,000\,000\nSouth Goa\, Goa\, India\nCloses Jan 17\, 2027\
+ , 10:55 AM UTC\nOfficial page: https://unstop.com/hackathons/goa-buildatho
+ n-27-goa-buildathon-1789849\nCheck the official rules for the exact closin
+ g time and time zone.\nDetails: https://hackathontracker.com/hackathons/go
+ a-buildathon-27-9xgnm/
+URL:https://unstop.com/hackathons/goa-buildathon-27-goa-buildathon-1789849
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Goa Buildathon 27
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

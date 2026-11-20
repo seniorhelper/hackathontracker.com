@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI for Medicine: A Global Student Hackathon on the Future of C
+ are
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ai-for-medicine-a-global-student-hackathon-on-the-future-of-1341a@hacka
+ thontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Deadline: AI for Medicine: A Global Student Hackathon on the Future
+  of Care
+DESCRIPTION:Online\nOfficial page: https://ai-for-medicine.devpost.com/\nCh
+ eck the official rules for the exact closing time and time zone.\nDetails:
+  https://hackathontracker.com/hackathons/ai-for-medicine-a-global-student-
+ hackathon-on-the-future-of-1341a/
+URL:https://ai-for-medicine.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AI for Medicine: A Global Student Hackathon on the
+  Future of Care
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

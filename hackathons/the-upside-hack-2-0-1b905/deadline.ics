@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Upside Hack 2.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:the-upside-hack-2-0-1b905@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Deadline: The Upside Hack 2.0
+DESCRIPTION:$582 in prizes\nTunis\nOfficial page: https://the-upside-hack-2
+ -0.devpost.com/\nCheck the official rules for the exact closing time and t
+ ime zone.\nDetails: https://hackathontracker.com/hackathons/the-upside-hac
+ k-2-0-1b905/
+URL:https://the-upside-hack-2-0.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: The Upside Hack 2.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

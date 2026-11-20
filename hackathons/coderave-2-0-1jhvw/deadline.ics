@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CODERAVE 2.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:coderave-2-0-1jhvw@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270214T103000Z
+DTEND:20270214T113000Z
+SUMMARY:Deadline: CODERAVE 2.0
+DESCRIPTION:In person\nCloses Feb 14\, 2027\, 11:30 AM UTC\nOfficial page: 
+ https://coderave-2.devfolio.co/\nCheck the official rules for the exact cl
+ osing time and time zone.\nDetails: https://hackathontracker.com/hackathon
+ s/coderave-2-0-1jhvw/
+URL:https://coderave-2.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CODERAVE 2.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

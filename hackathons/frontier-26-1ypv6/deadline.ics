@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FRONTIER//26
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:frontier-26-1ypv6@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Deadline: FRONTIER//26
+DESCRIPTION:Online\nOfficial page: https://frontier26.devpost.com/\nCheck t
+ he official rules for the exact closing time and time zone.\nDetails: http
+ s://hackathontracker.com/hackathons/frontier-26-1ypv6/
+URL:https://frontier26.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: FRONTIER//26
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

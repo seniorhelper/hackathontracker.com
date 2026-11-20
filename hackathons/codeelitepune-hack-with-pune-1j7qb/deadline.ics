@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodeElitePune - Hack With Pune
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codeelitepune-hack-with-pune-1j7qb@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261216T173027Z
+DTEND:20261216T183027Z
+SUMMARY:Deadline: CodeElitePune - Hack With Pune
+DESCRIPTION:Online\nCloses Dec 16\, 2026\, 6:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/codeelitepune-hack-with-pune-hackwithpune-179452
+ 2\nCheck the official rules for the exact closing time and time zone.\nDet
+ ails: https://hackathontracker.com/hackathons/codeelitepune-hack-with-pune
+ -1j7qb/
+URL:https://unstop.com/hackathons/codeelitepune-hack-with-pune-hackwithpune
+ -1794522
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CodeElitePune - Hack With Pune
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

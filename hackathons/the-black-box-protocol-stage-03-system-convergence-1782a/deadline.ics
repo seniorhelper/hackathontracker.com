@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Black-Box Protocol: Stage 03 - System Convergence
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:the-black-box-protocol-stage-03-system-convergence-1782a@hackathontrack
+ er.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261227T030100Z
+DTEND:20261227T040100Z
+SUMMARY:Deadline: The Black-Box Protocol: Stage 03 - System Convergence
+DESCRIPTION:INR 200\,000\nDelhi\, Delhi\, India\nCloses Dec 27\, 2026\, 4:0
+ 1 AM UTC\nOfficial page: https://unstop.com/hackathons/the-black-box-proto
+ col-stage-03-system-convergence-techhelp4u-1745778\nCheck the official rul
+ es for the exact closing time and time zone.\nDetails: https://hackathontr
+ acker.com/hackathons/the-black-box-protocol-stage-03-system-convergence-17
+ 82a/
+URL:https://unstop.com/hackathons/the-black-box-protocol-stage-03-system-co
+ nvergence-techhelp4u-1745778
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: The Black-Box Protocol: Stage 03 - System Converge
+ nce
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

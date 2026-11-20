@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Campus to Cloud Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:campus-to-cloud-hackathon-16e1v@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261129T173000Z
+DTEND:20261129T183000Z
+SUMMARY:Deadline: Campus to Cloud Hackathon
+DESCRIPTION:INR 150\,000\nOnline\nCloses Nov 29\, 2026\, 6:30 PM UTC\nOffic
+ ial page: https://unstop.com/hackathons/campus-to-cloud-hackathon-iit-bomb
+ ay-1818968\nCheck the official rules for the exact closing time and time z
+ one.\nDetails: https://hackathontracker.com/hackathons/campus-to-cloud-hac
+ kathon-16e1v/
+URL:https://unstop.com/hackathons/campus-to-cloud-hackathon-iit-bombay-1818
+ 968
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Campus to Cloud Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

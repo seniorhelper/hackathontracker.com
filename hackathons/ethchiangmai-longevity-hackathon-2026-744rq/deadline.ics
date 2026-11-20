@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ETHChiangmai & Longevity Hackathon 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ethchiangmai-longevity-hackathon-2026-744rq@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261227T000000Z
+DTEND:20261227T010000Z
+SUMMARY:Deadline: ETHChiangmai & Longevity Hackathon 2026
+DESCRIPTION:Chang Wat Chiang Mai\, Thailand\nCloses Dec 27\, 2026\, 1:00 AM
+  UTC\nOfficial page: https://chiangmai.devfolio.co/\nCheck the official ru
+ les for the exact closing time and time zone.\nDetails: https://hackathont
+ racker.com/hackathons/ethchiangmai-longevity-hackathon-2026-744rq/
+URL:https://chiangmai.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: ETHChiangmai & Longevity Hackathon 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

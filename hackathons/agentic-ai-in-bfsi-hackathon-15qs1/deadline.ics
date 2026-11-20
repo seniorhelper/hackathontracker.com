@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Agentic AI in BFSI Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:agentic-ai-in-bfsi-hackathon-15qs1@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261124T173000Z
+DTEND:20261124T183000Z
+SUMMARY:Deadline: Agentic AI in BFSI Hackathon
+DESCRIPTION:INR 100\,000\nPowai\, Maharashtra\, India\nCloses Nov 24\, 2026
+ \, 6:30 PM UTC\nOfficial page: https://unstop.com/hackathons/agentic-ai-in
+ -bfsi-hackathon-iit-bombay-1800857\nCheck the official rules for the exact
+  closing time and time zone.\nDetails: https://hackathontracker.com/hackat
+ hons/agentic-ai-in-bfsi-hackathon-15qs1/
+URL:https://unstop.com/hackathons/agentic-ai-in-bfsi-hackathon-iit-bombay-1
+ 800857
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Agentic AI in BFSI Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

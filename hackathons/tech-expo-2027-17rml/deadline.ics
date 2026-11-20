@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Tech Expo 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:tech-expo-2027-17rml@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20270129T103021Z
+DTEND:20270129T113021Z
+SUMMARY:Deadline: Tech Expo 2027
+DESCRIPTION:INR 198\,000\nVadodara\, Gujarat\, India + online\nCloses Jan 2
+ 9\, 2027\, 11:30 AM UTC\nOfficial page: https://unstop.com/hackathons/tech
+ -expo-2027-parul-university-pu-vadodara-1771511\nCheck the official rules 
+ for the exact closing time and time zone.\nDetails: https://hackathontrack
+ er.com/hackathons/tech-expo-2027-17rml/
+URL:https://unstop.com/hackathons/tech-expo-2027-parul-university-pu-vadoda
+ ra-1771511
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Tech Expo 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

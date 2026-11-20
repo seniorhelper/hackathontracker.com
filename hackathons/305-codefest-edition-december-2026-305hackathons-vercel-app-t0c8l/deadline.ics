@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:305 CodeFest Edition December 2026 — 305Hackathons.vercel.ap
+ p
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:305-codefest-edition-december-2026-305hackathons-vercel-app-t0c8l@hacka
+ thontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Deadline: 305 CodeFest Edition December 2026 — 305Hackathons.verc
+ el.app
+DESCRIPTION:Online\nOfficial page: https://305codefestdec2026.devpost.com/\
+ nCheck the official rules for the exact closing time and time zone.\nDetai
+ ls: https://hackathontracker.com/hackathons/305-codefest-edition-december-
+ 2026-305hackathons-vercel-app-t0c8l/
+URL:https://305codefestdec2026.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: 305 CodeFest Edition December 2026 — 305Hackatho
+ ns.vercel.app
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

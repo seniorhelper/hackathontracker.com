@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Expanding Horizons 8.0 Software
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:expanding-horizons-8-0-software-1cdoc@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261127T130516Z
+DTEND:20261127T140516Z
+SUMMARY:Deadline: Expanding Horizons 8.0 Software
+DESCRIPTION:Online\nCloses Nov 27\, 2026\, 2:05 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/expanding-horizons-80-software-expanding-horizon
+ -80-motilal-nehru-national-institute-of-technology-1799767\nCheck the offi
+ cial rules for the exact closing time and time zone.\nDetails: https://hac
+ kathontracker.com/hackathons/expanding-horizons-8-0-software-1cdoc/
+URL:https://unstop.com/hackathons/expanding-horizons-80-software-expanding-
+ horizon-80-motilal-nehru-national-institute-of-technology-1799767
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Expanding Horizons 8.0 Software
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

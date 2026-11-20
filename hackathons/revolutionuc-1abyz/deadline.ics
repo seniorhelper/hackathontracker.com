@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:RevolutionUC
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:revolutionuc-1abyz@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Deadline: RevolutionUC
+DESCRIPTION:Cincinnati\, Ohio\, US\nOfficial page: https://www.mlh.com/even
+ ts/revolutionuc-d9\nCheck the official rules for the exact closing time an
+ d time zone.\nDetails: https://hackathontracker.com/hackathons/revolutionu
+ c-1abyz/
+URL:https://www.mlh.com/events/revolutionuc-d9
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: RevolutionUC
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

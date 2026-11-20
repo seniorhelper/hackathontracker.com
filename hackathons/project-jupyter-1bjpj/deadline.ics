@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Project Jupyter
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:project-jupyter-1bjpj@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270310T053000Z
+DTEND:20270310T063000Z
+SUMMARY:Deadline: Project Jupyter
+DESCRIPTION:INR 30\,000\nOnline\nCloses Mar 10\, 2027\, 6:30 AM UTC\nOffici
+ al page: https://unstop.com/hackathons/project-jupyter-solutions-2k27-army
+ -institute-of-technology-pune-1799762\nCheck the official rules for the ex
+ act closing time and time zone.\nDetails: https://hackathontracker.com/hac
+ kathons/project-jupyter-1bjpj/
+URL:https://unstop.com/hackathons/project-jupyter-solutions-2k27-army-insti
+ tute-of-technology-pune-1799762
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Project Jupyter
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

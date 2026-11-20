@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Tech to Treasure Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:tech-to-treasure-hackathon-1jm2r@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:Deadline: Tech to Treasure Hackathon
+DESCRIPTION:$450 in prizes\nTully Community Branch Library\nOfficial page: 
+ https://techtotreasure.devpost.com/\nCheck the official rules for the exac
+ t closing time and time zone.\nDetails: https://hackathontracker.com/hacka
+ thons/tech-to-treasure-hackathon-1jm2r/
+URL:https://techtotreasure.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Tech to Treasure Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

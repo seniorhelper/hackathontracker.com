@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Diamondhacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:diamondhacks-rup0x@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270406
+SUMMARY:Deadline: Diamondhacks
+DESCRIPTION:La Jolla\, California\, US\nOfficial page: https://www.mlh.com/
+ events/diamondhacks-dc\nCheck the official rules for the exact closing tim
+ e and time zone.\nDetails: https://hackathontracker.com/hackathons/diamond
+ hacks-rup0x/
+URL:https://www.mlh.com/events/diamondhacks-dc
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Diamondhacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

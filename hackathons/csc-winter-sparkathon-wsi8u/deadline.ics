@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CSC Winter Sparkathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:csc-winter-sparkathon-wsi8u@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: CSC Winter Sparkathon
+DESCRIPTION:$300 in prizes\nOnline\nOfficial page: https://csc-winter-spark
+ athon.devpost.com/\nCheck the official rules for the exact closing time an
+ d time zone.\nDetails: https://hackathontracker.com/hackathons/csc-winter-
+ sparkathon-wsi8u/
+URL:https://csc-winter-sparkathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CSC Winter Sparkathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

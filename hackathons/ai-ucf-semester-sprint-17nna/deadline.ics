@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI@UCF Semester Sprint
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ai-ucf-semester-sprint-17nna@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Deadline: AI@UCF Semester Sprint
+DESCRIPTION:Online\nOfficial page: https://semester-sprint.devpost.com/\nCh
+ eck the official rules for the exact closing time and time zone.\nDetails:
+  https://hackathontracker.com/hackathons/ai-ucf-semester-sprint-17nna/
+URL:https://semester-sprint.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AI@UCF Semester Sprint
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

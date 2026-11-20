@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CPP - Competitive Programming Potpourri
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:cpp-competitive-programming-potpourri-fu5av@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270104T172900Z
+DTEND:20270104T182900Z
+SUMMARY:Deadline: CPP - Competitive Programming Potpourri
+DESCRIPTION:INR 50\,000\nChennai\, Tamil Nadu\, India + online\nCloses Jan 
+ 4\, 2027\, 6:29 PM UTC\nOfficial page: https://unstop.com/hackathons/cpp-c
+ ompetitive-programming-potpourri-shaastra-2027-iit-madras-1782995\nCheck t
+ he official rules for the exact closing time and time zone.\nDetails: http
+ s://hackathontracker.com/hackathons/cpp-competitive-programming-potpourri-
+ fu5av/
+URL:https://unstop.com/hackathons/cpp-competitive-programming-potpourri-sha
+ astra-2027-iit-madras-1782995
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CPP - Competitive Programming Potpourri
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

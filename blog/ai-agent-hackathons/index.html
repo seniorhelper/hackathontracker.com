@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; object-src 'none'; form-action 'self' https://clients.eyetoad.com">
+<meta name="theme-color" content="#c6f432">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>AI Agent Hackathons: How to Pick One and Build a Demo That Works | Hackathon Tracker</title>
+<meta name="description" content="What AI agent hackathons ask for, how to read the rules on models and tools, how to scope an agent that works live on demo day, and how to find the ones worth entering.">
+<link rel="canonical" href="https://hackathontracker.com/blog/ai-agent-hackathons/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:site_name" content="Hackathon Tracker"><meta property="og:type" content="article"><meta property="og:title" content="AI Agent Hackathons: How to Pick One and Build a Demo That Works | Hackathon Tracker"><meta property="og:description" content="What AI agent hackathons ask for, how to read the rules on models and tools, how to scope an agent that works live on demo day, and how to find the ones worth entering."><meta property="og:url" content="https://hackathontracker.com/blog/ai-agent-hackathons/"><meta property="og:image" content="https://hackathontracker.com/assets/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AI Agent Hackathons: How to Pick One and Build a Demo That Works | Hackathon Tracker"><meta name="twitter:description" content="What AI agent hackathons ask for, how to read the rules on models and tools, how to scope an agent that works live on demo day, and how to find the ones worth entering."><meta name="twitter:image" content="https://hackathontracker.com/assets/og.png">
+<meta name="google-adsense-account" content="ca-pub-3561679124556057">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="New hackathons" href="/feeds/new.xml">
+<link rel="alternate" type="text/calendar" title="Hackathon deadlines calendar" href="/calendar.ics">
+<link rel="stylesheet" href="/assets/styles.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3561679124556057" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"AI Agent Hackathons: How to Pick One and Build a Demo That Works","description":"What AI agent hackathons ask for, how to read the rules on models and tools, how to scope an agent that works live on demo day, and how to find the ones worth entering.","datePublished":"2026-11-17","dateModified":"2026-11-17","mainEntityOfPage":"https://hackathontracker.com/blog/ai-agent-hackathons/","image":["https://hackathontracker.com/assets/og.png"],"author":{"@type":"Organization","name":"Hackathon Tracker","url":"https://hackathontracker.com/about/"},"publisher":{"@type":"Organization","name":"Hackathon Tracker","logo":{"@type":"ImageObject","url":"https://hackathontracker.com/assets/apple-touch-icon.png"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is an AI agent hackathon?","acceptedAnswer":{"@type":"Answer","text":"It is a hackathon where the project has to be an AI agent: software that uses a language model to plan steps, call tools or APIs, and act on a goal with little hand-holding. Many are run by a model or platform company that wants people building on its stack."}},{"@type":"Question","name":"Do I need to know machine learning to enter an AI agent hackathon?","acceptedAnswer":{"@type":"Answer","text":"Usually not. Most agent projects call a hosted model through an API and spend their effort on tools, prompts, data and the user experience. Solid web or backend skills matter more than training models."}},{"@type":"Question","name":"Which model or framework should I use?","acceptedAnswer":{"@type":"Answer","text":"Use whatever the rules require first. Some events make a sponsor's model, SDK or cloud mandatory for eligibility or for a prize track. If the rules are open, pick the stack you can debug fastest, because reliability on demo day beats novelty."}},{"@type":"Question","name":"How do I stop my agent from failing during the live demo?","acceptedAnswer":{"@type":"Answer","text":"Narrow the task, cap the number of steps, log every tool call, and keep a recorded backup run. Test the exact demo path many times and have a fallback for slow or failed model calls."}},{"@type":"Question","name":"Where can I find AI agent hackathons that are open now?","acceptedAnswer":{"@type":"Answer","text":"Hackathon Tracker's AI hackathons page lists open and upcoming events tagged AI, agents or LLMs, with prize money, sign-ups and odds side by side. Search the word agent to narrow it further."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap bar">
+  <a class="logo" href="/" aria-label="Hackathon Tracker home"><svg class="logo-svg" viewBox="0 0 280 40" width="280" height="40" aria-hidden="true" focusable="false"><rect x="0" y="2" width="36" height="36" rx="8" fill="#c6f432"/><path d="M10.1 13.2l7.9 6.8-7.9 6.8M20.3 26.8h6.8" fill="none" stroke="#0c0f14" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><text x="46" y="27" textLength="233" lengthAdjust="spacingAndGlyphs" fill="currentColor" font-family="ui-monospace, 'Cascadia Code', Consolas, Menlo, monospace" font-size="21" font-weight="800" letter-spacing="-0.5">hackathon_tracker</text></svg></a>
+  <a class="saved-link" href="/?saved=1" aria-label="My saved hackathons">★ <span class="hide-sm">My list</span> <b id="savedCount" hidden></b></a>
+  <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav"><span aria-hidden="true">☰</span> Menu</button>
+  <nav id="mainNav" aria-label="Main"><a href="/top-50/">Top 50</a><a href="/calendar/">Calendar</a><a href="/submissions/">Entry wall</a><a href="/best-odds/">Best odds</a><a href="/online-hackathons/">Online</a><a href="/ai-hackathons/">AI</a><a href="/open-to-everyone/">No student ID</a><a href="/blog/">Blog</a></nav>
+</div></header>
+<main id="main"><section class="hero small"><div class="wrap"><p class="small"><a href="/blog/">Guides</a> · Nov 17, 2026</p><h1>AI Agent Hackathons: How to Pick One and Build a Demo That Works</h1></div></section>
+<div class="wrap prose">
+<p>A year ago the hot hackathon theme was “build something with an LLM.” Now the rules ask for an <strong>agent</strong>: something that takes a goal, decides what to do, calls tools and gets a result without a human pressing every button. That is a harder brief, and it changes what wins.</p>
+<p>This guide covers what these events actually ask for, the rules people miss, how to scope an agent that survives a live demo, and how to find agent hackathons where your odds are decent.</p>
+
+<h2>What organizers mean by “agent”</h2>
+<p>Definitions vary, but most judges are looking for three things:</p>
+<ul>
+<li><strong>A goal, not a prompt.</strong> The user states an outcome (“book the cheapest refundable flight,” “triage these support tickets”) and the agent works out the steps.</li>
+<li><strong>Tools.</strong> The agent calls real APIs, searches, reads files, writes to a database or takes actions in another app. A chatbot that only talks back is usually not enough.</li>
+<li><strong>Some autonomy with guard rails.</strong> It should handle a few steps on its own, recover from small errors, and know when to stop or ask a human.</li>
+</ul>
+<p>If the rules use words like “agentic workflow,” “tool use,” “multi-step” or “autonomous,” assume the judges want to see those things happen on screen.</p>
+
+<h2>Read these rules before you write any code</h2>
+<p>AI agent hackathons are often run by a company that wants developers on its platform. That shapes the rules in ways that can quietly disqualify a great project.</p>
+<ul>
+<li><strong>Required stack.</strong> Some events require a specific model, SDK, cloud or agent framework, either for the whole event or for a prize track. Building on the wrong one can make you ineligible.</li>
+<li><strong>New work only.</strong> Many rules say the project must be started during the submission period. Reusing an old repo can count against you, so check what is allowed.</li>
+<li><strong>Prize form.</strong> Headline pools sometimes mix cash with API credits or products. Our guide to <a href="/blog/online-hackathons-with-cash-prizes/">online hackathons with cash prizes</a> shows how to separate them.</li>
+<li><strong>Data and safety.</strong> If your agent touches personal data, payments or real accounts, read the sections on privacy and acceptable use. Judges notice when an agent can do something risky with no check.</li>
+<li><strong>Submission format.</strong> Most want a public repo, a short video and a write-up. Some want a hosted demo judges can try. Plan for the format from day one.</li>
+</ul>
+
+<h2>Pick a task an agent is genuinely good at</h2>
+<p>The projects that place tend to pick a narrow job with a clear finish line. Good shapes for an agent demo:</p>
+<ul>
+<li><strong>Research and summarize.</strong> Pull from a few named sources, compare, and produce a short, cited answer.</li>
+<li><strong>Fill a form or run a workflow.</strong> Take messy input, look things up, and complete a multi-step process in another tool.</li>
+<li><strong>Triage.</strong> Sort a queue (emails, tickets, bug reports) into buckets with a reason for each, then take one safe action.</li>
+<li><strong>Watch and alert.</strong> Check something on a schedule and act or notify when a condition is met.</li>
+</ul>
+<p>Avoid “an agent that does everything.” Judges have a few minutes per project. One task done reliably beats ten done halfway, which is the same lesson as in our guide on <a href="/blog/how-to-win-a-hackathon/">how to win a hackathon</a>.</p>
+
+<h2>Build for demo day, not for the slide</h2>
+<p>Agents fail in more interesting ways than normal apps. A model call times out, a tool returns something unexpected, or the agent loops. Plan for it.</p>
+<ol>
+<li><strong>Cap the steps.</strong> Set a maximum number of tool calls per run and a clear stop condition. An agent that ends cleanly looks smarter than one that wanders.</li>
+<li><strong>Log every step on screen.</strong> Show the plan, each tool call and its result. Judges score what they can see, and a visible trace proves it is really an agent.</li>
+<li><strong>Keep a human check for risky actions.</strong> A confirm step before sending, buying or deleting shows good judgment and protects your demo from surprises.</li>
+<li><strong>Fake nothing, but control the inputs.</strong> Use a test account and a small, real data set you understand. Know what the agent should do with it.</li>
+<li><strong>Record a backup run.</strong> If the live call is slow on the day, play the recording and explain. Our <a href="/blog/hackathon-demo-video-tips/">demo video tips</a> cover how to make it clear in under three minutes.</li>
+</ol>
+
+<h2>What judges score in agent projects</h2>
+<p>Criteria differ by event, but the usual headings are impact, technical execution, creativity and use of the sponsor’s technology. For agents, “technical execution” often means: does it actually complete the task, how does it handle errors, and is the tool use more than a single API call? Read <a href="/blog/how-hackathons-are-judged/">how hackathons are judged</a> and map each criterion to something visible in your demo.</p>
+<p>Two easy wins: say plainly what the agent cannot do yet, and show one failure it recovers from. Both build trust with judges who have seen a lot of over-promising demos.</p>
+
+<h2>Solo or team?</h2>
+<p>Agent projects split well across two or three people: one on the agent loop and prompts, one on tools and integrations, one on the interface and video. A solo builder can still do well by keeping the scope tight. If you are going alone, our guide on <a href="/blog/can-you-do-a-hackathon-alone/">doing a hackathon solo</a> helps you plan the week.</p>
+
+<h2>How to find AI agent hackathons worth entering</h2>
+<p>Company-run AI hackathons often carry the biggest prize pools and the biggest crowds. The trick is finding the ones where the prize is large compared with the number of people signed up.</p>
+<ul>
+<li>Open the <a href="/ai-hackathons/">AI hackathons list</a> and type <em>agent</em> in the search box.</li>
+<li>Sort by <strong>Best odds (prize per entrant)</strong> to see which events have the most prize money per person. <a href="/methodology/">Here is how that number works</a>.</li>
+<li>Tick <strong>Compare</strong> on two or three cards to see deadline, prize, sign-ups and eligibility side by side.</li>
+<li>Press <strong>Add to calendar</strong> on the ones you shortlist, or <a href="/calendar/">subscribe to every deadline</a> so none of them sneak up on you.</li>
+</ul>
+<p>Before you register, give the official page the five-minute check in <a href="/blog/is-this-hackathon-legit/">is this hackathon legit?</a>: a named organizer, published rules, clear prizes and a real judging process.</p>
+
+<h2>A simple plan for a two-week agent hackathon</h2>
+<ul>
+<li><strong>Days 1 to 2:</strong> read the rules, pick one task, and write down the exact demo path from start to finish.</li>
+<li><strong>Days 3 to 7:</strong> get the agent loop working end to end with one tool, then add the second and third.</li>
+<li><strong>Days 8 to 10:</strong> add the visible step log, the stop conditions and the human confirm step.</li>
+<li><strong>Days 11 to 12:</strong> test the demo path again and again and fix what breaks.</li>
+<li><strong>Days 13 to 14:</strong> record the video, write the submission, and submit with time to spare.</li>
+</ul>
+<p>An agent that does one useful job, shows its work and stops when it should is still rare. Build that, and you are already ahead of most of the field.</p>
+<section class="faq"><h2>FAQ</h2><h3>What is an AI agent hackathon?</h3><p>It is a hackathon where the project has to be an AI agent: software that uses a language model to plan steps, call tools or APIs, and act on a goal with little hand-holding. Many are run by a model or platform company that wants people building on its stack.</p><h3>Do I need to know machine learning to enter an AI agent hackathon?</h3><p>Usually not. Most agent projects call a hosted model through an API and spend their effort on tools, prompts, data and the user experience. Solid web or backend skills matter more than training models.</p><h3>Which model or framework should I use?</h3><p>Use whatever the rules require first. Some events make a sponsor&#39;s model, SDK or cloud mandatory for eligibility or for a prize track. If the rules are open, pick the stack you can debug fastest, because reliability on demo day beats novelty.</p><h3>How do I stop my agent from failing during the live demo?</h3><p>Narrow the task, cap the number of steps, log every tool call, and keep a recorded backup run. Test the exact demo path many times and have a fallback for slow or failed model calls.</p><h3>Where can I find AI agent hackathons that are open now?</h3><p>Hackathon Tracker&#39;s AI hackathons page lists open and upcoming events tagged AI, agents or LLMs, with prize money, sign-ups and odds side by side. Search the word agent to narrow it further.</p></section><p class="cta"><a class="btn" href="/">Search 381 live hackathons</a></p></div></main>
+<footer class="site"><div class="wrap">
+  <nav class="foot-links" aria-label="Footer"><a href="/top-50/">Top 50</a><a href="/submissions/">Entry wall</a><a href="/submit/">Submit your project</a><a href="/calendar/">Deadline calendar</a><a href="/alerts/">Feeds & alerts</a><a href="/compare/">Compare</a><a href="/methodology/">How the odds work</a><a href="/sources/">Sources</a><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Use</a></nav>
+  <p class="small xlink">Into AI? <a href="https://www.greatairace.com/" rel="noopener" target="_blank">Watch the AI race between the big labs →</a></p>
+  <p class="small">Data last refreshed Nov 20, 2026, 1:19 PM MST. Hackathon Tracker is independent and not affiliated with the organizers or platforms listed. Always check the official rules before you enter.</p>
+  <p class="small">© 2026 Hackathon Tracker</p>
+</div></footer>
+<p class="heart"><span class="beat" aria-hidden="true">❤</span><a href="https://eyetoad.com/" rel="noopener" target="_blank">Need a website?</a></p>
+<script type="module" src="/assets/site.js"></script>
+
+</body></html>

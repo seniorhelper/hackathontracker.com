@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SMBP FinHack
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:smbp-finhack-1apix@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Deadline: SMBP FinHack
+DESCRIPTION:Online\nOfficial page: https://smbp-finhack.devpost.com/\nCheck
+  the official rules for the exact closing time and time zone.\nDetails: ht
+ tps://hackathontracker.com/hackathons/smbp-finhack-1apix/
+URL:https://smbp-finhack.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: SMBP FinHack
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

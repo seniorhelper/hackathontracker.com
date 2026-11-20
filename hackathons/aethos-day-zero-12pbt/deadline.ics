@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AETHOS - Day Zero
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:aethos-day-zero-12pbt@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20270204T103158Z
+DTEND:20270204T113158Z
+SUMMARY:Deadline: AETHOS - Day Zero
+DESCRIPTION:Online\nCloses Feb 4\, 2027\, 11:31 AM UTC\nOfficial page: http
+ s://unstop.com/hackathons/aethos-day-zero-together-we-solve-1730263\nCheck
+  the official rules for the exact closing time and time zone.\nDetails: ht
+ tps://hackathontracker.com/hackathons/aethos-day-zero-12pbt/
+URL:https://unstop.com/hackathons/aethos-day-zero-together-we-solve-1730263
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AETHOS - Day Zero
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

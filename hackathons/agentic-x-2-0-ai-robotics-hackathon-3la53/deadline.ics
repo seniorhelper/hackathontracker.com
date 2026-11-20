@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AGENTIC X 2.0 – AI & Robotics Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:agentic-x-2-0-ai-robotics-hackathon-3la53@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261209T113000Z
+DTEND:20261209T123000Z
+SUMMARY:Deadline: AGENTIC X 2.0 – AI & Robotics Hackathon
+DESCRIPTION:Hyderabad\, Telangana\, India + online\nCloses Dec 9\, 2026\, 1
+ 2:30 PM UTC\nOfficial page: https://unstop.com/hackathons/agentic-x-20-ai-
+ robotics-hackathon-woxsen-university-hyderabad-1779479\nCheck the official
+  rules for the exact closing time and time zone.\nDetails: https://hackath
+ ontracker.com/hackathons/agentic-x-2-0-ai-robotics-hackathon-3la53/
+URL:https://unstop.com/hackathons/agentic-x-20-ai-robotics-hackathon-woxsen
+ -university-hyderabad-1779479
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AGENTIC X 2.0 – AI & Robotics Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Android Ignition
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:android-ignition-1ygkd@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261206T143000Z
+DTEND:20261206T153000Z
+SUMMARY:Deadline: Android Ignition
+DESCRIPTION:Online\nCloses Dec 6\, 2026\, 3:30 PM UTC\nOfficial page: https
+ ://unstop.com/hackathons/android-ignition-ganeshi-lal-bajaj-institute-of-t
+ echnology-and-management-glbitm-greater-noida-1805946\nCheck the official 
+ rules for the exact closing time and time zone.\nDetails: https://hackatho
+ ntracker.com/hackathons/android-ignition-1ygkd/
+URL:https://unstop.com/hackathons/android-ignition-ganeshi-lal-bajaj-instit
+ ute-of-technology-and-management-glbitm-greater-noida-1805946
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Android Ignition
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

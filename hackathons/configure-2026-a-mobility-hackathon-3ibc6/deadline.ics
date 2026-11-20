@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Configure 2026: A Mobility Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:configure-2026-a-mobility-hackathon-3ibc6@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261125T173000Z
+DTEND:20261125T183000Z
+SUMMARY:Deadline: Configure 2026: A Mobility Hackathon
+DESCRIPTION:INR 300\,000\nOnline\nCloses Nov 25\, 2026\, 6:30 PM UTC\nOffic
+ ial page: https://unstop.com/hackathons/configure-2026-a-mobility-hackatho
+ n-zeliot-pvt-ltd-1811085\nCheck the official rules for the exact closing t
+ ime and time zone.\nDetails: https://hackathontracker.com/hackathons/confi
+ gure-2026-a-mobility-hackathon-3ibc6/
+URL:https://unstop.com/hackathons/configure-2026-a-mobility-hackathon-zelio
+ t-pvt-ltd-1811085
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Configure 2026: A Mobility Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IDEATHON- FutureX: Innovating for Global Challenges
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ideathon-futurex-innovating-for-global-challenges-ofy3@hackathontracker
+ .com
+DTSTAMP:20261120T202018Z
+DTSTART:20261219T104500Z
+DTEND:20261219T114500Z
+SUMMARY:Deadline: IDEATHON- FutureX: Innovating for Global Challenges
+DESCRIPTION:Online\nCloses Dec 19\, 2026\, 11:45 AM UTC\nOfficial page: htt
+ ps://unstop.com/hackathons/ideathon-futurex-innovating-for-global-challeng
+ es-skill2career-1803074\nCheck the official rules for the exact closing ti
+ me and time zone.\nDetails: https://hackathontracker.com/hackathons/ideath
+ on-futurex-innovating-for-global-challenges-ofy3/
+URL:https://unstop.com/hackathons/ideathon-futurex-innovating-for-global-ch
+ allenges-skill2career-1803074
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: IDEATHON- FutureX: Innovating for Global Challenge
+ s
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

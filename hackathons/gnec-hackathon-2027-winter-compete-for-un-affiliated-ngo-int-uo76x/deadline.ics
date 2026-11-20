@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GNEC Hackathon 2027 Winter - Compete For UN-Affiliated/NGO Int
+ ernships & Prizes
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:gnec-hackathon-2027-winter-compete-for-un-affiliated-ngo-int-uo76x@hack
+ athontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Deadline: GNEC Hackathon 2027 Winter - Compete For UN-Affiliated/NG
+ O Internships & Prizes
+DESCRIPTION:$700 in prizes\nOnline\nOfficial page: https://gnec-hackathon-2
+ 027-winter.devpost.com/\nCheck the official rules for the exact closing ti
+ me and time zone.\nDetails: https://hackathontracker.com/hackathons/gnec-h
+ ackathon-2027-winter-compete-for-un-affiliated-ngo-int-uo76x/
+URL:https://gnec-hackathon-2027-winter.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: GNEC Hackathon 2027 Winter - Compete For UN-Affili
+ ated/NGO Internships & Prizes
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

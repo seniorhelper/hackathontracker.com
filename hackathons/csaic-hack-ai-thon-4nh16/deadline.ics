@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CSAIC Hack-AI-Thon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:csaic-hack-ai-thon-4nh16@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:Deadline: CSAIC Hack-AI-Thon
+DESCRIPTION:Online\nOfficial page: https://csaic-hackaithon.devpost.com/\nC
+ heck the official rules for the exact closing time and time zone.\nDetails
+ : https://hackathontracker.com/hackathons/csaic-hack-ai-thon-4nh16/
+URL:https://csaic-hackaithon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CSAIC Hack-AI-Thon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VIT Bhopal University to Host Health Hackathon 3.0 in January 
+ 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:vit-bhopal-university-to-host-health-hackathon-3-0-in-januar-112ij@hack
+ athontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261130T172900Z
+DTEND:20261130T182900Z
+SUMMARY:Deadline: VIT Bhopal University to Host Health Hackathon 3.0 in Jan
+ uary 2027
+DESCRIPTION:Bhopal\, Madhya Pradesh\, India\nCloses Nov 30\, 2026\, 6:29 PM
+  UTC\nOfficial page: https://unstop.com/hackathons/vit-bhopal-university-t
+ o-host-health-hackathon-30-in-january-2027-vit-bhopal-1781454\nCheck the o
+ fficial rules for the exact closing time and time zone.\nDetails: https://
+ hackathontracker.com/hackathons/vit-bhopal-university-to-host-health-hacka
+ thon-3-0-in-januar-112ij/
+URL:https://unstop.com/hackathons/vit-bhopal-university-to-host-health-hack
+ athon-30-in-january-2027-vit-bhopal-1781454
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: VIT Bhopal University to Host Health Hackathon 3.0
+  in January 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

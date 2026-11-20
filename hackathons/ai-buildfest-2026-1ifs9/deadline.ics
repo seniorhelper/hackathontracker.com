@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI BuildFest 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ai-buildfest-2026-1ifs9@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261212T053000Z
+DTEND:20261212T063000Z
+SUMMARY:Deadline: AI BuildFest 2026
+DESCRIPTION:INR 28\,500\nOnline\nCloses Dec 12\, 2026\, 6:30 AM UTC\nOffici
+ al page: https://unstop.com/hackathons/ai-buildfest-2026-frontend-arena-17
+ 74417\nCheck the official rules for the exact closing time and time zone.\
+ nDetails: https://hackathontracker.com/hackathons/ai-buildfest-2026-1ifs9/
+URL:https://unstop.com/hackathons/ai-buildfest-2026-frontend-arena-1774417
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AI BuildFest 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

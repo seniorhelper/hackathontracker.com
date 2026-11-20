@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Pitch Premier | Techkriti | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:pitch-premier-techkriti-iit-kanpur-l3itm@hackathontracker.com
+DTSTAMP:20261120T202019Z
+DTSTART:20261231T070226Z
+DTEND:20261231T080226Z
+SUMMARY:Deadline: Pitch Premier | Techkriti | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 8:02 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/pitch-premier-techkri
+ ti27-techkriti-1764454\nCheck the official rules for the exact closing tim
+ e and time zone.\nDetails: https://hackathontracker.com/hackathons/pitch-p
+ remier-techkriti-iit-kanpur-l3itm/
+URL:https://unstop.com/hackathons/pitch-premier-techkriti27-techkriti-17644
+ 54
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Pitch Premier | Techkriti | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

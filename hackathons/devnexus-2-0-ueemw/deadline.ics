@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:DevNexus 2.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:devnexus-2-0-ueemw@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261128T173000Z
+DTEND:20261128T183000Z
+SUMMARY:Deadline: DevNexus 2.0
+DESCRIPTION:Kolkata\, West Bengal\, India\nCloses Nov 28\, 2026\, 6:30 PM U
+ TC\nOfficial page: https://devnexus2.devfolio.co/\nCheck the official rule
+ s for the exact closing time and time zone.\nDetails: https://hackathontra
+ cker.com/hackathons/devnexus-2-0-ueemw/
+URL:https://devnexus2.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: DevNexus 2.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

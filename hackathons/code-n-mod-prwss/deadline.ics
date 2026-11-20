@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Code N Mod
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:code-n-mod-prwss@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261123T093000Z
+DTEND:20261123T103000Z
+SUMMARY:Deadline: Code N Mod
+DESCRIPTION:Tumakur\, Karnataka\, India\nCloses Nov 23\, 2026\, 10:30 AM UT
+ C\nOfficial page: https://codenmod.devfolio.co/\nCheck the official rules 
+ for the exact closing time and time zone.\nDetails: https://hackathontrack
+ er.com/hackathons/code-n-mod-prwss/
+URL:https://codenmod.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Code N Mod
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

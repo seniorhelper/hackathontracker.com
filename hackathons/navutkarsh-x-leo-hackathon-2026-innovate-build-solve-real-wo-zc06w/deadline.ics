@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:NavUtkarsh x Leo Hackathon 2026 | Innovate\, Build & Solve Rea
+ l-World Problems
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:navutkarsh-x-leo-hackathon-2026-innovate-build-solve-real-wo-zc06w@hack
+ athontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261226T133000Z
+DTEND:20261226T143000Z
+SUMMARY:Deadline: NavUtkarsh x Leo Hackathon 2026 | Innovate\, Build & Solv
+ e Real-World Problems
+DESCRIPTION:INR 30\,000\nBoisar\, Maharashtra\, India + online\nCloses Dec 
+ 26\, 2026\, 2:30 PM UTC\nOfficial page: https://unstop.com/hackathons/navu
+ tkarsh-x-leo-hackathon-2026-innovate-build-solve-real-world-problems-navut
+ karsh-1771952\nCheck the official rules for the exact closing time and tim
+ e zone.\nDetails: https://hackathontracker.com/hackathons/navutkarsh-x-leo
+ -hackathon-2026-innovate-build-solve-real-wo-zc06w/
+URL:https://unstop.com/hackathons/navutkarsh-x-leo-hackathon-2026-innovate-
+ build-solve-real-world-problems-navutkarsh-1771952
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: NavUtkarsh x Leo Hackathon 2026 | Innovate\, Build
+  & Solve Real-World Problems
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

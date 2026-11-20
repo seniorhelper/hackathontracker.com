@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:H.A.R.D. Hack 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:h-a-r-d-hack-2027-2gvbt@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Deadline: H.A.R.D. Hack 2027
+DESCRIPTION:$300 in prizes\nUniversity of California - Jacobs Hall\nOfficia
+ l page: https://h-a-r-d-hack-2027.devpost.com/\nCheck the official rules f
+ or the exact closing time and time zone.\nDetails: https://hackathontracke
+ r.com/hackathons/h-a-r-d-hack-2027-2gvbt/
+URL:https://h-a-r-d-hack-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: H.A.R.D. Hack 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

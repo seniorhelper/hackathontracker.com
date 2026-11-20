@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Ethon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ethon-1fzmb@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270305T073000Z
+DTEND:20270305T083000Z
+SUMMARY:Deadline: Ethon
+DESCRIPTION:INR 6\,000\nPune\, Maharashtra\, India\nCloses Mar 5\, 2027\, 8
+ :30 AM UTC\nOfficial page: https://unstop.com/hackathons/ethon-solutions-2
+ k27-army-institute-of-technology-pune-1799758\nCheck the official rules fo
+ r the exact closing time and time zone.\nDetails: https://hackathontracker
+ .com/hackathons/ethon-1fzmb/
+URL:https://unstop.com/hackathons/ethon-solutions-2k27-army-institute-of-te
+ chnology-pune-1799758
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Ethon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

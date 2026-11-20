@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Codathon | #1 Global Coding Contest
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codathon-1-global-coding-contest-xq783@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20270109T043100Z
+DTEND:20270109T053100Z
+SUMMARY:Deadline: Codathon | #1 Global Coding Contest
+DESCRIPTION:INR 30\,000\nOnline\nCloses Jan 9\, 2027\, 5:31 AM UTC\nOfficia
+ l page: https://unstop.com/hackathons/codathon-1-global-coding-contest-iit
+ -bombay-1811016\nCheck the official rules for the exact closing time and t
+ ime zone.\nDetails: https://hackathontracker.com/hackathons/codathon-1-glo
+ bal-coding-contest-xq783/
+URL:https://unstop.com/hackathons/codathon-1-global-coding-contest-iit-bomb
+ ay-1811016
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Codathon | #1 Global Coding Contest
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI Builder Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ai-builder-hackathon-15uqq@hackathontracker.com
+DTSTAMP:20261120T202018Z
+DTSTART:20261121T172900Z
+DTEND:20261121T182900Z
+SUMMARY:Deadline: AI Builder Hackathon
+DESCRIPTION:INR 200\,000\nOnline\nCloses Nov 21\, 2026\, 6:29 PM UTC\nOffic
+ ial page: https://unstop.com/hackathons/ai-builder-hackathon-product-space
+ -1799509\nCheck the official rules for the exact closing time and time zon
+ e.\nDetails: https://hackathontracker.com/hackathons/ai-builder-hackathon-
+ 15uqq/
+URL:https://unstop.com/hackathons/ai-builder-hackathon-product-space-179950
+ 9
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AI Builder Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Mogoj Dholai (CP contest)
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:mogoj-dholai-cp-contest-nxnno@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261219T073000Z
+DTEND:20261219T083000Z
+SUMMARY:Deadline: Mogoj Dholai (CP contest)
+DESCRIPTION:INR 6\,000\nKolkata\, West Bengal\, India\nCloses Dec 19\, 2026
+ \, 8:30 AM UTC\nOfficial page: https://unstop.com/hackathons/mogoj-dholai-
+ kernel-10-department-of-information-technology-jadavpur-university-1822588
+ \nCheck the official rules for the exact closing time and time zone.\nDeta
+ ils: https://hackathontracker.com/hackathons/mogoj-dholai-cp-contest-nxnno
+ /
+URL:https://unstop.com/hackathons/mogoj-dholai-kernel-10-department-of-info
+ rmation-technology-jadavpur-university-1822588
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Mogoj Dholai (CP contest)
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

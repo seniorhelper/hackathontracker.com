@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Craft N Code (Chattisgarh)
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:craft-n-code-chattisgarh-a8lpl@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270206T093100Z
+DTEND:20270206T103100Z
+SUMMARY:Deadline: Craft N Code (Chattisgarh)
+DESCRIPTION:INR 50\,000\nOnline\nCloses Feb 6\, 2027\, 10:31 AM UTC\nOffici
+ al page: https://unstop.com/hackathons/craft-n-code-chattisgarh-internatio
+ nal-institute-of-information-technology-iiit-bhubaneswar-1735451\nCheck th
+ e official rules for the exact closing time and time zone.\nDetails: https
+ ://hackathontracker.com/hackathons/craft-n-code-chattisgarh-a8lpl/
+URL:https://unstop.com/hackathons/craft-n-code-chattisgarh-international-in
+ stitute-of-information-technology-iiit-bhubaneswar-1735451
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Craft N Code (Chattisgarh)
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

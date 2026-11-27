@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hacksmart 2.0 Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hacksmart-2-0-hackathon-1stvs@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270207T123000Z
+DTEND:20270207T133000Z
+SUMMARY:Deadline: Hacksmart 2.0 Hackathon
+DESCRIPTION:INR 370\,000\nGurgaon\, Haryana\, India + online\nCloses Feb 7\
+ , 2027\, 1:30 PM UTC\nOfficial page: https://unstop.com/hackathons/hacksma
+ rt-20-geek-room-1799091\nCheck the official rules for the exact closing ti
+ me and time zone.\nDetails: https://hackathontracker.com/hackathons/hacksm
+ art-2-0-hackathon-1stvs/
+URL:https://unstop.com/hackathons/hacksmart-20-geek-room-1799091
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hacksmart 2.0 Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

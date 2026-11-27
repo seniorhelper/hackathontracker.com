@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Zyrelyx Global AI Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:zyrelyx-global-ai-hackathon-1osd8@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: Zyrelyx Global AI Hackathon
+DESCRIPTION:$15\,000 in prizes\nOnline\nOfficial page: https://zyrelyx-glob
+ al-ai-hackathon.devpost.com/\nCheck the official rules for the exact closi
+ ng time and time zone.\nDetails: https://hackathontracker.com/hackathons/z
+ yrelyx-global-ai-hackathon-1osd8/
+URL:https://zyrelyx-global-ai-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Zyrelyx Global AI Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI Vibeathon 1.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ai-vibeathon-1-0-1tnul@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261219T103000Z
+DTEND:20261219T113000Z
+SUMMARY:Deadline: AI Vibeathon 1.0
+DESCRIPTION:INR 50\,000\nDelhi\, Delhi\, India + online\nCloses Dec 19\, 20
+ 26\, 11:30 AM UTC\nOfficial page: https://unstop.com/hackathons/ai-vibeath
+ on-2026-promptwars-echo-engineers-echo-engineers-1799092\nCheck the offici
+ al rules for the exact closing time and time zone.\nDetails: https://hacka
+ thontracker.com/hackathons/ai-vibeathon-1-0-1tnul/
+URL:https://unstop.com/hackathons/ai-vibeathon-2026-promptwars-echo-enginee
+ rs-echo-engineers-1799092
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AI Vibeathon 1.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

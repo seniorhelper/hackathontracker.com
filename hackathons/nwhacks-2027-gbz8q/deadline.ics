@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:nwHacks 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:nwhacks-2027-gbz8q@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Deadline: nwHacks 2027
+DESCRIPTION:$CAD 1\,000\nUBC LSI Life Sciences Institute\nOfficial page: ht
+ tps://nwhacks-2027.devpost.com/\nCheck the official rules for the exact cl
+ osing time and time zone.\nDetails: https://hackathontracker.com/hackathon
+ s/nwhacks-2027-gbz8q/
+URL:https://nwhacks-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: nwHacks 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack The Rex
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-the-rex-13zwm@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Deadline: Hack The Rex
+DESCRIPTION:Etobicoke\, Ontario\, Canada\nOfficial page: https://www.hackth
+ erex.com/\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/hack-the-rex-13zwm/
+URL:https://www.hacktherex.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hack The Rex
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

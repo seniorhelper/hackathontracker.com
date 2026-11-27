@@ -1,0 +1,1255 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackathon deadlines (prize events)
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:algoconnect-quantathon-2026-1az0j@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Deadline: AlgoConnect Quantathon - 2026
+DESCRIPTION:$700 in prizes\nAlgoConnect - Montréal Offices\nOfficial page:
+  https://algoconnect-quantathon-2026.devpost.com/\nCheck the official rule
+ s for the exact closing time and time zone.\nDetails: https://hackathontra
+ cker.com/hackathons/algoconnect-quantathon-2026-1az0j/
+URL:https://algoconnect-quantathon-2026.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AlgoConnect Quantathon - 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blackout-2026-xpnzy@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Deadline: Blackout 2026
+DESCRIPTION:$5\,000 in prizes\nCoimbatore\nOfficial page: https://blackout-
+ 2026.devpost.com/\nCheck the official rules for the exact closing time and
+  time zone.\nDetails: https://hackathontracker.com/hackathons/blackout-202
+ 6-xpnzy/
+URL:https://blackout-2026.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Blackout 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:buildhybridai-2026-ww40h@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: #BuildHybridAI 2026
+DESCRIPTION:$30\,000 in prizes\nOnline\nOfficial page: https://firebasehybr
+ idaihackathon.devpost.com/\nCheck the official rules for the exact closing
+  time and time zone.\nDetails: https://hackathontracker.com/hackathons/bui
+ ldhybridai-2026-ww40h/
+URL:https://firebasehybridaihackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: #BuildHybridAI 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csc-winter-sparkathon-wsi8u@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: CSC Winter Sparkathon
+DESCRIPTION:$300 in prizes\nOnline\nOfficial page: https://csc-winter-spark
+ athon.devpost.com/\nCheck the official rules for the exact closing time an
+ d time zone.\nDetails: https://hackathontracker.com/hackathons/csc-winter-
+ sparkathon-wsi8u/
+URL:https://csc-winter-sparkathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CSC Winter Sparkathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:obscura-satellite-ai-research-challenge-1st9l@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: OBSCURA: Satellite AI Research Challenge
+DESCRIPTION:$50 in prizes\nOnline\nOfficial page: https://obscura.devpost.c
+ om/\nCheck the official rules for the exact closing time and time zone.\nD
+ etails: https://hackathontracker.com/hackathons/obscura-satellite-ai-resea
+ rch-challenge-1st9l/
+URL:https://obscura.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: OBSCURA: Satellite AI Research Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:acodemic-x-keebsforwater-global-sdg-hackathon-tpffh@hackathontracker.co
+ m
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: Acodemic X KeebsforWater Global SDG Hackathon
+DESCRIPTION:$35 in prizes\nOnline\nOfficial page: https://hackathon-draft-3
+ 2215.devpost.com/\nCheck the official rules for the exact closing time and
+  time zone.\nDetails: https://hackathontracker.com/hackathons/acodemic-x-k
+ eebsforwater-global-sdg-hackathon-tpffh/
+URL:https://hackathon-draft-32215.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Acodemic X KeebsforWater Global SDG Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:anna-ai-os-founding-builder-challenge-2026-vz773@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261130T035900Z
+DTEND:20261130T045900Z
+SUMMARY:Deadline: Anna AI OS Founding Builder Challenge 2026
+DESCRIPTION:$80\,000 in prizes\nOnline\nCloses Nov 30\, 2026\, 4:59 AM UTC\
+ nOfficial page: https://unstop.com/hackathons/anna-ai-os-founding-builder-
+ challenge-2026-talentsec-technology-hong-kong-limited-1762519\nCheck the o
+ fficial rules for the exact closing time and time zone.\nDetails: https://
+ hackathontracker.com/hackathons/anna-ai-os-founding-builder-challenge-2026
+ -vz773/
+URL:https://unstop.com/hackathons/anna-ai-os-founding-builder-challenge-202
+ 6-talentsec-technology-hong-kong-limited-1762519
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Anna AI OS Founding Builder Challenge 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:code-for-change-wcsli@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Deadline: Code for Change
+DESCRIPTION:$200 in prizes\nOnline\nOfficial page: https://code-for-change-
+ global.devpost.com/\nCheck the official rules for the exact closing time a
+ nd time zone.\nDetails: https://hackathontracker.com/hackathons/code-for-c
+ hange-wcsli/
+URL:https://code-for-change-global.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Code for Change
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kiroween-2026-12mg7@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Deadline: Kiroween 2026
+DESCRIPTION:$100\,000 in prizes\nOnline\nOfficial page: https://kiroween.de
+ vpost.com/\nCheck the official rules for the exact closing time and time z
+ one.\nDetails: https://hackathontracker.com/hackathons/kiroween-2026-12mg7
+ /
+URL:https://kiroween.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Kiroween 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:launchpad-hacks-580k-in-prizes-1r5by@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Deadline: LaunchPad Hacks (580k In Prizes!)
+DESCRIPTION:$300 in prizes\nOnline\nOfficial page: https://launchpad-hacks.
+ devpost.com/\nCheck the official rules for the exact closing time and time
+  zone.\nDetails: https://hackathontracker.com/hackathons/launchpad-hacks-5
+ 80k-in-prizes-1r5by/
+URL:https://launchpad-hacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: LaunchPad Hacks (580k In Prizes!)
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:the-dawn-of-superintelligence-kaya-ai-grand-challenge-1z0cr@hackathontr
+ acker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Deadline: The Dawn of Superintelligence | Kaya AI Grand Challenge
+DESCRIPTION:$3\,000 in prizes\nMumbai\nOfficial page: https://kaya-ai-grand
+ -challenge.devpost.com/\nCheck the official rules for the exact closing ti
+ me and time zone.\nDetails: https://hackathontracker.com/hackathons/the-da
+ wn-of-superintelligence-kaya-ai-grand-challenge-1z0cr/
+URL:https://kaya-ai-grand-challenge.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: The Dawn of Superintelligence | Kaya AI Grand Chal
+ lenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:deck-the-pixels-1ru37@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: Deck the Pixels
+DESCRIPTION:$25\,000 in prizes\nOnline\nOfficial page: https://deckthepixel
+ s.devpost.com/\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/deck-the-pixels
+ -1ru37/
+URL:https://deckthepixels.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Deck the Pixels
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:learn-ar-with-specs-10vg6@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: Learn AR with SPECS
+DESCRIPTION:$2\,500 in prizes\nOnline\nOfficial page: https://learn-specs.d
+ evpost.com/\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/learn-ar-with-spec
+ s-10vg6/
+URL:https://learn-specs.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Learn AR with SPECS
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:slay-hacks-1rk3l@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: SLAY HACKS
+DESCRIPTION:$4\,500 in prizes\nOnline\nOfficial page: https://slayy-hacks.d
+ evpost.com/\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/slay-hacks-1rk3l/
+URL:https://slayy-hacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: SLAY HACKS
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:zyrelyx-global-ai-hackathon-1osd8@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: Zyrelyx Global AI Hackathon
+DESCRIPTION:$15\,000 in prizes\nOnline\nOfficial page: https://zyrelyx-glob
+ al-ai-hackathon.devpost.com/\nCheck the official rules for the exact closi
+ ng time and time zone.\nDetails: https://hackathontracker.com/hackathons/z
+ yrelyx-global-ai-hackathon-1osd8/
+URL:https://zyrelyx-global-ai-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Zyrelyx Global AI Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:zero-g-hacks-1q6ee@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: Zero-G Hacks
+DESCRIPTION:$120 in prizes\nOnline\nOfficial page: https://zero-g-hacks.dev
+ post.com/\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/zero-g-hacks-1q6ee/
+URL:https://zero-g-hacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Zero-G Hacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:reddit-s-game-of-the-day-hackathon-3e36x@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Deadline: Reddit’s Game of the Day Hackathon
+DESCRIPTION:$35\,000 in prizes\nOnline\nOfficial page: https://redditgameof
+ day2026.devpost.com/\nCheck the official rules for the exact closing time 
+ and time zone.\nDetails: https://hackathontracker.com/hackathons/reddit-s-
+ game-of-the-day-hackathon-3e36x/
+URL:https://redditgameofday2026.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Reddit’s Game of the Day Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:safespace-hacks-judges-needed-wwrsw@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Deadline: SafeSpace Hacks - Judges Needed
+DESCRIPTION:$280 in prizes\nOnline\nOfficial page: https://safespace-hacks.
+ devpost.com/\nCheck the official rules for the exact closing time and time
+  zone.\nDetails: https://hackathontracker.com/hackathons/safespace-hacks-j
+ udges-needed-wwrsw/
+URL:https://safespace-hacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: SafeSpace Hacks - Judges Needed
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-openbuild-p9g4p@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Deadline: AI OpenBuild
+DESCRIPTION:$150 in prizes\nOnline\nOfficial page: https://ai-openbuild.dev
+ post.com/\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/ai-openbuild-p9g4p/
+URL:https://ai-openbuild.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AI OpenBuild
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:green-shift-hacks-x6rel@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Deadline: Green Shift Hacks
+DESCRIPTION:$125 in prizes\nOnline\nOfficial page: https://green-shift-hack
+ s.devpost.com/\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/green-shift-hac
+ ks-x6rel/
+URL:https://green-shift-hacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Green Shift Hacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aws-msp-ai-hackathon-3y2eb@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Deadline: AWS MSP AI Hackathon
+DESCRIPTION:$64\,000 in prizes\nOnline\nOfficial page: https://aws-agentic-
+ msp.devpost.com/\nCheck the official rules for the exact closing time and 
+ time zone.\nDetails: https://hackathontracker.com/hackathons/aws-msp-ai-ha
+ ckathon-3y2eb/
+URL:https://aws-agentic-msp.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AWS MSP AI Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:qnx-global-hackathon-1nznz@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Deadline: QNX Global Hackathon
+DESCRIPTION:$50\,000 in prizes\nOnline\nOfficial page: https://qnx.devpost.
+ com/\nCheck the official rules for the exact closing time and time zone.\n
+ Details: https://hackathontracker.com/hackathons/qnx-global-hackathon-1nzn
+ z/
+URL:https://qnx.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: QNX Global Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:silicon-valley-buildathon-14he6@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Deadline: Silicon Valley Buildathon
+DESCRIPTION:$500 in prizes\nOnline\nOfficial page: https://silicon-valley-b
+ uildathon.devpost.com/\nCheck the official rules for the exact closing tim
+ e and time zone.\nDetails: https://hackathontracker.com/hackathons/silicon
+ -valley-buildathon-14he6/
+URL:https://silicon-valley-buildathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Silicon Valley Buildathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ship-or-die-100k-hackathon-ahb1v@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Deadline: Ship or Die $100K Hackathon
+DESCRIPTION:$100\,000 in prizes\nOnline\nOfficial page: https://www.ship-or
+ -die.com/100k-hackathon\nCheck the official rules for the exact closing ti
+ me and time zone.\nDetails: https://hackathontracker.com/hackathons/ship-o
+ r-die-100k-hackathon-ahb1v/
+URL:https://www.ship-or-die.com/100k-hackathon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Ship or Die $100K Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ryze-hacks-2026-14rgx@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Deadline: Ryze Hacks 2026
+DESCRIPTION:$3\,260 in prizes\nOnline\nOfficial page: https://ryzehacks.dev
+ post.com/\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/ryze-hacks-2026-14rg
+ x/
+URL:https://ryzehacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Ryze Hacks 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:accessed-hacks-wms77@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Deadline: AccessED Hacks
+DESCRIPTION:$225 in prizes\nOnline\nOfficial page: https://accessed-hacks.d
+ evpost.com/\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/accessed-hacks-wms
+ 77/
+URL:https://accessed-hacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AccessED Hacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:global-perceive-drawing-challenge-sbhf0@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Deadline: Global Perceive Drawing Challenge
+DESCRIPTION:$50 in prizes\nOnline\nOfficial page: https://perceive-drawing-
+ challenge.devpost.com/\nCheck the official rules for the exact closing tim
+ e and time zone.\nDetails: https://hackathontracker.com/hackathons/global-
+ perceive-drawing-challenge-sbhf0/
+URL:https://perceive-drawing-challenge.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Global Perceive Drawing Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hackstead-winterfest-1btkh@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Deadline: Hackstead: Winterfest
+DESCRIPTION:$2\,830 in prizes\nOnline\nOfficial page: https://hackstead.dev
+ post.com/\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/hackstead-winterfest
+ -1btkh/
+URL:https://hackstead.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hackstead: Winterfest
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:national-research-cloud-innovation-challenge-season-4-by-3sv-1ae87@hack
+ athontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261220T172900Z
+DTEND:20261220T182900Z
+SUMMARY:Deadline: National Research & Cloud Innovation Challenge Season 4 b
+ y 3SVK — Powered by Adaption Labs | 4.9K+ Registrations
+DESCRIPTION:$100 in prizes\nOnline\nCloses Dec 20\, 2026\, 6:29 PM UTC\nOff
+ icial page: https://unstop.com/hackathons/cloud-innovation-challenge-jawah
+ arlal-nehru-technological-university-jntuh-hyderabad-1652247\nCheck the of
+ ficial rules for the exact closing time and time zone.\nDetails: https://h
+ ackathontracker.com/hackathons/national-research-cloud-innovation-challeng
+ e-season-4-by-3sv-1ae87/
+URL:https://unstop.com/hackathons/cloud-innovation-challenge-jawaharlal-neh
+ ru-technological-university-jntuh-hyderabad-1652247
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: National Research & Cloud Innovation Challenge Sea
+ son 4 by 3SVK — Powered by Adaption Labs | 4.9K+ Registrations
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiter-hacks-v1-xlh7c@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:Deadline: Arbiter Hacks V1
+DESCRIPTION:$7\,800 in prizes\nOnline\nOfficial page: https://arbiter-hacks
+ -v1.devpost.com/\nCheck the official rules for the exact closing time and 
+ time zone.\nDetails: https://hackathontracker.com/hackathons/arbiter-hacks
+ -v1-xlh7c/
+URL:https://arbiter-hacks-v1.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Arbiter Hacks V1
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:codegeist-2026-build-with-context-ship-with-confidence-4k7ff@hackathont
+ racker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Deadline: Codegeist 2026: Build with context. Ship with confidence.
+DESCRIPTION:$120\,000 in prizes\nOnline\nOfficial page: https://codegeist20
+ 26.devpost.com/\nCheck the official rules for the exact closing time and t
+ ime zone.\nDetails: https://hackathontracker.com/hackathons/codegeist-2026
+ -build-with-context-ship-with-confidence-4k7ff/
+URL:https://codegeist2026.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Codegeist 2026: Build with context. Ship with conf
+ idence.
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cracklehacks-ds3ar@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:Deadline: CrackleHacks
+DESCRIPTION:$20 in prizes\nOnline\nOfficial page: https://cracklehacks.devp
+ ost.com/\nCheck the official rules for the exact closing time and time zon
+ e.\nDetails: https://hackathontracker.com/hackathons/cracklehacks-ds3ar/
+URL:https://cracklehacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CrackleHacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:evensonarisnord-1u0jv@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Deadline: evensonarisnord
+DESCRIPTION:$150 in prizes\nOnline\nOfficial page: https://evensonarisnord.
+ devpost.com/\nCheck the official rules for the exact closing time and time
+  zone.\nDetails: https://hackathontracker.com/hackathons/evensonarisnord-1
+ u0jv/
+URL:https://evensonarisnord.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: evensonarisnord
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hackthefashion-global-26-1oidm@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Deadline: HackTheFashion Global'26
+DESCRIPTION:$10\,000 in prizes\nOnline\nOfficial page: https://hackthefashi
+ on-global-26.devpost.com/\nCheck the official rules for the exact closing 
+ time and time zone.\nDetails: https://hackathontracker.com/hackathons/hack
+ thefashion-global-26-1oidm/
+URL:https://hackthefashion-global-26.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackTheFashion Global'26
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:united-hacks-v8-157wk@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Deadline: United Hacks V8
+DESCRIPTION:$18\,700 in prizes\nOnline\nOfficial page: https://unitedhacksv
+ 8.devpost.com/\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/united-hacks-v8
+ -157wk/
+URL:https://unitedhacksv8.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: United Hacks V8
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:checkpoint-1-games-for-good-fyp5o@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Deadline: checkpoint 1 — games for good
+DESCRIPTION:$15\,560 in prizes\nOnline\nOfficial page: https://checkpoint-1
+ .devpost.com/\nCheck the official rules for the exact closing time and tim
+ e zone.\nDetails: https://hackathontracker.com/hackathons/checkpoint-1-gam
+ es-for-good-fyp5o/
+URL:https://checkpoint-1.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: checkpoint 1 — games for good
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:open-agentic-web-challenge-13dfe@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:Deadline: Open Agentic Web Challenge
+DESCRIPTION:$10\,000 in prizes\nOnline\nOfficial page: https://cognizant-ag
+ enticweb.devpost.com/\nCheck the official rules for the exact closing time
+  and time zone.\nDetails: https://hackathontracker.com/hackathons/open-age
+ ntic-web-challenge-13dfe/
+URL:https://cognizant-agenticweb.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Open Agentic Web Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cloud9-x-jetbrains-sky-s-the-limit-hackathon-2026-4a7tq@hackathontracke
+ r.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Deadline: Cloud9 x JetBrains: Sky's The Limit Hackathon 2026
+DESCRIPTION:$25\,000 in prizes\nOnline\nOfficial page: https://cloud9.devpo
+ st.com/\nCheck the official rules for the exact closing time and time zone
+ .\nDetails: https://hackathontracker.com/hackathons/cloud9-x-jetbrains-sky
+ -s-the-limit-hackathon-2026-4a7tq/
+URL:https://cloud9.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Cloud9 x JetBrains: Sky's The Limit Hackathon 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hackstorm-3-0-sense-think-and-act-1kkyn@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Deadline: HackStorm 3.0: Sense\, Think and Act
+DESCRIPTION:$5\,200 in prizes\nSan Francisco\nOfficial page: https://hackst
+ orm3.devpost.com/\nCheck the official rules for the exact closing time and
+  time zone.\nDetails: https://hackathontracker.com/hackathons/hackstorm-3-
+ 0-sense-think-and-act-1kkyn/
+URL:https://hackstorm3.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackStorm 3.0: Sense\, Think and Act
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cosmo-hacks-2026-1kkn2@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:Deadline: Cosmo Hacks 2026
+DESCRIPTION:$147\,105 in prizes\nOnline\nOfficial page: https://cosmohacks.
+ devpost.com/\nCheck the official rules for the exact closing time and time
+  zone.\nDetails: https://hackathontracker.com/hackathons/cosmo-hacks-2026-
+ 1kkn2/
+URL:https://cosmohacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Cosmo Hacks 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:h-a-r-d-hack-2027-2gvbt@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Deadline: H.A.R.D. Hack 2027
+DESCRIPTION:$300 in prizes\nUniversity of California - Jacobs Hall\nOfficia
+ l page: https://h-a-r-d-hack-2027.devpost.com/\nCheck the official rules f
+ or the exact closing time and time zone.\nDetails: https://hackathontracke
+ r.com/hackathons/h-a-r-d-hack-2027-2gvbt/
+URL:https://h-a-r-d-hack-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: H.A.R.D. Hack 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nsh-rpi-2027-1fgsb@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Deadline: NSH @RPI 2027
+DESCRIPTION:$3\,600 in prizes\nRPI DCC\nOfficial page: https://nsh-rpi-2027
+ .devpost.com/\nCheck the official rules for the exact closing time and tim
+ e zone.\nDetails: https://hackathontracker.com/hackathons/nsh-rpi-2027-1fg
+ sb/
+URL:https://nsh-rpi-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: NSH @RPI 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:the-arcticathon-12e2u@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270130T173000Z
+DTEND:20270130T183000Z
+SUMMARY:Deadline: The Arcticathon
+DESCRIPTION:$100\,000 in prizes\nOnline\nCloses Jan 30\, 2027\, 6:30 PM UTC
+ \nOfficial page: https://unstop.com/hackathons/the-arcticathon-bidaya-1759
+ 619\nCheck the official rules for the exact closing time and time zone.\nD
+ etails: https://hackathontracker.com/hackathons/the-arcticathon-12e2u/
+URL:https://unstop.com/hackathons/the-arcticathon-bidaya-1759619
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: The Arcticathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:build-with-ai-pico-space-program-1y1t4@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Deadline: Build with AI - PICO Space Program
+DESCRIPTION:$50\,000 in prizes\nOnline\nOfficial page: https://pico-space-p
+ rogram.devpost.com/\nCheck the official rules for the exact closing time a
+ nd time zone.\nDetails: https://hackathontracker.com/hackathons/build-with
+ -ai-pico-space-program-1y1t4/
+URL:https://pico-space-program.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Build with AI - PICO Space Program
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hackout-2027-1ssoy@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Deadline: HackOut! 2027
+DESCRIPTION:$3\,000 in prizes\nOnline\nOfficial page: https://hackout-branc
+ hout.devpost.com/\nCheck the official rules for the exact closing time and
+  time zone.\nDetails: https://hackathontracker.com/hackathons/hackout-2027
+ -1ssoy/
+URL:https://hackout-branchout.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackOut! 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hacktitan-a65b8@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+SUMMARY:Deadline: HackTitan
+DESCRIPTION:$10\,000 in prizes\nOnline\nOfficial page: https://hacktitan.de
+ vpost.com/\nCheck the official rules for the exact closing time and time z
+ one.\nDetails: https://hackathontracker.com/hackathons/hacktitan-a65b8/
+URL:https://hacktitan.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackTitan
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:decisions-modeling-for-greater-philadelphia-xmh1x@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Deadline: Decisions Modeling for Greater Philadelphia
+DESCRIPTION:$100 in prizes\nPennovation Works\nOfficial page: https://tbd-h
+ ackathon.devpost.com/\nCheck the official rules for the exact closing time
+  and time zone.\nDetails: https://hackathontracker.com/hackathons/decision
+ s-modeling-for-greater-philadelphia-xmh1x/
+URL:https://tbd-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Decisions Modeling for Greater Philadelphia
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:developerweek-2027-hackathon-iahl6@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:Deadline: DeveloperWeek 2027 Hackathon
+DESCRIPTION:$6\,000 in prizes\nSanta Clara Convention Center + Online\nOffi
+ cial page: https://developerweek-2027-hackathon.devpost.com/\nCheck the of
+ ficial rules for the exact closing time and time zone.\nDetails: https://h
+ ackathontracker.com/hackathons/developerweek-2027-hackathon-iahl6/
+URL:https://developerweek-2027-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: DeveloperWeek 2027 Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-for-human-impact-a-global-basis-hackathon-yu7jc@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Deadline: AI for Human Impact: A Global BASIS Hackathon
+DESCRIPTION:$10\,200 in prizes\nOnline\nOfficial page: https://basisglobalh
+ ackathon.devpost.com/\nCheck the official rules for the exact closing time
+  and time zone.\nDetails: https://hackathontracker.com/hackathons/ai-for-h
+ uman-impact-a-global-basis-hackathon-yu7jc/
+URL:https://basisglobalhackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AI for Human Impact: A Global BASIS Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ntu-beyond-binary-techathon-2027-1412h@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Deadline: NTU Beyond Binary Techathon 2027
+DESCRIPTION:$10\,000 in prizes\nSingapore\nOfficial page: https://ntu-beyon
+ d-binary-2027.devpost.com/\nCheck the official rules for the exact closing
+  time and time zone.\nDetails: https://hackathontracker.com/hackathons/ntu
+ -beyond-binary-techathon-2027-1412h/
+URL:https://ntu-beyond-binary-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: NTU Beyond Binary Techathon 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:civic-hacks-2027-tdtps@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Deadline: Civic Hacks 2027
+DESCRIPTION:$300 in prizes\nBoston University- CDS\nOfficial page: https://
+ civic-hacks-2027-32027.devpost.com/\nCheck the official rules for the exac
+ t closing time and time zone.\nDetails: https://hackathontracker.com/hacka
+ thons/civic-hacks-2027-tdtps/
+URL:https://civic-hacks-2027-32027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Civic Hacks 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rebelhacks-2027-hfui0@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Deadline: RebelHacks 2027
+DESCRIPTION:$2\,500 in prizes\nUniversity of Nevada Las Vegas\nOfficial pag
+ e: https://rebelhacks-2027.devpost.com/\nCheck the official rules for the 
+ exact closing time and time zone.\nDetails: https://hackathontracker.com/h
+ ackathons/rebelhacks-2027-hfui0/
+URL:https://rebelhacks-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: RebelHacks 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:launchly-project-sprint-19vn9@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+SUMMARY:Deadline: Launchly Project Sprint
+DESCRIPTION:$1\,500 in prizes\nOnline\nOfficial page: https://launchlyapp.d
+ evpost.com/\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/launchly-project-s
+ print-19vn9/
+URL:https://launchlyapp.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Launchly Project Sprint
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hook-em-hacks-2027-1b75x@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Deadline: Hook Em Hacks 2027
+DESCRIPTION:$1\,000 in prizes\nAustin\nOfficial page: https://hook-em-hacks
+ -2027.devpost.com/\nCheck the official rules for the exact closing time an
+ d time zone.\nDetails: https://hackathontracker.com/hackathons/hook-em-hac
+ ks-2027-1b75x/
+URL:https://hook-em-hacks-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hook Em Hacks 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:forgehacks-ofzaq@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Deadline: Forgehacks
+DESCRIPTION:$6\,000 in prizes\nPharmacutical Sciences Building\nOfficial pa
+ ge: https://forgehacks-biztech.devpost.com/\nCheck the official rules for 
+ the exact closing time and time zone.\nDetails: https://hackathontracker.c
+ om/hackathons/forgehacks-ofzaq/
+URL:https://forgehacks-biztech.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Forgehacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tauras-by-revat-crypto-trading-hackathon-prove-your-edge-the-1jbhq@hack
+ athontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270309T053652Z
+DTEND:20270309T063652Z
+SUMMARY:Deadline: Tauras by Revat: Crypto Trading Hackathon | Prove Your Ed
+ ge\, Then Trade It Live
+DESCRIPTION:$1\,250 in prizes\nOnline\nCloses Mar 9\, 2027\, 6:36 AM UTC\nO
+ fficial page: https://unstop.com/hackathons/tauras-by-revat-crypto-trading
+ -hackathon-prove-your-edge-then-trade-it-live-revat-crypto-fund-1820715\nC
+ heck the official rules for the exact closing time and time zone.\nDetails
+ : https://hackathontracker.com/hackathons/tauras-by-revat-crypto-trading-h
+ ackathon-prove-your-edge-the-1jbhq/
+URL:https://unstop.com/hackathons/tauras-by-revat-crypto-trading-hackathon-
+ prove-your-edge-then-trade-it-live-revat-crypto-fund-1820715
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Tauras by Revat: Crypto Trading Hackathon | Prove 
+ Your Edge\, Then Trade It Live
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tech-to-treasure-hackathon-1jm2r@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:Deadline: Tech to Treasure Hackathon
+DESCRIPTION:$450 in prizes\nTully Community Branch Library\nOfficial page: 
+ https://techtotreasure.devpost.com/\nCheck the official rules for the exac
+ t closing time and time zone.\nDetails: https://hackathontracker.com/hacka
+ thons/tech-to-treasure-hackathon-1jm2r/
+URL:https://techtotreasure.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Tech to Treasure Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:build-beyond-hackathon-1749d@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Deadline: Build Beyond Hackathon
+DESCRIPTION:$5\,000 in prizes\nOnline\nOfficial page: https://build-beyond.
+ devpost.com/\nCheck the official rules for the exact closing time and time
+  zone.\nDetails: https://hackathontracker.com/hackathons/build-beyond-hack
+ athon-1749d/
+URL:https://build-beyond.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Build Beyond Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:checkpoint-journeys-hanoi-1os7k@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Deadline: checkpoint journeys — hanoi
+DESCRIPTION:$9\,112 in prizes\nTrue North International School\, Hà Nội\
+ , Vietnam\nOfficial page: https://checkpoint-journeys-hanoi.devpost.com/\n
+ Check the official rules for the exact closing time and time zone.\nDetail
+ s: https://hackathontracker.com/hackathons/checkpoint-journeys-hanoi-1os7k
+ /
+URL:https://checkpoint-journeys-hanoi.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: checkpoint journeys — hanoi
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gnec-hackathon-2027-winter-compete-for-un-affiliated-ngo-int-uo76x@hack
+ athontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Deadline: GNEC Hackathon 2027 Winter - Compete For UN-Affiliated/NG
+ O Internships & Prizes
+DESCRIPTION:$700 in prizes\nOnline\nOfficial page: https://gnec-hackathon-2
+ 027-winter.devpost.com/\nCheck the official rules for the exact closing ti
+ me and time zone.\nDetails: https://hackathontracker.com/hackathons/gnec-h
+ ackathon-2027-winter-compete-for-un-affiliated-ngo-int-uo76x/
+URL:https://gnec-hackathon-2027-winter.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: GNEC Hackathon 2027 Winter - Compete For UN-Affili
+ ated/NGO Internships & Prizes
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:machine-age-1lf0l@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:Deadline: MACHINE AGE
+DESCRIPTION:$10\,000 in prizes\nOnline\nOfficial page: https://machineage.d
+ evpost.com/\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/machine-age-1lf0l/
+URL:https://machineage.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: MACHINE AGE
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:n-a-ldjde@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270406
+DTEND;VALUE=DATE:20270407
+SUMMARY:Deadline: N/A
+DESCRIPTION:$2 in prizes\nOnline\nOfficial page: https://ai-content-engine-
+ hackathon.devpost.com/\nCheck the official rules for the exact closing tim
+ e and time zone.\nDetails: https://hackathontracker.com/hackathons/n-a-ldj
+ de/
+URL:https://ai-content-engine-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: N/A
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:knightlytics-6r0zm@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Deadline: Knightlytics
+DESCRIPTION:$100 in prizes\nOnline\nOfficial page: https://knightlytics.dev
+ post.com/\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/knightlytics-6r0zm/
+URL:https://knightlytics.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Knightlytics
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:desert-dev-lab-2027-hgcdh@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:Deadline: Desert Dev Lab 2027
+DESCRIPTION:$1\,000 in prizes\nAlbuquerque\nOfficial page: https://desert-d
+ ev-lab-2027.devpost.com/\nCheck the official rules for the exact closing t
+ ime and time zone.\nDetails: https://hackathontracker.com/hackathons/deser
+ t-dev-lab-2027-hgcdh/
+URL:https://desert-dev-lab-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Desert Dev Lab 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:developerweek-new-york-2027-hackathon-wcamf@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270617
+DTEND;VALUE=DATE:20270618
+SUMMARY:Deadline: DeveloperWeek New York 2027 Hackathon
+DESCRIPTION:$12\,500 in prizes\nMeadowlands Exposition Center + Online\nOff
+ icial page: https://developerweek-new-york-2027.devpost.com/\nCheck the of
+ ficial rules for the exact closing time and time zone.\nDetails: https://h
+ ackathontracker.com/hackathons/developerweek-new-york-2027-hackathon-wcamf
+ /
+URL:https://developerweek-new-york-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: DeveloperWeek New York 2027 Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:devnetwork-api-cloud-ai-hackathon-2027-26qpl@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20270910
+DTEND;VALUE=DATE:20270911
+SUMMARY:Deadline: DevNetwork [API + Cloud + AI] Hackathon 2027
+DESCRIPTION:$12\,500 in prizes\nSanta Clara Convention Center and Online\nO
+ fficial page: https://devnetwork-api-hackathon-2027.devpost.com/\nCheck th
+ e official rules for the exact closing time and time zone.\nDetails: https
+ ://hackathontracker.com/hackathons/devnetwork-api-cloud-ai-hackathon-2027-
+ 26qpl/
+URL:https://devnetwork-api-hackathon-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: DevNetwork [API + Cloud + AI] Hackathon 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-quantathon-v4-18sv9@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20271024
+DTEND;VALUE=DATE:20271025
+SUMMARY:Deadline: SC Quantathon v4
+DESCRIPTION:$250 in prizes\nWatt Family Innovation Center\nOfficial page: h
+ ttps://sc-quantathon-v4.devpost.com/\nCheck the official rules for the exa
+ ct closing time and time zone.\nDetails: https://hackathontracker.com/hack
+ athons/sc-quantathon-v4-18sv9/
+URL:https://sc-quantathon-v4.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: SC Quantathon v4
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hacks-test-3ibev@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART;VALUE=DATE:20271210
+DTEND;VALUE=DATE:20271211
+SUMMARY:Deadline: hacks test
+DESCRIPTION:$1 in prizes\nVancouver\nOfficial page: https://youtube-automat
+ ion-hackathon.devpost.com/\nCheck the official rules for the exact closing
+  time and time zone.\nDetails: https://hackathontracker.com/hackathons/hac
+ ks-test-3ibev/
+URL:https://youtube-automation-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: hacks test
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

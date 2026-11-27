@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:thanksgiving thank you hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:thanksgiving-thank-you-hackathon-1p2ct@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Deadline: thanksgiving thank you hackathon
+DESCRIPTION:Online\nOfficial page: https://thanksgiving-hackathon.devpost.c
+ om/\nCheck the official rules for the exact closing time and time zone.\nD
+ etails: https://hackathontracker.com/hackathons/thanksgiving-thank-you-hac
+ kathon-1p2ct/
+URL:https://thanksgiving-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: thanksgiving thank you hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

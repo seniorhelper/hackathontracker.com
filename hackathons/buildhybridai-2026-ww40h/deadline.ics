@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:#BuildHybridAI 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:buildhybridai-2026-ww40h@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: #BuildHybridAI 2026
+DESCRIPTION:$30\,000 in prizes\nOnline\nOfficial page: https://firebasehybr
+ idaihackathon.devpost.com/\nCheck the official rules for the exact closing
+  time and time zone.\nDetails: https://hackathontracker.com/hackathons/bui
+ ldhybridai-2026-ww40h/
+URL:https://firebasehybridaihackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: #BuildHybridAI 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

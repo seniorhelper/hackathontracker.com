@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodeHive Coding Night
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codehive-coding-night-ekqxx@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261128T103100Z
+DTEND:20261128T113100Z
+SUMMARY:Deadline: CodeHive Coding Night
+DESCRIPTION:Online\nCloses Nov 28\, 2026\, 11:31 AM UTC\nOfficial page: htt
+ ps://unstop.com/hackathons/codehive-rivalry-night-code-hive-1830429\nCheck
+  the official rules for the exact closing time and time zone.\nDetails: ht
+ tps://hackathontracker.com/hackathons/codehive-coding-night-ekqxx/
+URL:https://unstop.com/hackathons/codehive-rivalry-night-code-hive-1830429
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CodeHive Coding Night
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

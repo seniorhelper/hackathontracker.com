@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:REFRACT 1.0 Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:refract-1-0-hackathon-1sz0y@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270131T083000Z
+DTEND:20270131T093000Z
+SUMMARY:Deadline: REFRACT 1.0 Hackathon
+DESCRIPTION:INR 45\,000\nKolkata\, West Bengal\, India + online\nCloses Jan
+  31\, 2027\, 9:30 AM UTC\nOfficial page: https://unstop.com/hackathons/ref
+ ract-10-hackathon-university-of-engineering-and-management-kolkata-1817240
+ \nCheck the official rules for the exact closing time and time zone.\nDeta
+ ils: https://hackathontracker.com/hackathons/refract-1-0-hackathon-1sz0y/
+URL:https://unstop.com/hackathons/refract-10-hackathon-university-of-engine
+ ering-and-management-kolkata-1817240
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: REFRACT 1.0 Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

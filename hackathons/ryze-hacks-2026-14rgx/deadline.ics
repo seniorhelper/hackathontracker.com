@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Ryze Hacks 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ryze-hacks-2026-14rgx@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Deadline: Ryze Hacks 2026
+DESCRIPTION:$3\,260 in prizes\nOnline\nOfficial page: https://ryzehacks.dev
+ post.com/\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/ryze-hacks-2026-14rg
+ x/
+URL:https://ryzehacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Ryze Hacks 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

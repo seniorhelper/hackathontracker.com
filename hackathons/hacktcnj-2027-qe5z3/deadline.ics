@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackTCNJ 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hacktcnj-2027-qe5z3@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Deadline: HackTCNJ 2027
+DESCRIPTION:The College of New Jersey\nOfficial page: https://hacktcnj-2027
+ .devpost.com/\nCheck the official rules for the exact closing time and tim
+ e zone.\nDetails: https://hackathontracker.com/hackathons/hacktcnj-2027-qe
+ 5z3/
+URL:https://hacktcnj-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackTCNJ 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

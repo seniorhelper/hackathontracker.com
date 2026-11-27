@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Westside High School Build Challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:westside-high-school-build-challenge-10lgl@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Deadline: Westside High School Build Challenge
+DESCRIPTION:Westside High School\nOfficial page: https://whs-build.devpost.
+ com/\nCheck the official rules for the exact closing time and time zone.\n
+ Details: https://hackathontracker.com/hackathons/westside-high-school-buil
+ d-challenge-10lgl/
+URL:https://whs-build.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Westside High School Build Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

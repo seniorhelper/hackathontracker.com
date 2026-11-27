@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodeCrafters India 2026 - National Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codecrafters-india-2026-national-hackathon-le6cx@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261214T153833Z
+DTEND:20261214T163833Z
+SUMMARY:Deadline: CodeCrafters India 2026 - National Hackathon
+DESCRIPTION:Online\nCloses Dec 14\, 2026\, 4:38 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/codecrafters-india-2026-national-hackathon-hackw
+ ithpune-1792826\nCheck the official rules for the exact closing time and t
+ ime zone.\nDetails: https://hackathontracker.com/hackathons/codecrafters-i
+ ndia-2026-national-hackathon-le6cx/
+URL:https://unstop.com/hackathons/codecrafters-india-2026-national-hackatho
+ n-hackwithpune-1792826
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CodeCrafters India 2026 - National Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

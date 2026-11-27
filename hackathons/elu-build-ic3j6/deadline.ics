@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ELU Build
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:elu-build-ic3j6@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261225T172900Z
+DTEND:20261225T182900Z
+SUMMARY:Deadline: ELU Build
+DESCRIPTION:Online\nCloses Dec 25\, 2026\, 6:29 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/elubuild-edulinkup-1811493\nCheck the official r
+ ules for the exact closing time and time zone.\nDetails: https://hackathon
+ tracker.com/hackathons/elu-build-ic3j6/
+URL:https://unstop.com/hackathons/elubuild-edulinkup-1811493
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: ELU Build
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

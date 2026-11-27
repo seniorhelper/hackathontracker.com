@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hoya Hacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hoya-hacks-hg7z5@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Deadline: Hoya Hacks
+DESCRIPTION:Washington\, DC\, US\nOfficial page: https://www.mlh.com/events
+ /hoya-hacks-39\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/hoya-hacks-hg7z
+ 5/
+URL:https://www.mlh.com/events/hoya-hacks-39
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hoya Hacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

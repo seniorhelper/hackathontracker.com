@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ETHGlobal Cannes 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ethglobal-cannes-2027-ecls2@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:Deadline: ETHGlobal Cannes 2027
+DESCRIPTION:Cannes\, France\nOfficial page: https://ethglobal.com/events/ca
+ nnes2027\nCheck the official rules for the exact closing time and time zon
+ e.\nDetails: https://hackathontracker.com/hackathons/ethglobal-cannes-2027
+ -ecls2/
+URL:https://ethglobal.com/events/cannes2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: ETHGlobal Cannes 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Infriqa Design. Build. Operate. Challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:infriqa-design-build-operate-challenge-194jp@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261211T145800Z
+DTEND:20261211T155800Z
+SUMMARY:Deadline: Infriqa Design. Build. Operate. Challenge
+DESCRIPTION:INR 5\,000\nOnline\nCloses Dec 11\, 2026\, 3:58 PM UTC\nOfficia
+ l page: https://unstop.com/hackathons/infriqa-design-build-operate-challen
+ ge-infriqa-1829467\nCheck the official rules for the exact closing time an
+ d time zone.\nDetails: https://hackathontracker.com/hackathons/infriqa-des
+ ign-build-operate-challenge-194jp/
+URL:https://unstop.com/hackathons/infriqa-design-build-operate-challenge-in
+ friqa-1829467
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Infriqa Design. Build. Operate. Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

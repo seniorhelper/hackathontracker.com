@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Finance Next Hackathon 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:finance-next-hackathon-2026-1yadv@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270129T173100Z
+DTEND:20270129T183100Z
+SUMMARY:Deadline: Finance Next Hackathon 2026
+DESCRIPTION:Online\nCloses Jan 29\, 2027\, 6:31 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/finance-next-hackathon-2026-proton-solutions-182
+ 7472\nCheck the official rules for the exact closing time and time zone.\n
+ Details: https://hackathontracker.com/hackathons/finance-next-hackathon-20
+ 26-1yadv/
+URL:https://unstop.com/hackathons/finance-next-hackathon-2026-proton-soluti
+ ons-1827472
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Finance Next Hackathon 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

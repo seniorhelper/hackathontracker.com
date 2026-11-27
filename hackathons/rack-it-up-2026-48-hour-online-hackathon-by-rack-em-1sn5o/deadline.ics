@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Rack It Up 2026: 48-Hour Online Hackathon by Rack'Em
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:rack-it-up-2026-48-hour-online-hackathon-by-rack-em-1sn5o@hackathontrac
+ ker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261220T143000Z
+DTEND:20261220T153000Z
+SUMMARY:Deadline: Rack It Up 2026: 48-Hour Online Hackathon by Rack'Em
+DESCRIPTION:Online\nCloses Dec 20\, 2026\, 3:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/rack-it-up-2026-48-hour-online-hackathon-by-rack
+ em-karma-enterprises-1777639\nCheck the official rules for the exact closi
+ ng time and time zone.\nDetails: https://hackathontracker.com/hackathons/r
+ ack-it-up-2026-48-hour-online-hackathon-by-rack-em-1sn5o/
+URL:https://unstop.com/hackathons/rack-it-up-2026-48-hour-online-hackathon-
+ by-rackem-karma-enterprises-1777639
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Rack It Up 2026: 48-Hour Online Hackathon by Rack'
+ Em
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

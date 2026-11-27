@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Agents that act. Systems that answer.
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:agents-that-act-systems-that-answer-tzi6o@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Deadline: Agents that act. Systems that answer.
+DESCRIPTION:Online\nOfficial page: https://accountable-agents.devpost.com/\
+ nCheck the official rules for the exact closing time and time zone.\nDetai
+ ls: https://hackathontracker.com/hackathons/agents-that-act-systems-that-a
+ nswer-tzi6o/
+URL:https://accountable-agents.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Agents that act. Systems that answer.
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

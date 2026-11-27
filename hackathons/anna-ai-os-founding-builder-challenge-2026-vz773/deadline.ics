@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Anna AI OS Founding Builder Challenge 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:anna-ai-os-founding-builder-challenge-2026-vz773@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261130T035900Z
+DTEND:20261130T045900Z
+SUMMARY:Deadline: Anna AI OS Founding Builder Challenge 2026
+DESCRIPTION:$80\,000 in prizes\nOnline\nCloses Nov 30\, 2026\, 4:59 AM UTC\
+ nOfficial page: https://unstop.com/hackathons/anna-ai-os-founding-builder-
+ challenge-2026-talentsec-technology-hong-kong-limited-1762519\nCheck the o
+ fficial rules for the exact closing time and time zone.\nDetails: https://
+ hackathontracker.com/hackathons/anna-ai-os-founding-builder-challenge-2026
+ -vz773/
+URL:https://unstop.com/hackathons/anna-ai-os-founding-builder-challenge-202
+ 6-talentsec-technology-hong-kong-limited-1762519
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Anna AI OS Founding Builder Challenge 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

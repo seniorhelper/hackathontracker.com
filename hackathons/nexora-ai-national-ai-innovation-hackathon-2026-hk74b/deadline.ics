@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Nexora AI – National AI & Innovation Hackathon 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:nexora-ai-national-ai-innovation-hackathon-2026-hk74b@hackathontracker.
+ com
+DTSTAMP:20261127T211710Z
+DTSTART:20261231T081700Z
+DTEND:20261231T091700Z
+SUMMARY:Deadline: Nexora AI – National AI & Innovation Hackathon 2026
+DESCRIPTION:Online\nCloses Dec 31\, 2026\, 9:17 AM UTC\nOfficial page: http
+ s://unstop.com/hackathons/nexora-ai-national-ai-innovation-hackathon-2026-
+ psit-college-of-engineering-psitcoe-kanpur-uttar-pradesh-1812323\nCheck th
+ e official rules for the exact closing time and time zone.\nDetails: https
+ ://hackathontracker.com/hackathons/nexora-ai-national-ai-innovation-hackat
+ hon-2026-hk74b/
+URL:https://unstop.com/hackathons/nexora-ai-national-ai-innovation-hackatho
+ n-2026-psit-college-of-engineering-psitcoe-kanpur-uttar-pradesh-1812323
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Nexora AI – National AI & Innovation Hackathon 2
+ 026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

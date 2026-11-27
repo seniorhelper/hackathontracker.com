@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Build with AI - PICO Space Program
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:build-with-ai-pico-space-program-1y1t4@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Deadline: Build with AI - PICO Space Program
+DESCRIPTION:$50\,000 in prizes\nOnline\nOfficial page: https://pico-space-p
+ rogram.devpost.com/\nCheck the official rules for the exact closing time a
+ nd time zone.\nDetails: https://hackathontracker.com/hackathons/build-with
+ -ai-pico-space-program-1y1t4/
+URL:https://pico-space-program.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Build with AI - PICO Space Program
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

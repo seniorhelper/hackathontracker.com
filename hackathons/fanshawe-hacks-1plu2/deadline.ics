@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Fanshawe Hacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:fanshawe-hacks-1plu2@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Deadline: Fanshawe Hacks
+DESCRIPTION:Online\nOfficial page: https://fanshawe-hacks.devpost.com/\nChe
+ ck the official rules for the exact closing time and time zone.\nDetails: 
+ https://hackathontracker.com/hackathons/fanshawe-hacks-1plu2/
+URL:https://fanshawe-hacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Fanshawe Hacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:LooHacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:loohacks-1xizo@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Deadline: LooHacks
+DESCRIPTION:Spur Innovation Center - SPUR Campus\nOfficial page: https://lo
+ ohacks.devpost.com/\nCheck the official rules for the exact closing time a
+ nd time zone.\nDetails: https://hackathontracker.com/hackathons/loohacks-1
+ xizo/
+URL:https://loohacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: LooHacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Code Red
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:code-red-1r17e@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270306T053000Z
+DTEND:20270306T063000Z
+SUMMARY:Deadline: Code Red
+DESCRIPTION:INR 12\,000\nPune\, Maharashtra\, India + online\nCloses Mar 6\
+ , 2027\, 6:30 AM UTC\nOfficial page: https://unstop.com/hackathons/code-re
+ d-solutions-2k27-army-institute-of-technology-ait-pune-1801200\nCheck the 
+ official rules for the exact closing time and time zone.\nDetails: https:/
+ /hackathontracker.com/hackathons/code-red-1r17e/
+URL:https://unstop.com/hackathons/code-red-solutions-2k27-army-institute-of
+ -technology-ait-pune-1801200
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Code Red
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

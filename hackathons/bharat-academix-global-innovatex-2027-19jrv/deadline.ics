@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bharat Academix Global Innovatex 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:bharat-academix-global-innovatex-2027-19jrv@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270103T143000Z
+DTEND:20270103T153000Z
+SUMMARY:Deadline: Bharat Academix Global Innovatex 2027
+DESCRIPTION:INR 90\,200\nOnline\nCloses Jan 3\, 2027\, 3:30 PM UTC\nOfficia
+ l page: https://unstop.com/hackathons/bharat-academix-global-innovatex-202
+ 7-bharat-academix-1826250\nCheck the official rules for the exact closing 
+ time and time zone.\nDetails: https://hackathontracker.com/hackathons/bhar
+ at-academix-global-innovatex-2027-19jrv/
+URL:https://unstop.com/hackathons/bharat-academix-global-innovatex-2027-bha
+ rat-academix-1826250
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Bharat Academix Global Innovatex 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

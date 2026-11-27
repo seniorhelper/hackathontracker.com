@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackathon-kncw4@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261220T073042Z
+DTEND:20261220T083042Z
+SUMMARY:Deadline: Hackathon
+DESCRIPTION:INR 80\,000\nOnline\nCloses Dec 20\, 2026\, 8:30 AM UTC\nOffici
+ al page: https://unstop.com/hackathons/hackathon-st-vincent-pallotti-colle
+ ge-of-engineering-and-technology-svpcet-nagpur-1820868\nCheck the official
+  rules for the exact closing time and time zone.\nDetails: https://hackath
+ ontracker.com/hackathons/hackathon-kncw4/
+URL:https://unstop.com/hackathons/hackathon-st-vincent-pallotti-college-of-
+ engineering-and-technology-svpcet-nagpur-1820868
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Green Shift Hacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:green-shift-hacks-x6rel@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Deadline: Green Shift Hacks
+DESCRIPTION:$125 in prizes\nOnline\nOfficial page: https://green-shift-hack
+ s.devpost.com/\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/green-shift-hac
+ ks-x6rel/
+URL:https://green-shift-hacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Green Shift Hacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

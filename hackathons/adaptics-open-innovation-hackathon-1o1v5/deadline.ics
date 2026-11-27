@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Adaptics - Open Innovation Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:adaptics-open-innovation-hackathon-1o1v5@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261222T172900Z
+DTEND:20261222T182900Z
+SUMMARY:Deadline: Adaptics - Open Innovation Hackathon
+DESCRIPTION:INR 5\,484\nOnline\nCloses Dec 22\, 2026\, 6:29 PM UTC\nOfficia
+ l page: https://unstop.com/hackathons/adaptics-open-innovation-hackathon-m
+ akers-need-more-mnm-1823604\nCheck the official rules for the exact closin
+ g time and time zone.\nDetails: https://hackathontracker.com/hackathons/ad
+ aptics-open-innovation-hackathon-1o1v5/
+URL:https://unstop.com/hackathons/adaptics-open-innovation-hackathon-makers
+ -need-more-mnm-1823604
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Adaptics - Open Innovation Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

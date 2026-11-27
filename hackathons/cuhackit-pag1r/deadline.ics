@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CUhackit
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:cuhackit-pag1r@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Deadline: CUhackit
+DESCRIPTION:Clemson\, SC\, US\nOfficial page: https://www.mlh.com/events/cu
+ hackit-ba\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/cuhackit-pag1r/
+URL:https://www.mlh.com/events/cuhackit-ba
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CUhackit
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

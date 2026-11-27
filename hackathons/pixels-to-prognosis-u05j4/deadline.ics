@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Pixels To Prognosis
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:pixels-to-prognosis-u05j4@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270104T113100Z
+DTEND:20270104T123100Z
+SUMMARY:Deadline: Pixels To Prognosis
+DESCRIPTION:INR 35\,000\nOnline\nCloses Jan 4\, 2027\, 12:31 PM UTC\nOffici
+ al page: https://unstop.com/hackathons/pixels-to-prognosis-iit-madras-1781
+ 358\nCheck the official rules for the exact closing time and time zone.\nD
+ etails: https://hackathontracker.com/hackathons/pixels-to-prognosis-u05j4/
+URL:https://unstop.com/hackathons/pixels-to-prognosis-iit-madras-1781358
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Pixels To Prognosis
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

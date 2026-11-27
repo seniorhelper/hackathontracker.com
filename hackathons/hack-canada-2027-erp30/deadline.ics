@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack Canada 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-canada-2027-erp30@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Deadline: Hack Canada 2027
+DESCRIPTION:Toronto\, Ontario\, CA\nOfficial page: https://www.mlh.com/even
+ ts/hack-canada-2027\nCheck the official rules for the exact closing time a
+ nd time zone.\nDetails: https://hackathontracker.com/hackathons/hack-canad
+ a-2027-erp30/
+URL:https://www.mlh.com/events/hack-canada-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hack Canada 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Arcticathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:the-arcticathon-12e2u@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270130T173000Z
+DTEND:20270130T183000Z
+SUMMARY:Deadline: The Arcticathon
+DESCRIPTION:$100\,000 in prizes\nOnline\nCloses Jan 30\, 2027\, 6:30 PM UTC
+ \nOfficial page: https://unstop.com/hackathons/the-arcticathon-bidaya-1759
+ 619\nCheck the official rules for the exact closing time and time zone.\nD
+ etails: https://hackathontracker.com/hackathons/the-arcticathon-12e2u/
+URL:https://unstop.com/hackathons/the-arcticathon-bidaya-1759619
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: The Arcticathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

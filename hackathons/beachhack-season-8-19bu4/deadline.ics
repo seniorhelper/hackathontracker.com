@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BeachHack Season 8
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:beachhack-season-8-19bu4@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Deadline: BeachHack Season 8
+DESCRIPTION:Thrissur\, Kerala\, IN\nOfficial page: https://www.mlh.com/even
+ ts/beachhack-season-8\nCheck the official rules for the exact closing time
+  and time zone.\nDetails: https://hackathontracker.com/hackathons/beachhac
+ k-season-8-19bu4/
+URL:https://www.mlh.com/events/beachhack-season-8
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: BeachHack Season 8
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackBI X
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackbi-x-18isl@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Deadline: HackBI X
+DESCRIPTION:Alexandria\, Virginia\, US\nOfficial page: https://www.mlh.com/
+ events/hackbi-x\nCheck the official rules for the exact closing time and t
+ ime zone.\nDetails: https://hackathontracker.com/hackathons/hackbi-x-18isl
+ /
+URL:https://www.mlh.com/events/hackbi-x
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackBI X
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

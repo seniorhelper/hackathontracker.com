@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Agentic AI Hackathon 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:agentic-ai-hackathon-2026-50esf@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261209T173000Z
+DTEND:20261209T183000Z
+SUMMARY:Deadline: Agentic AI Hackathon 2026
+DESCRIPTION:Online\nCloses Dec 9\, 2026\, 6:30 PM UTC\nOfficial page: https
+ ://unstop.com/hackathons/agentic-ai-hackathon-2026-proton-solutions-182889
+ 0\nCheck the official rules for the exact closing time and time zone.\nDet
+ ails: https://hackathontracker.com/hackathons/agentic-ai-hackathon-2026-50
+ esf/
+URL:https://unstop.com/hackathons/agentic-ai-hackathon-2026-proton-solution
+ s-1828890
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Agentic AI Hackathon 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

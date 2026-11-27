@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Operation Blackout
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:operation-blackout-dxatp@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261201T172900Z
+DTEND:20261201T182900Z
+SUMMARY:Deadline: Operation Blackout
+DESCRIPTION:INR 35\,000\nBangalore Urban\, Karnataka\, India + online\nClos
+ es Dec 1\, 2026\, 6:29 PM UTC\nOfficial page: https://unstop.com/hackathon
+ s/operation-blackout-react-2026-rv-college-of-engineering-rvce-bangalore-1
+ 818820\nCheck the official rules for the exact closing time and time zone.
+ \nDetails: https://hackathontracker.com/hackathons/operation-blackout-dxat
+ p/
+URL:https://unstop.com/hackathons/operation-blackout-react-2026-rv-college-
+ of-engineering-rvce-bangalore-1818820
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Operation Blackout
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Anveshak: Open-World Object Detection for Remote Sensing
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:anveshak-open-world-object-detection-for-remote-sensing-18f6b@hackathon
+ tracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261129T173100Z
+DTEND:20261129T183100Z
+SUMMARY:Deadline: Anveshak: Open-World Object Detection for Remote Sensing
+DESCRIPTION:INR 150\,000\nPowai\, Maharashtra\, India\nCloses Nov 29\, 2026
+ \, 6:31 PM UTC\nOfficial page: https://unstop.com/hackathons/anveshak-open
+ -world-object-detection-for-remote-sensing-iit-bombay-1818894\nCheck the o
+ fficial rules for the exact closing time and time zone.\nDetails: https://
+ hackathontracker.com/hackathons/anveshak-open-world-object-detection-for-r
+ emote-sensing-18f6b/
+URL:https://unstop.com/hackathons/anveshak-open-world-object-detection-for-
+ remote-sensing-iit-bombay-1818894
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Anveshak: Open-World Object Detection for Remote S
+ ensing
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

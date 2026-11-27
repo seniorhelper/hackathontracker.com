@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Zero-G Hacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:zero-g-hacks-1q6ee@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: Zero-G Hacks
+DESCRIPTION:$120 in prizes\nOnline\nOfficial page: https://zero-g-hacks.dev
+ post.com/\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/zero-g-hacks-1q6ee/
+URL:https://zero-g-hacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Zero-G Hacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

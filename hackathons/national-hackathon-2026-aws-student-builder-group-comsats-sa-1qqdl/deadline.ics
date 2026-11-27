@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:National Hackathon 2026: AWS Student Builder Group COMSATS Sah
+ iwal × ILC×Devsinc
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:national-hackathon-2026-aws-student-builder-group-comsats-sa-1qqdl@hack
+ athontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: National Hackathon 2026: AWS Student Builder Group COMSAT
+ S Sahiwal × ILC×Devsinc
+DESCRIPTION:Online\nOfficial page: https://aws-sbg-cui-sahiwal-hack-2026.de
+ vpost.com/\nCheck the official rules for the exact closing time and time z
+ one.\nDetails: https://hackathontracker.com/hackathons/national-hackathon-
+ 2026-aws-student-builder-group-comsats-sa-1qqdl/
+URL:https://aws-sbg-cui-sahiwal-hack-2026.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: National Hackathon 2026: AWS Student Builder Group
+  COMSATS Sahiwal × ILC×Devsinc
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

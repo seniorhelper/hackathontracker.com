@@ -1,0 +1,49 @@
+# Hackathon Tracker
+
+> Hackathon Tracker (https://hackathontracker.com) is a free, independent search engine for open and upcoming hackathons. It merges public listings from several hackathon platforms plus hand-checked organizer pages, removes duplicates and ended events, and ranks events by listed cash prize per person signed up ("prize per entrant"). No account is needed.
+
+Data is rebuilt daily. Last refresh: Nov 27, 2026, 2:16 PM MST. 403 open or upcoming hackathons, $1,140,125 in listed US-dollar prizes. Organizer pages are always the authority on dates, rules and prizes.
+
+## Search and lists
+- [Search all hackathons](https://hackathontracker.com/): filters for online or in person, city or country, minimum prize, deadline window, odds, beginner, AI and student-only events. Query parameters work, for example https://hackathontracker.com/?q=ai&mode=online&minPrize=10000
+- [Top 50 by prize money](https://hackathontracker.com/top-50/)
+- [Hackathons with the best odds right now](https://hackathontracker.com/best-odds/)
+- [Online hackathons open now](https://hackathontracker.com/online-hackathons/)
+- [In-person hackathons](https://hackathontracker.com/in-person-hackathons/)
+- [AI hackathons open now](https://hackathontracker.com/ai-hackathons/)
+- [Beginner-friendly hackathons](https://hackathontracker.com/beginner-hackathons/)
+- [Hackathons you can enter without a student ID](https://hackathontracker.com/open-to-everyone/)
+- [The biggest hackathon prizes open now](https://hackathontracker.com/biggest-prizes/)
+- [Hackathons closing in the next 7 days](https://hackathontracker.com/closing-soon/)
+- Each hackathon has its own page at https://hackathontracker.com/hackathons/<slug>/ with deadline, prize, sign-ups, eligibility and a per-event calendar file at https://hackathontracker.com/hackathons/<slug>/deadline.ics
+
+## Calendar and feeds (free, no account)
+- [All upcoming deadlines, iCalendar feed](https://hackathontracker.com/calendar.ics): one all-day event per deadline, refreshed daily. Subscribe with webcal://hackathontracker.com/calendar.ics
+- [Prize hackathon deadlines, iCalendar](https://hackathontracker.com/feeds/deadlines.ics)
+- [Newly listed hackathons, RSS](https://hackathontracker.com/feeds/new.xml)
+- [Hackathons with strong odds, RSS](https://hackathontracker.com/feeds/best-odds.xml)
+- [Machine-readable listings, JSON](https://hackathontracker.com/data/events.json)
+
+## Method
+- [How prize per entrant and the odds badges work](https://hackathontracker.com/methodology/)
+- [Sources and data status](https://hackathontracker.com/sources/)
+
+## Guides
+- [AI Agent Hackathons: How to Pick One and Build a Demo That Works](https://hackathontracker.com/blog/ai-agent-hackathons/): What AI agent hackathons ask for, how to read the rules on models and tools, how to scope an agent that works live on demo day, and how to find the ones worth entering.
+- [Can You Do a Hackathon Alone? A Solo Builder's Playbook](https://hackathontracker.com/blog/can-you-do-a-hackathon-alone/): Yes, many hackathons allow solo entries. How to check the rules, pick events that suit one person, scope the build, and present like a full team.
+- [Hackathon Demo Video Tips: A 3-Minute Video Judges Finish](https://hackathontracker.com/blog/hackathon-demo-video-tips/): How to plan, script, record and upload a hackathon demo video: a minute-by-minute structure, recording setup, captions, and the upload mistakes to avoid.
+- [Do You Pay Taxes on Hackathon Winnings? A Plain-English US Guide](https://hackathontracker.com/blog/hackathon-prize-taxes/): Hackathon prize money is generally taxable in the US. What the IRS says, when you get a 1099-MISC, how credits and team prizes work, and what to do before payday.
+- [Hackathons for Beginners With No Coding Experience: How to Start](https://hackathontracker.com/blog/hackathons-for-beginners-no-coding/): You can join a hackathon without knowing how to code. How to pick a beginner-friendly event, check the rules, choose a role, and plan a first project you can finish.
+- [How Hackathons Are Judged: Criteria, Rounds and What Judges See](https://hackathontracker.com/blog/how-hackathons-are-judged/): How hackathon judging works: common criteria, screening and final rounds, how much of your project judges actually see, and how to score well on each.
+- [How to Find Hackathons Near Me (and Know Which Are Worth the Trip)](https://hackathontracker.com/blog/how-to-find-hackathons-near-me/): Practical ways to find in-person hackathons near you: search by city, use Near me, check universities and local tech groups, and decide whether an event is worth the travel.
+- [How to Write a Winning Devpost Submission, Field by Field](https://hackathontracker.com/blog/how-to-write-a-devpost-submission/): A field-by-field guide to the Devpost project page: title, tagline, project story, Built With, links, testing instructions and the final checks before the deadline.
+- [Online Hackathons With Cash Prizes: How to Find Real Money](https://hackathontracker.com/blog/online-hackathons-with-cash-prizes/): Where to find online hackathons that pay real cash, how to tell cash from credits and prize value, and how winners actually get paid. A practical checklist.
+- [Are Hackathons Worth It? An Honest Look at the Math](https://hackathontracker.com/blog/are-hackathons-worth-it/): Prize money versus hours spent, plus the non-cash returns: contacts, portfolio pieces and credits. How to think about expected value and where the numbers lie.
+- [Hackathons for Adults and Non-Students: Where You Can Enter](https://hackathontracker.com/blog/hackathons-for-adults-and-non-students/): Working adult who wants to enter a hackathon? See where non-students are welcome, how to read the eligibility rules, and what students only usually means.
+- [How to Choose a Hackathon: A Seven-Point Checklist](https://hackathontracker.com/blog/how-to-choose-a-hackathon/): Not every hackathon deserves your weekend. Use this checklist on odds, deadline, eligibility, cash vs credits, judging, IP and team rules before you sign up.
+- [How to Find Hackathon Teammates (Even Remotely, Even as an Adult)](https://hackathontracker.com/blog/how-to-find-hackathon-teammates/): Where to look for teammates, how to pitch yourself without sounding desperate, and which roles non-coders can own: product, design and pitch. Remote tips too.
+- [How to Win a Hackathon: Scope, Demo and Submission Day](https://hackathontracker.com/blog/how-to-win-a-hackathon/): How to win: read the judging criteria and sponsor goals, scope a tight demo, record a clear video, write it up well, and run a submission-day checklist.
+- [Is This Hackathon Legit? Red Flags and How to Check](https://hackathontracker.com/blog/is-this-hackathon-legit/): Entry fees, vague judging, IP grabs, prizes that say up to, and no past winners: red flags that suggest a shady hackathon, and how to check before you build.
+
+## About
+- [About](https://hackathontracker.com/about/) · [Contact](https://hackathontracker.com/contact/) · [Privacy Policy](https://hackathontracker.com/privacy/) · [Terms of Use](https://hackathontracker.com/terms/)

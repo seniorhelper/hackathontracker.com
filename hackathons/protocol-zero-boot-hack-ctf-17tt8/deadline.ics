@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Protocol Zero: Boot | Hack | CTF
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:protocol-zero-boot-hack-ctf-17tt8@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270312T173000Z
+DTEND:20270312T183000Z
+SUMMARY:Deadline: Protocol Zero: Boot | Hack | CTF
+DESCRIPTION:INR 1\,000\,000\nChennai\, Tamil Nadu\, India + online\nCloses 
+ Mar 12\, 2027\, 6:30 PM UTC\nOfficial page: https://unstop.com/hackathons/
+ protocol-zero-boot-hack-ctf-centre-for-cybersecurity-trust-and-reliability
+ -iit-madras-cystar-1798676\nCheck the official rules for the exact closing
+  time and time zone.\nDetails: https://hackathontracker.com/hackathons/pro
+ tocol-zero-boot-hack-ctf-17tt8/
+URL:https://unstop.com/hackathons/protocol-zero-boot-hack-ctf-centre-for-cy
+ bersecurity-trust-and-reliability-iit-madras-cystar-1798676
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Protocol Zero: Boot | Hack | CTF
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

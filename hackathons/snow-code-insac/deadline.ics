@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Snow Code
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:snow-code-insac@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261210T173000Z
+DTEND:20261210T183000Z
+SUMMARY:Deadline: Snow Code
+DESCRIPTION:INR 6\,000\nOnline\nCloses Dec 10\, 2026\, 6:30 PM UTC\nOfficia
+ l page: https://unstop.com/hackathons/snow-code-stampers-1828497\nCheck th
+ e official rules for the exact closing time and time zone.\nDetails: https
+ ://hackathontracker.com/hackathons/snow-code-insac/
+URL:https://unstop.com/hackathons/snow-code-stampers-1828497
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Snow Code
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

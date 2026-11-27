@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Technova 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:technova-2027-1fuqp@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270106T053000Z
+DTEND:20270106T063000Z
+SUMMARY:Deadline: Technova 2027
+DESCRIPTION:Mumbai\, Maharashtra\, India\nCloses Jan 6\, 2027\, 6:30 AM UTC
+ \nOfficial page: https://unstop.com/hackathons/technova-2027-burhani-colle
+ ge-mumbai-1786992\nCheck the official rules for the exact closing time and
+  time zone.\nDetails: https://hackathontracker.com/hackathons/technova-202
+ 7-1fuqp/
+URL:https://unstop.com/hackathons/technova-2027-burhani-college-mumbai-1786
+ 992
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Technova 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

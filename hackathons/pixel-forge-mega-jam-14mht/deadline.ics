@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Pixel Forge Mega Jam
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:pixel-forge-mega-jam-14mht@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Deadline: Pixel Forge Mega Jam
+DESCRIPTION:Online\nOfficial page: https://pixelforgejam.org/\nCheck the of
+ ficial rules for the exact closing time and time zone.\nDetails: https://h
+ ackathontracker.com/hackathons/pixel-forge-mega-jam-14mht/
+URL:https://pixelforgejam.org/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Pixel Forge Mega Jam
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

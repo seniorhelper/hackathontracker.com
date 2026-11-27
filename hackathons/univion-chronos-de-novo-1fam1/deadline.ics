@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UNIVION: CHRONOS DE NOVO
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:univion-chronos-de-novo-1fam1@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270116T130000Z
+DTEND:20270116T140000Z
+SUMMARY:Deadline: UNIVION: CHRONOS DE NOVO
+DESCRIPTION:Delhi\, Delhi\, India + online\nCloses Jan 16\, 2027\, 2:00 PM 
+ UTC\nOfficial page: https://unstop.com/hackathons/univion-chronos-de-novo-
+ sieeds-1826867\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/univion-chronos
+ -de-novo-1fam1/
+URL:https://unstop.com/hackathons/univion-chronos-de-novo-sieeds-1826867
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: UNIVION: CHRONOS DE NOVO
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

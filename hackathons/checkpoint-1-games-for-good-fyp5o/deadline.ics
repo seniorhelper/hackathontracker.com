@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:checkpoint 1 — games for good
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:checkpoint-1-games-for-good-fyp5o@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Deadline: checkpoint 1 — games for good
+DESCRIPTION:$15\,560 in prizes\nOnline\nOfficial page: https://checkpoint-1
+ .devpost.com/\nCheck the official rules for the exact closing time and tim
+ e zone.\nDetails: https://hackathontracker.com/hackathons/checkpoint-1-gam
+ es-for-good-fyp5o/
+URL:https://checkpoint-1.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: checkpoint 1 — games for good
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

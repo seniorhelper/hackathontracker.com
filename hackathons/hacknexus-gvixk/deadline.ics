@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hacknexus
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hacknexus-gvixk@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261230T173000Z
+DTEND:20261230T183000Z
+SUMMARY:Deadline: Hacknexus
+DESCRIPTION:Online\nCloses Dec 30\, 2026\, 6:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/hacknexus-mastermind-research-technologies-17468
+ 46\nCheck the official rules for the exact closing time and time zone.\nDe
+ tails: https://hackathontracker.com/hackathons/hacknexus-gvixk/
+URL:https://unstop.com/hackathons/hacknexus-mastermind-research-technologie
+ s-1746846
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hacknexus
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

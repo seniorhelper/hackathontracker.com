@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:RedStone Rush 12 Hour Open Innovation Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:redstone-rush-12-hour-open-innovation-hackathon-13hxd@hackathontracker.
+ com
+DTSTAMP:20261127T211711Z
+DTSTART:20270109T133000Z
+DTEND:20270109T143000Z
+SUMMARY:Deadline: RedStone Rush 12 Hour Open Innovation Hackathon
+DESCRIPTION:Gorakhpur\, Uttar Pradesh\, India + online\nCloses Jan 9\, 2027
+ \, 2:30 PM UTC\nOfficial page: https://unstop.com/hackathons/redstone-rush
+ -12-hour-open-innovation-hackathon-continuum-mmmut-gorakhpur-1771949\nChec
+ k the official rules for the exact closing time and time zone.\nDetails: h
+ ttps://hackathontracker.com/hackathons/redstone-rush-12-hour-open-innovati
+ on-hackathon-13hxd/
+URL:https://unstop.com/hackathons/redstone-rush-12-hour-open-innovation-hac
+ kathon-continuum-mmmut-gorakhpur-1771949
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: RedStone Rush 12 Hour Open Innovation Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

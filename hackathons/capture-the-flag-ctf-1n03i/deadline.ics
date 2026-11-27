@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Capture The Flag (CTF)
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:capture-the-flag-ctf-1n03i@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261203T103000Z
+DTEND:20261203T113000Z
+SUMMARY:Deadline: Capture The Flag (CTF)
+DESCRIPTION:INR 9\,000\nDavanagere\, Karnataka\, India\nCloses Dec 3\, 2026
+ \, 11:30 AM UTC\nOfficial page: https://unstop.com/hackathons/capture-the-
+ flag-ctf-ignitron-2k26-gm-university-davanagere-1791574\nCheck the officia
+ l rules for the exact closing time and time zone.\nDetails: https://hackat
+ hontracker.com/hackathons/capture-the-flag-ctf-1n03i/
+URL:https://unstop.com/hackathons/capture-the-flag-ctf-ignitron-2k26-gm-uni
+ versity-davanagere-1791574
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Capture The Flag (CTF)
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TryHackingMe Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:tryhackingme-hackathon-dl189@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261228T022956Z
+DTEND:20261228T032956Z
+SUMMARY:Deadline: TryHackingMe Hackathon
+DESCRIPTION:Online\nCloses Dec 28\, 2026\, 3:29 AM UTC\nOfficial page: http
+ s://unstop.com/hackathons/tryhackingme-hackathon-buildx-1826567\nCheck the
+  official rules for the exact closing time and time zone.\nDetails: https:
+ //hackathontracker.com/hackathons/tryhackingme-hackathon-dl189/
+URL:https://unstop.com/hackathons/tryhackingme-hackathon-buildx-1826567
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: TryHackingMe Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

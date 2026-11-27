@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Nexathon : Next Gen Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:nexathon-next-gen-hackathon-1n1ud@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261218T143000Z
+DTEND:20261218T153000Z
+SUMMARY:Deadline: Nexathon : Next Gen Hackathon
+DESCRIPTION:Online\nCloses Dec 18\, 2026\, 3:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/nexathon-school-of-computers-ips-academy-indore-
+ 1795775\nCheck the official rules for the exact closing time and time zone
+ .\nDetails: https://hackathontracker.com/hackathons/nexathon-next-gen-hack
+ athon-1n1ud/
+URL:https://unstop.com/hackathons/nexathon-school-of-computers-ips-academy-
+ indore-1795775
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Nexathon : Next Gen Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

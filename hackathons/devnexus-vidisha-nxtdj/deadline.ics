@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:DevNexus Vidisha
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:devnexus-vidisha-nxtdj@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270124T103000Z
+DTEND:20270124T113000Z
+SUMMARY:Deadline: DevNexus Vidisha
+DESCRIPTION:Vidisha\, Madhya Pradesh\, India\nCloses Jan 24\, 2027\, 11:30 
+ AM UTC\nOfficial page: https://devnexus-3.devfolio.co/\nCheck the official
+  rules for the exact closing time and time zone.\nDetails: https://hackath
+ ontracker.com/hackathons/devnexus-vidisha-nxtdj/
+URL:https://devnexus-3.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: DevNexus Vidisha
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

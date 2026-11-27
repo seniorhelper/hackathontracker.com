@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:DeltaHacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:deltahacks-15zr5@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Deadline: DeltaHacks
+DESCRIPTION:Hamilton\, Ontario\, CA\nOfficial page: https://www.mlh.com/eve
+ nts/deltahacks-d5\nCheck the official rules for the exact closing time and
+  time zone.\nDetails: https://hackathontracker.com/hackathons/deltahacks-1
+ 5zr5/
+URL:https://www.mlh.com/events/deltahacks-d5
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: DeltaHacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

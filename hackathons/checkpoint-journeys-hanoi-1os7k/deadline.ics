@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:checkpoint journeys — hanoi
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:checkpoint-journeys-hanoi-1os7k@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Deadline: checkpoint journeys — hanoi
+DESCRIPTION:$9\,112 in prizes\nTrue North International School\, Hà Nội\
+ , Vietnam\nOfficial page: https://checkpoint-journeys-hanoi.devpost.com/\n
+ Check the official rules for the exact closing time and time zone.\nDetail
+ s: https://hackathontracker.com/hackathons/checkpoint-journeys-hanoi-1os7k
+ /
+URL:https://checkpoint-journeys-hanoi.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: checkpoint journeys — hanoi
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

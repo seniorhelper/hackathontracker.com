@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Cosmo Hacks 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:cosmo-hacks-2026-1kkn2@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:Deadline: Cosmo Hacks 2026
+DESCRIPTION:$147\,105 in prizes\nOnline\nOfficial page: https://cosmohacks.
+ devpost.com/\nCheck the official rules for the exact closing time and time
+  zone.\nDetails: https://hackathontracker.com/hackathons/cosmo-hacks-2026-
+ 1kkn2/
+URL:https://cosmohacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Cosmo Hacks 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

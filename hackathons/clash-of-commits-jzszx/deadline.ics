@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Clash of Commits
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:clash-of-commits-jzszx@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261205T113000Z
+DTEND:20261205T123000Z
+SUMMARY:Deadline: Clash of Commits
+DESCRIPTION:Chennai\, Tamil Nadu\, India\nCloses Dec 5\, 2026\, 12:30 PM UT
+ C\nOfficial page: https://clash-of-commits.devfolio.co/\nCheck the officia
+ l rules for the exact closing time and time zone.\nDetails: https://hackat
+ hontracker.com/hackathons/clash-of-commits-jzszx/
+URL:https://clash-of-commits.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Clash of Commits
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

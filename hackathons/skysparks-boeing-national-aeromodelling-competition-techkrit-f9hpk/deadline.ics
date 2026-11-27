@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Skysparks - Boeing National Aeromodelling Competition | TECHKR
+ ITI | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:skysparks-boeing-national-aeromodelling-competition-techkrit-f9hpk@hack
+ athontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261231T072028Z
+DTEND:20261231T082028Z
+SUMMARY:Deadline: Skysparks - Boeing National Aeromodelling Competition | T
+ ECHKRITI | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 8:20 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/skysparks-boeing-nati
+ onal-aeromodelling-competition-techkriti27-techkriti-1764461\nCheck the of
+ ficial rules for the exact closing time and time zone.\nDetails: https://h
+ ackathontracker.com/hackathons/skysparks-boeing-national-aeromodelling-com
+ petition-techkrit-f9hpk/
+URL:https://unstop.com/hackathons/skysparks-boeing-national-aeromodelling-c
+ ompetition-techkriti27-techkriti-1764461
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Skysparks - Boeing National Aeromodelling Competit
+ ion | TECHKRITI | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

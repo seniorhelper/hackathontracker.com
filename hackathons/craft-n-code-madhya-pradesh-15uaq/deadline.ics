@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Craft N Code (Madhya Pradesh)
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:craft-n-code-madhya-pradesh-15uaq@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270206T093045Z
+DTEND:20270206T103045Z
+SUMMARY:Deadline: Craft N Code (Madhya Pradesh)
+DESCRIPTION:INR 50\,000\nOnline\nCloses Feb 6\, 2027\, 10:30 AM UTC\nOffici
+ al page: https://unstop.com/hackathons/craft-n-code-madhya-pradesh-d3-2026
+ -tech-fest-iiit-bhubaneswar-international-institute-of-information-technol
+ -1831389\nCheck the official rules for the exact closing time and time zon
+ e.\nDetails: https://hackathontracker.com/hackathons/craft-n-code-madhya-p
+ radesh-15uaq/
+URL:https://unstop.com/hackathons/craft-n-code-madhya-pradesh-d3-2026-tech-
+ fest-iiit-bhubaneswar-international-institute-of-information-technol-18313
+ 89
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Craft N Code (Madhya Pradesh)
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

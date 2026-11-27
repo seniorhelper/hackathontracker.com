@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Techkriti Grand Prix | TECHKRITI | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:techkriti-grand-prix-techkriti-iit-kanpur-gdg4b@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261231T072145Z
+DTEND:20261231T082145Z
+SUMMARY:Deadline: Techkriti Grand Prix | TECHKRITI | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 8:21 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/techkriti-grand-prix-
+ techkriti27-techkriti-1764465\nCheck the official rules for the exact clos
+ ing time and time zone.\nDetails: https://hackathontracker.com/hackathons/
+ techkriti-grand-prix-techkriti-iit-kanpur-gdg4b/
+URL:https://unstop.com/hackathons/techkriti-grand-prix-techkriti27-techkrit
+ i-1764465
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Techkriti Grand Prix | TECHKRITI | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

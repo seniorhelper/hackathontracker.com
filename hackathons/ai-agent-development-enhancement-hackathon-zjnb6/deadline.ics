@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI Agent Development & Enhancement Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ai-agent-development-enhancement-hackathon-zjnb6@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261213T173000Z
+DTEND:20261213T183000Z
+SUMMARY:Deadline: AI Agent Development & Enhancement Hackathon
+DESCRIPTION:Online\nCloses Dec 13\, 2026\, 6:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/ai-agent-development-enhancement-hackathon-proto
+ n-solutions-1829674\nCheck the official rules for the exact closing time a
+ nd time zone.\nDetails: https://hackathontracker.com/hackathons/ai-agent-d
+ evelopment-enhancement-hackathon-zjnb6/
+URL:https://unstop.com/hackathons/ai-agent-development-enhancement-hackatho
+ n-proton-solutions-1829674
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AI Agent Development & Enhancement Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackStorm 3.0: Sense\, Think and Act
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackstorm-3-0-sense-think-and-act-1kkyn@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Deadline: HackStorm 3.0: Sense\, Think and Act
+DESCRIPTION:$5\,200 in prizes\nSan Francisco\nOfficial page: https://hackst
+ orm3.devpost.com/\nCheck the official rules for the exact closing time and
+  time zone.\nDetails: https://hackathontracker.com/hackathons/hackstorm-3-
+ 0-sense-think-and-act-1kkyn/
+URL:https://hackstorm3.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackStorm 3.0: Sense\, Think and Act
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Convergence-1.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:convergence-1-0-3nk61@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270206T053000Z
+DTEND:20270206T063000Z
+SUMMARY:Deadline: Convergence-1.0
+DESCRIPTION:Kalyani\, West Bengal\, India\nCloses Feb 6\, 2027\, 6:30 AM UT
+ C\nOfficial page: https://convergence2027.devfolio.co/\nCheck the official
+  rules for the exact closing time and time zone.\nDetails: https://hackath
+ ontracker.com/hackathons/convergence-1-0-3nk61/
+URL:https://convergence2027.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Convergence-1.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

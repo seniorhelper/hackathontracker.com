@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kent Hack Enough 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:kent-hack-enough-2027-5m1c7@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Deadline: Kent Hack Enough 2027
+DESCRIPTION:Kent State University - DI Hub\nOfficial page: https://khe-2027
+ .devpost.com/\nCheck the official rules for the exact closing time and tim
+ e zone.\nDetails: https://hackathontracker.com/hackathons/kent-hack-enough
+ -2027-5m1c7/
+URL:https://khe-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Kent Hack Enough 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

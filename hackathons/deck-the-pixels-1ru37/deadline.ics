@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Deck the Pixels
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:deck-the-pixels-1ru37@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: Deck the Pixels
+DESCRIPTION:$25\,000 in prizes\nOnline\nOfficial page: https://deckthepixel
+ s.devpost.com/\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/deck-the-pixels
+ -1ru37/
+URL:https://deckthepixels.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Deck the Pixels
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Tauras by Revat: Crypto Trading Hackathon | Prove Your Edge\, 
+ Then Trade It Live
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:tauras-by-revat-crypto-trading-hackathon-prove-your-edge-the-1jbhq@hack
+ athontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270309T053652Z
+DTEND:20270309T063652Z
+SUMMARY:Deadline: Tauras by Revat: Crypto Trading Hackathon | Prove Your Ed
+ ge\, Then Trade It Live
+DESCRIPTION:$1\,250 in prizes\nOnline\nCloses Mar 9\, 2027\, 6:36 AM UTC\nO
+ fficial page: https://unstop.com/hackathons/tauras-by-revat-crypto-trading
+ -hackathon-prove-your-edge-then-trade-it-live-revat-crypto-fund-1820715\nC
+ heck the official rules for the exact closing time and time zone.\nDetails
+ : https://hackathontracker.com/hackathons/tauras-by-revat-crypto-trading-h
+ ackathon-prove-your-edge-the-1jbhq/
+URL:https://unstop.com/hackathons/tauras-by-revat-crypto-trading-hackathon-
+ prove-your-edge-then-trade-it-live-revat-crypto-fund-1820715
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Tauras by Revat: Crypto Trading Hackathon | Prove 
+ Your Edge\, Then Trade It Live
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Zenith'2k26
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:zenith-2k26-gzbmt@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261213T070042Z
+DTEND:20261213T080042Z
+SUMMARY:Deadline: Zenith'2k26
+DESCRIPTION:INR 200\,000\nHyderabad\, Telangana\, India\nCloses Dec 13\, 20
+ 26\, 8:00 AM UTC\nOfficial page: https://unstop.com/hackathons/zenith2k26-
+ mlr-institute-of-technology-mlrit-hyderabad-1826211\nCheck the official ru
+ les for the exact closing time and time zone.\nDetails: https://hackathont
+ racker.com/hackathons/zenith-2k26-gzbmt/
+URL:https://unstop.com/hackathons/zenith2k26-mlr-institute-of-technology-ml
+ rit-hyderabad-1826211
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Zenith'2k26
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

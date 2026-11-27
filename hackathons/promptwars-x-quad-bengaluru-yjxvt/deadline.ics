@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PromptWars x Quad Bengaluru
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:promptwars-x-quad-bengaluru-yjxvt@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261204T060000Z
+DTEND:20261204T070000Z
+SUMMARY:Deadline: PromptWars x Quad Bengaluru
+DESCRIPTION:INR 20\,000\nBangalore\, Karnataka\, India\nCloses Dec 4\, 2026
+ \, 7:00 AM UTC\nOfficial page: https://unstop.com/hackathons/promptwars-x-
+ quad-bengaluru-quad-ai-school-of-technology-management-1817389\nCheck the 
+ official rules for the exact closing time and time zone.\nDetails: https:/
+ /hackathontracker.com/hackathons/promptwars-x-quad-bengaluru-yjxvt/
+URL:https://unstop.com/hackathons/promptwars-x-quad-bengaluru-quad-ai-schoo
+ l-of-technology-management-1817389
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: PromptWars x Quad Bengaluru
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

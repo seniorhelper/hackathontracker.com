@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SustainIQ
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:sustainiq-7d2ij@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261204T063000Z
+DTEND:20261204T073000Z
+SUMMARY:Deadline: SustainIQ
+DESCRIPTION:INR 60\,000\nMysuru\, Karnataka\, India\nCloses Dec 4\, 2026\, 
+ 7:30 AM UTC\nOfficial page: https://unstop.com/hackathons/sustainiq-vidyav
+ ardhaka-college-of-engineering-mysore-1814270\nCheck the official rules fo
+ r the exact closing time and time zone.\nDetails: https://hackathontracker
+ .com/hackathons/sustainiq-7d2ij/
+URL:https://unstop.com/hackathons/sustainiq-vidyavardhaka-college-of-engine
+ ering-mysore-1814270
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: SustainIQ
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

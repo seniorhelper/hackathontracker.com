@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:United Hacks V8
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:united-hacks-v8-157wk@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Deadline: United Hacks V8
+DESCRIPTION:$18\,700 in prizes\nOnline\nOfficial page: https://unitedhacksv
+ 8.devpost.com/\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/united-hacks-v8
+ -157wk/
+URL:https://unitedhacksv8.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: United Hacks V8
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

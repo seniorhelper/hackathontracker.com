@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SC Quantathon v4
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:sc-quantathon-v4-18sv9@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20271024
+DTEND;VALUE=DATE:20271025
+SUMMARY:Deadline: SC Quantathon v4
+DESCRIPTION:$250 in prizes\nWatt Family Innovation Center\nOfficial page: h
+ ttps://sc-quantathon-v4.devpost.com/\nCheck the official rules for the exa
+ ct closing time and time zone.\nDetails: https://hackathontracker.com/hack
+ athons/sc-quantathon-v4-18sv9/
+URL:https://sc-quantathon-v4.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: SC Quantathon v4
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

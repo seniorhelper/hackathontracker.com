@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VYTRON'26 Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:vytron-26-hackathon-1ozna@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261128T173000Z
+DTEND:20261128T183000Z
+SUMMARY:Deadline: VYTRON'26 Hackathon
+DESCRIPTION:INR 100\,000\nOnline\nCloses Nov 28\, 2026\, 6:30 PM UTC\nOffic
+ ial page: https://unstop.com/hackathons/vytron26-droidecks-1786652\nCheck 
+ the official rules for the exact closing time and time zone.\nDetails: htt
+ ps://hackathontracker.com/hackathons/vytron-26-hackathon-1ozna/
+URL:https://unstop.com/hackathons/vytron26-droidecks-1786652
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: VYTRON'26 Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

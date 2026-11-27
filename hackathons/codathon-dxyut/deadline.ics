@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Codathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codathon-dxyut@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261217T173000Z
+DTEND:20261217T183000Z
+SUMMARY:Deadline: Codathon
+DESCRIPTION:Matunga\, Maharashtra\, India\nCloses Dec 17\, 2026\, 6:30 PM U
+ TC\nOfficial page: https://unstop.com/hackathons/codathon-vortex-140-insti
+ tute-of-chemical-technology-mumbai-1800622\nCheck the official rules for t
+ he exact closing time and time zone.\nDetails: https://hackathontracker.co
+ m/hackathons/codathon-dxyut/
+URL:https://unstop.com/hackathons/codathon-vortex-140-institute-of-chemical
+ -technology-mumbai-1800622
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Codathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

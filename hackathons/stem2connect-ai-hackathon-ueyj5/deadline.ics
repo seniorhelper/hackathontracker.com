@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:STEM2Connect AI Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:stem2connect-ai-hackathon-ueyj5@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Deadline: STEM2Connect AI Hackathon
+DESCRIPTION:Online\nOfficial page: https://stem2connect-online-hackathon.de
+ vpost.com/\nCheck the official rules for the exact closing time and time z
+ one.\nDetails: https://hackathontracker.com/hackathons/stem2connect-ai-hac
+ kathon-ueyj5/
+URL:https://stem2connect-online-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: STEM2Connect AI Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

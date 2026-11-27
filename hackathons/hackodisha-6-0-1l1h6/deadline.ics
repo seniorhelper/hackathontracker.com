@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:hackodisha-6.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackodisha-6-0-1l1h6@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261213T053000Z
+DTEND:20261213T063000Z
+SUMMARY:Deadline: hackodisha-6.0
+DESCRIPTION:Online\nCloses Dec 13\, 2026\, 6:30 AM UTC\nOfficial page: http
+ s://hackodisha-6a.devfolio.co/\nCheck the official rules for the exact clo
+ sing time and time zone.\nDetails: https://hackathontracker.com/hackathons
+ /hackodisha-6-0-1l1h6/
+URL:https://hackodisha-6a.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: hackodisha-6.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodeUnited India - National Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codeunited-india-national-hackathon-1ji4s@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261227T033100Z
+DTEND:20261227T043100Z
+SUMMARY:Deadline: CodeUnited India - National Hackathon
+DESCRIPTION:Online\nCloses Dec 27\, 2026\, 4:31 AM UTC\nOfficial page: http
+ s://unstop.com/hackathons/codeunited-india-national-hackathon-hackwithpune
+ -1817749\nCheck the official rules for the exact closing time and time zon
+ e.\nDetails: https://hackathontracker.com/hackathons/codeunited-india-nati
+ onal-hackathon-1ji4s/
+URL:https://unstop.com/hackathons/codeunited-india-national-hackathon-hackw
+ ithpune-1817749
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CodeUnited India - National Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CrackleHacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:cracklehacks-ds3ar@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:Deadline: CrackleHacks
+DESCRIPTION:$20 in prizes\nOnline\nOfficial page: https://cracklehacks.devp
+ ost.com/\nCheck the official rules for the exact closing time and time zon
+ e.\nDetails: https://hackathontracker.com/hackathons/cracklehacks-ds3ar/
+URL:https://cracklehacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CrackleHacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

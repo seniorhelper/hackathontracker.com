@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:InteractUp Nexus National Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:interactup-nexus-national-hackathon-sw1so@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261230T173000Z
+DTEND:20261230T183000Z
+SUMMARY:Deadline: InteractUp Nexus National Hackathon
+DESCRIPTION:INR 50\,000\nOnline\nCloses Dec 30\, 2026\, 6:30 PM UTC\nOffici
+ al page: https://unstop.com/hackathons/interactup-nexus-national-hackathon
+ -interactup-1828645\nCheck the official rules for the exact closing time a
+ nd time zone.\nDetails: https://hackathontracker.com/hackathons/interactup
+ -nexus-national-hackathon-sw1so/
+URL:https://unstop.com/hackathons/interactup-nexus-national-hackathon-inter
+ actup-1828645
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: InteractUp Nexus National Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

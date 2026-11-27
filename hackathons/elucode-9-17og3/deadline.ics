@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ELUCode - 9
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:elucode-9-17og3@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261206T143031Z
+DTEND:20261206T153031Z
+SUMMARY:Deadline: ELUCode - 9
+DESCRIPTION:Online\nCloses Dec 6\, 2026\, 3:30 PM UTC\nOfficial page: https
+ ://unstop.com/hackathons/elucode-9-edulinkup-1822884\nCheck the official r
+ ules for the exact closing time and time zone.\nDetails: https://hackathon
+ tracker.com/hackathons/elucode-9-17og3/
+URL:https://unstop.com/hackathons/elucode-9-edulinkup-1822884
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: ELUCode - 9
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

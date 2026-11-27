@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ETHGlobal New York 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ethglobal-new-york-2027-13xzh@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270616
+DTEND;VALUE=DATE:20270617
+SUMMARY:Deadline: ETHGlobal New York 2027
+DESCRIPTION:New York City\, United States\nOfficial page: https://ethglobal
+ .com/events/newyork2027\nCheck the official rules for the exact closing ti
+ me and time zone.\nDetails: https://hackathontracker.com/hackathons/ethglo
+ bal-new-york-2027-13xzh/
+URL:https://ethglobal.com/events/newyork2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: ETHGlobal New York 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Code For DFW
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:code-for-dfw-3g5v5@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Deadline: Code For DFW
+DESCRIPTION:Online\nOfficial page: https://code-for-dfw.devpost.com/\nCheck
+  the official rules for the exact closing time and time zone.\nDetails: ht
+ tps://hackathontracker.com/hackathons/code-for-dfw-3g5v5/
+URL:https://code-for-dfw.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Code For DFW
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

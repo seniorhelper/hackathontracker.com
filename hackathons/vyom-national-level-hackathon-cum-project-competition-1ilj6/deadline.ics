@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VYOM - National Level Hackathon Cum Project Competition
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:vyom-national-level-hackathon-cum-project-competition-1ilj6@hackathontr
+ acker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261130T173000Z
+DTEND:20261130T183000Z
+SUMMARY:Deadline: VYOM - National Level Hackathon Cum Project Competition
+DESCRIPTION:Aurangabad\, Maharashtra\, India + online\nCloses Nov 30\, 2026
+ \, 6:30 PM UTC\nOfficial page: https://unstop.com/hackathons/vyom-national
+ -level-hackathon-cum-project-competition-government-college-of-engineering
+ -geca-aurangabad-1793796\nCheck the official rules for the exact closing t
+ ime and time zone.\nDetails: https://hackathontracker.com/hackathons/vyom-
+ national-level-hackathon-cum-project-competition-1ilj6/
+URL:https://unstop.com/hackathons/vyom-national-level-hackathon-cum-project
+ -competition-government-college-of-engineering-geca-aurangabad-1793796
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: VYOM - National Level Hackathon Cum Project Compet
+ ition
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Ooty Hacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ooty-hacks-q1yjz@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261216T173000Z
+DTEND:20261216T183000Z
+SUMMARY:Deadline: Ooty Hacks
+DESCRIPTION:Ooty\, Tamil Nadu\, India\nCloses Dec 16\, 2026\, 6:30 PM UTC\n
+ Official page: https://unstop.com/hackathons/ooty-hacks-hackhere-1768100\n
+ Check the official rules for the exact closing time and time zone.\nDetail
+ s: https://hackathontracker.com/hackathons/ooty-hacks-q1yjz/
+URL:https://unstop.com/hackathons/ooty-hacks-hackhere-1768100
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Ooty Hacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

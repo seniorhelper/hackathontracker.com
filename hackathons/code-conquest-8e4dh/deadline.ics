@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Code Conquest
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:code-conquest-8e4dh@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270104T103000Z
+DTEND:20270104T113000Z
+SUMMARY:Deadline: Code Conquest
+DESCRIPTION:INR 50\,000\nChennai\, Tamil Nadu\, India + online\nCloses Jan 
+ 4\, 2027\, 11:30 AM UTC\nOfficial page: https://unstop.com/hackathons/code
+ -conquest-shaastra-2027-iit-madras-1783515\nCheck the official rules for t
+ he exact closing time and time zone.\nDetails: https://hackathontracker.co
+ m/hackathons/code-conquest-8e4dh/
+URL:https://unstop.com/hackathons/code-conquest-shaastra-2027-iit-madras-17
+ 83515
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Code Conquest
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VisionHacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:visionhacks-71few@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Deadline: VisionHacks
+DESCRIPTION:$CAD 3\,000\nOakville\nOfficial page: https://visionhacks.devpo
+ st.com/\nCheck the official rules for the exact closing time and time zone
+ .\nDetails: https://hackathontracker.com/hackathons/visionhacks-71few/
+URL:https://visionhacks.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: VisionHacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

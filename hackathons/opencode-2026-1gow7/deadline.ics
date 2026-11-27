@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:OpenCode 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:opencode-2026-1gow7@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261213T163000Z
+DTEND:20261213T173000Z
+SUMMARY:Deadline: OpenCode 2026
+DESCRIPTION:INR 80\,000\nOnline\nCloses Dec 13\, 2026\, 5:30 PM UTC\nOffici
+ al page: https://unstop.com/hackathons/opencode-2026-opencode-indian-insti
+ tute-of-information-technology-iiit-allahabad-1811349\nCheck the official 
+ rules for the exact closing time and time zone.\nDetails: https://hackatho
+ ntracker.com/hackathons/opencode-2026-1gow7/
+URL:https://unstop.com/hackathons/opencode-2026-opencode-indian-institute-o
+ f-information-technology-iiit-allahabad-1811349
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: OpenCode 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

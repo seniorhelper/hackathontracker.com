@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MACHINE AGE
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:machine-age-1lf0l@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:Deadline: MACHINE AGE
+DESCRIPTION:$10\,000 in prizes\nOnline\nOfficial page: https://machineage.d
+ evpost.com/\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/machine-age-1lf0l/
+URL:https://machineage.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: MACHINE AGE
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

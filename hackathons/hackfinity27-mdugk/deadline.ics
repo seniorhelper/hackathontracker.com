@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackfinity27
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackfinity27-mdugk@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261218T183000Z
+DTEND:20261218T193000Z
+SUMMARY:Deadline: Hackfinity27
+DESCRIPTION:Online\nCloses Dec 18\, 2026\, 7:30 PM UTC\nOfficial page: http
+ s://hackfinity27.devfolio.co/\nCheck the official rules for the exact clos
+ ing time and time zone.\nDetails: https://hackathontracker.com/hackathons/
+ hackfinity27-mdugk/
+URL:https://hackfinity27.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hackfinity27
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

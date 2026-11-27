@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hojohborolo (Dev Event)
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hojohborolo-dev-event-lfr8f@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261219T103000Z
+DTEND:20261219T113000Z
+SUMMARY:Deadline: Hojohborolo (Dev Event)
+DESCRIPTION:INR 6\,000\nKolkata\, West Bengal\, India\nCloses Dec 19\, 2026
+ \, 11:30 AM UTC\nOfficial page: https://unstop.com/hackathons/hojohborolo-
+ kernel-10-department-of-information-technology-jadavpur-university-1822587
+ \nCheck the official rules for the exact closing time and time zone.\nDeta
+ ils: https://hackathontracker.com/hackathons/hojohborolo-dev-event-lfr8f/
+URL:https://unstop.com/hackathons/hojohborolo-kernel-10-department-of-infor
+ mation-technology-jadavpur-university-1822587
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hojohborolo (Dev Event)
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

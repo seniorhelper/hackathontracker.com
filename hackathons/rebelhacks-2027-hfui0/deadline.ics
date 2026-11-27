@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:RebelHacks 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:rebelhacks-2027-hfui0@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Deadline: RebelHacks 2027
+DESCRIPTION:$2\,500 in prizes\nUniversity of Nevada Las Vegas\nOfficial pag
+ e: https://rebelhacks-2027.devpost.com/\nCheck the official rules for the 
+ exact closing time and time zone.\nDetails: https://hackathontracker.com/h
+ ackathons/rebelhacks-2027-hfui0/
+URL:https://rebelhacks-2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: RebelHacks 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

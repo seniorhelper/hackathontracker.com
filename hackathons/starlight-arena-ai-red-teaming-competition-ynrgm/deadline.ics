@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Starlight Arena - AI Red Teaming Competition
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:starlight-arena-ai-red-teaming-competition-ynrgm@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261214T163000Z
+DTEND:20261214T173000Z
+SUMMARY:Deadline: Starlight Arena - AI Red Teaming Competition
+DESCRIPTION:Online\nCloses Dec 14\, 2026\, 5:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/starlight-arena-ai-red-teaming-competition-starl
+ ight-arena-parsewave-ai-1824394\nCheck the official rules for the exact cl
+ osing time and time zone.\nDetails: https://hackathontracker.com/hackathon
+ s/starlight-arena-ai-red-teaming-competition-ynrgm/
+URL:https://unstop.com/hackathons/starlight-arena-ai-red-teaming-competitio
+ n-starlight-arena-parsewave-ai-1824394
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Starlight Arena - AI Red Teaming Competition
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

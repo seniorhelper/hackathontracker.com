@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Code Relay 5.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:code-relay-5-0-cqxcn@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270117T172900Z
+DTEND:20270117T182900Z
+SUMMARY:Deadline: Code Relay 5.0
+DESCRIPTION:INR 310\,000\nBhubaneswar\, Odisha\, India + online\nCloses Jan
+  17\, 2027\, 6:29 PM UTC\nOfficial page: https://unstop.com/hackathons/cod
+ e-relay-50-indian-institute-of-technology-iit-bhubaneswar-1810370\nCheck t
+ he official rules for the exact closing time and time zone.\nDetails: http
+ s://hackathontracker.com/hackathons/code-relay-5-0-cqxcn/
+URL:https://unstop.com/hackathons/code-relay-50-indian-institute-of-technol
+ ogy-iit-bhubaneswar-1810370
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Code Relay 5.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hacklytics 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hacklytics-2027-1dtbh@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Deadline: Hacklytics 2027
+DESCRIPTION:Atlanta\, GA\, US\nOfficial page: https://www.mlh.com/events/ha
+ cklytics-2027\nCheck the official rules for the exact closing time and tim
+ e zone.\nDetails: https://hackathontracker.com/hackathons/hacklytics-2027-
+ 1dtbh/
+URL:https://www.mlh.com/events/hacklytics-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hacklytics 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

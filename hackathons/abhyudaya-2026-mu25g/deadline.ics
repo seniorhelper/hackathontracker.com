@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ABHYUDAYA 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:abhyudaya-2026-mu25g@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261205T093000Z
+DTEND:20261205T103000Z
+SUMMARY:Deadline: ABHYUDAYA 2026
+DESCRIPTION:Challakere Rural\, Karnataka\, India\nCloses Dec 5\, 2026\, 10:
+ 30 AM UTC\nOfficial page: https://abhyudaya.devfolio.co/\nCheck the offici
+ al rules for the exact closing time and time zone.\nDetails: https://hacka
+ thontracker.com/hackathons/abhyudaya-2026-mu25g/
+URL:https://abhyudaya.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: ABHYUDAYA 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

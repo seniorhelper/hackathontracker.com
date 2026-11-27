@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackSheffield11
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hacksheffield11-1ca2l@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Deadline: HackSheffield11
+DESCRIPTION:Sheffield\, South Yorkshire\, GB\nOfficial page: https://www.ml
+ h.com/events/hacksheffield11\nCheck the official rules for the exact closi
+ ng time and time zone.\nDetails: https://hackathontracker.com/hackathons/h
+ acksheffield11-1ca2l/
+URL:https://www.mlh.com/events/hacksheffield11
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackSheffield11
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

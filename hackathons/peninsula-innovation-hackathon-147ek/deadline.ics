@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Peninsula Innovation Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:peninsula-innovation-hackathon-147ek@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Deadline: Peninsula Innovation Hackathon
+DESCRIPTION:Online\nOfficial page: https://peninsula-innovation-hackathon.d
+ evpost.com/\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/peninsula-innovati
+ on-hackathon-147ek/
+URL:https://peninsula-innovation-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Peninsula Innovation Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

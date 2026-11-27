@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Pakistan Hardware Hack 27
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:pakistan-hardware-hack-27-1swei@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Deadline: Pakistan Hardware Hack 27
+DESCRIPTION:Lahore\, Punjab\, Pakistan\nOfficial page: https://teenhacks.or
+ g/\nCheck the official rules for the exact closing time and time zone.\nDe
+ tails: https://hackathontracker.com/hackathons/pakistan-hardware-hack-27-1
+ swei/
+URL:https://teenhacks.org/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Pakistan Hardware Hack 27
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

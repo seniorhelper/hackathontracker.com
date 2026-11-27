@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackKro CodeByte 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackkro-codebyte-2026-15wt3@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261207T172900Z
+DTEND:20261207T182900Z
+SUMMARY:Deadline: HackKro CodeByte 2026
+DESCRIPTION:Online\nCloses Dec 7\, 2026\, 6:29 PM UTC\nOfficial page: https
+ ://unstop.com/hackathons/hackkro-codebyte-2026-hackkro-1807297\nCheck the 
+ official rules for the exact closing time and time zone.\nDetails: https:/
+ /hackathontracker.com/hackathons/hackkro-codebyte-2026-15wt3/
+URL:https://unstop.com/hackathons/hackkro-codebyte-2026-hackkro-1807297
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackKro CodeByte 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

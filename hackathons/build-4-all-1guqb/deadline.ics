@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BUILD 4 ALL
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:build-4-all-1guqb@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Deadline: BUILD 4 ALL
+DESCRIPTION:Online\nOfficial page: https://build4all.devpost.com/\nCheck th
+ e official rules for the exact closing time and time zone.\nDetails: https
+ ://hackathontracker.com/hackathons/build-4-all-1guqb/
+URL:https://build4all.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: BUILD 4 ALL
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

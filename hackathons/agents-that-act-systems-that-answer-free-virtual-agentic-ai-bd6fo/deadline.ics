@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Agents that act. Systems that answer. | Free Virtual Agentic-A
+ I Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:agents-that-act-systems-that-answer-free-virtual-agentic-ai-bd6fo@hacka
+ thontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261128T003000Z
+DTEND:20261128T013000Z
+SUMMARY:Deadline: Agents that act. Systems that answer. | Free Virtual Agen
+ tic-AI Hackathon
+DESCRIPTION:Online\nCloses Nov 28\, 2026\, 1:30 AM UTC\nOfficial page: http
+ s://unstop.com/hackathons/agents-that-act-systems-that-answer-studentchakr
+ a-1777504\nCheck the official rules for the exact closing time and time zo
+ ne.\nDetails: https://hackathontracker.com/hackathons/agents-that-act-syst
+ ems-that-answer-free-virtual-agentic-ai-bd6fo/
+URL:https://unstop.com/hackathons/agents-that-act-systems-that-answer-stude
+ ntchakra-1777504
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Agents that act. Systems that answer. | Free Virtu
+ al Agentic-AI Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

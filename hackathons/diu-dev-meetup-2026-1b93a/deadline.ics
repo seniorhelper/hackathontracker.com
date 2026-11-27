@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:DIU Dev Meetup 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:diu-dev-meetup-2026-1b93a@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Deadline: DIU Dev Meetup 2026
+DESCRIPTION:Online\nOfficial page: https://diu-devthon.devpost.com/\nCheck 
+ the official rules for the exact closing time and time zone.\nDetails: htt
+ ps://hackathontracker.com/hackathons/diu-dev-meetup-2026-1b93a/
+URL:https://diu-devthon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: DIU Dev Meetup 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

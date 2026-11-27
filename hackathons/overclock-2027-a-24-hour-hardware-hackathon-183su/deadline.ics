@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:OVERCLOCK 2027 || A 24-Hour Hardware Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:overclock-2027-a-24-hour-hardware-hackathon-183su@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270130T003000Z
+DTEND:20270130T013000Z
+SUMMARY:Deadline: OVERCLOCK 2027 || A 24-Hour Hardware Hackathon
+DESCRIPTION:INR 75\,000\nNavi Mumbai\, Maharashtra\, India\nCloses Jan 30\,
+  2027\, 1:30 AM UTC\nOfficial page: https://unstop.com/hackathons/overcloc
+ k-agnel-charities-fr-c-rodrigues-institute-of-technology-vashi-navi-mumbai
+ -1798677\nCheck the official rules for the exact closing time and time zon
+ e.\nDetails: https://hackathontracker.com/hackathons/overclock-2027-a-24-h
+ our-hardware-hackathon-183su/
+URL:https://unstop.com/hackathons/overclock-agnel-charities-fr-c-rodrigues-
+ institute-of-technology-vashi-navi-mumbai-1798677
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: OVERCLOCK 2027 || A 24-Hour Hardware Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

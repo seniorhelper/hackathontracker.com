@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SHE CODE
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:she-code-153ce@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270306T083000Z
+DTEND:20270306T093000Z
+SUMMARY:Deadline: SHE CODE
+DESCRIPTION:INR 15\,000\nPune\, Maharashtra\, India + online\nCloses Mar 6\
+ , 2027\, 9:30 AM UTC\nOfficial page: https://unstop.com/hackathons/she-cod
+ e-solutions-2k27-army-institute-of-technology-pune-1802089\nCheck the offi
+ cial rules for the exact closing time and time zone.\nDetails: https://hac
+ kathontracker.com/hackathons/she-code-153ce/
+URL:https://unstop.com/hackathons/she-code-solutions-2k27-army-institute-of
+ -technology-pune-1802089
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: SHE CODE
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

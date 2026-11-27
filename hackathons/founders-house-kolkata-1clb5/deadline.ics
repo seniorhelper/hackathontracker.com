@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Founders' House Kolkata
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:founders-house-kolkata-1clb5@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261129T173000Z
+DTEND:20261129T183000Z
+SUMMARY:Deadline: Founders' House Kolkata
+DESCRIPTION:In person\nCloses Nov 29\, 2026\, 6:30 PM UTC\nOfficial page: h
+ ttps://founders-house-kolkata.devfolio.co/\nCheck the official rules for t
+ he exact closing time and time zone.\nDetails: https://hackathontracker.co
+ m/hackathons/founders-house-kolkata-1clb5/
+URL:https://founders-house-kolkata.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Founders' House Kolkata
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

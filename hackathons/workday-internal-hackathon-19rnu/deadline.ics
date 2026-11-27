@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Workday Internal Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:workday-internal-hackathon-19rnu@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Deadline: Workday Internal Hackathon
+DESCRIPTION:Pleasanton\, CA\, US\nOfficial page: https://www.mlh.com/events
+ /workday-internal-hackathon\nCheck the official rules for the exact closin
+ g time and time zone.\nDetails: https://hackathontracker.com/hackathons/wo
+ rkday-internal-hackathon-19rnu/
+URL:https://www.mlh.com/events/workday-internal-hackathon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Workday Internal Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

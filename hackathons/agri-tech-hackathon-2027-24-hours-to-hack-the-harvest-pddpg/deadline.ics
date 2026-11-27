@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Agri-Tech Hackathon 2027: 24 Hours to Hack the Harvest
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:agri-tech-hackathon-2027-24-hours-to-hack-the-harvest-pddpg@hackathontr
+ acker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270129T172900Z
+DTEND:20270129T182900Z
+SUMMARY:Deadline: Agri-Tech Hackathon 2027: 24 Hours to Hack the Harvest
+DESCRIPTION:INR 350\,000\nMumbai\, Maharashtra\, India\nCloses Jan 29\, 202
+ 7\, 6:29 PM UTC\nOfficial page: https://unstop.com/hackathons/agri-tech-ha
+ ckathon-2027-24-hours-to-hack-the-harvest-k-j-somaiya-college-of-engineeri
+ ng-kjsce-vidyavihar-1792152\nCheck the official rules for the exact closin
+ g time and time zone.\nDetails: https://hackathontracker.com/hackathons/ag
+ ri-tech-hackathon-2027-24-hours-to-hack-the-harvest-pddpg/
+URL:https://unstop.com/hackathons/agri-tech-hackathon-2027-24-hours-to-hack
+ -the-harvest-k-j-somaiya-college-of-engineering-kjsce-vidyavihar-1792152
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Agri-Tech Hackathon 2027: 24 Hours to Hack the Har
+ vest
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

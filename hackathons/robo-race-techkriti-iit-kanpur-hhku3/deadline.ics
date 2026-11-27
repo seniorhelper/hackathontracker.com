@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Robo Race | TECHKRITI | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:robo-race-techkriti-iit-kanpur-hhku3@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261231T064439Z
+DTEND:20261231T074439Z
+SUMMARY:Deadline: Robo Race | TECHKRITI | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 7:44 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/robo-race-techkriti27
+ -techkriti-1764445\nCheck the official rules for the exact closing time an
+ d time zone.\nDetails: https://hackathontracker.com/hackathons/robo-race-t
+ echkriti-iit-kanpur-hhku3/
+URL:https://unstop.com/hackathons/robo-race-techkriti27-techkriti-1764445
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Robo Race | TECHKRITI | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

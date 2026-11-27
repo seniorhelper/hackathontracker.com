@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackday Dec
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackday-dec-1osgf@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261212T143047Z
+DTEND:20261212T153047Z
+SUMMARY:Deadline: Hackday Dec
+DESCRIPTION:Online\nCloses Dec 12\, 2026\, 3:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/hackday-dec-trishulx-1828678\nCheck the official
+  rules for the exact closing time and time zone.\nDetails: https://hackath
+ ontracker.com/hackathons/hackday-dec-1osgf/
+URL:https://unstop.com/hackathons/hackday-dec-trishulx-1828678
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hackday Dec
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack Uttar Pradesh 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-uttar-pradesh-2026-1ovja@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270111T134100Z
+DTEND:20270111T144100Z
+SUMMARY:Deadline: Hack Uttar Pradesh 2026
+DESCRIPTION:INR 40\,000\nKanpur\, Uttar Pradesh\, India + online\nCloses Ja
+ n 11\, 2027\, 2:41 PM UTC\nOfficial page: https://unstop.com/hackathons/ha
+ ck-uttar-pradesh-2026-riwa-creatives-1817499\nCheck the official rules for
+  the exact closing time and time zone.\nDetails: https://hackathontracker.
+ com/hackathons/hack-uttar-pradesh-2026-1ovja/
+URL:https://unstop.com/hackathons/hack-uttar-pradesh-2026-riwa-creatives-18
+ 17499
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hack Uttar Pradesh 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

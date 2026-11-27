@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Dry Run: DSA Challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:dry-run-dsa-challenge-vx1dr@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261212T153000Z
+DTEND:20261212T163000Z
+SUMMARY:Deadline: Dry Run: DSA Challenge
+DESCRIPTION:Online\nCloses Dec 12\, 2026\, 4:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/dry-run-dsa-challenge-ibs-hyderabad-1829921\nChe
+ ck the official rules for the exact closing time and time zone.\nDetails: 
+ https://hackathontracker.com/hackathons/dry-run-dsa-challenge-vx1dr/
+URL:https://unstop.com/hackathons/dry-run-dsa-challenge-ibs-hyderabad-18299
+ 21
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Dry Run: DSA Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

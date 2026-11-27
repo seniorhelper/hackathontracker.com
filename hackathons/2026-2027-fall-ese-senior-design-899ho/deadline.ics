@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:2026-2027 Fall ESE Senior Design
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:2026-2027-fall-ese-senior-design-899ho@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deadline: 2026-2027 Fall ESE Senior Design
+DESCRIPTION:Amy Gutman Hall\nOfficial page: https://ese4500f26.devpost.com/
+ \nCheck the official rules for the exact closing time and time zone.\nDeta
+ ils: https://hackathontracker.com/hackathons/2026-2027-fall-ese-senior-des
+ ign-899ho/
+URL:https://ese4500f26.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: 2026-2027 Fall ESE Senior Design
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackville 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackville-2027-6isff@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Deadline: Hackville 2027
+DESCRIPTION:Oakville\, Ontario\, CA\nOfficial page: https://www.mlh.com/eve
+ nts/hackville-2027\nCheck the official rules for the exact closing time an
+ d time zone.\nDetails: https://hackathontracker.com/hackathons/hackville-2
+ 027-6isff/
+URL:https://www.mlh.com/events/hackville-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hackville 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

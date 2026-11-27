@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodeClash: The November Nexus 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codeclash-the-november-nexus-2026-19o1t@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261206T153000Z
+DTEND:20261206T163000Z
+SUMMARY:Deadline: CodeClash: The November Nexus 2026
+DESCRIPTION:INR 12\,000\nOnline\nCloses Dec 6\, 2026\, 4:30 PM UTC\nOfficia
+ l page: https://unstop.com/hackathons/codeclash-the-november-nexus-2026-le
+ ts-code-community-1775207\nCheck the official rules for the exact closing 
+ time and time zone.\nDetails: https://hackathontracker.com/hackathons/code
+ clash-the-november-nexus-2026-19o1t/
+URL:https://unstop.com/hackathons/codeclash-the-november-nexus-2026-lets-co
+ de-community-1775207
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CodeClash: The November Nexus 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

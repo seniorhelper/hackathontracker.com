@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Silicon Valley Buildathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:silicon-valley-buildathon-14he6@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Deadline: Silicon Valley Buildathon
+DESCRIPTION:$500 in prizes\nOnline\nOfficial page: https://silicon-valley-b
+ uildathon.devpost.com/\nCheck the official rules for the exact closing tim
+ e and time zone.\nDetails: https://hackathontracker.com/hackathons/silicon
+ -valley-buildathon-14he6/
+URL:https://silicon-valley-buildathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Silicon Valley Buildathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

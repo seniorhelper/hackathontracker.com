@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KITE Winter Innovation Expedition – National-Level Innovatio
+ n Challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:kite-winter-innovation-expedition-national-level-innovation-12bb3@hacka
+ thontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261212T140000Z
+DTEND:20261212T150000Z
+SUMMARY:Deadline: KITE Winter Innovation Expedition – National-Level Inno
+ vation Challenge
+DESCRIPTION:INR 20\,000\nTiruchengode\, Tamil Nadu\, India\nCloses Dec 12\,
+  2026\, 3:00 PM UTC\nOfficial page: https://unstop.com/hackathons/kite-win
+ ter-innovation-expedition-national-level-innovation-challenge-ks-rangasamy
+ -college-of-technology-ksrc-1820425\nCheck the official rules for the exac
+ t closing time and time zone.\nDetails: https://hackathontracker.com/hacka
+ thons/kite-winter-innovation-expedition-national-level-innovation-12bb3/
+URL:https://unstop.com/hackathons/kite-winter-innovation-expedition-nationa
+ l-level-innovation-challenge-ks-rangasamy-college-of-technology-ksrc-18204
+ 25
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: KITE Winter Innovation Expedition – National-Lev
+ el Innovation Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

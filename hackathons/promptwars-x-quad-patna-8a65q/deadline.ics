@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PromptWars x Quad Patna
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:promptwars-x-quad-patna-8a65q@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261204T063000Z
+DTEND:20261204T073000Z
+SUMMARY:Deadline: PromptWars x Quad Patna
+DESCRIPTION:INR 20\,000\nPatna\, Bihar\, India\nCloses Dec 4\, 2026\, 7:30 
+ AM UTC\nOfficial page: https://unstop.com/hackathons/promptwars-x-quad-pat
+ na-quad-ai-school-of-technology-management-1821984\nCheck the official rul
+ es for the exact closing time and time zone.\nDetails: https://hackathontr
+ acker.com/hackathons/promptwars-x-quad-patna-8a65q/
+URL:https://unstop.com/hackathons/promptwars-x-quad-patna-quad-ai-school-of
+ -technology-management-1821984
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: PromptWars x Quad Patna
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

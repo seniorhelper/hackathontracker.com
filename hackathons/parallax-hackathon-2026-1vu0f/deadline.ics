@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Parallax Hackathon 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:parallax-hackathon-2026-1vu0f@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261220T143000Z
+DTEND:20261220T153000Z
+SUMMARY:Deadline: Parallax Hackathon 2026
+DESCRIPTION:Online\nCloses Dec 20\, 2026\, 3:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/parallax-hackathon-2026-invoqe-1826157\nCheck th
+ e official rules for the exact closing time and time zone.\nDetails: https
+ ://hackathontracker.com/hackathons/parallax-hackathon-2026-1vu0f/
+URL:https://unstop.com/hackathons/parallax-hackathon-2026-invoqe-1826157
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Parallax Hackathon 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

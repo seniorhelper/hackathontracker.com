@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Cloud9 x JetBrains: Sky's The Limit Hackathon 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:cloud9-x-jetbrains-sky-s-the-limit-hackathon-2026-4a7tq@hackathontracke
+ r.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Deadline: Cloud9 x JetBrains: Sky's The Limit Hackathon 2026
+DESCRIPTION:$25\,000 in prizes\nOnline\nOfficial page: https://cloud9.devpo
+ st.com/\nCheck the official rules for the exact closing time and time zone
+ .\nDetails: https://hackathontracker.com/hackathons/cloud9-x-jetbrains-sky
+ -s-the-limit-hackathon-2026-4a7tq/
+URL:https://cloud9.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Cloud9 x JetBrains: Sky's The Limit Hackathon 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

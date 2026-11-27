@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Agentic Arena
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:agentic-arena-lheup@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261214T172920Z
+DTEND:20261214T182920Z
+SUMMARY:Deadline: Agentic Arena
+DESCRIPTION:INR 40\,000\nNagpur\, Maharashtra\, India\nCloses Dec 14\, 2026
+ \, 6:29 PM UTC\nOfficial page: https://unstop.com/hackathons/agentic-arena
+ -st-vincent-pallotti-college-of-engineering-and-technology-svpcet-nagpur-1
+ 820895\nCheck the official rules for the exact closing time and time zone.
+ \nDetails: https://hackathontracker.com/hackathons/agentic-arena-lheup/
+URL:https://unstop.com/hackathons/agentic-arena-st-vincent-pallotti-college
+ -of-engineering-and-technology-svpcet-nagpur-1820895
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Agentic Arena
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

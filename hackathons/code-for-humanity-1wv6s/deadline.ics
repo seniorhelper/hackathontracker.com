@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Code for Humanity
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:code-for-humanity-1wv6s@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Deadline: Code for Humanity
+DESCRIPTION:Online\nOfficial page: https://code-for-humanity.devpost.com/\n
+ Check the official rules for the exact closing time and time zone.\nDetail
+ s: https://hackathontracker.com/hackathons/code-for-humanity-1wv6s/
+URL:https://code-for-humanity.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Code for Humanity
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

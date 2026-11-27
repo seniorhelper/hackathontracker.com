@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AgentX
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:agentx-2q3f9@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261206T153000Z
+DTEND:20261206T163000Z
+SUMMARY:Deadline: AgentX
+DESCRIPTION:INR 500\nOnline\nCloses Dec 6\, 2026\, 4:30 PM UTC\nOfficial pa
+ ge: https://unstop.com/hackathons/agentx-ai-academia-1824377\nCheck the of
+ ficial rules for the exact closing time and time zone.\nDetails: https://h
+ ackathontracker.com/hackathons/agentx-2q3f9/
+URL:https://unstop.com/hackathons/agentx-ai-academia-1824377
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AgentX
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

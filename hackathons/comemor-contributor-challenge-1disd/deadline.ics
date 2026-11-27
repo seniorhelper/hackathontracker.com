@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CoMemor Contributor Challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:comemor-contributor-challenge-1disd@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261215T172900Z
+DTEND:20261215T182900Z
+SUMMARY:Deadline: CoMemor Contributor Challenge
+DESCRIPTION:Online\nCloses Dec 15\, 2026\, 6:29 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/comemor-contributor-challenge-comemor-1825938\nC
+ heck the official rules for the exact closing time and time zone.\nDetails
+ : https://hackathontracker.com/hackathons/comemor-contributor-challenge-1d
+ isd/
+URL:https://unstop.com/hackathons/comemor-contributor-challenge-comemor-182
+ 5938
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CoMemor Contributor Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

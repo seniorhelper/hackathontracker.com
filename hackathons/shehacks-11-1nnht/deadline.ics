@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SheHacks+ 11
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:shehacks-11-1nnht@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Deadline: SheHacks+ 11
+DESCRIPTION:London\, Ontario\, CA\nOfficial page: https://www.mlh.com/event
+ s/shehacks-11\nCheck the official rules for the exact closing time and tim
+ e zone.\nDetails: https://hackathontracker.com/hackathons/shehacks-11-1nnh
+ t/
+URL:https://www.mlh.com/events/shehacks-11
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: SheHacks+ 11
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

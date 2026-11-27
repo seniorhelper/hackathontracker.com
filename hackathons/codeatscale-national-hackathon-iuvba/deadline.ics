@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodeAtScale - National Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codeatscale-national-hackathon-iuvba@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270107T033000Z
+DTEND:20270107T043000Z
+SUMMARY:Deadline: CodeAtScale - National Hackathon
+DESCRIPTION:Online\nCloses Jan 7\, 2027\, 4:30 AM UTC\nOfficial page: https
+ ://unstop.com/hackathons/codeatscale-national-hackathon-hackwithpune-18307
+ 05\nCheck the official rules for the exact closing time and time zone.\nDe
+ tails: https://hackathontracker.com/hackathons/codeatscale-national-hackat
+ hon-iuvba/
+URL:https://unstop.com/hackathons/codeatscale-national-hackathon-hackwithpu
+ ne-1830705
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CodeAtScale - National Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

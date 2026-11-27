@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Ideathon: Idea to Prototyping Challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ideathon-idea-to-prototyping-challenge-1pmco@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261130T172900Z
+DTEND:20261130T182900Z
+SUMMARY:Deadline: Ideathon: Idea to Prototyping Challenge
+DESCRIPTION:Mumbai\, Maharashtra\, India + online\nCloses Nov 30\, 2026\, 6
+ :29 PM UTC\nOfficial page: https://unstop.com/hackathons/ideathon-idea-to-
+ prototyping-challenge-iit-bombay-1823841\nCheck the official rules for the
+  exact closing time and time zone.\nDetails: https://hackathontracker.com/
+ hackathons/ideathon-idea-to-prototyping-challenge-1pmco/
+URL:https://unstop.com/hackathons/ideathon-idea-to-prototyping-challenge-ii
+ t-bombay-1823841
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Ideathon: Idea to Prototyping Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

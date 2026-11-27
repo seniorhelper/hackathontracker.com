@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack_NCState
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-ncstate-1clu9@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Deadline: Hack_NCState
+DESCRIPTION:Raleigh\, North Carolina\, US\nOfficial page: https://www.mlh.c
+ om/events/hack_ncstate-e7\nCheck the official rules for the exact closing 
+ time and time zone.\nDetails: https://hackathontracker.com/hackathons/hack
+ -ncstate-1clu9/
+URL:https://www.mlh.com/events/hack_ncstate-e7
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hack_NCState
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

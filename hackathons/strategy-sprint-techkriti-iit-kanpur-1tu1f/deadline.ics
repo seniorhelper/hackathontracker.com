@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Strategy Sprint | TECHKRITI | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:strategy-sprint-techkriti-iit-kanpur-1tu1f@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261231T124749Z
+DTEND:20261231T134749Z
+SUMMARY:Deadline: Strategy Sprint | TECHKRITI | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 1:47 
+ PM UTC\nOfficial page: https://unstop.com/hackathons/strategy-sprint-techk
+ riti27-techkriti-1764188\nCheck the official rules for the exact closing t
+ ime and time zone.\nDetails: https://hackathontracker.com/hackathons/strat
+ egy-sprint-techkriti-iit-kanpur-1tu1f/
+URL:https://unstop.com/hackathons/strategy-sprint-techkriti27-techkriti-176
+ 4188
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Strategy Sprint | TECHKRITI | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

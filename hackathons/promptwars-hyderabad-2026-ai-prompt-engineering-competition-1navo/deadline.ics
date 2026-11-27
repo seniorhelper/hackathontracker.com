@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PromptWars Hyderabad 2026 - AI & Prompt Engineering Competitio
+ n
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:promptwars-hyderabad-2026-ai-prompt-engineering-competition-1navo@hacka
+ thontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261210T110000Z
+DTEND:20261210T120000Z
+SUMMARY:Deadline: PromptWars Hyderabad 2026 - AI & Prompt Engineering Compe
+ tition
+DESCRIPTION:Hyderabad\, Telangana\, India\nCloses Dec 10\, 2026\, 12:00 PM 
+ UTC\nOfficial page: https://unstop.com/hackathons/promptwars-hyderabad-202
+ 6-ai-prompt-engineering-competition-st-peters-engineering-college-spec-hyd
+ erabad-tela-1765597\nCheck the official rules for the exact closing time a
+ nd time zone.\nDetails: https://hackathontracker.com/hackathons/promptwars
+ -hyderabad-2026-ai-prompt-engineering-competition-1navo/
+URL:https://unstop.com/hackathons/promptwars-hyderabad-2026-ai-prompt-engin
+ eering-competition-st-peters-engineering-college-spec-hyderabad-tela-17655
+ 97
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: PromptWars Hyderabad 2026 - AI & Prompt Engineerin
+ g Competition
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

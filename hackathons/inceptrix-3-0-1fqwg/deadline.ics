@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Inceptrix 3.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:inceptrix-3-0-1fqwg@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270220T133000Z
+DTEND:20270220T143000Z
+SUMMARY:Deadline: Inceptrix 3.0
+DESCRIPTION:INR 250\,000\nBangalore\, Karnataka\, India + online\nCloses Fe
+ b 20\, 2027\, 2:30 PM UTC\nOfficial page: https://unstop.com/hackathons/in
+ cpetrix-30-faculty-of-engineering-and-technology-jain-deemed-to-be-univers
+ ity-1794479\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/inceptrix-3-0-1fqw
+ g/
+URL:https://unstop.com/hackathons/incpetrix-30-faculty-of-engineering-and-t
+ echnology-jain-deemed-to-be-university-1794479
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Inceptrix 3.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

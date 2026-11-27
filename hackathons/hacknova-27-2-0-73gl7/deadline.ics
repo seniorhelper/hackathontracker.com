@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hacknova'27 2.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hacknova-27-2-0-73gl7@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20270207T113000Z
+DTEND:20270207T123000Z
+SUMMARY:Deadline: Hacknova'27 2.0
+DESCRIPTION:INR 145\,000\nKharghar\, Maharashtra\, India\nCloses Feb 7\, 20
+ 27\, 12:30 PM UTC\nOfficial page: https://unstop.com/hackathons/hacknova27
+ -20-bharati-vidyapeeth-deemed-to-be-university-1772235\nCheck the official
+  rules for the exact closing time and time zone.\nDetails: https://hackath
+ ontracker.com/hackathons/hacknova-27-2-0-73gl7/
+URL:https://unstop.com/hackathons/hacknova27-20-bharati-vidyapeeth-deemed-t
+ o-be-university-1772235
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hacknova'27 2.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

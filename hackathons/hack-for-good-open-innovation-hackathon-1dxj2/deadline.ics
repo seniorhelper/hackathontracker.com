@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack for Good: Open Innovation Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-for-good-open-innovation-hackathon-1dxj2@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261209T160000Z
+DTEND:20261209T170000Z
+SUMMARY:Deadline: Hack for Good: Open Innovation Hackathon
+DESCRIPTION:Hyderabad\, Telangana\, India + online\nCloses Dec 9\, 2026\, 5
+ :00 PM UTC\nOfficial page: https://unstop.com/hackathons/hack-for-good-ope
+ n-innovation-hackathon-ibs-hyderabad-1828382\nCheck the official rules for
+  the exact closing time and time zone.\nDetails: https://hackathontracker.
+ com/hackathons/hack-for-good-open-innovation-hackathon-1dxj2/
+URL:https://unstop.com/hackathons/hack-for-good-open-innovation-hackathon-i
+ bs-hyderabad-1828382
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hack for Good: Open Innovation Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI-Powered Career Development Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ai-powered-career-development-hackathon-18dre@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261129T140000Z
+DTEND:20261129T150000Z
+SUMMARY:Deadline: AI-Powered Career Development Hackathon
+DESCRIPTION:INR 40\,497\nOnline\nCloses Nov 29\, 2026\, 3:00 PM UTC\nOffici
+ al page: https://unstop.com/hackathons/ai-powered-career-development-hacka
+ thon-unsaidtalks-education-1821954\nCheck the official rules for the exact
+  closing time and time zone.\nDetails: https://hackathontracker.com/hackat
+ hons/ai-powered-career-development-hackathon-18dre/
+URL:https://unstop.com/hackathons/ai-powered-career-development-hackathon-u
+ nsaidtalks-education-1821954
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: AI-Powered Career Development Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

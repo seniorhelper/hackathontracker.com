@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ML Empowerment Build Challenge 4.0 (250K IN PRIZES!)
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:ml-empowerment-build-challenge-4-0-250k-in-prizes-1so55@hackathontracke
+ r.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Deadline: ML Empowerment Build Challenge 4.0 (250K IN PRIZES!)
+DESCRIPTION:Online\nOfficial page: https://ml-build-challenge-4.devpost.com
+ /\nCheck the official rules for the exact closing time and time zone.\nDet
+ ails: https://hackathontracker.com/hackathons/ml-empowerment-build-challen
+ ge-4-0-250k-in-prizes-1so55/
+URL:https://ml-build-challenge-4.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: ML Empowerment Build Challenge 4.0 (250K IN PRIZES
+ !)
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

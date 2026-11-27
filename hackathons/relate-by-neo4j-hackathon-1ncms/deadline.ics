@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Relate by Neo4j Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:relate-by-neo4j-hackathon-1ncms@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Deadline: Relate by Neo4j Hackathon
+DESCRIPTION:Online\nOfficial page: https://relate.devpost.com/\nCheck the o
+ fficial rules for the exact closing time and time zone.\nDetails: https://
+ hackathontracker.com/hackathons/relate-by-neo4j-hackathon-1ncms/
+URL:https://relate.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Relate by Neo4j Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Build Beyond Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:build-beyond-hackathon-1749d@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Deadline: Build Beyond Hackathon
+DESCRIPTION:$5\,000 in prizes\nOnline\nOfficial page: https://build-beyond.
+ devpost.com/\nCheck the official rules for the exact closing time and time
+  zone.\nDetails: https://hackathontracker.com/hackathons/build-beyond-hack
+ athon-1749d/
+URL:https://build-beyond.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Build Beyond Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

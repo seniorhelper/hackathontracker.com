@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HACK 6.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-6-0-5tf7w@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270124T053000Z
+DTEND:20270124T063000Z
+SUMMARY:Deadline: HACK 6.0
+DESCRIPTION:Hamirpur\, Himachal Pradesh\, India\nCloses Jan 24\, 2027\, 6:3
+ 0 AM UTC\nOfficial page: https://hack-1736.devfolio.co/\nCheck the officia
+ l rules for the exact closing time and time zone.\nDetails: https://hackat
+ hontracker.com/hackathons/hack-6-0-5tf7w/
+URL:https://hack-1736.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HACK 6.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

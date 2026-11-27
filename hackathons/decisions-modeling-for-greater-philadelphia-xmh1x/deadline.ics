@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Decisions Modeling for Greater Philadelphia
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:decisions-modeling-for-greater-philadelphia-xmh1x@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Deadline: Decisions Modeling for Greater Philadelphia
+DESCRIPTION:$100 in prizes\nPennovation Works\nOfficial page: https://tbd-h
+ ackathon.devpost.com/\nCheck the official rules for the exact closing time
+  and time zone.\nDetails: https://hackathontracker.com/hackathons/decision
+ s-modeling-for-greater-philadelphia-xmh1x/
+URL:https://tbd-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Decisions Modeling for Greater Philadelphia
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

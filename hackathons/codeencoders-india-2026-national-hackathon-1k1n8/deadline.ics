@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodeEncoders India 2026 — National Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codeencoders-india-2026-national-hackathon-1k1n8@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261209T153031Z
+DTEND:20261209T163031Z
+SUMMARY:Deadline: CodeEncoders India 2026 — National Hackathon
+DESCRIPTION:Online\nCloses Dec 9\, 2026\, 4:30 PM UTC\nOfficial page: https
+ ://unstop.com/hackathons/codeencoders-india-2026-national-hackathon-wecode
+ coders-1823739\nCheck the official rules for the exact closing time and ti
+ me zone.\nDetails: https://hackathontracker.com/hackathons/codeencoders-in
+ dia-2026-national-hackathon-1k1n8/
+URL:https://unstop.com/hackathons/codeencoders-india-2026-national-hackatho
+ n-wecodecoders-1823739
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CodeEncoders India 2026 — National Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

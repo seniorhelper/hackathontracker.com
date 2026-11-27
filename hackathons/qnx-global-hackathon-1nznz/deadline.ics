@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:QNX Global Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:qnx-global-hackathon-1nznz@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Deadline: QNX Global Hackathon
+DESCRIPTION:$50\,000 in prizes\nOnline\nOfficial page: https://qnx.devpost.
+ com/\nCheck the official rules for the exact closing time and time zone.\n
+ Details: https://hackathontracker.com/hackathons/qnx-global-hackathon-1nzn
+ z/
+URL:https://qnx.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: QNX Global Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

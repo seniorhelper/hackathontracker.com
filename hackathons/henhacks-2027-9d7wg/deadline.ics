@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HenHacks 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:henhacks-2027-9d7wg@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Deadline: HenHacks 2027
+DESCRIPTION:University of Delaware - Smith Hall\nOfficial page: https://hen
+ hacks2027.devpost.com/\nCheck the official rules for the exact closing tim
+ e and time zone.\nDetails: https://hackathontracker.com/hackathons/henhack
+ s-2027-9d7wg/
+URL:https://henhacks2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HenHacks 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

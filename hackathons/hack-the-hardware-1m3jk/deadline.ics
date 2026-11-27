@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack The Hardware
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-the-hardware-1m3jk@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261220T043000Z
+DTEND:20261220T053000Z
+SUMMARY:Deadline: Hack The Hardware
+DESCRIPTION:INR 70\,000\nNagpur\, Maharashtra\, India\nCloses Dec 20\, 2026
+ \, 5:30 AM UTC\nOfficial page: https://unstop.com/hackathons/hack-the-hard
+ ware-st-vincent-pallotti-college-of-engineering-and-technology-svpcet-nagp
+ ur-1820851\nCheck the official rules for the exact closing time and time z
+ one.\nDetails: https://hackathontracker.com/hackathons/hack-the-hardware-1
+ m3jk/
+URL:https://unstop.com/hackathons/hack-the-hardware-st-vincent-pallotti-col
+ lege-of-engineering-and-technology-svpcet-nagpur-1820851
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hack The Hardware
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

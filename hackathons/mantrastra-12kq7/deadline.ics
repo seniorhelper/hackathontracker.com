@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Mantrastra
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:mantrastra-12kq7@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261226T130000Z
+DTEND:20261226T140000Z
+SUMMARY:Deadline: Mantrastra
+DESCRIPTION:INR 12\,000\nGorakhpur\, Uttar Pradesh\, India\nCloses Dec 26\,
+  2026\, 2:00 PM UTC\nOfficial page: https://unstop.com/hackathons/mantrast
+ ra-techsrijan-27-madan-mohan-malaviya-university-of-technology-1810554\nCh
+ eck the official rules for the exact closing time and time zone.\nDetails:
+  https://hackathontracker.com/hackathons/mantrastra-12kq7/
+URL:https://unstop.com/hackathons/mantrastra-techsrijan-27-madan-mohan-mala
+ viya-university-of-technology-1810554
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Mantrastra
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

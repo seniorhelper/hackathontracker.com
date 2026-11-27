@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PhysTech 2027: Physical Activity and Technology Hack Day
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:phystech-2027-physical-activity-and-technology-hack-day-1s42s@hackathon
+ tracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270626
+DTEND;VALUE=DATE:20270627
+SUMMARY:Deadline: PhysTech 2027: Physical Activity and Technology Hack Day
+DESCRIPTION:Online\nOfficial page: https://phystech2027.devpost.com/\nCheck
+  the official rules for the exact closing time and time zone.\nDetails: ht
+ tps://hackathontracker.com/hackathons/phystech-2027-physical-activity-and-
+ technology-hack-day-1s42s/
+URL:https://phystech2027.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: PhysTech 2027: Physical Activity and Technology Ha
+ ck Day
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

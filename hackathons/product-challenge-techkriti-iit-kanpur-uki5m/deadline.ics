@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Product Challenge | TECHKRITI | IIT KANPUR
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:product-challenge-techkriti-iit-kanpur-uki5m@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261231T124751Z
+DTEND:20261231T134751Z
+SUMMARY:Deadline: Product Challenge | TECHKRITI | IIT KANPUR
+DESCRIPTION:Kalyanpur\, Uttar Pradesh\, India\nCloses Dec 31\, 2026\, 1:47 
+ PM UTC\nOfficial page: https://unstop.com/hackathons/product-challenge-tec
+ hkriti27-techkriti-1764167\nCheck the official rules for the exact closing
+  time and time zone.\nDetails: https://hackathontracker.com/hackathons/pro
+ duct-challenge-techkriti-iit-kanpur-uki5m/
+URL:https://unstop.com/hackathons/product-challenge-techkriti27-techkriti-1
+ 764167
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Product Challenge | TECHKRITI | IIT KANPUR
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

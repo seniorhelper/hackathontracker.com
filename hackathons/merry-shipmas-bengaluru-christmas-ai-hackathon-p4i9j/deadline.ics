@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Merry Shipmas Bengaluru: Christmas AI Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:merry-shipmas-bengaluru-christmas-ai-hackathon-p4i9j@hackathontracker.c
+ om
+DTSTAMP:20261127T211710Z
+DTSTART:20261211T173000Z
+DTEND:20261211T183000Z
+SUMMARY:Deadline: Merry Shipmas Bengaluru: Christmas AI Hackathon
+DESCRIPTION:Bangalore\, Karnataka\, India + online\nCloses Dec 11\, 2026\, 
+ 6:30 PM UTC\nOfficial page: https://unstop.com/hackathons/merry-shipmas-be
+ ngaluru-christmas-ai-hackathon-nerdconf-1820028\nCheck the official rules 
+ for the exact closing time and time zone.\nDetails: https://hackathontrack
+ er.com/hackathons/merry-shipmas-bengaluru-christmas-ai-hackathon-p4i9j/
+URL:https://unstop.com/hackathons/merry-shipmas-bengaluru-christmas-ai-hack
+ athon-nerdconf-1820028
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Merry Shipmas Bengaluru: Christmas AI Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

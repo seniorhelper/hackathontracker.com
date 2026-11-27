@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack Peel
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-peel-wd6sl@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Deadline: Hack Peel
+DESCRIPTION:Mississauga\, Ontario\, Canada\nOfficial page: https://hackpeel
+ .ca/\nCheck the official rules for the exact closing time and time zone.\n
+ Details: https://hackathontracker.com/hackathons/hack-peel-wd6sl/
+URL:https://hackpeel.ca/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hack Peel
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

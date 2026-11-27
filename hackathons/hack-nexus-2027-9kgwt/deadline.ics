@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack Nexus 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hack-nexus-2027-9kgwt@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270131T103000Z
+DTEND:20270131T113000Z
+SUMMARY:Deadline: Hack Nexus 2027
+DESCRIPTION:Nagpur\, Maharashtra\, India\nCloses Jan 31\, 2027\, 11:30 AM U
+ TC\nOfficial page: https://hack-nexus.devfolio.co/\nCheck the official rul
+ es for the exact closing time and time zone.\nDetails: https://hackathontr
+ acker.com/hackathons/hack-nexus-2027-9kgwt/
+URL:https://hack-nexus.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hack Nexus 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

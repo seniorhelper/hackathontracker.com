@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Tech Eximius 3.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:tech-eximius-3-0-1haot@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270203T113000Z
+DTEND:20270203T123000Z
+SUMMARY:Deadline: Tech Eximius 3.0
+DESCRIPTION:Delhi\, Delhi\, India\nCloses Feb 3\, 2027\, 12:30 PM UTC\nOffi
+ cial page: https://unstop.com/hackathons/tech-eximius-30-tech-circle-18293
+ 21\nCheck the official rules for the exact closing time and time zone.\nDe
+ tails: https://hackathontracker.com/hackathons/tech-eximius-3-0-1haot/
+URL:https://unstop.com/hackathons/tech-eximius-30-tech-circle-1829321
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Tech Eximius 3.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

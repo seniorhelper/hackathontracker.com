@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Mosque & Madrassah Hackathon 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:mosque-madrassah-hackathon-2026-1nxta@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Deadline: Mosque & Madrassah Hackathon 2026
+DESCRIPTION:Thistle London Heathrow Terminal 5\nOfficial page: https://mosq
+ ue-expo-hackathon-2026.devpost.com/\nCheck the official rules for the exac
+ t closing time and time zone.\nDetails: https://hackathontracker.com/hacka
+ thons/mosque-madrassah-hackathon-2026-1nxta/
+URL:https://mosque-expo-hackathon-2026.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Mosque & Madrassah Hackathon 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

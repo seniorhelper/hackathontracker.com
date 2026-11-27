@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodePulse 48 - National Hackathon
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:codepulse-48-national-hackathon-1behr@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261229T033051Z
+DTEND:20261229T043051Z
+SUMMARY:Deadline: CodePulse 48 - National Hackathon
+DESCRIPTION:Online\nCloses Dec 29\, 2026\, 4:30 AM UTC\nOfficial page: http
+ s://unstop.com/hackathons/codepulse-48-national-hackathon-wecodecoders-182
+ 7866\nCheck the official rules for the exact closing time and time zone.\n
+ Details: https://hackathontracker.com/hackathons/codepulse-48-national-hac
+ kathon-1behr/
+URL:https://unstop.com/hackathons/codepulse-48-national-hackathon-wecodecod
+ ers-1827866
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: CodePulse 48 - National Hackathon
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

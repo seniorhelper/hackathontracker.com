@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WEHack
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:wehack-prjvu@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Deadline: WEHack
+DESCRIPTION:Richardson\, TX\, US\nOfficial page: https://www.mlh.com/events
+ /wehack-36\nCheck the official rules for the exact closing time and time z
+ one.\nDetails: https://hackathontracker.com/hackathons/wehack-prjvu/
+URL:https://www.mlh.com/events/wehack-36
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: WEHack
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

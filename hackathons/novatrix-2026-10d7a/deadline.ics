@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Novatrix 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:novatrix-2026-10d7a@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261204T113000Z
+DTEND:20261204T123000Z
+SUMMARY:Deadline: Novatrix 2026
+DESCRIPTION:Online\nCloses Dec 4\, 2026\, 12:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/novatrix-2026-altairx-tech-1829639\nCheck the of
+ ficial rules for the exact closing time and time zone.\nDetails: https://h
+ ackathontracker.com/hackathons/novatrix-2026-10d7a/
+URL:https://unstop.com/hackathons/novatrix-2026-altairx-tech-1829639
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Novatrix 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

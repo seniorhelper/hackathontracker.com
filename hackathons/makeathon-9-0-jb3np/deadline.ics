@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Makeathon 9.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:makeathon-9-0-jb3np@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270131T030000Z
+DTEND:20270131T040000Z
+SUMMARY:Deadline: Makeathon 9.0
+DESCRIPTION:Patiala\, Punjab\, India\nCloses Jan 31\, 2027\, 4:00 AM UTC\nO
+ fficial page: https://makeathon-9.devfolio.co/\nCheck the official rules f
+ or the exact closing time and time zone.\nDetails: https://hackathontracke
+ r.com/hackathons/makeathon-9-0-jb3np/
+URL:https://makeathon-9.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Makeathon 9.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

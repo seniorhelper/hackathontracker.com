@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Teens in AI Global Challenge 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:teens-in-ai-global-challenge-2027-1seqo@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:Deadline: Teens in AI Global Challenge 2027
+DESCRIPTION:Online\nOfficial page: https://teens-in-ai.devpost.com/\nCheck 
+ the official rules for the exact closing time and time zone.\nDetails: htt
+ ps://hackathontracker.com/hackathons/teens-in-ai-global-challenge-2027-1se
+ qo/
+URL:https://teens-in-ai.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Teens in AI Global Challenge 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Imagine the Impossible: The Game Design Challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:imagine-the-impossible-the-game-design-challenge-k28fr@hackathontracker
+ .com
+DTSTAMP:20261127T211710Z
+DTSTART:20261128T143000Z
+DTEND:20261128T153000Z
+SUMMARY:Deadline: Imagine the Impossible: The Game Design Challenge
+DESCRIPTION:Online\nCloses Nov 28\, 2026\, 3:30 PM UTC\nOfficial page: http
+ s://unstop.com/hackathons/imagine-the-impossible-the-game-design-challenge
+ -kalindi-college-kc-university-of-delhi-du-delhi-1826953\nCheck the offici
+ al rules for the exact closing time and time zone.\nDetails: https://hacka
+ thontracker.com/hackathons/imagine-the-impossible-the-game-design-challeng
+ e-k28fr/
+URL:https://unstop.com/hackathons/imagine-the-impossible-the-game-design-ch
+ allenge-kalindi-college-kc-university-of-delhi-du-delhi-1826953
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Imagine the Impossible: The Game Design Challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

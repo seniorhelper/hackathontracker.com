@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Nurn 2026 – National Innovation & Technology Challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:nurn-2026-national-innovation-technology-challenge-g3ukw@hackathontrack
+ er.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270110T091400Z
+DTEND:20270110T101400Z
+SUMMARY:Deadline: Nurn 2026 – National Innovation & Technology Challenge
+DESCRIPTION:Online\nCloses Jan 10\, 2027\, 10:14 AM UTC\nOfficial page: htt
+ ps://unstop.com/hackathons/nurn-2026-national-innovation-technology-challe
+ nge-pranveer-singh-institute-of-technology-psit-kanpur-1817757\nCheck the 
+ official rules for the exact closing time and time zone.\nDetails: https:/
+ /hackathontracker.com/hackathons/nurn-2026-national-innovation-technology-
+ challenge-g3ukw/
+URL:https://unstop.com/hackathons/nurn-2026-national-innovation-technology-
+ challenge-pranveer-singh-institute-of-technology-psit-kanpur-1817757
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Nurn 2026 – National Innovation & Technology Cha
+ llenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

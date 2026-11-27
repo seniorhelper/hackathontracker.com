@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Apex CTF
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:apex-ctf-1kplk@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261220T043004Z
+DTEND:20261220T053004Z
+SUMMARY:Deadline: Apex CTF
+DESCRIPTION:INR 500\,000\nOnline\nCloses Dec 20\, 2026\, 5:30 AM UTC\nOffic
+ ial page: https://unstop.com/hackathons/apex-ctf-st-vincent-pallotti-colle
+ ge-of-engineering-and-technology-svpcet-nagpur-1820854\nCheck the official
+  rules for the exact closing time and time zone.\nDetails: https://hackath
+ ontracker.com/hackathons/apex-ctf-1kplk/
+URL:https://unstop.com/hackathons/apex-ctf-st-vincent-pallotti-college-of-e
+ ngineering-and-technology-svpcet-nagpur-1820854
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Apex CTF
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

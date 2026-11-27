@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Code Fort 2027
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:code-fort-2027-ge0hl@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261128T163100Z
+DTEND:20261128T173100Z
+SUMMARY:Deadline: Code Fort 2027
+DESCRIPTION:INR 175\,000\nMohali\, Punjab\, India\nCloses Nov 28\, 2026\, 5
+ :31 PM UTC\nOfficial page: https://unstop.com/hackathons/code-fort-2027-ch
+ andigarh-university-cu-ajitgarh-punjab-1817736\nCheck the official rules f
+ or the exact closing time and time zone.\nDetails: https://hackathontracke
+ r.com/hackathons/code-fort-2027-ge0hl/
+URL:https://unstop.com/hackathons/code-fort-2027-chandigarh-university-cu-a
+ jitgarh-punjab-1817736
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Code Fort 2027
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

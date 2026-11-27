@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Trivora
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:trivora-11nmt@hackathontracker.com
+DTSTAMP:20261127T211711Z
+DTSTART:20261201T173000Z
+DTEND:20261201T183000Z
+SUMMARY:Deadline: Trivora
+DESCRIPTION:INR 50\,000\nCoimbatore\, Tamil Nadu\, India + online\nCloses D
+ ec 1\, 2026\, 6:30 PM UTC\nOfficial page: https://unstop.com/hackathons/tr
+ ivora-hackhere-1760462\nCheck the official rules for the exact closing tim
+ e and time zone.\nDetails: https://hackathontracker.com/hackathons/trivora
+ -11nmt/
+URL:https://unstop.com/hackathons/trivora-hackhere-1760462
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Trivora
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackxCraft – A 6 hour coding challenge
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hackxcraft-a-6-hour-coding-challenge-w6p0d@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261224T103100Z
+DTEND:20261224T113100Z
+SUMMARY:Deadline: HackxCraft – A 6 hour coding challenge
+DESCRIPTION:Bhopal\, Madhya Pradesh\, India\nCloses Dec 24\, 2026\, 11:31 A
+ M UTC\nOfficial page: https://unstop.com/hackathons/hackxcraft-6-house-hou
+ se-based-coding-challenge-e-summit26-lnct-group-of-colleges-bhopal-madhya-
+ pradesh-1825414\nCheck the official rules for the exact closing time and t
+ ime zone.\nDetails: https://hackathontracker.com/hackathons/hackxcraft-a-6
+ -hour-coding-challenge-w6p0d/
+URL:https://unstop.com/hackathons/hackxcraft-6-house-house-based-coding-cha
+ llenge-e-summit26-lnct-group-of-colleges-bhopal-madhya-pradesh-1825414
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: HackxCraft – A 6 hour coding challenge
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

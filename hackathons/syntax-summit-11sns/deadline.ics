@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Syntax Summit
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:syntax-summit-11sns@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Deadline: Syntax Summit
+DESCRIPTION:Online\nOfficial page: https://syntax-summit.devpost.com/\nChec
+ k the official rules for the exact closing time and time zone.\nDetails: h
+ ttps://hackathontracker.com/hackathons/syntax-summit-11sns/
+URL:https://syntax-summit.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Syntax Summit
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

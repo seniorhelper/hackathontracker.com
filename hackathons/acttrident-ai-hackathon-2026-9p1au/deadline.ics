@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ActTrident AI Hackathon 2026
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:acttrident-ai-hackathon-2026-9p1au@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261220T172900Z
+DTEND:20261220T182900Z
+SUMMARY:Deadline: ActTrident AI Hackathon 2026
+DESCRIPTION:INR 65\,000\nOnline\nCloses Dec 20\, 2026\, 6:29 PM UTC\nOffici
+ al page: https://unstop.com/hackathons/acttrident-ai-hackathon-2026-triden
+ t-shield-2026-acttrident-1830923\nCheck the official rules for the exact c
+ losing time and time zone.\nDetails: https://hackathontracker.com/hackatho
+ ns/acttrident-ai-hackathon-2026-9p1au/
+URL:https://unstop.com/hackathons/acttrident-ai-hackathon-2026-trident-shie
+ ld-2026-acttrident-1830923
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: ActTrident AI Hackathon 2026
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Enigma 2.0 – 24-Hour National level Hackathon | Riet Jaipur
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:enigma-2-0-24-hour-national-level-hackathon-riet-jaipur-1c1xr@hackathon
+ tracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261215T075700Z
+DTEND:20261215T085700Z
+SUMMARY:Deadline: Enigma 2.0 – 24-Hour National level Hackathon | Riet Ja
+ ipur
+DESCRIPTION:INR 23\,000\nJaipur\, Rajasthan\, India\nCloses Dec 15\, 2026\,
+  8:57 AM UTC\nOfficial page: https://unstop.com/hackathons/enigma-20-24-ho
+ ur-inter-college-hackathon-riet-jaipur-rajasthan-institute-of-engineering-
+ and-technology-jaipu-1826269\nCheck the official rules for the exact closi
+ ng time and time zone.\nDetails: https://hackathontracker.com/hackathons/e
+ nigma-2-0-24-hour-national-level-hackathon-riet-jaipur-1c1xr/
+URL:https://unstop.com/hackathons/enigma-20-24-hour-inter-college-hackathon
+ -riet-jaipur-rajasthan-institute-of-engineering-and-technology-jaipu-18262
+ 69
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Enigma 2.0 – 24-Hour National level Hackathon | 
+ Riet Jaipur
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

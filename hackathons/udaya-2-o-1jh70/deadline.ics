@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UDAYA 2.O
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:udaya-2-o-1jh70@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261204T131500Z
+DTEND:20261204T141500Z
+SUMMARY:Deadline: UDAYA 2.O
+DESCRIPTION:Bengaluru\, Karnataka\, India\nCloses Dec 4\, 2026\, 2:15 PM UT
+ C\nOfficial page: https://udaya-2-o.devfolio.co/\nCheck the official rules
+  for the exact closing time and time zone.\nDetails: https://hackathontrac
+ ker.com/hackathons/udaya-2-o-1jh70/
+URL:https://udaya-2-o.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: UDAYA 2.O
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

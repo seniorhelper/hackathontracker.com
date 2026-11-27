@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Utopia Stock Exchange
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:utopia-stock-exchange-18n6v@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20261210T172900Z
+DTEND:20261210T182900Z
+SUMMARY:Deadline: Utopia Stock Exchange
+DESCRIPTION:INR 20\,000\nHadapsar Pune\, Maharashtra\, India\nCloses Dec 10
+ \, 2026\, 6:29 PM UTC\nOfficial page: https://unstop.com/hackathons/utopia
+ -stock-exchange-icfai-business-school-ibs-pune-1827808\nCheck the official
+  rules for the exact closing time and time zone.\nDetails: https://hackath
+ ontracker.com/hackathons/utopia-stock-exchange-18n6v/
+URL:https://unstop.com/hackathons/utopia-stock-exchange-icfai-business-scho
+ ol-ibs-pune-1827808
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Utopia Stock Exchange
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

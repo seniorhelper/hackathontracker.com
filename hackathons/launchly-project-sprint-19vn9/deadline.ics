@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Launchly Project Sprint
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:launchly-project-sprint-19vn9@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+SUMMARY:Deadline: Launchly Project Sprint
+DESCRIPTION:$1\,500 in prizes\nOnline\nOfficial page: https://launchlyapp.d
+ evpost.com/\nCheck the official rules for the exact closing time and time 
+ zone.\nDetails: https://hackathontracker.com/hackathons/launchly-project-s
+ print-19vn9/
+URL:https://launchlyapp.devpost.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Launchly Project Sprint
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

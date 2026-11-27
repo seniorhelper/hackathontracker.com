@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sentinel Hacks
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:sentinel-hacks-2a5z6@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Deadline: Sentinel Hacks
+DESCRIPTION:Sunnyvale\, California\, United States\nOfficial page: https://
+ www.sentinelhacks.tech/\nCheck the official rules for the exact closing ti
+ me and time zone.\nDetails: https://hackathontracker.com/hackathons/sentin
+ el-hacks-2a5z6/
+URL:https://www.sentinelhacks.tech/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Sentinel Hacks
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

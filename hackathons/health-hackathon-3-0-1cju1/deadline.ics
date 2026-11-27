@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Health Hackathon 3.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:health-hackathon-3-0-1cju1@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270129T093000Z
+DTEND:20270129T103000Z
+SUMMARY:Deadline: Health Hackathon 3.0
+DESCRIPTION:Kothri Kalan\, Madhya Pradesh\, India\nCloses Jan 29\, 2027\, 1
+ 0:30 AM UTC\nOfficial page: https://health-hackathon.devfolio.co/\nCheck t
+ he official rules for the exact closing time and time zone.\nDetails: http
+ s://hackathontracker.com/hackathons/health-hackathon-3-0-1cju1/
+URL:https://health-hackathon.devfolio.co/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Health Hackathon 3.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

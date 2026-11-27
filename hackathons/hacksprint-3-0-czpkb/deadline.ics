@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//hackathontracker.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hacksprint 3.0
+X-WR-CALDESC:Hackathon deadlines from hackathontracker.com. Always confirm 
+ the exact time on the official page.
+BEGIN:VEVENT
+UID:hacksprint-3-0-czpkb@hackathontracker.com
+DTSTAMP:20261127T211710Z
+DTSTART:20270206T133000Z
+DTEND:20270206T143000Z
+SUMMARY:Deadline: Hacksprint 3.0
+DESCRIPTION:Coimbatore\, Tamil Nadu\, India + online\nCloses Feb 6\, 2027\,
+  2:30 PM UTC\nOfficial page: https://unstop.com/hackathons/hacksprint-30-k
+ arpagam-academy-of-higher-education-1778597\nCheck the official rules for 
+ the exact closing time and time zone.\nDetails: https://hackathontracker.c
+ om/hackathons/hacksprint-3-0-czpkb/
+URL:https://unstop.com/hackathons/hacksprint-30-karpagam-academy-of-higher-
+ education-1778597
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:3 days left: Hacksprint 3.0
+TRIGGER:-P3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
